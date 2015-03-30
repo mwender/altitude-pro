@@ -20,8 +20,12 @@ define( 'CHILD_THEME_URL', 'http://my.studiopress.com/themes/altitude/' );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 //* Enqueue scripts and styles
-add_action( 'wp_enqueue_scripts', 'altitude_enqueue_scripts_styles' );
+add_action( 'wp_enqueue_scripts', 'altitude_enqueue_scripts_styles', 6 );
 function altitude_enqueue_scripts_styles() {
+	//* Remove default style.css, add /lib/main.css
+	$handle  = defined( 'CHILD_THEME_NAME' ) && CHILD_THEME_NAME ? sanitize_title_with_dashes( CHILD_THEME_NAME ) : 'child-theme';
+	wp_deregister_style( $handle );
+	wp_enqueue_style( $handle, get_bloginfo( 'stylesheet_directory' ) . '/lib/css/main.css', false, filemtime( get_stylesheet_directory() . '/lib/css/main.css' ) );
 
 	wp_enqueue_script( 'altitude-global', get_bloginfo( 'stylesheet_directory' ) . '/js/global.js', array( 'jquery' ), '1.0.0' );
 
@@ -82,9 +86,9 @@ function rainmaker_footer_menu() {
 		'container'      => false,
 		'depth'          => 1,
 		'fallback_cb'    => false,
-		'menu_class'     => 'genesis-nav-menu',	
+		'menu_class'     => 'genesis-nav-menu',
 	) );
-	
+
 	echo '</nav>';
 }
 
@@ -136,7 +140,7 @@ add_filter( 'comment_form_defaults', 'altitude_remove_comment_form_allowed_tags'
 function altitude_remove_comment_form_allowed_tags( $defaults ) {
 
 	$defaults['comment_field'] = '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun', 'altitude' ) . '</label> <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>';
-	$defaults['comment_notes_after'] = '';	
+	$defaults['comment_notes_after'] = '';
 	return $defaults;
 
 }
@@ -162,7 +166,7 @@ function altitude_widget_area_class( $id ) {
 	$count = altitude_count_widgets( $id );
 
 	$class = '';
-	
+
 	if( $count == 1 ) {
 		$class .= ' widget-full';
 	} elseif( $count % 3 == 1 ) {
@@ -171,11 +175,11 @@ function altitude_widget_area_class( $id ) {
 		$class .= ' widget-fourths';
 	} elseif( $count % 2 == 0 ) {
 		$class .= ' widget-halves uneven';
-	} else {	
+	} else {
 		$class .= ' widget-halves';
 	}
 	return $class;
-	
+
 }
 
 //* Relocate the post info
@@ -197,7 +201,7 @@ function altitude_post_meta_filter( $post_meta ) {
 
 	$post_meta = 'Written by [post_author_posts_link] [post_categories before=" &middot; Categorized: "]  [post_tags before=" &middot; Tagged: "]';
 	return $post_meta;
-	
+
 }
 
 //* Register widget areas

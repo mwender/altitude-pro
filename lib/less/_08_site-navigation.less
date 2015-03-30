@@ -1,0 +1,179 @@
+
+/*
+Site Navigation
+---------------------------------------------------------------------------------------------------- */
+
+.genesis-nav-menu {
+	line-height: 1;
+}
+
+.genesis-nav-menu .menu-item {
+	display: inline-block;
+	text-align: left;
+}
+
+.genesis-nav-menu li li {
+	margin-left: 0;
+}
+
+.genesis-nav-menu a {
+	color: #fff;
+	display: block;
+	font-size: 14px;
+	font-weight: 200;
+	letter-spacing: 1px;
+	padding: 30px 15px;
+	text-transform: uppercase;
+}
+
+.site-header.dark .genesis-nav-menu a {
+	padding: 20px 15px;
+}
+
+.genesis-nav-menu li.highlight a:hover::before {
+	color: #fff;
+}
+
+.genesis-nav-menu li.highlight > a {
+	font-weight: 800;
+}
+
+.front-page .genesis-nav-menu li.current-menu-item > a,
+.genesis-nav-menu > li > a {
+	border-bottom: 2px solid transparent;
+}
+
+.front-page .genesis-nav-menu li.current-menu-item > a:hover,
+.genesis-nav-menu li.current-menu-item > a,
+.genesis-nav-menu > li > a:hover {
+	border-color: #fff;
+}
+
+.genesis-nav-menu > .menu-item > a {
+	text-transform: uppercase;
+}
+
+.genesis-nav-menu .sub-menu {
+	left: -9999px;
+	letter-spacing: 0;
+	opacity: 0;
+	position: absolute;
+	-webkit-transition: opacity .4s ease-in-out;
+	-moz-transition:    opacity .4s ease-in-out;
+	-ms-transition:     opacity .4s ease-in-out;
+	-o-transition:      opacity .4s ease-in-out;
+	transition:         opacity .4s ease-in-out;
+	width: 200px;
+	z-index: 99;
+}
+
+.genesis-nav-menu .sub-menu a {
+	background-color: #111;
+	padding: 20px;
+	position: relative;
+	width: 200px;
+}
+
+.genesis-nav-menu .sub-menu a:hover,
+.genesis-nav-menu .sub-menu li.current-menu-item > a {
+	background-color: #222;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu {
+	margin: -54px 0 0 199px;
+}
+
+.genesis-nav-menu .menu-item:hover {
+	position: static;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+	left: auto;
+	opacity: 1;
+}
+
+.genesis-nav-menu > .first > a {
+	padding-left: 0;
+}
+
+.genesis-nav-menu > .last > a {
+	padding-right: 0;
+}
+
+.genesis-nav-menu > .right {
+	color: #fff;
+	display: inline-block;
+	list-style-type: none;
+	padding: 27px 20px;
+	text-transform: uppercase;
+}
+
+.genesis-nav-menu > .right > a {
+	display: inline;
+	padding: 0;
+}
+
+.genesis-nav-menu > .rss > a {
+	margin-left: 48px;
+}
+
+.genesis-nav-menu > .search {
+	display: block;
+	margin: 0 auto;
+	padding: 0 20px 20px;
+	width: 50%;
+}
+
+/* Primary Navigation
+--------------------------------------------- */
+
+.nav-primary {
+	text-align: center;
+}
+
+.nav-primary .genesis-nav-menu {
+	float: right;
+}
+
+/* Secondary Navigation
+--------------------------------------------- */
+
+.nav-secondary {
+	border-bottom: 1px solid #fff;
+}
+
+/* Footer Navigation
+--------------------------------------------- */
+
+.nav-footer .genesis-nav-menu {
+	padding: 20px 0;
+}
+
+.nav-footer .genesis-nav-menu a {
+	border: none;
+	font-weight: 800;
+	letter-spacing: 3px;
+	margin: 0 20px;
+	padding: 0;
+}
+
+/* Responsive Menu
+--------------------------------------------- */
+
+.responsive-menu-icon {
+	cursor: pointer;
+	display: none;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.responsive-menu-icon::before {
+	color: #fff;
+	content: "\f333";
+	font: normal 24px/1 "dashicons";
+	margin: 0 auto;
+}
+
+.nav-secondary .responsive-menu-icon {
+	margin: 10px auto 0;
+}
