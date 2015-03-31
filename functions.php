@@ -205,6 +205,12 @@ function altitude_post_meta_filter( $post_meta ) {
 
 }
 
+//* Display a custom favicon
+add_filter( 'genesis_pre_load_favicon', 'sp_favicon_filter' );
+function sp_favicon_filter( $favicon_url ) {
+	return get_bloginfo( 'stylesheet_directory' ) . '/favicon.ico';
+}
+
 //* Register widget areas
 genesis_register_sidebar( array(
 	'id'          => 'front-page-1',
