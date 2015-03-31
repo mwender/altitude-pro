@@ -1,6 +1,9 @@
 /*
 Defaults
 ---------------------------------------------------------------------------------------------------- */
+@body-font: 'PT Sans Narrow', sans-serif;
+@heading-font: 'PT Sans Narrow', sans-serif;
+
 
 /* Typographical Elements
 --------------------------------------------- */
@@ -8,7 +11,7 @@ Defaults
 body {
 	background-color: #fff;
 	color: #000;
-	font-family: "Ek Mukta", sans-serif;
+	font-family: @body-font;
 	font-size: 20px;
 	font-weight: 200;
 	line-height: 1.5;
@@ -104,7 +107,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Ek Mukta", sans-serif;
+	font-family: @heading-font;
 	font-weight: 200;
 	line-height: 1.2;
 	margin: 0 0 20px;
