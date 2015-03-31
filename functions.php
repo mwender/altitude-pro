@@ -42,7 +42,7 @@ add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list'
 add_theme_support( 'genesis-responsive-viewport' );
 
 //* Add new image sizes
-add_image_size( 'featured-page', 1140, 400, TRUE );
+add_image_size( 'featured-page', 1140, 700, TRUE );
 
 //* Add support for 1-column footer widget area
 add_theme_support( 'genesis-footer-widgets', 1 );
