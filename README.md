@@ -7,6 +7,7 @@ The `master` branch always maintains the latest version of the theme available f
 
 - All CSS moved to `lib/css/main.css`.
 - CSS moved to `lib/less/` and compiled with [grunt-contrib-less](https://github.com/gruntjs/grunt-contrib-less).
+- Custom favicon specified in `functions.php`.
 
 Any time I start a new project using this theme, I create a branch from `develop`. Any time there are updates to the Altitude Pro Theme, I update `master` with the new version of the theme, and then I merge `master` into `develop`.
 
