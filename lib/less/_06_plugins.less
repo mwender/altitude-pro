@@ -24,7 +24,32 @@ Plugins
 
 /* Good Reviews for WordPress
 --------------------------------------------- */
-.gr-reviews{
+article.grfwp-review{
+	blockquote{
+		color: #333;
+		padding-left: 40px;
+		margin-bottom: 0;
+
+		&::before{
+			font-size: 100px;
+			left: -54px;
+			top: -20px;
+		}
+	}
+
+	header, p.entry-meta{
+		display: none;
+	}
+
+	.gr-author{
+		text-align: left;
+		margin-top: 0;
+	}
+
+
+}
+
+.flexible-widgets .gr-reviews{
 	margin: 0;
 
 	blockquote{
