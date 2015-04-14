@@ -19,6 +19,9 @@ define( 'CHILD_THEME_NAME', 'Altitude Pro Theme' );
 define( 'CHILD_THEME_URL', 'http://my.studiopress.com/themes/altitude/' );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
+//* Include additional files
+include_once( get_stylesheet_directory() . '/lib/fns/fns.shortcodes.php' );
+
 //* Enqueue scripts and styles
 add_action( 'wp_enqueue_scripts', 'altitude_enqueue_scripts_styles', 6 );
 function altitude_enqueue_scripts_styles() {
@@ -48,6 +51,9 @@ add_theme_support( 'genesis-footer-widgets', 1 );
 
 //* Add support for footer menu
 add_theme_support ( 'genesis-menus' , array ( 'primary' => 'Primary Navigation Menu', 'secondary' => 'Secondary Navigation Menu', 'footer' => 'Footer Navigation Menu' ) );
+
+//* Process shortcodes in Text widgets
+add_filter( 'widget_text', 'do_shortcode' );
 
 //* Unregister the header right widget area
 unregister_sidebar( 'header-right' );
