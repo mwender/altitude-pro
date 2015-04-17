@@ -16,6 +16,9 @@ function html_include( $atts ){
 		case 'awards':
 			$html = file_get_contents( dirname( __FILE__ ) . '/../html/wedding-wire-awards.html' );
 			break;
+		case 'availability-top':
+			$html = file_get_contents( dirname( __FILE__ ) . '/../html/djint-availability-top.html' );
+			break;
 		default:
 			$html = file_get_contents( dirname( __FILE__ ) . '/../html/djint-availability.html' );
 			break;
