@@ -21,6 +21,7 @@ define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 //* Include additional files
 include_once( get_stylesheet_directory() . '/lib/fns/fns.shortcodes.php' );
+include_once( get_stylesheet_directory() . '/lib/fns/fns.gravityforms.php' );
 
 //* Enqueue scripts and styles
 add_action( 'wp_enqueue_scripts', 'altitude_enqueue_scripts_styles', 6 );
