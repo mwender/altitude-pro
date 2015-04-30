@@ -1,0 +1,19 @@
+{
+  "name": "altitude-pro",
+  "version": "1.0.0",
+  "homepage": "https://github.com/mwender/altitude-pro",
+  "authors": [
+    "Michael Wender <michael@michaelwender.com>"
+  ],
+  "description": "Altitude Pro theme customized for IDoEntertainment.com",
+  "main": "index.php",
+  "license": "GPL",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
