@@ -9,17 +9,19 @@ Plugins
 	margin: 0 auto;
 	text-align: center;
 
+	/*
 	select{
 		width: inherit;
 		height: 57px;
 		line-height: 1;
 		border: 0;
 	}
+	*/
 
-	&.availability ul{
+	&.availability ul.select-box-list{
 		display: inline-block;
 
-		li{
+		& > li{
 			display: block;
 			float: left;
 			margin-right: 10px;
@@ -30,6 +32,24 @@ Plugins
 
 			&:last-child{
 				margin-right: 0;
+			}
+		}
+	}
+
+	.selectboxit-container{
+		.selectboxit-list{
+			li{
+				margin: 0;
+			}
+		}
+		.selectboxit{
+			height: 57px;
+			color: #000;
+
+			span{
+				line-height: 57px;
+				height: 57px;
+				font-size: 16px;
 			}
 		}
 	}

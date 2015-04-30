@@ -36,6 +36,9 @@ function altitude_enqueue_scripts_styles() {
 	wp_enqueue_style( 'dashicons' );
 	wp_enqueue_style( 'altitude-google-fonts', '//fonts.googleapis.com/css?family=Ek+Mukta:200,800', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'genericons' );
+
+	wp_enqueue_style( 'select-box-it', get_bloginfo( 'stylesheet_directory' ) . '/bower_components/jquery.selectBoxIt/src/stylesheets/jquery.selectBoxIt.css', null, '3.8.0' );
+	wp_enqueue_script( 'select-box-it', get_bloginfo( 'stylesheet_directory' ) . '/bower_components/jquery.selectBoxIt/src/javascripts/jquery.selectBoxIt.js', array( 'jquery', 'jquery-ui-widget' ), '3.8.0' );
 }
 
 //* Add HTML5 markup structure

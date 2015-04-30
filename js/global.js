@@ -54,4 +54,8 @@ jQuery(function( $ ){
 		}
 	}
 
+	// Apply SelectBoxIt to selects
+	$("select").selectBoxIt({
+	});
+
 });
