@@ -320,18 +320,32 @@ Media Queries
 		margin-bottom: -80px;
 	}
 
+	.djintelligence{
+		&.availability ul.select-box-list{
+			li:nth-child(n+5){
+				width: 100%;
+			}
+		}
+	}
+
 }
 
 @media only screen and (max-width: 480px) {
 
 	.image-section h2,
 	.solid-section h2 {
-		font-size: 40px;
+		font-size: 40px !important;
 	}
 
 	.djintelligence{
 		&.availability ul li{
 			float: none;
+		}
+
+		&.availability ul.select-box-list{
+			li:nth-child(n+4){
+				width: 100%;
+			}
 		}
 
 		select{
