@@ -1,6 +1,6 @@
 # Altitude Pro Child Theme
 
-This is my personal repository of the [Altitude Pro Theme by StudioPress](http://my.studiopress.com/themes/altitude/). I use this repository to maintain any edits I make to the theme while also allowing for future updates of the master theme.
+This is my personal repository of the [Altitude Pro Theme by StudioPress](http://my.studiopress.com/themes/altitude/). I use this repository to maintain any edits I make to the theme while also allowing for future updates by updating the `master` branch.
 
 ## Methodology
 The `master` branch always maintains the latest version of the theme available for download from [StudioPress.com](http://studiopress.com). The `develop` branch is my baseline starter version of this theme. It has the following features:
