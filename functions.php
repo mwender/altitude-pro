@@ -30,7 +30,7 @@ function altitude_enqueue_scripts_styles() {
 	wp_enqueue_script( 'altitude-global', get_bloginfo( 'stylesheet_directory' ) . '/js/global.js', array( 'jquery' ), '1.0.0' );
 
 	wp_enqueue_style( 'dashicons' );
-	wp_enqueue_style( 'altitude-google-fonts', '//fonts.googleapis.com/css?family=Ek+Mukta:200,800', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'altitude-google-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700', array(), CHILD_THEME_VERSION );
 
 }
 
