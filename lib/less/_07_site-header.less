@@ -12,24 +12,22 @@ Site Header
 	z-index: 999;
 }
 
-.featured-section .site-header {
-	background-color: transparent;
-}
+.featured-section {
+	.site-header{
+		background-color: rgba(0,0,0,0.65);
 
-.featured-section .site-header > .wrap {
-	border-bottom: 1px solid #fff;
-}
+		&.dark{
+			background-color: #000;
 
-.site-header.dark {
-	background-color: #000;
-}
+			.nav-secondary{
+				display: none;
+			}
+		}
 
-.site-header.dark > .wrap {
-	border-bottom: none;
-}
-
-.site-header.dark .nav-secondary {
-	display: none;
+		& > .wrap{
+			border-bottom: none;
+		}
+	}
 }
 
 .admin-bar .site-header {
