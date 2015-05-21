@@ -39,12 +39,23 @@ Site Header
 
 .title-area {
 	float: left;
-	padding: 25px 0;
+	padding: 0;
 	width: 360px;
 }
 
 .site-header.dark .title-area {
-	padding: 15px 0;
+	.site-title{
+		opacity: 1;
+
+		> a{
+			-webkit-transition: all 0.2s ease-in-out;
+			-moz-transition:    all 0.2s ease-in-out;
+			-ms-transition:     all 0.2s ease-in-out;
+			-o-transition:      all 0.2s ease-in-out;
+			transition:         all 0.2s ease-in-out;
+			background-image: url(../../images/thrifttrac-header-image.green.png);
+		}
+	}
 }
 
 .site-title {
@@ -54,6 +65,15 @@ Site Header
 	line-height: 1;
 	margin-bottom: 0;
 	text-transform: uppercase;
+	opacity: 0.5;
+
+	> a{
+		background-size: contain !important;
+		display: block;
+		height: 76px;
+		text-indent: -9999px;
+		background: url(../../images/thrifttrac-header-image.white.png) no-repeat;
+	}
 }
 
 .site-title a,
