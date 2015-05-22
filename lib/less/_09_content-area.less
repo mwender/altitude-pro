@@ -108,7 +108,33 @@ Content Area
 	font-style: italic;
 }
 
+.pricing-row{
+	border-bottom: 1px dotted #333;
+	position: relative;
+	.clearfix;
 
+	.left, .right{
+		line-height: 1;
+		margin-top: 14px;
+	}
+
+	.left{
+		position: absolute;
+		left: 0;
+		background-color: #fff;
+		padding: 0 8px 0 0;
+	}
+	.middle{
+		height: 1.5em;
+	}
+	.right{
+		position: absolute;
+		right: 0;
+		top: 0;
+		background-color: #fff;
+		padding: 0 0 0 8px;
+	}
+}
 /* Dashicons
 --------------------------------------------- */
 
