@@ -392,3 +392,18 @@ input[type="search"]::-webkit-search-results-button {
 	border: 2px solid #fff;
 	color: #000;
 }
+
+/* Alerts
+--------------------------------------------- */
+.alert{
+	border: 1px solid #666;
+	background-color: #eee;
+	padding: 30px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+
+	&.green{
+		border-color: darken( @primary-color, 25% );
+		background-color: lighten( @primary-color, 35% );
+	}
+}
