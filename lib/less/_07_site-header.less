@@ -65,7 +65,10 @@ Site Header
 	line-height: 1;
 	margin-bottom: 0;
 	text-transform: uppercase;
-	opacity: 0.25;
+
+	.home &{
+		opacity: 0.25;
+	}
 
 	&:hover{
 		opacity: 1;
@@ -76,7 +79,11 @@ Site Header
 		display: block;
 		height: 76px;
 		text-indent: -9999px;
-		background: url(../../images/thrifttrac-header-image.white.png) no-repeat;
+		background: url(../../images/thrifttrac-header-image.green.png) no-repeat;
+	}
+
+	.home & > a{
+		background-image: url(../../images/thrifttrac-header-image.white.png);
 	}
 }
 
