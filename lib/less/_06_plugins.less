@@ -205,6 +205,12 @@ article.page .easy-faqs-wrapper{
 	textarea.textarea{
 		padding: .15em .5em;
 	}
+
+	.aligncenter{
+		.gform_heading, .gform_footer{
+			text-align: center;
+		}
+	}
 }
 
 /* Jetpack
@@ -212,4 +218,178 @@ article.page .easy-faqs-wrapper{
 
 #wpstats {
 	display: none;
+}
+
+/* Google Calendar Events
+--------------------------------------------- */
+.gce-page-grid,.gce-page-list,.gce-widget-grid,.gce-widget-list,.gce-event-info {
+    line-height: 1.5;
+}
+.gce-month-title,.gce-list-title {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.gce-list-event,.gce-tooltip-event {
+    background-color: #ddd;
+    padding: 0 5px;
+}
+.gce-page-grid {
+    .gce-calendar {
+        width:100%;
+        border-collapse:collapse;
+        border:1px solid #CCCCCC;
+        color:#CCCCCC;
+        .gce-caption {
+            color:#333333;
+            text-align:center;
+            height: 45px;
+            margin-bottom: 10px;
+            background-color: #ccc;
+        }
+        th {
+            border:1px solid #CCCCCC;
+            text-align:center;
+            width:14.29%;
+            padding:0;
+            abbr {
+                border-bottom:none;
+            }
+        }
+        td {
+            border:1px solid #CCCCCC;
+            text-align:center;
+            height:80px;
+            vertical-align:middle;
+            padding:0;
+        }
+        .gce-has-events {
+            color: @accent-color;
+            cursor:pointer;
+            background-color:  lighten( @accent-color, 35% );
+        }
+        .gce-event-info {
+            display:none;
+        }
+        .gce-day-number {
+            font-size:2em;
+        }
+        .gce-today {
+            background-color: lighten( #000, 90% );
+            color: lighten( #000, 25% );
+        }
+    }
+}
+.gce-page-list {
+    .gce-feed {
+        padding-bottom: 10px;
+    }
+    .gce-list {
+        p {
+            margin:0;
+        }
+    }
+}
+.gce-page-list .gce-list p span,.gce-page-list .gce-list div span {
+    color:#999999;
+}
+.gce-widget-grid {
+    .gce-calendar {
+        width:100%;
+        border:1px solid #CCCCCC;
+        border-collapse:collapse;
+        .gce-caption {
+            text-align:center;
+        }
+        th {
+            width:14.29%;
+            border:1px solid #CCCCCC;
+            text-align:center;
+            abbr {
+                border-bottom:none;
+            }
+        }
+        td {
+            color:#CCCCCC;
+            width:14.29%;
+            border:1px solid #CCCCCC;
+            text-align:center;
+        }
+        .gce-has-events {
+            cursor:pointer;
+            color:#666666;
+        }
+        .gce-today {
+            background-color:#DDDDDD;
+        }
+        .gce-event-info {
+            display:none;
+        }
+    }
+}
+.gce-widget-list {
+    .gce-list {
+        p {
+            margin:0;
+        }
+    }
+}
+.gce-widget-list .gce-list p span,.gce-widget-list .gce-list div span {
+    color:#999999;
+}
+.gce-event-info {
+    background-color:#FFFFFF;
+    .gce-tooltip-title {
+        margin:5px;
+        font-weight:bold;
+        font-size:1.2em;
+    }
+    ul {
+        padding:0;
+        margin:5px;
+        list-style-type:none;
+        li {
+            margin:10px 0 0 0;
+            p {
+                margin:0;
+            }
+        }
+    }
+}
+.gce-event-info ul li p span,.gce-event-info ul li div span {
+    color:#999999;
+}
+.gce-navbar {
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background-color: #fff;
+
+    .gce-next,
+    .gce-prev{
+    	.makebutton( 10px 15px );
+    	white-space: nowrap;
+    }
+	.gce-prev {
+	    float: left;
+	}
+	.gce-next {
+	    float: right;
+	}
+}
+
+
+.gce-month-title {
+    display: inline-block;
+    margin: 0 auto;
+    white-space: nowrap;
+    line-height: 45px;
+    font-size: 28px;
+}
+.gce-list-grouped {
+    .gce-feed {
+        margin-left: 5%;
+    }
 }
