@@ -20,6 +20,7 @@ define( 'CHILD_THEME_URL', 'http://my.studiopress.com/themes/altitude/' );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 //* Include additional files
+include_once( get_stylesheet_directory() . '/lib/fns/fns.theme-settings.php' );
 include_once( get_stylesheet_directory() . '/lib/fns/fns.shortcodes.php' );
 include_once( get_stylesheet_directory() . '/lib/fns/fns.gravityforms.php' );
 
