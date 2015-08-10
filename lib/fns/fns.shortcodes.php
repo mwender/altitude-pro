@@ -9,20 +9,12 @@
 add_shortcode( 'htmlinc', 'html_include' );
 function html_include( $atts ){
 	extract( shortcode_atts( array(
-		'html' => 'availability',
+		'html' => 'name-of-your-html-file',
 	), $atts ) );
 
-	switch ( strtolower( $html ) ) {
-		case 'awards':
-			$html = file_get_contents( dirname( __FILE__ ) . '/../html/wedding-wire-awards.html' );
-			break;
-		case 'availability-top':
-			$html = file_get_contents( dirname( __FILE__ ) . '/../html/djint-availability-top.html' );
-			break;
-		default:
-			$html = file_get_contents( dirname( __FILE__ ) . '/../html/djint-availability.html' );
-			break;
-	}
+	$file = dirname( __FILE__ ) . '/../html/' . $html . '.html';
+
+	$html = ( file_exists( $file ) )? file_get_contents( $file ) : '<p class="alert"><strong>ERROR:</strong> I could not find <code>' . basename( $file ) . '</code>.</p>' ;
 
 	return $html;
 }
