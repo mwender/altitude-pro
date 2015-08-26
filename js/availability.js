@@ -3,7 +3,8 @@ jQuery(function( $ ){
 	$('.check-availability').click(function(e){
 		e.preventDefault();
 
-		//$(this).prop('disabled',true);
+		var button = $(this);
+		button.prop('disabled',true);
 
 		var parent = $(this).closest('.select-box-list');
 
@@ -26,7 +27,15 @@ jQuery(function( $ ){
 
 		$.post( wpvars.ajax_url, data, function(response){
 			console.log(response);
+			if( true === response.available ){
+				console.log('Available. Route user to a contact form with the date pre-filled.');
+			} else {
+				console.log('NOT available!');
+				button.prop('disabled',false);
+			}
+
 		});
+			}
 	});
 
 });
