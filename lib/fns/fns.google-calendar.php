@@ -30,7 +30,6 @@
 
  	if( ! empty( $date ) && ! empty( $api_key ) && ! empty( $cal_id ) ){
  		$url = 'https://www.googleapis.com/calendar/v3/freeBusy?key=' . $api_key;
- 		$response->url = $url;
 
  		if( $timezone_string = get_option( 'timezone_string' ) ){
 	 		$date = new DateTime( $date, new DateTimeZone( $timezone_string ) );
@@ -56,24 +55,19 @@
 			  ]
 			}'
 		);
- 			/*'body' => json_encode( array(
- 				'timeMin' => $timeMin,
- 				'timeMax' => $timeMax,
- 				'timeZone' => $timezone_string,
- 				'items' => array(
- 					'id' => $cal_id,
-				),
-			) ),*/
+		
 		$response->args = $args;
-		//*
 		$result = wp_remote_post( $url, $args );
 		if( is_wp_error( $result ) ){
 			$response->message = $result->get_error_message();
 		} else {
-			$response->body = wp_remote_retrieve_body( $result );
-			$response->code = wp_remote_retrieve_response_code( $result );
+			$body = json_decode( wp_remote_retrieve_body( $result) );
+			$busy = $body->calendars->$cal_id->busy;
+			$response->body = $body;
+			$response->busy = $busy;
+			$response->available = ( 0 < count( $busy ) )? false : true;
+			$response->status = wp_remote_retrieve_response_code( $result );
 		}
-		/**/
  	}
 
  	wp_send_json( $response );
