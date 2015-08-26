@@ -32,8 +32,12 @@
  		$url = 'https://www.googleapis.com/calendar/v3/freeBusy?key=' . $api_key;
  		$response->url = $url;
 
- 		$timezone_string = get_option( 'timezone_string' );
- 		$date = new DateTime( $date, new DateTimeZone( $timezone_string ) );
+ 		if( $timezone_string = get_option( 'timezone_string' ) ){
+	 		$date = new DateTime( $date, new DateTimeZone( $timezone_string ) );
+ 		} else {
+ 			$date = new DateTime( $date );
+ 		}
+
  		$timeMin = $date->format( 'Y-m-d\TH:i:sP');
  		$date->modify( '+23 hours 59 minutes 59 seconds' );
  		$timeMax = $date->format( 'Y-m-d\TH:i:sP');
