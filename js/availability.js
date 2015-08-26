@@ -18,7 +18,6 @@ jQuery(function( $ ){
 		}
 
 		var date = year + '-' + month + '-' + day;
-		console.log('date = ' + date);
 
 		var data = {
 			action: 'availability_checker',
@@ -35,7 +34,6 @@ jQuery(function( $ ){
 			}
 
 		});
-			}
 	});
 
 });
