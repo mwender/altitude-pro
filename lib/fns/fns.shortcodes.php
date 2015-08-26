@@ -14,9 +14,12 @@ function html_include( $atts ){
 
 	$file = dirname( __FILE__ ) . '/../html/' . $html . '.html';
 
-	$html = ( file_exists( $file ) )? file_get_contents( $file ) : '<p class="alert"><strong>ERROR:</strong> I could not find <code>' . basename( $file ) . '</code>.</p>' ;
+	$return = ( file_exists( $file ) )? file_get_contents( $file ) : '<p class="alert"><strong>ERROR:</strong> I could not find <code>' . basename( $file ) . '</code>.</p>' ;
 
-	return $html;
+	if( 'djint-availability-top' == $html )
+		wp_enqueue_script( 'availability-checker' );
+
+	return $return;
 }
 
 ?>

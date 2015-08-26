@@ -20,9 +20,13 @@ define( 'CHILD_THEME_URL', 'http://my.studiopress.com/themes/altitude/' );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 //* Include additional files
-include_once( get_stylesheet_directory() . '/lib/fns/fns.theme-settings.php' );
-include_once( get_stylesheet_directory() . '/lib/fns/fns.shortcodes.php' );
+include_once( get_stylesheet_directory() . '/lib/fns/fns.google-calendar.php' );
 include_once( get_stylesheet_directory() . '/lib/fns/fns.gravityforms.php' );
+include_once( get_stylesheet_directory() . '/lib/fns/fns.shortcodes.php' );
+include_once( get_stylesheet_directory() . '/lib/fns/fns.theme-settings.php' );
+
+ add_action( 'wp_ajax_availability_checker', 'gcal_freebusy' );
+ add_action( 'wp_ajax_nopriv_availability_checker', 'gcal_freebusy' );
 
 //* Enqueue scripts and styles
 add_action( 'wp_enqueue_scripts', 'altitude_enqueue_scripts_styles', 6 );
@@ -40,6 +44,11 @@ function altitude_enqueue_scripts_styles() {
 
 	wp_enqueue_style( 'select-box-it', get_bloginfo( 'stylesheet_directory' ) . '/bower_components/jquery.selectBoxIt/src/stylesheets/jquery.selectBoxIt.css', null, '3.8.0' );
 	wp_enqueue_script( 'select-box-it', get_bloginfo( 'stylesheet_directory' ) . '/bower_components/jquery.selectBoxIt/src/javascripts/jquery.selectBoxIt.js', array( 'jquery', 'jquery-ui-widget' ), '3.8.0' );
+
+	// Register Availability Tracker Scripts
+	wp_register_script( 'availability-checker', get_stylesheet_directory_uri() . '/js/availability.js', array( 'jquery' ), filemtime( get_stylesheet_directory() . '/js/availability.js' ) );
+	$ajax_url = admin_url( 'admin-ajax.php' );
+	wp_localize_script( 'availability-checker', 'wpvars', array( 'ajax_url' => $ajax_url ) );
 }
 
 //* Add HTML5 markup structure
