@@ -30,6 +30,7 @@ function google_cal_sanitization_filters() {
 		'no_html',
 		GENESIS_SETTINGS_FIELD,
 		array(
+			'available_redirect_url',
 			'google_api_key',
 			'google_cal_id',
 		)
@@ -59,6 +60,9 @@ add_action( 'genesis_theme_settings_metaboxes', 'register_google_cal_settings_bo
 
 function google_cal_settings_box() {
 	?>
+	<p><?php _e( '"Availabile" Redirect:', 'be-genesis-child' );?><br />
+	<input type="text" name="<?php echo GENESIS_SETTINGS_FIELD; ?>[available_redirect_url]" value="<?php echo esc_attr( genesis_get_option('available_redirect_url') ); ?>" size="90" /><br />Enter the URL of the page where you want to redirect users when you're available.</p>
+
 	<p><?php _e( 'Google API Key:', 'be-genesis-child' );?><br />
 	<input type="text" name="<?php echo GENESIS_SETTINGS_FIELD; ?>[google_api_key]" value="<?php echo esc_attr( genesis_get_option('google_api_key') ); ?>" size="90" /><br /><a href="https://console.developers.google.com/project" target="_blank">Get a Google API Key &rarr;</a></p>
 

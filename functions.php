@@ -48,7 +48,8 @@ function altitude_enqueue_scripts_styles() {
 	// Register Availability Tracker Scripts
 	wp_register_script( 'availability-checker', get_stylesheet_directory_uri() . '/js/availability.js', array( 'jquery' ), filemtime( get_stylesheet_directory() . '/js/availability.js' ) );
 	$ajax_url = admin_url( 'admin-ajax.php' );
-	wp_localize_script( 'availability-checker', 'wpvars', array( 'ajax_url' => $ajax_url ) );
+	$available_redirect_url = genesis_get_option('available_redirect_url');
+	wp_localize_script( 'availability-checker', 'wpvars', array( 'ajax_url' => $ajax_url, 'available_redirect_url' => $available_redirect_url ) );
 }
 
 //* Add HTML5 markup structure
