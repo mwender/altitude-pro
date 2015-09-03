@@ -61,13 +61,13 @@ add_action( 'genesis_theme_settings_metaboxes', 'register_google_cal_settings_bo
 function google_cal_settings_box() {
 	?>
 	<p><?php _e( '"Availabile" Redirect:', 'be-genesis-child' );?><br />
-	<input type="text" name="<?php echo GENESIS_SETTINGS_FIELD; ?>[available_redirect_url]" value="<?php echo esc_attr( genesis_get_option('available_redirect_url') ); ?>" size="90" /><br />Enter the URL of the page where you want to redirect users when you're available.</p>
+	<input type="text" name="<?php echo GENESIS_SETTINGS_FIELD; ?>[available_redirect_url]" value="<?php echo esc_attr( genesis_get_option('available_redirect_url') ); ?>" size="60" /><br />Enter the URL of the page where you want to redirect users when you're available.</p>
 
 	<p><?php _e( 'Google API Key:', 'be-genesis-child' );?><br />
-	<input type="text" name="<?php echo GENESIS_SETTINGS_FIELD; ?>[google_api_key]" value="<?php echo esc_attr( genesis_get_option('google_api_key') ); ?>" size="90" /><br /><a href="https://console.developers.google.com/project" target="_blank">Get a Google API Key &rarr;</a></p>
+	<input type="text" name="<?php echo GENESIS_SETTINGS_FIELD; ?>[google_api_key]" value="<?php echo esc_attr( genesis_get_option('google_api_key') ); ?>" size="60" /><br /><a href="https://console.developers.google.com/project" target="_blank">Get a Google API Key &rarr;</a></p>
 
 	<p><?php _e( 'Google Calendar ID:', 'be-genesis-child' );?><br />
-	<input type="text" name="<?php echo GENESIS_SETTINGS_FIELD; ?>[google_cal_id]" value="<?php echo esc_attr( genesis_get_option('google_cal_id') ); ?>" size="90" />
+	<input type="text" name="<?php echo GENESIS_SETTINGS_FIELD; ?>[google_cal_id]" value="<?php echo esc_attr( genesis_get_option('google_cal_id') ); ?>" size="60" />
 	</p>
 	<div style="margin: 0 20px 0 40px; border: 1px solid #ccc; background: #eee; padding: 0 10px 10px 10px; border-radius: 3px;"><p>Access your Google Calendar's settings to find its Calendar ID:</p>
 	<a href="<?php bloginfo( 'stylesheet_directory' ) ?>/images/google-calendar-id.jpg" target="_blank"><img src="<?php bloginfo( 'stylesheet_directory' ) ?>/images/google-calendar-id.jpg" style="width: 100%;" /></a></div>
