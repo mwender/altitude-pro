@@ -28,7 +28,7 @@ jQuery(function( $ ){
 			console.log(response);
 			if( true === response.available ){
 				console.log('Available. Route user to a contact form with the date pre-filled.');
-				window.location( wpvars.available_redirect_url + '?date=' + year + '-' + month + '-' + day );
+				window.location.href = wpvars.available_redirect_url + '?date=' + year + '-' + month + '-' + day;
 			} else {
 				console.log('NOT available!');
 				alert('The date you selected is not available.');
