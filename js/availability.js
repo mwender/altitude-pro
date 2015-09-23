@@ -28,6 +28,7 @@ jQuery(function( $ ){
 		var date = year + '-' + month + '-' + day;
 		*/
 		var date = $('.altDate').val();
+		var human_date = $('.datepicker').val();
 		if( '' == date ){
 			alert( 'Please select a date.' );
 			return false;
@@ -42,10 +43,10 @@ jQuery(function( $ ){
 			console.log(response);
 			if( true === response.available ){
 				console.log('Available. Route user to a contact form with the date pre-filled.');
-				window.location.href = wpvars.available_redirect_url + '?date=' + year + '-' + month + '-' + day;
+				window.location.href = wpvars.available_redirect_url + '?date=' + date;
 			} else {
 				console.log('NOT available!');
-				alert('The date you selected (' + response.date + ') is not available.');
+				alert('The date you selected (' + human_date + ') is not available.');
 				button.prop('disabled',false);
 			}
 
