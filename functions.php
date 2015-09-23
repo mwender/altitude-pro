@@ -98,6 +98,13 @@ function altitude_secondary_nav_class( $classes ) {
 
 }
 
+//* Remove author attribution on pages
+add_action( 'parse_query', 'idoent_remove_page_author' );
+function idoent_remove_page_author(){
+	if( is_page() )
+		remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
+}
+
 //* Hook menu in footer
 add_action( 'genesis_footer', 'rainmaker_footer_menu', 7 );
 function rainmaker_footer_menu() {
