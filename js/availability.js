@@ -1,11 +1,19 @@
 jQuery(function( $ ){
 
+    $('.datepicker').datepicker({
+        dateFormat : 'D, M d, yy',
+        changeMonth: true,
+        changeYear: true,
+        altField: '.altDate',
+        altFormat: 'yy-mm-dd'
+    });
+
 	$('.check-availability').click(function(e){
 		e.preventDefault();
 
 		var button = $(this);
 		button.prop('disabled',true);
-
+		/*
 		var parent = $(this).closest('.select-box-list');
 
 		var month = parent.find('select.month').val();
@@ -18,6 +26,12 @@ jQuery(function( $ ){
 		}
 
 		var date = year + '-' + month + '-' + day;
+		*/
+		var date = $('.altDate').val();
+		if( '' == date ){
+			alert( 'Please select a date.' );
+			return false;
+		}
 
 		var data = {
 			action: 'availability_checker',
@@ -31,7 +45,7 @@ jQuery(function( $ ){
 				window.location.href = wpvars.available_redirect_url + '?date=' + year + '-' + month + '-' + day;
 			} else {
 				console.log('NOT available!');
-				alert('The date you selected is not available.');
+				alert('The date you selected (' + response.date + ') is not available.');
 				button.prop('disabled',false);
 			}
 

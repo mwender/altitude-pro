@@ -16,6 +16,7 @@
  	$date = $_POST['date'];
 
  	$response = new stdClass();
+ 	$response->date = $date;
 
  	if( null == $date )
  		$response->message = 'No date specified.';
@@ -55,7 +56,7 @@
 			  ]
 			}'
 		);
-		
+
 		$response->args = $args;
 		$result = wp_remote_post( $url, $args );
 		if( is_wp_error( $result ) ){

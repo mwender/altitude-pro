@@ -45,6 +45,11 @@ function altitude_enqueue_scripts_styles() {
 	wp_enqueue_style( 'select-box-it', get_bloginfo( 'stylesheet_directory' ) . '/bower_components/jquery.selectBoxIt/src/stylesheets/jquery.selectBoxIt.css', null, '3.8.0' );
 	wp_enqueue_script( 'select-box-it', get_bloginfo( 'stylesheet_directory' ) . '/bower_components/jquery.selectBoxIt/src/javascripts/jquery.selectBoxIt.js', array( 'jquery', 'jquery-ui-widget' ), '3.8.0' );
 
+	if( is_front_page() ){
+		wp_enqueue_script( 'jquery-ui-datepicker' );
+		wp_enqueue_style('jquery-ui-datepicker-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
+	}
+
 	// Register Availability Tracker Scripts
 	wp_register_script( 'availability-checker', get_stylesheet_directory_uri() . '/js/availability.js', array( 'jquery' ), filemtime( get_stylesheet_directory() . '/js/availability.js' ) );
 	$ajax_url = admin_url( 'admin-ajax.php' );
