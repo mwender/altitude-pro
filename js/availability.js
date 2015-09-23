@@ -13,22 +13,8 @@ jQuery(function( $ ){
 
 		var button = $(this);
 		button.prop('disabled',true);
-		/*
-		var parent = $(this).closest('.select-box-list');
 
-		var month = parent.find('select.month').val();
-		var day = parent.find('select.day').val();
-		var year = parent.find('select.year').val();
-
-		if( '' == month || '' == day || '' == year ){
-			alert( 'Please select a MONTH, DAY, and YEAR.' );
-			return false;
-		}
-
-		var date = year + '-' + month + '-' + day;
-		*/
 		var date = $('.altDate').val();
-		var human_date = $('.datepicker').val();
 		if( '' == date ){
 			alert( 'Please select a date.' );
 			return false;
@@ -46,7 +32,7 @@ jQuery(function( $ ){
 				window.location.href = wpvars.available_redirect_url + '?date=' + date;
 			} else {
 				console.log('NOT available!');
-				alert('The date you selected (' + human_date + ') is not available.');
+				alert('The date you selected is not available.');
 				button.prop('disabled',false);
 			}
 
