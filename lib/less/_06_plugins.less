@@ -22,10 +22,6 @@ Plugins
 /* Gravity Forms
 --------------------------------------------- */
 .gform_wrapper{
-	.gform_confirmation_message{
-		.alert-variant(@alert-success-bg, @alert-success-border, @alert-success-text);
-	}
-
 	input[type=text],
 	textarea,
 	.medium{
@@ -35,6 +31,11 @@ Plugins
 	textarea.textarea{
 		padding: .15em .5em;
 	}
+}
+
+.gform_confirmation_message{
+	.alert;
+	.alert-variant(@alert-success-bg, @alert-success-border, @alert-success-text);
 }
 
 /* Jetpack
