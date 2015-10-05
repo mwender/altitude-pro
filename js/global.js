@@ -53,10 +53,4 @@ jQuery(function( $ ){
 			$( '#' + id + ' .easy-faq-title' ).prepend( '<div class="num">' + ( x + 1 ) + '.</div><div class="ans">' ).append('</div>');
 		}
 	}
-
-	// Apply SelectBoxIt to selects
-	$("select").selectBoxIt({
-		autoWidth: false
-	});
-
 });
