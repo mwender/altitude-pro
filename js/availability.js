@@ -6,7 +6,7 @@ jQuery(function( $ ){
         changeYear: true,
         altField: '.altDate',
         altFormat: 'yy-mm-dd',
-        minDate: 3
+        minDate: 2
     });
 
 	$('.check-availability').click(function(e){
