@@ -19,6 +19,10 @@ function html_include( $atts ){
 	if( 'djint-availability-top' == $html )
 		wp_enqueue_script( 'availability-checker' );
 
+	$search = array( '{themedir}' );
+	$replace = array( trailingslashit( get_stylesheet_directory_uri() ) );
+	$return = str_replace( $search, $replace, $return );
+
 	return $return;
 }
 
