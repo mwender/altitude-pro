@@ -12,14 +12,14 @@ jQuery(function( $ ){
 	$('.check-availability').click(function(e){
 		e.preventDefault();
 
-		var button = $(this);
-		button.prop('disabled',true);
-
 		var date = $('.altDate').val();
 		if( '' == date ){
 			alert( 'Please select a date.' );
 			return false;
 		}
+
+		var button = $(this);
+		button.prop('disabled',true);
 
 		var data = {
 			action: 'availability_checker',
