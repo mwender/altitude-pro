@@ -22,6 +22,15 @@ Plugins
 /* Gravity Forms
 --------------------------------------------- */
 .gform_wrapper{
+
+	&.newsletter-subscribe_wrapper{
+		margin-top: 0;
+
+		& > br{
+			display: none;
+		}
+	}
+
 	input[type=text],
 	textarea,
 	.medium{
@@ -30,6 +39,50 @@ Plugins
 	}
 	textarea.textarea{
 		padding: .15em .5em;
+	}
+
+	& .newsletter-subscribe{
+
+		.ginput_complex.ginput_container.has_first_name.no_middle_name.has_last_name span{
+			width: 100%;
+		}
+
+		.gform_footer{
+			padding: 0;
+			margin: 0;
+
+			input[type=submit]{
+				margin: 10px 0 0 0;
+				display: block;
+				width: 97.5%;
+				font-size: .75em;
+				padding: 12px 18px;
+			}
+		}
+
+		h3.gform_title{
+			margin-top: 0;
+		}
+
+		label.gfield_label + .ginput_container{
+			margin-top: 0;
+		}
+
+		p{
+			margin-bottom: 0;
+		}
+
+		.top_label{
+			br,
+			label{
+				display: none;
+			}
+
+			li{
+				padding-bottom: 0;
+				margin-bottom: 0;
+			}
+		}
 	}
 }
 
