@@ -109,13 +109,46 @@ blockquote::before {
 
 .blue{
 	color: @smcoblue;
+
+	&.widget{
+		background-color: @smcoblue!important;
+		color: #fff;
+
+		&.fade10{
+			background-color: lighten(@smcoblue,10%)!important;
+		}
+		&.fade25{
+			background-color: lighten(@smcoblue,25%)!important;
+		}
+
+		.button.clear{
+			color: #fff;
+			border-color: #fff;
+
+			&:hover{
+				background-color: #fff;
+				color: @smcoblue;
+				border-color: #fff;
+			}
+		}
+	}
 }
 .grey{
 	color: @smcogrey;
+
+	&.widget{
+		background-color: @smcogrey!important;
+		color: #000;
+
+		&.darken10{
+			background-color: darken(@smcogrey,10%)!important;
+		}
+	}
 }
 .pink{
 	color: @smcopink;
 }
+
 
 
 /* Headings

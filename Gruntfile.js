@@ -33,6 +33,18 @@ module.exports = function(grunt) {
         options: {
           nospawn: true
         }
+      },
+      htmlincludes: {
+        files: ['lib/html/*.html'],
+        options: {
+          nospawn: true
+        }
+      },
+      js: {
+        files: ['js/*.js'],
+        options: {
+          nospawn: true
+        }
       }
     }
   });
