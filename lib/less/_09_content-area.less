@@ -108,6 +108,62 @@ Content Area
 	font-style: italic;
 }
 
+/* Grow
+  ------------------------------------------- */
+.front-page-2{
+	.wrap{
+		max-width: 100%;
+
+		p{
+			max-width: 1200px;
+			margin: 0 auto 30px auto;
+		}
+
+		.bottom-image{
+			.gradient(darken(@smcoblue,40%),@smcoblue);
+			padding-bottom: 90px;
+		}
+	}
+}
+
+/* Plans and Pricing
+  ------------------------------------------- */
+.front-page-4{
+	.flexible-widgets{
+		padding-bottom: 0;
+		padding-top: 60px;
+	}
+
+	.wrap{
+		max-width: 100%;
+
+		#plans .widget:nth-child(1n + 2){
+			width: 25%;
+			margin-left: 0;
+			margin-bottom: 0;
+		}
+
+		section.widget{
+			margin-bottom: 0;
+		}
+
+		@widgetsize: 150px;
+		.widgettitle{
+			border: none;
+			background-color: #fff;
+			color: @smcoblue;
+			border-radius: 50%;
+			width: @widgetsize;
+			height: @widgetsize;
+			line-height: @widgetsize;
+			margin: 0 auto 30px auto;
+			font-size: 28px;
+			text-transform: none;
+			letter-spacing: 0;
+		}
+	}
+}
+
 
 /* Dashicons
 --------------------------------------------- */
@@ -176,6 +232,25 @@ Content Area
 .flexible-widgets.widget-thirds h2,
 .flexible-widgets.widget-fourths h2 {
 	font-size: 36px;
+}
+
+.flexible-widgets.widget-full{
+	.solid-section{
+
+		.widget:not(:first-child){
+			background: #fff;
+			padding: 40px 20px 0;
+			margin-left: 2.564102564102564%;
+
+			li{
+				font-size: 16px;
+			}
+		}
+
+		.widget:nth-child(2){
+			margin-left: 0;
+		}
+	}
 }
 
 /* Content
