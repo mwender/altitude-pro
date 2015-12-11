@@ -12,21 +12,22 @@ Site Header
 	z-index: 999;
 }
 
-.featured-section .site-header {
-	background-color: rgba(0,0,0,0.65);
+.featured-section {
+	.site-header{
+		background-color: rgba(0,0,0,0.65);
 
-	&.dark{
-		background-color: #000;
+		&.dark{
+			background-color: #000;
 
+			.nav-secondary{
+				display: none;
+			}
+		}
 
-		& > .wrap {
+		& > .wrap{
 			border-bottom: none;
 		}
 	}
-}
-
-.site-header.dark .nav-secondary {
-	display: none;
 }
 
 .admin-bar .site-header {
@@ -38,12 +39,22 @@ Site Header
 
 .title-area {
 	float: left;
-	padding: 25px 0;
+	padding: 0;
 	width: 360px;
 }
 
 .site-header.dark .title-area {
-	padding: 15px 0;
+	.site-title{
+		opacity: 1;
+
+		> a{
+			-webkit-transition: all 0.2s ease-in-out;
+			-moz-transition:    all 0.2s ease-in-out;
+			-ms-transition:     all 0.2s ease-in-out;
+			-o-transition:      all 0.2s ease-in-out;
+			transition:         all 0.2s ease-in-out;
+		}
+	}
 }
 
 .site-title {
@@ -53,6 +64,16 @@ Site Header
 	line-height: 1;
 	margin-bottom: 0;
 	text-transform: uppercase;
+
+	> a{
+		display: block;
+		height: 76px;
+		text-indent: -9999px;
+		background-image: url(../../images/logo_gps.600x170.png);
+		background-repeat: no-repeat;
+		background-size: auto 60px;
+		background-position: 0 50%;
+	}
 }
 
 .site-title a,
@@ -81,4 +102,12 @@ Site Header
 	height: 0;
 	margin-bottom: 0;
 	text-indent: -9999px;
+}
+
+header, header.site-header.dark{
+	.genesis-nav-menu{
+		a{
+			padding: 30px 15px;
+		}
+	}
 }
