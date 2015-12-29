@@ -105,6 +105,9 @@ function rainmaker_footer_menu() {
 	echo '</nav>';
 }
 
+//* Process text widget shortcodes
+add_filter( 'widget_text', 'do_shortcode' );
+
 //* Unregister layout settings
 genesis_unregister_layout( 'content-sidebar-sidebar' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
