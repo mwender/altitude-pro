@@ -97,6 +97,13 @@ blockquote::before {
 	top: -10px;
 }
 
+hr{
+	border: 0;
+	border-collapse: collapse;
+	border-top: 1px solid #eee;
+	clear: both;
+	margin: 40px 0;
+}
 
 /* Headings
 --------------------------------------------- */
@@ -200,6 +207,10 @@ img {
 	margin: 0;
 	padding: 0 4px;
 	text-align: center;
+	width: 100%;
+}
+
+.gallery-columns-1 .gallery-item{
 	width: 100%;
 }
 
@@ -340,6 +351,14 @@ input:hover[type="submit"],
 	display: inline-block;
 }
 
+button.small,
+input[type="button"].small,
+input[type="reset"].small,
+input[type="submit"].small,
+.button.small{
+	padding: 8px 16px;
+}
+
 .widget .button.clear {
 	background-color: transparent;
 	border: 2px solid #000;
@@ -393,6 +412,31 @@ input[type="search"]::-webkit-search-results-button {
 	background-color: #fff;
 	border: 2px solid #fff;
 	color: #000;
+}
+
+/* Tables
+-------------------------------------------------- */
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 2;
+	margin-bottom: 40px;
+	width: 100%;
+}
+tbody{
+	border-bottom: 1px solid #ddd;
+}
+th,
+td{
+	text-align: left;
+}
+th{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+td{
+	border-top: 1px solid #ddd;
+	padding: 6px 0;
 }
 
 /* Alerts
