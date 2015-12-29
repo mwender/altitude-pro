@@ -119,8 +119,8 @@ unregister_sidebar( 'sidebar-alt' );
 //* Add support for custom header
 add_theme_support( 'custom-header', array(
 	'flex-height'     => true,
-	'width'           => 360,
-	'height'          => 76,
+	'width'           => 720,
+	'height'          => 152,
 	'header-selector' => '.site-title a',
 	'header-text'     => false,
 ) );
