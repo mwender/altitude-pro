@@ -50,6 +50,15 @@ add_theme_support( 'genesis-footer-widgets', 1 );
 //* Add support for footer menu
 add_theme_support ( 'genesis-menus' , array ( 'primary' => 'Primary Navigation Menu', 'secondary' => 'Secondary Navigation Menu', 'footer' => 'Footer Navigation Menu' ) );
 
+//* Customer the footer text
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', 'altitude_custom_footer' );
+function altitude_custom_footer() {
+	?>
+	<p>&copy; Copyright <?php echo date( 'Y' ) ?> <a href="<?php bloginfo( 'url' ) ?>"><?php bloginfo( 'name' ) ?></a> &middot; All Rights Reserved</p>
+	<?php
+}
+
 //* Unregister the header right widget area
 unregister_sidebar( 'header-right' );
 
