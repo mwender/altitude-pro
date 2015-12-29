@@ -14,6 +14,9 @@ require_once( get_stylesheet_directory() . '/lib/customize.php' );
 //* Include Customizer CSS
 include_once( get_stylesheet_directory() . '/lib/output.php' );
 
+//* Include functions
+include_once( get_stylesheet_directory() . '/lib/fns/fns.shortcodes.php' );
+
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Altitude Pro Theme' );
 define( 'CHILD_THEME_URL', 'http://my.studiopress.com/themes/altitude/' );
