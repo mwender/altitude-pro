@@ -1,12 +1,13 @@
 # Altitude Pro Child Theme
 
-This is my personal repository of the [Altitude Pro Theme by StudioPress](http://my.studiopress.com/themes/altitude/). I use this repository to maintain any edits I make to the theme while also allowing for future updates of the master theme.
+This is my personal repository of the [Altitude Pro Theme by StudioPress](http://my.studiopress.com/themes/altitude/). I use this repository to maintain any edits I make to the theme while also allowing for future updates by updating the `master` branch.
 
 ## Methodology
 The `master` branch always maintains the latest version of the theme available for download from [StudioPress.com](http://studiopress.com). The `develop` branch is my baseline starter version of this theme. It has the following features:
 
 - All CSS moved to `lib/css/main.css`.
 - CSS moved to `lib/less/` and compiled with [grunt-contrib-less](https://github.com/gruntjs/grunt-contrib-less).
+- Custom favicon specified in `functions.php`.
 
 Any time I start a new project using this theme, I create a branch from `develop`. Any time there are updates to the Altitude Pro Theme, I update `master` with the new version of the theme, and then I merge `master` into `develop`.
 
@@ -18,4 +19,5 @@ This repository is intended only for my private development and for public demon
 
 ## Changelog
 
+- Version 1.0.2 - Altitude Pro v.1.0.2
 - Version 1.0 - Updated 01/12/2015

@@ -1,6 +1,15 @@
 <?php
 
 /**
+ * Customizer additions.
+ *
+ * @package Altitude Pro
+ * @author  StudioPress
+ * @link    http://my.studiopress.com/themes/altitude/
+ * @license GPL2-0+
+ */
+
+/**
  * Get default accent color for Customizer.
  *
  * Abstracted here since at least two functions use it.
@@ -99,6 +108,7 @@ function altitude_customizer_register() {
 		'altitude_accent_color',
 		array(
 			'default' => altitude_customizer_get_default_accent_color(),
+			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
 

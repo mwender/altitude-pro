@@ -1,5 +1,11 @@
 jQuery(function( $ ){
 
+	if (document.location.hash) {
+			window.setTimeout(function () {
+				document.location.href += '';
+			}, 10);
+	}
+
 	// Local Scroll Speed
 	$.localScroll({
 		duration: 750

@@ -1,120 +1,133 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Altitude Pro Theme\n"
-"POT-Creation-Date: 2015-01-11 12:36-0500\n"
-"PO-Revision-Date: 2015-01-11 12:37-0500\n"
+"POT-Creation-Date: 2015-04-14 01:26-0500\n"
+"PO-Revision-Date: 2015-04-14 01:26-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.7\n"
+"X-Generator: Poedit 1.7.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: functions.php:138
+#: functions.php:46
+msgid "Header Navigation Menu"
+msgstr ""
+
+#: functions.php:46
+msgid "Above Header Navigation Menu"
+msgstr ""
+
+#: functions.php:46
+msgid "Footer Navigation Menu"
+msgstr ""
+
+#: functions.php:141
 msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: functions.php:206
+#: functions.php:212
 msgid "Front Page 1"
 msgstr ""
 
-#: functions.php:207
+#: functions.php:213
 msgid "This is the front page 1 section."
 msgstr ""
 
-#: functions.php:211
+#: functions.php:217
 msgid "Front Page 2"
 msgstr ""
 
-#: functions.php:212
+#: functions.php:218
 msgid "This is the front page 2 section."
 msgstr ""
 
-#: functions.php:216
+#: functions.php:222
 msgid "Front Page 3"
 msgstr ""
 
-#: functions.php:217
+#: functions.php:223
 msgid "This is the front page 3 section."
 msgstr ""
 
-#: functions.php:221
+#: functions.php:227
 msgid "Front Page 4"
 msgstr ""
 
-#: functions.php:222
+#: functions.php:228
 msgid "This is the front page 4 section."
 msgstr ""
 
-#: functions.php:226
+#: functions.php:232
 msgid "Front Page 5"
 msgstr ""
 
-#: functions.php:227
+#: functions.php:233
 msgid "This is the front page 5 section."
 msgstr ""
 
-#: functions.php:231
+#: functions.php:237
 msgid "Front Page 6"
 msgstr ""
 
-#: functions.php:232
+#: functions.php:238
 msgid "This is the front page 6 section."
 msgstr ""
 
-#: functions.php:236
+#: functions.php:242
 msgid "Front Page 7"
 msgstr ""
 
-#: functions.php:237
+#: functions.php:243
 msgid "This is the front page 7 section."
 msgstr ""
 
-#: lib/customize.php:48
+#: lib/customize.php:57
 msgid "No Image"
 msgstr ""
 
-#: lib/customize.php:52
+#: lib/customize.php:61
 msgid "Upload New"
 msgstr ""
 
-#: lib/customize.php:53
+#: lib/customize.php:62
 msgid "Uploaded"
 msgstr ""
 
-#: lib/customize.php:56
+#: lib/customize.php:65
 msgid "Default"
 msgstr ""
 
-#: lib/customize.php:77
+#: lib/customize.php:86
 msgid ""
 "Use the included default images or personalize your site by uploading your "
 "own images.<br /><br />The default images are <strong>1600 pixels wide and "
 "1050 pixels tall</strong>."
 msgstr ""
 
-#: lib/customize.php:78
+#: lib/customize.php:87
 msgid "Front Page Background Images"
 msgstr ""
 
-#: lib/customize.php:90
+#: lib/customize.php:99
 #, php-format
 msgid "Featured Section %s Image:"
 msgstr ""
 
-#: lib/customize.php:110
+#: lib/customize.php:120
 msgid "Change the default accent color for links, buttons, and more."
 msgstr ""
 
-#: lib/customize.php:111
+#: lib/customize.php:121
 msgid "Accent Color"
 msgstr ""
