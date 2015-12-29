@@ -25,7 +25,8 @@ function altitude_enqueue_scripts_styles() {
 	//* Remove default style.css, add /lib/main.css
 	$handle  = defined( 'CHILD_THEME_NAME' ) && CHILD_THEME_NAME ? sanitize_title_with_dashes( CHILD_THEME_NAME ) : 'child-theme';
 	wp_deregister_style( $handle );
-	wp_enqueue_style( $handle, get_bloginfo( 'stylesheet_directory' ) . '/lib/css/main.css', false, filemtime( get_stylesheet_directory() . '/lib/css/main.css' ) );
+	$main_css_version = ( file_exists( get_stylesheet_directory() . '/lib/css/main.css' ) )? filemtime( get_stylesheet_directory() . '/lib/css/main.css' ) : get_bloginfo( 'version' );
+	wp_enqueue_style( $handle, get_bloginfo( 'stylesheet_directory' ) . '/lib/css/main.css', false, $main_css_version );
 
 	wp_enqueue_script( 'altitude-global', get_bloginfo( 'stylesheet_directory' ) . '/js/global.js', array( 'jquery' ), '1.0.0' );
 
