@@ -17,7 +17,7 @@ include_once( get_stylesheet_directory() . '/lib/output.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Altitude Pro Theme' );
 define( 'CHILD_THEME_URL', 'http://my.studiopress.com/themes/altitude/' );
-define( 'CHILD_THEME_VERSION', '1.0.0' );
+define( 'CHILD_THEME_VERSION', '1.0.2' );
 
 //* Enqueue scripts and styles
 add_action( 'wp_enqueue_scripts', 'altitude_enqueue_scripts_styles' );
@@ -43,7 +43,7 @@ add_image_size( 'featured-page', 1140, 400, TRUE );
 add_theme_support( 'genesis-footer-widgets', 1 );
 
 //* Add support for footer menu
-add_theme_support ( 'genesis-menus' , array ( 'primary' => 'Primary Navigation Menu', 'secondary' => 'Secondary Navigation Menu', 'footer' => 'Footer Navigation Menu' ) );
+add_theme_support ( 'genesis-menus' , array ( 'primary' => __( 'Header Navigation Menu', 'altitude' ), 'secondary' => __( 'Above Header Navigation Menu', 'altitude' ), 'footer' => __( 'Footer Navigation Menu', 'altitude' ) ) );
 
 //* Unregister the header right widget area
 unregister_sidebar( 'header-right' );
@@ -74,19 +74,21 @@ function altitude_secondary_nav_class( $classes ) {
 }
 
 //* Hook menu in footer
-add_action( 'genesis_footer', 'rainmaker_footer_menu', 7 );
-function rainmaker_footer_menu() {
-	printf( '<nav %s>', genesis_attr( 'nav-footer' ) );
-	wp_nav_menu( array(
+add_action( 'genesis_footer', 'altitude_footer_menu', 7 );
+function altitude_footer_menu() {
+
+	genesis_nav_menu( array(
 		'theme_location' => 'footer',
 		'container'      => false,
 		'depth'          => 1,
 		'fallback_cb'    => false,
 		'menu_class'     => 'genesis-nav-menu',	
 	) );
-	
-	echo '</nav>';
+
 }
+
+//* Add Attributes for Footer Navigation
+add_filter( 'genesis_attr_nav-footer', 'genesis_attributes_nav' ); 
 
 //* Unregister layout settings
 genesis_unregister_layout( 'content-sidebar-sidebar' );
@@ -127,6 +129,7 @@ add_filter( 'genesis_comment_list_args', 'altitude_comments_gravatar' );
 function altitude_comments_gravatar( $args ) {
 
 	$args['avatar_size'] = 120;
+
 	return $args;
 
 }
@@ -136,7 +139,8 @@ add_filter( 'comment_form_defaults', 'altitude_remove_comment_form_allowed_tags'
 function altitude_remove_comment_form_allowed_tags( $defaults ) {
 
 	$defaults['comment_field'] = '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun', 'altitude' ) . '</label> <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>';
-	$defaults['comment_notes_after'] = '';	
+	$defaults['comment_notes_after'] = '';
+
 	return $defaults;
 
 }
@@ -187,6 +191,7 @@ add_filter( 'genesis_post_info', 'altitude_post_info_filter' );
 function altitude_post_info_filter( $post_info ) {
 
     $post_info = '[post_date format="M d Y"] [post_edit]';
+
     return $post_info;
 
 }
@@ -196,6 +201,7 @@ add_filter( 'genesis_post_meta', 'altitude_post_meta_filter' );
 function altitude_post_meta_filter( $post_meta ) {
 
 	$post_meta = 'Written by [post_author_posts_link] [post_categories before=" &middot; Categorized: "]  [post_tags before=" &middot; Tagged: "]';
+
 	return $post_meta;
 	
 }

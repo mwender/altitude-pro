@@ -5,9 +5,9 @@
 	Author: StudioPress
 	Author URI: http://www.studiopress.com/
 
-	Version: 1.0.0
+	Version: 1.0.2
 
-	Tags: black, white, blue, green, orange, pink, one-column, two-columns, responsive-layout, custom-header, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, premise-landing-page
+	Tags: black, white, blue, green, orange, pink, one-column, two-columns, responsive-layout, custom-header, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 
 	Template: genesis
 	Template Version: 2.1
@@ -30,6 +30,7 @@
 		- Gallery
 		- Forms
 		- Buttons
+		- Tables
 	- Structure and Layout
 		- Site Containers
 		- Column Widths and Positions
@@ -227,6 +228,14 @@ blockquote::before {
 	top: -10px;
 }
 
+hr {
+	border: 0;
+	border-collapse: collapse;
+	border-top: 1px solid #eee; 
+	clear: both;
+	margin: 40px 0;
+}
+
 
 /* Headings
 --------------------------------------------- */
@@ -330,6 +339,9 @@ img {
 	margin: 0;
 	padding: 0 4px;
 	text-align: center;
+}
+
+.gallery-columns-1 .gallery-item {
 	width: 100%;
 }
 
@@ -448,6 +460,14 @@ input[type="submit"],
 	width: auto;
 }
 
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button {
+	display: none;
+}
+
+/* Buttons
+--------------------------------------------- */
+
 button:hover,
 input:hover[type="button"],
 input:hover[type="reset"],
@@ -470,34 +490,19 @@ input:hover[type="submit"],
 	display: inline-block;
 }
 
+button.small,
+input[type="button"].small,
+input[type="reset"].small,
+input[type="submit"].small,
+.button.small {
+	padding: 8px 16px;
+}
+
 .widget .button.clear {
 	background-color: transparent;
 	border: 2px solid #000;
 	color: #000;
 }
-
-button:disabled,
-button:disabled:hover,
-input:disabled,
-input:disabled:hover,
-input[type="button"]:disabled,
-input[type="button"]:disabled:hover,
-input[type="reset"]:disabled,
-input[type="reset"]:disabled:hover,
-input[type="submit"]:disabled,
-input[type="submit"]:disabled:hover {
-	background-color: #ddd;
-	border-color: #ddd;
-	cursor: not-allowed;
-}
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button {
-	display: none;
-}
-
-/* Buttons
---------------------------------------------- */
 
 .image-section .button {
 	margin-left: 5px;
@@ -525,6 +530,52 @@ input[type="search"]::-webkit-search-results-button {
 	color: #000;
 }
 
+button:disabled,
+button:disabled:hover,
+input:disabled,
+input:disabled:hover,
+input[type="button"]:disabled,
+input[type="button"]:disabled:hover,
+input[type="reset"]:disabled,
+input[type="reset"]:disabled:hover,
+input[type="submit"]:disabled,
+input[type="submit"]:disabled:hover {
+	background-color: #ddd;
+	border-color: #ddd;
+	color: #fff;
+	cursor: not-allowed;
+}
+
+/* Tables
+--------------------------------------------- */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 2;
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+tbody {
+	border-bottom: 1px solid #ddd;
+}
+
+th,
+td {
+	text-align: left;
+}
+
+th {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+td {
+	border-top: 1px solid #ddd;
+	padding: 6px 0;
+}
+
 
 /*
 Structure and Layout
@@ -546,7 +597,7 @@ Structure and Layout
 	margin-top: 170px;
 	position: relative;
 	z-index: 9;
-	-word-wrap: break-word;
+	word-wrap: break-word;
 }
 
 .front-page .site-container .site-inner {
@@ -775,7 +826,7 @@ img.centered,
 
 img.alignnone,
 .alignnone {
-	margin-bottom: 12px;
+	margin: 0 0 12px;
 }
 
 a.alignleft,
@@ -811,6 +862,12 @@ img.alignright,
 
 .post-password-form input[type="submit"] {
 	padding: 25px;
+}
+
+.wp-audio-shortcode,
+.wp-playlist,
+.wp-video {
+	margin: 0 0 28px;
 }
 
 
@@ -892,6 +949,13 @@ Plugins
 
 .enews form + p {
 	margin-top: 24px;
+}
+
+/* Genesis Portfolio Pro
+--------------------------------------------- */
+
+.genesis-pro-portfolio .content .pro-portfolio {
+	padding: 0;
 }
 
 /* Jetpack

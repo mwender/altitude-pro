@@ -1203,7 +1203,7 @@ This is an example of a WordPress page, you could edit this to put information a
 <p>This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what exactly is on your mind.</p>
 </div>
 
-<div style="border-bottom:1px solid #eee;clear:both;margin-bottom: 40px"></div>
+<hr class="clearfix">
 
 <h3>Three-Columns</h3>
 
@@ -1219,7 +1219,7 @@ This is an example of a WordPress page, you could edit this to put information a
 <p>This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.</p>
 </div>
 
-<div style="border-bottom:1px solid #eee;clear:both;margin-bottom: 40px"></div>
+<hr class="clearfix">
 
 <h3>Four-Columns</h3>
 
@@ -1239,7 +1239,7 @@ This is an example of a WordPress page, you could edit this to put information a
 <p>This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what exactly is on your mind.</p>
 </div>
 
-<div style="border-bottom:1px solid #eee;clear:both;margin-bottom: 40px"></div>
+<hr class="clearfix">
 
 <h3>Six-Columns</h3>
 
