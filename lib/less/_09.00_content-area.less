@@ -129,6 +129,7 @@ Content Area
 /* Plans and Pricing
   ------------------------------------------- */
 .front-page-4{
+
 	.flexible-widgets{
 		padding-bottom: 0;
 		padding-top: 60px;
@@ -137,11 +138,34 @@ Content Area
 	.wrap{
 		max-width: 100%;
 
-		#plans .widget:nth-child(1n + 2){
-			width: 25%;
-			margin-left: 0;
-			margin-bottom: 0;
+		#plans{
+			.widget:nth-child(1){
+				position: relative;
+				z-index: 2;
+			}
+
+			.widget:nth-child(1n + 2){
+				width: 33.33333%;
+				margin-left: 0;
+				margin-bottom: 0;
+				padding-bottom: 20px;
+			}
+
+			.widget:nth-child(3){
+				box-shadow: 0px 0px 10px #000;
+				position: relative;
+				z-index: 3;
+			}
+
+			.widget:nth-child(4){
+				position: relative;
+				z-index: 1;
+			}
 		}
+
+		#plans
+		#plans
+		#plans
 
 		section.widget{
 			margin-bottom: 0;
@@ -160,6 +184,70 @@ Content Area
 			font-size: 28px;
 			text-transform: none;
 			letter-spacing: 0;
+		}
+	}
+
+	div.cta{
+		padding: 40px;
+
+		h3{
+			font-weight: 500;
+			margin-bottom: 4px;
+		}
+
+		.three-fourths{
+			text-align: left;
+		}
+
+		.one-fourth{
+			padding-top: 12px;
+
+			.button{
+				white-space: nowrap;
+				line-height: 32px;
+				text-transform: none;
+				letter-spacing: 0.0001;
+				font-size: 18px;
+
+				.dashicons{
+					font-size: 24px;
+					height: 32px;
+					margin: 0 0 0 4px;
+					width: 32px;
+					border-radius: 50%;
+					padding: 4px 4px 2px 4px;
+				}
+			}
+		}
+
+		.wrap{
+			max-width: 1200px;
+		}
+	}
+
+	div.blue{
+		background-color: @smcoblue;
+		color: #fff;
+
+		.button{
+			border-color: #fff;
+			background-color: #fff;
+			color: @smcoblue;
+
+			.dashicons{
+				background-color: @smcoblue;
+				color: #fff;
+			}
+
+			&:hover{
+				background-color: @smcoblue;
+				color: #fff;
+
+				.dashicons{
+					background-color: #fff;
+					color: @smcoblue;
+				}
+			}
 		}
 	}
 }
