@@ -18,13 +18,13 @@ jQuery(function( $ ){
 
 	});
 
-	// Resize package columns to match 1st column, above 1023px media query breakpoint
+	// Resize package columns to match 3rd column, above 1023px media query breakpoint
 	function resizePlans(){
 		var windowWidth = $( window ).width();
 
 		if( 1023 < windowWidth ){
-			var widget_h = $( '#plans .widget:nth-child(2)' ).height();
-			var ul_h = $( '#plans .widget:nth-child(2) ul' ).height();
+			var widget_h = $( '#plans .widget:nth-child(4)' ).height();
+			var ul_h = $( '#plans .widget:nth-child(4) ul' ).height();
 			console.log('widget_h = ' + widget_h + "\nul_h = " + ul_h );
 			for( x = 2; x < 5; x++ ){
 				$( '#plans .widget:nth-of-type(' + x + ')' ).height( widget_h );
