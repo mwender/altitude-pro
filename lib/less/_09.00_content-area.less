@@ -142,10 +142,19 @@ Content Area
 			.plan{
 				a{
 					color: #fff;
-					font-style: italic;
+					background-color: rgba(256,256,256,0.25);
+					padding: 2px 2px 0 4px;
+					border-radius: 2px;
 
 					&:hover{
-						text-decoration: underline;
+						color: @smcoblue;
+						background-color: #fff;
+					}
+
+					&:after{
+						font-family: "Genericons";
+						content: '\f442';
+						font-size: 20px;
 					}
 				}
 			}
