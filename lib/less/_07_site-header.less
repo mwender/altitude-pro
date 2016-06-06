@@ -4,7 +4,7 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #000;
+	background-color: rgba(255,255,255,0.5);
 	left: 0;
 	position: fixed;
 	top: 0;
@@ -13,15 +13,14 @@ Site Header
 }
 
 .featured-section .site-header {
-	background-color: transparent;
+	background-color: rgba(255,255,255,0.95);
 }
 
 .featured-section .site-header > .wrap {
-	border-bottom: 1px solid #fff;
 }
 
 .site-header.dark {
-	background-color: #000;
+	background-color: @edgegray;
 }
 
 .site-header.dark > .wrap {
@@ -41,12 +40,23 @@ Site Header
 
 .title-area {
 	float: left;
-	padding: 25px 0;
+	padding: 12px 0;
 	width: 360px;
 }
 
 .site-header.dark .title-area {
-	padding: 15px 0;
+	.site-title{
+		opacity: 1;
+
+		> a{
+			-webkit-transition: all 0.2s ease-in-out;
+			-moz-transition:    all 0.2s ease-in-out;
+			-ms-transition:     all 0.2s ease-in-out;
+			-o-transition:      all 0.2s ease-in-out;
+			transition:         all 0.2s ease-in-out;
+			background-image: url(../../images/edgeseccon-and-tagline.gold.1092x400.png);
+		}
+	}
 }
 
 .site-title {
@@ -56,6 +66,14 @@ Site Header
 	line-height: 1;
 	margin-bottom: 0;
 	text-transform: uppercase;
+
+	> a{
+		background-size: contain !important;
+		display: block;
+		height: 80px;
+		text-indent: -9999px;
+		background: url(../../images/edgeseccon-and-tagline.1092x400.png) no-repeat;
+	}
 }
 
 .site-title a,
