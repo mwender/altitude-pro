@@ -10,6 +10,7 @@ Site Navigation
 .genesis-nav-menu .menu-item {
 	display: inline-block;
 	text-align: left;
+	margin-top: 16px;
 }
 
 .genesis-nav-menu li li {
@@ -17,17 +18,18 @@ Site Navigation
 }
 
 .genesis-nav-menu a {
-	color: #fff;
+	color: @edgered;
 	display: block;
 	font-size: 14px;
-	font-weight: 200;
+	font-weight: 700;
 	letter-spacing: 1px;
 	padding: 30px 15px;
 	text-transform: uppercase;
 }
 
 .site-header.dark .genesis-nav-menu a {
-	padding: 20px 15px;
+	padding: 30px 15px;
+	color: @edgegold;
 }
 
 .genesis-nav-menu li.highlight a:hover::before {
@@ -37,12 +39,12 @@ Site Navigation
 .genesis-nav-menu li.highlight > a {
 	font-weight: 800;
 }
-
+/*
 .front-page .genesis-nav-menu li.current-menu-item > a,
 .genesis-nav-menu > li > a {
 	border-bottom: 2px solid transparent;
 }
-
+*/
 .front-page .genesis-nav-menu li.current-menu-item > a:hover,
 .genesis-nav-menu li.current-menu-item > a,
 .genesis-nav-menu > li > a:hover {
