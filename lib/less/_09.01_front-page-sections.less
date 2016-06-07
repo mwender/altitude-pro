@@ -128,7 +128,42 @@
 	}
 }
 #front-page-6{
+	.flexible-widgets{
+		padding: 0;
+
+		&.widget-halves .widget:nth-child(even){
+			padding: 0;
+			background-color: @edgered;
+			margin: 0;
+			width: 65%;
+		}
+		&.widget-halves .widget:nth-child(odd){
+			width: 30%;
+			padding-left: 0;
+			padding-top: 30px;
+		}
+	}
+	.overlay {
+	   background:transparent;
+	   position:relative;
+	   width: 100%;
+	   height:500px; /* your iframe height */
+	   top:500px;  /* your iframe height */
+	   margin-top:-500px;  /* your iframe height */
+	}
+	section:first-child{
+		display: none;
+	}
+	section:nth-child(2){
+		.textwidget{
+			margin-bottom: -8px;
+		}
+	}
 	.widget_black_studio_tinymce{
 		text-align: left;
+	}
+	.wrap{
+		max-width: none;
+		margin: 0 auto;
 	}
 }
