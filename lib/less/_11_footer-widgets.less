@@ -5,35 +5,36 @@ Footer Widgets
 .site-container .footer-widgets {
 	background-color: darken(@edgegray,20%);
 	clear: both;
-	text-align: center;
+	text-align: left;
 	position: relative;
 	z-index: 9;
-}
-
-.footer-widgets .wrap {
-	padding-bottom: 100px;
-	padding-top: 100px;
-}
-
-.footer-widgets,
-.footer-widgets .wrap a,
-.footer-widgets .wrap a.button {
 	color: #fff;
-}
 
-.footer-widgets a:hover {
-	color: #000;
-}
+	.wrap {
+		padding-bottom: 100px;
+		padding-top: 100px;
 
-.footer-widgets li {
-	margin-bottom: 10px;
-	padding-bottom: 10px;
-}
+		a,
+		a.button{
+			color: @edgegold;
 
-.footer-widgets .widget {
-	margin-bottom: 40px;
-}
+			&:hover{
+				color: @edgered;
+			}
+		}
+	}
 
-.footer-widgets p:last-child {
-	margin-bottom: 0;
+	li{
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+	}
+
+	.widget{
+		margin-bottom: 40px;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
 }
