@@ -6,10 +6,21 @@
 #front-page-3,
 #front-page-4,
 #front-page-5,
-#front-page-6{
+#front-page-6,
+#front-page-7{
 	.widget_text h3{
 		text-align: center;
 		text-transform: uppercase;
+	}
+}
+/* Remove background images */
+#front-page-3,
+#front-page-5,
+#front-page-7{
+	background-image: none;
+
+	.image-section{
+		background: none;
 	}
 }
 
@@ -51,11 +62,9 @@
 	}
 }
 #front-page-3{
-	background-image: none;
 	background-color: #fff;
 
 	.image-section{
-		background: none;
 		color: @edgegray;
 	}
 	.wrap{
@@ -63,7 +72,6 @@
 	}
 }
 #front-page-4{
-
 	.solid-section{
 		background: lighten(@edgegray,60%);
 		color: @edgegray;
@@ -83,13 +91,7 @@
 	}
 }
 #front-page-5{
-	background-image: none;
 	background-color: @edgegold;
-
-	.image-section{
-		background: none;
-
-	}
 
 	.tb-ticket-form{
 		background-color: @edgegold;
@@ -165,5 +167,20 @@
 	.wrap{
 		max-width: none;
 		margin: 0 auto;
+	}
+}
+#front-page-7{
+	background-color: @edgered;
+
+	.image-section{
+		color: #fff;
+	}
+	.wrap{
+		text-align: center;
+	}
+	.widget_black_studio_tinymce{
+		.widgettitle{
+			display: none;
+		}
 	}
 }
