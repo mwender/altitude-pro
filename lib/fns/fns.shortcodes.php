@@ -23,4 +23,28 @@ function html_include( $atts ){
 	return $return;
 }
 
+/**
+ * A WordPress navigation menu.
+ *
+ * @since 1.0.2
+ *
+ * @return string WordPress nav menu.
+ */
+add_shortcode( 'navmenu', 'ap_get_navmenu' );
+function ap_get_navmenu( $atts ){
+	if( empty( $atts['menu'] ) )
+		return '<p><strong>ERROR:</strong> Please specify a <code>menu</code>.</p>';
+
+	$args = shortcode_atts( array(
+		'menu' 				=> null,
+		'menu_class' 		=> 'menu',
+		'menu_id' 			=> null,
+		'container' 		=> 'div',
+		'container_class' 	=> null,
+	), $atts );
+	$args['echo'] = false;
+
+	return wp_nav_menu( $args );
+}
+
 ?>
