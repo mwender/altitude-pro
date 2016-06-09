@@ -29,7 +29,19 @@ module.exports = function(grunt) {
       },
       styles: {
         files: ['lib/less/**/*.less'], // which files to watch
-        tasks: ['less:development'],
+        tasks: ['less:production'],
+        options: {
+          nospawn: true
+        }
+      },
+      htmlincludes: {
+        files: ['lib/html/*.html'],
+        options: {
+          nospawn: true
+        }
+      },
+      js: {
+        files: ['js/*.js'],
         options: {
           nospawn: true
         }
