@@ -17,7 +17,16 @@ jQuery(function( $ ){
 	$( '.image-section' ) .css({'height': windowHeight +'px'});
 
 	// Venue Section Height
-	var venue_h = windowHeight - 130;
+	var venue_h = windowHeight - 99;
+	var venueScrollOffset = -49;
+
+	// Adjust Venue offset and section height
+	// if .admin-bar is showing.
+	if( true == wp.adminBar ){
+		venue_h = venue_h - 31;
+		venueScrollOffset = venueScrollOffset - 31;
+	}
+
 	$( '#front-page-6 .solid-section' ) .css({'height': venue_h +'px'});
 	$( '#front-page-6 iframe' ) . css({'height': venue_h +'px'});
 
@@ -26,7 +35,7 @@ jQuery(function( $ ){
 	$('li.venue a').click(function(e){
 		e.preventDefault();
 		$.scrollTo(venuesection,750,{
-			offset: -80
+			offset: venueScrollOffset
 		});
 	});
 

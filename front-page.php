@@ -21,6 +21,7 @@ function altitude_front_page_genesis_meta() {
 		function altitude_enqueue_altitude_script() {
 
 			wp_enqueue_script( 'altitude-script', get_bloginfo( 'stylesheet_directory' ) . '/js/home.js', array( 'jquery' ), '1.0.0' );
+			wp_localize_script( 'altitude-script', 'wp', array( 'adminBar' => is_admin_bar_showing() ) );
 			wp_enqueue_script( 'localScroll', get_stylesheet_directory_uri() . '/js/jquery.localScroll.min.js', array( 'scrollTo' ), '1.2.8b', true );
 			wp_enqueue_script( 'scrollTo', get_stylesheet_directory_uri() . '/js/jquery.scrollTo.min.js', array( 'jquery' ), '1.4.5-beta', true );
 
@@ -54,7 +55,7 @@ function altitude_front_page_genesis_meta() {
 			add_filter( 'body_class', 'altitude_featured_body_class' );
 			function altitude_featured_body_class( $classes ) {
 
-				$classes[] = 'featured-section';				
+				$classes[] = 'featured-section';
 				return $classes;
 
 			}
