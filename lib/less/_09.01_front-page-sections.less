@@ -135,7 +135,6 @@
 
 		&.widget-halves .widget:nth-child(even){
 			padding: 0;
-			background-color: @edgered;
 			margin: 0;
 			width: 65%;
 		}
@@ -194,6 +193,23 @@
 	.widget_black_studio_tinymce{
 		.widgettitle{
 			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 1229px){
+	#front-page-6{
+		div.solid-section{
+			height: auto;
+		}
+
+		.flexible-widgets.widget-halves .widget{
+			&:nth-child(even),
+			&:nth-child(odd){
+				width: 100%;
+				float: none;
+				padding-top: 20px;
+			}
 		}
 	}
 }
