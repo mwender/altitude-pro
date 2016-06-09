@@ -27,8 +27,12 @@ jQuery(function( $ ){
 		venueScrollOffset = venueScrollOffset - 31;
 	}
 
-	$( '#front-page-6 .solid-section' ) .css({'height': venue_h +'px'});
-	$( '#front-page-6 iframe' ) . css({'height': venue_h +'px'});
+	$( '#front-page-6 .solid-section' ) .css({'height': venue_h + 'px'});
+	$( '#front-page-6 iframe' ) . css({'height': venue_h + 'px'});
+	$( '#front-page-6 .overlay' ) . css({'height': venue_h + 'px', 'top': venue_h + 'px', 'margin-top': '-' + venue_h + 'px'});
+	$( '#front-page-6 #read-more' ).on( 'click', function(){
+		$( '#front-page-6 .solid-section' ) .css({'height': 'auto' });
+	} );
 
 	// Scroll to Venue section
 	var venuesection = $('#front-page-6');
