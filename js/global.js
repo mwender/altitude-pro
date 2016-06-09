@@ -64,5 +64,5 @@ jQuery(function( $ ){
         }
     }
 
-    hideText( '.hidetext', 200, 'More &darr;' );
+    hideText( '.hidetext', 200 );
 });
