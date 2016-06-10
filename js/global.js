@@ -58,7 +58,6 @@ jQuery(function( $ ){
                     $(this).find('span.hidden-text').toggle();
                     $(this).find('span.read-more').hide();
                     $(this).find('span.visible-text').hide();
-                    return true;
                 });
             $( sections[i] ).find( 'span.hidden-text' ).hide();
         }
