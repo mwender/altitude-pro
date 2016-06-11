@@ -32,8 +32,8 @@ function altitude_enqueue_scripts_styles() {
 
 	wp_enqueue_style( 'dashicons' );
 	$font_families = array();
-	$font_families[] = 'Open+Sans:400,600,700';
-	$font_families[] = 'Lato:400,700';
+	$font_families[] = 'Oswald:400,700';
+	$font_families[] = 'Merriweather:400,700';
 	wp_enqueue_style( 'altitude-google-fonts', '//fonts.googleapis.com/css?family=' . implode( '|', $font_families ), array(), CHILD_THEME_VERSION );
 
 }
