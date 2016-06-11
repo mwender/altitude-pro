@@ -1,9 +1,12 @@
 /*
 Defaults
 ---------------------------------------------------------------------------------------------------- */
-@body-font: "Open Sans", sans-serif;
-@heading-font: "Lato", sans-serif;
-
+@heading-font: "Oswald", sans-serif;
+@body-font: "Merriweather", sans-serif;
+@nav-font: @heading-font;
+@button-font: @heading-font;
+@button-color: @edgered;
+@button-color-hover: @edgegold;
 
 /* Typographical Elements
 --------------------------------------------- */
@@ -23,6 +26,7 @@ body.altitude-home {
 }
 
 a,
+a.add_to_cart,
 input:focus,
 input[type="button"],
 input[type="reset"],
@@ -320,15 +324,17 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
+a.add_to_cart,
 .button,
 .widget .button {
-	background-color: #22a1c4;
-	border: 2px solid #22a1c4;
+	background-color: @button-color;
+	border: 2px solid @button-color;
 	border-radius: 5px;
 	color: #fff;
 	cursor: pointer;
 	font-size: 14px;
 	font-weight: 800;
+	font-family: @button-font;
 	letter-spacing: 2px;
 	padding: 15px 25px;
 	text-transform: uppercase;
@@ -341,6 +347,7 @@ button:hover,
 input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
+a.add_to_cart:hover,
 .button.clear:hover,
 .button:hover,
 .footer-widgets button,
@@ -350,9 +357,9 @@ input:hover[type="submit"],
 .footer-widgets .widget .button,
 .widget .button:hover,
 .widget .button.clear:hover {
-	background-color: #000;
-	border: 2px solid #000;
-	color: #fff;
+	background-color: #fff;
+	border: 2px solid #fff;
+	color: #000;
 }
 
 .button {
