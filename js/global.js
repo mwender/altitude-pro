@@ -1,20 +1,25 @@
 jQuery(function( $ ){
 
-	if( $( document ).scrollTop() > 0 ){
+	if( $('body').hasClass( 'home' ) ){
+		if( $( document ).scrollTop() > 0 ){
+			$( '.site-header' ).addClass( 'dark' );
+		}
+	} else {
 		$( '.site-header' ).addClass( 'dark' );
 	}
 
 	// Add opacity class to site header
-	$( document ).on('scroll', function(){
+	if( $('body').hasClass( 'home' ) ){
+		$( document ).on('scroll', function(){
+			if ( $( document ).scrollTop() > 0 ){
+				$( '.site-header' ).addClass( 'dark' );
 
-		if ( $( document ).scrollTop() > 0 ){
-			$( '.site-header' ).addClass( 'dark' );
+			} else {
+				$( '.site-header' ).removeClass( 'dark' );
+			}
 
-		} else {
-			$( '.site-header' ).removeClass( 'dark' );
-		}
-
-	});
+		});
+	}
 
 
 	$( '.nav-primary .genesis-nav-menu, .nav-secondary .genesis-nav-menu' ).addClass( 'responsive-menu' ).before('<div class="responsive-menu-icon"></div>');
