@@ -10,6 +10,7 @@ add_shortcode( 'htmlinc', 'html_include' );
 function html_include( $atts ){
 	extract( shortcode_atts( array(
 		'html' => 'name-of-your-html-file',
+		'doshortcodes' => true,
 	), $atts ) );
 
 	$file = dirname( __FILE__ ) . '/../html/' . $html . '.html';
@@ -19,6 +20,9 @@ function html_include( $atts ){
 	$search = array( '{themedir}' );
 	$replace = array( trailingslashit( get_stylesheet_directory_uri() ) );
 	$return = str_replace( $search, $replace, $return );
+
+	if( true == $doshortcodes )
+		$return = do_shortcode( $return );
 
 	return $return;
 }
