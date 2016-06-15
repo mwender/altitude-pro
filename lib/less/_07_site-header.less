@@ -103,3 +103,120 @@ Site Header
 	margin-bottom: 0;
 	text-indent: -9999px;
 }
+
+/* Top Section
+--------------------------------------------- */
+@topSectionHeight: 200px;
+.top-section{
+	background: @edgered url(../../images/edge-bkgrd.1920x300.jpg) no-repeat left center;
+	background-size: cover;
+	height: @topSectionHeight;
+	margin-top: 104px;
+	color: #fff;
+
+	.dashicon{
+		font-family: 'dashicons';
+		font-size: 16px;
+
+		&.calendar:before{
+			content: "\f508";
+		}
+		&.mic:before{
+			content: "\f482";
+		}
+		&.pin:before{
+			content: "\f230";
+		}
+		&.share:before{
+			content: "\f237";
+		}
+		&.users:before{
+			content: "\f307";
+		}
+	}
+
+	.gradient{
+		.background-gradient();
+		height: @topSectionHeight;
+	}
+
+	.ribbon-one{
+		height: @topSectionHeight - 36px;
+		max-width: 1200px;
+		margin: 0 auto;
+
+		p{
+			font-weight: 600;
+			line-height: @topSectionHeight - 36px;
+			text-align: center;
+
+			span{
+				font-family: @heading-font;
+			}
+		}
+	}
+	.ribbon-two{
+		height: 36px;
+		background-color: rgba(red(@edgered),green(@edgered),blue(@edgered),0.6);
+	}
+
+	ul{
+		max-width: 1200px;
+		margin: 0 auto;
+
+		li{
+			float: left;
+			width: 20%;
+			font-family: @heading-font;
+			font-size: 16px;
+			padding: 4px;
+			text-align: center;
+		}
+	}
+
+
+}
+.wide.full-width-content{
+	.top-section + .site-inner{
+		margin-top: 30px;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.top-section{
+		margin-top: 0px;
+		height: auto;
+
+		.gradient,
+		.ribbon-two{
+			height: auto;
+		}
+
+		.ribbon-one{
+			display: none;
+		}
+
+		.ribbon-two{
+			background-color: transparent;
+		}
+
+		ul li{
+			font-size: 12px;
+
+			/*float: none;
+			width: 100%;
+			display: block;
+			clear: left;*/
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			background-color: rgba(red(@edgered),green(@edgered),blue(@edgered),0.7);
+
+			.dashicon{
+				font-size: 12px;
+			}
+
+			&:last-child{
+			}
+		}
+	}
+}
