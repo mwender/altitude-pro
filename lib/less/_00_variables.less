@@ -1,4 +1,6 @@
 @import 'mixins/alerts';
+@import 'mixins/google-maps';
+@import 'mixins/gradients';
 
 @edgered: 	#e94f3d;
 @edgegold: 	#f39d20;
@@ -14,13 +16,13 @@
 @font-size-base: 			20px;
 @line-height-base: 			1.5;
 @line-height-computed:    	floor((@font-size-base * @line-height-base));
-@alert-padding: 			20px;
-@alert-border-radius: 		5px;
+@alert-padding: 			15px;
+@alert-border-radius: 		0;
 @alert-link-font-weight: 	700;
 
-@alert-success-border: 		#49db28;
-@alert-success-bg: 			lighten(@alert-success-border,20%);
-@alert-success-text: 		#333;
+@alert-success-border: 		#cae6b3;
+@alert-success-bg: 			#dff0d8;
+@alert-success-text: 		#3c763d;
 
 @alert-info-border: 		#2852db;
 @alert-info-bg: 			lighten(@alert-info-border,20%);
