@@ -126,6 +126,80 @@ Common Classes
 	margin: 0 20px 24px 0;
 }
 
+/* Callout
+--------------------------------------------- */
+.callout{
+	background-color: @edgered;
+	color: #fff;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+
+	.callout-title{
+		padding: 10px;
+		border-bottom: 1px solid #fff;
+
+		h3{
+			margin: 0;
+		}
+	}
+	.callout-content{
+		padding: 20px 30px 20px 20px;
+	}
+
+	.dashicons{
+		font-family: 'dashicons';
+		font-size: inherit;
+		line-height: inherit;
+		width: 30px;
+		margin-right: 8px;
+
+		&.dashicons-info{
+			content: "\f348";
+		}
+	}
+
+	.gform_wrapper{
+		margin-bottom: 0;
+
+		input[type=email],
+		input[type=number],
+		input[type=password],
+		input[type=tel],
+		input[type=text],
+		input[type=url]{
+			background-color: rgba(255,255,255,0.85);
+			color: #000;
+		}
+
+		.gfield_date_day label,
+		.gfield_date_month label,
+		.gfield_date_year label,
+		.gfield_time_ampm label,
+		.gfield_time_hour label,
+		.gfield_time_minute label,
+		.ginput_complex label,
+		.instruction{
+			margin-bottom: 0;
+		}
+
+		button,
+		input[type="button"],
+		input[type="reset"],
+		input[type="submit"],
+		.archive-pagination li a:hover,
+		.archive-pagination .active a,
+		.button,
+		.footer-widgets,
+		.widget .button{
+			background-color: #fff;
+			color: @edgered;
+		}
+
+		.gform_footer{
+			padding-bottom: 0;
+		}
+	}
+}
+
 /* Genesis
 --------------------------------------------- */
 
