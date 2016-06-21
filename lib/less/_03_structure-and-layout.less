@@ -132,28 +132,71 @@ Common Classes
 	background-color: @edgered;
 	color: #fff;
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+	margin-bottom: 20px;
+
+	a.add_to_cart{
+		background-color: @edgegold;
+		font-size: 28px;
+	}
+
+	span.tc_in_cart{
+		display: block;
+		float: right;
+		width: auto;
+
+		a{
+			padding: 6px 12px;
+			background-color: @edgegold;
+			border-radius: 3px;
+			color: #fff;
+			font-weight: bold;
+			font-family: 'Oswald', 'Helvetica Neue', sans-serif;
+			text-transform: uppercase;
+		}
+	}
 
 	.callout-title{
 		padding: 10px;
 		border-bottom: 1px solid #fff;
 
-		h3{
+		h3,
+		#front-page-5 .widget_text & h3{
 			margin: 0;
+			text-align: left;
 		}
 	}
 	.callout-content{
 		padding: 20px 30px 20px 20px;
 	}
 
-	.dashicons{
+	.dashicons,
+	.front-page & .dashicons{
 		font-family: 'dashicons';
 		font-size: inherit;
 		line-height: inherit;
 		width: 30px;
-		margin-right: 8px;
+		margin: 0 8px 0 0;
 
 		&.dashicons-info{
 			content: "\f348";
+		}
+		&.dashicons-tickets-alt{
+			content: "\f524";
+		}
+	}
+
+	form.cart_form{
+		float: right;
+	}
+
+	.price{
+		font-size: 36px;
+		font-family: 'Oswald', 'Helvetica Neue', Helvetica, sans-serif;
+		font-weight: bold;
+		line-height: 1;
+
+		del{
+			color: rgba(255,255,255,0.75);
 		}
 	}
 
