@@ -189,6 +189,13 @@ img {
 	&.circle{
 		border-radius: 50%;
 	}
+
+	&.gold{
+		border: 8px solid @edgegold;
+	}
+	&.red{
+		border: 8px solid @edgered;
+	}
 }
 
 .full-width-content img.pull-left {
@@ -519,4 +526,8 @@ Generate contextual modifier classes for colorizing the alert. */
 
 .alert-danger {
   .alert-variant(@alert-danger-bg; @alert-danger-border; @alert-danger-text);
+}
+
+.alert-edge2016{
+	.alert-variant(@edgegold,@edgered,#fff);
 }
