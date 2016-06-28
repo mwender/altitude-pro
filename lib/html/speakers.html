@@ -14,11 +14,11 @@
 <script id="overlay-template" type="text/x-handlebars-template">
         <div class="speaker-overlay" id="{{key}}">
             <div class="clearfix">
+                <a href="#" class="close"></a>
                 <div class="one-third first">
-                    <img src="{{themeurl}}/images/speakers/{{photo}}" class="circle" alt="">
+                    <img src="{{themeurl}}/images/speakers/{{photo}}" class="circle aligncenter" alt="">
                 </div>
                 <div class="two-thirds">
-					<a href="#" class="close"></a>
                 	<h2>{{name}}</h2>
 					<h5>{{{taglineHtml}}}</h5>
                 	{{{bioHtml}}}
@@ -78,9 +78,24 @@
 	font-family: 'Dashicons';
 	content: "\f153";
 	font-size: 36px;
+    cursor: pointer;
 }
 
 .noscroll{
 	overflow: hidden;
+}
+
+@media only screen and (max-width: 1024px) {
+    .speaker-overlay .clearfix:first-child,
+    .speaker-overlay .clearfix:last-child{
+        margin: 0;
+    }
+    .speaker-overlay .clearfix{
+        padding: 0 20px 0 20px;
+    }
+    .speaker-overlay .clearfix p{
+        font-size: .9em;
+    }
+
 }
 </style>
