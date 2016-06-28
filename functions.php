@@ -17,7 +17,7 @@ include_once( get_stylesheet_directory() . '/lib/output.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Altitude Pro Theme' );
 define( 'CHILD_THEME_URL', 'http://my.studiopress.com/themes/altitude/' );
-define( 'CHILD_THEME_VERSION', '1.0.2' );
+define( 'CHILD_THEME_VERSION', '1.0.3' );
 
 //* Enqueue scripts and styles
 add_action( 'wp_enqueue_scripts', 'altitude_enqueue_scripts_styles' );
@@ -43,7 +43,7 @@ add_image_size( 'featured-page', 1140, 400, TRUE );
 add_theme_support( 'genesis-footer-widgets', 1 );
 
 //* Add support for footer menu
-add_theme_support ( 'genesis-menus' , array ( 'primary' => __( 'Header Navigation Menu', 'altitude' ), 'secondary' => __( 'Above Header Navigation Menu', 'altitude' ), 'footer' => __( 'Footer Navigation Menu', 'altitude' ) ) );
+add_theme_support( 'genesis-menus' , array( 'secondary' => __( 'Before Header Menu', 'altitude' ), 'primary' => __( 'Header Menu', 'altitude' ), 'footer' => __( 'Footer Menu', 'altitude' ) ) );
 
 //* Unregister the header right widget area
 unregister_sidebar( 'header-right' );
@@ -55,6 +55,14 @@ add_action( 'genesis_header', 'genesis_do_nav', 12 );
 //* Remove output of primary navigation right extras
 remove_filter( 'genesis_nav_items', 'genesis_nav_right', 10, 2 );
 remove_filter( 'wp_nav_menu_items', 'genesis_nav_right', 10, 2 );
+
+//* Remove navigation meta box
+add_action( 'genesis_theme_settings_metaboxes', 'altitude_remove_genesis_metaboxes' );
+function altitude_remove_genesis_metaboxes( $_genesis_theme_settings_pagehook ) {
+
+    remove_meta_box( 'genesis-theme-settings-nav', $_genesis_theme_settings_pagehook, 'main' );
+
+}
 
 //* Reposition the secondary navigation menu
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
@@ -69,6 +77,7 @@ function altitude_secondary_nav_class( $classes ) {
 	if ( ! empty( $menu_locations['secondary'] ) ) {
 		$classes[] = 'secondary-nav';
 	}
+
 	return $classes;
 
 }
@@ -134,17 +143,6 @@ function altitude_comments_gravatar( $args ) {
 
 }
 
-//* Remove comment form allowed tags
-add_filter( 'comment_form_defaults', 'altitude_remove_comment_form_allowed_tags' );
-function altitude_remove_comment_form_allowed_tags( $defaults ) {
-
-	$defaults['comment_field'] = '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun', 'altitude' ) . '</label> <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>';
-	$defaults['comment_notes_after'] = '';
-
-	return $defaults;
-
-}
-
 //* Add support for after entry widget
 add_theme_support( 'genesis-after-entry-widget-area' );
 
@@ -163,21 +161,23 @@ function altitude_count_widgets( $id ) {
 }
 
 function altitude_widget_area_class( $id ) {
+
 	$count = altitude_count_widgets( $id );
 
 	$class = '';
 	
-	if( $count == 1 ) {
+	if ( $count == 1 ) {
 		$class .= ' widget-full';
-	} elseif( $count % 3 == 1 ) {
+	} elseif ( $count % 3 == 1 ) {
 		$class .= ' widget-thirds';
-	} elseif( $count % 4 == 1 ) {
+	} elseif ( $count % 4 == 1 ) {
 		$class .= ' widget-fourths';
-	} elseif( $count % 2 == 0 ) {
+	} elseif ( $count % 2 == 0 ) {
 		$class .= ' widget-halves uneven';
 	} else {	
 		$class .= ' widget-halves';
 	}
+
 	return $class;
 	
 }

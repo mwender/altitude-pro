@@ -19,7 +19,7 @@ function altitude_theme_defaults( $defaults ) {
 add_action( 'after_switch_theme', 'altitude_theme_setting_defaults' );
 function altitude_theme_setting_defaults() {
 
-	if( function_exists( 'genesis_update_settings' ) ) {
+	if ( function_exists( 'genesis_update_settings' ) ) {
 
 		genesis_update_settings( array(
 			'blog_cat_num'              => 5,	

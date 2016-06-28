@@ -88,10 +88,11 @@ function altitude_customizer_register() {
 		'priority' => 35,
 	) );
 
-	foreach( $images as $image ){
+	foreach( $images as $image ) {
 
 		$wp_customize->add_setting( $image .'-altitude-image', array(
 			'default'  => sprintf( '%s/images/bg-%s.jpg', get_stylesheet_directory_uri(), $image ),
+			'sanitize_callback' => 'esc_url_raw',
 			'type'     => 'option',
 		) );
 
