@@ -16,8 +16,9 @@ add_filter( 'body_class', 'altitude_add_body_class' );
 function altitude_add_body_class( $classes ) {
 
    $classes[] = 'altitude-landing';
+
    return $classes;
-   
+
 }
 
 //* Force full width content layout

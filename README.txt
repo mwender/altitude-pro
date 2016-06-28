@@ -7,7 +7,7 @@ INSTALL
 3. Activate the Altitude Pro theme.
 
 WIDGET AREAS
-Primary Sidebar - This is the primary sidebar if you are using the Content/Sidebar or Sidebar/Conent Site Layout option.
+Primary Sidebar - This is the primary sidebar if you are using the Content/Sidebar or Sidebar/Content Site Layout option.
 Front Page 1 - This is the first section of the home page.
 Front Page 2 - This is the second section of the home page.
 Front Page 3 - This is the third section of the home page.
@@ -39,3 +39,7 @@ CHANGELOG
 * Fix scroll location for Firefox
 * Remove Footer Navigation from Landing Page template
 * Add table CSS
+
+= 1.0.3 =
+* Remove IE8 CSS fix for images
+* Remove navigation extras setting

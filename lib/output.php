@@ -20,7 +20,7 @@ function altitude_css() {
 
 	$settings = array();
 
-	foreach( $opts as $opt ){
+	foreach( $opts as $opt ) {
 		$settings[$opt]['image'] = preg_replace( '/^https?:/', '', get_option( $opt .'-altitude-image', sprintf( '%s/images/bg-%s.jpg', get_stylesheet_directory_uri(), $opt ) ) );
 	}
 
@@ -30,7 +30,7 @@ function altitude_css() {
 
 		$background = $value['image'] ? sprintf( 'background-image: url(%s);', $value['image'] ) : '';
 
-		if( is_front_page() ) {
+		if ( is_front_page() ) {
 			$css .= ( ! empty( $section ) && ! empty( $background ) ) ? sprintf( '.front-page-%s { %s }', $section, $background ) : '';
 		}
 
@@ -69,7 +69,7 @@ function altitude_css() {
 		}
 		', $color ) : '';
 
-	if( $css ){
+	if ( $css ) {
 		wp_add_inline_style( $handle, $css );
 	}
 
