@@ -5,6 +5,7 @@ jQuery(function($){
 	var emptyColTemplate = Handlebars.compile( $('#emptycol-template').html() );
 	var speakerOverlayTemplate = Handlebars.compile( $('#overlay-template').html() );
 
+	// Speaker photos and bios
 	$.getJSON(wpvars.dataurl + '?ver=' + wpvars.dataversion , function( data ){
 		var numOfSpeakers = Object.keys(data).length;
 		var col = 1; // column counter
