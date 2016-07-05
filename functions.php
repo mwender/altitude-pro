@@ -31,6 +31,7 @@ function altitude_enqueue_scripts_styles() {
 	wp_enqueue_script( 'altitude-global', get_bloginfo( 'stylesheet_directory' ) . '/js/global.js', array( 'jquery' ), filemtime( get_stylesheet_directory() . '/js/global.js' ) );
 
 	wp_enqueue_style( 'dashicons' );
+	wp_enqueue_style( 'genericons', get_bloginfo( 'stylesheet_directory' ) . '/lib/fonts/genericons/genericons.css', null, filemtime( get_stylesheet_directory() . '/lib/fonts/genericons/genericons.css' ) );
 	$font_families = array();
 	$font_families[] = 'Oswald:400,700';
 	$font_families[] = 'Merriweather:400,700';

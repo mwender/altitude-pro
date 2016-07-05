@@ -28,3 +28,37 @@ Site Footer
 footer p.entry-meta{
 	display: none;
 }
+
+.site-container .footer-widgets{
+	.social{
+		font-family: 'genericons';
+
+		li{
+			float: left;
+		}
+
+		a{
+			background-color: rgba(255,255,255,0.25);
+			border-radius: 50%;
+			color: @edgegold;
+			padding: 8px;
+			font-size: 28px;
+			margin-left: 10px;
+
+			&:hover{
+				background-color: @edgegold;
+				color: #fff;
+			}
+		}
+
+		.linkedin:before{
+			content: '\f208';
+		}
+		.facebook:before{
+			content: '\f203';
+		}
+		.twitter:before{
+			content: '\f202';
+		}
+	}
+}
