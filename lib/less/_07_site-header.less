@@ -41,7 +41,7 @@ Site Header
 .title-area {
 	float: left;
 	padding: 12px 0;
-	width: 360px;
+	width: 380px;
 }
 
 .site-header.dark .title-area {
@@ -66,6 +66,8 @@ Site Header
 	line-height: 1;
 	margin-bottom: 0;
 	text-transform: uppercase;
+	width: 220px;
+	float: left;
 
 	> a{
 		background-size: contain !important;
@@ -230,4 +232,139 @@ Site Header
 			}
 		}
 	}
+}
+/* Add to Calendar
+--------------------------------------------- */
+/* Base */
+
+.addtocalendar var{
+    display: none;
+}
+
+.addtocalendar {
+    position: relative;
+    display: inline-block;
+    transform: translateY(55%);
+    background: transparent!important;
+    float: right;
+}
+
+.atcb-link {
+    display: block;
+    outline: none!important;
+    cursor: pointer;
+}
+
+.atcb-link:focus~ul,
+.atcb-link:active~ul,
+.atcb-list:hover{
+    visibility:visible;
+}
+
+.atcb-list {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 170px;
+    z-index: 900;
+}
+
+.atcb-list,
+.atcb-item
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: @heading-font;
+}
+
+.atcb-item {
+    float: none;
+    text-align: left;
+}
+
+.atcb-item-link
+{
+    text-decoration: none;
+    outline: none;
+    display: block;
+}
+
+.atcb-item.hover,
+.atcb-item:hover {
+    position: relative;
+    z-index: 900;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Blue */
+
+.atc-style-blue .atcb-link,
+.atc-style-blue .atcb-link:hover,
+.atc-style-blue .atcb-link:active,
+.atc-style-blue .atcb-link:focus
+{
+    margin: 0;
+    padding: 7px 25px;
+    color: #fff;
+    font-family:@heading-font;
+    font-size: 14px;
+    text-decoration: none;
+    outline: none;
+    line-height: 20px;
+    vertical-align: middle;
+    background: @edgered;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .13) inset;
+    border-radius: 4px;
+    zoom: 1;
+}
+
+.atc-style-blue .atcb-list {
+    width: 170px;
+    border: 1px solid rgb(186,186,186);
+    border-radius: 2px;
+    box-shadow: 0 0 5px #AAA;
+}
+
+.atc-style-blue .atcb-list,
+.atc-style-blue .atcb-item
+{
+    background: #fff;
+    color: #000;
+}
+
+.atc-style-blue .atcb-item,
+.atc-style-blue .atcb-item-link
+{
+    line-height: 1.3em;
+    vertical-align: middle;
+    zoom: 1;
+}
+
+.atc-style-blue .atcb-item-link,
+.atc-style-blue .atcb-item-link:hover,
+.atc-style-blue .atcb-item-link:active,
+.atc-style-blue .atcb-item-link:focus
+{
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    outline: none;
+    padding: 5px 15px;
+}
+
+.atc-style-blue .atcb-item-link:hover,
+.atc-style-blue .atcb-item-link:active,
+.atc-style-blue .atcb-item-link:focus
+{
+    color: #fff;
+}
+
+.atc-style-blue .atcb-item.hover,
+.atc-style-blue .atcb-item:hover {
+	background-color: @edgegold;
 }
