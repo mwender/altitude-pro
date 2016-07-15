@@ -28,6 +28,30 @@ jQuery(function( $ ){
 
 	});
 
+	var setSpeakerTextWidth = function(){
+		// Reset .speakers-text dimensions
+		$('div.speakers-text').removeClass('nofloat');
+		$('div.speakers-text').attr({ 'style': '' });
+
+		// Get widths
+		var allSpeakersWidth = 0;
+		$('div.speaker', '.speakers').each(function(){
+			allSpeakersWidth += $(this).width();
+		});
+		var speakerDivWidth = $('.speakers').width();
+
+		// Set .speakers-text width
+		var speakerTextWidth = (speakerDivWidth - allSpeakersWidth ) - 20;
+		$('div.speakers-text').css({ 'width': speakerTextWidth + 'px' });
+
+		// Check .speakers-text height. If > 63, clear the float.
+		var speakerTextHeight = $('div.speakers-text').height();
+		if( 63 < speakerTextHeight ){
+			$('div.speakers-text').addClass('nofloat');
+			$('div.speakers-text').attr({ 'style': '' });
+		}
+	}
+
 	// Speaker photos
 	$.getJSON(wpvars.dataurl + '?ver=' + wpvars.dataversion , function( data ){
 		var numOfSpeakers = Object.keys(data).length;
@@ -78,19 +102,17 @@ jQuery(function( $ ){
 		});
 		$('div.speakers div.speaker:last-of-type').addClass('last');
 
-		// Get width of all .speaker
-		var allSpeakersWidth = 0;
-		$('div.speaker', '.speakers').each(function(){
-			allSpeakersWidth += $(this).width();
-		});
-		var speakerDivWidth = $('.speakers').width();
-
 		// Add text about speakers
 		$('div.speakers > div.clearfix:first-child').append('<div class="speakers-text"><strong class="gold">Meet Our Speakers:</strong> Theresa Payton and Kevin Poulsen headline a celebrated lineup of experts in Healthcare, Retail, Legal, Banking and Finance, Manufacturing, and Government</div>');
 
-		// Set width of .speakers-text
-		var speakerTextWidth = (speakerDivWidth - allSpeakersWidth ) - 20;
-		$('div.speakers-text').css({ 'width': speakerTextWidth + 'px', 'float': 'left', 'font-size': '14px', 'margin-left': '20px' });
+		// Get width of all .speaker, and
+		// set width of .speakers-text to fit
+		// in the remaining space.
+		setSpeakerTextWidth();
+
+		$( window ).resize(function(){
+			setSpeakerTextWidth();
+		});
 
 		// Show overlay on click for speaker thumbnails
 		$('body').on('click', 'a.speaker', function(e){
