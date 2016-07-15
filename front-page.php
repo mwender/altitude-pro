@@ -17,11 +17,11 @@ function altitude_front_page_genesis_meta() {
 	if ( is_active_sidebar( 'front-page-1' ) || is_active_sidebar( 'front-page-2' ) || is_active_sidebar( 'front-page-3' ) || is_active_sidebar( 'front-page-4' ) || is_active_sidebar( 'front-page-5' ) || is_active_sidebar( 'front-page-6' ) || is_active_sidebar( 'front-page-7' ) ) {
 
 		//* Enqueue scripts
-		add_action( 'wp_enqueue_scripts', 'altitude_enqueue_altitude_script' );
+		add_action( 'wp_enqueue_scripts', 'altitude_enqueue_altitude_script', 99 );
 		function altitude_enqueue_altitude_script() {
 
-			wp_enqueue_script( 'altitude-script', get_bloginfo( 'stylesheet_directory' ) . '/js/home.js', array( 'jquery', 'altitude-global' ), filemtime( get_stylesheet_directory() . '/js/home.js' ) );
-			wp_localize_script( 'altitude-script', 'wp', array( 'adminBar' => is_admin_bar_showing() ) );
+			wp_enqueue_script( 'altitude-script', get_bloginfo( 'stylesheet_directory' ) . '/js/home.js', array( 'jquery', 'altitude-global', 'handlebars', 'showdown' ), filemtime( get_stylesheet_directory() . '/js/home.js' ) );
+			wp_localize_script( 'altitude-script', 'wpvars', array( 'dataurl' => get_bloginfo( 'stylesheet_directory' ) . '/lib/json/speakers.json', 'themeurl' => get_bloginfo( 'stylesheet_directory' ), 'dataversion' => filemtime( get_stylesheet_directory() . '/lib/json/speakers.json' ) ) );
 			wp_enqueue_script( 'localScroll', get_stylesheet_directory_uri() . '/js/jquery.localScroll.min.js', array( 'scrollTo' ), '1.2.8b', true );
 			wp_enqueue_script( 'scrollTo', get_stylesheet_directory_uri() . '/js/jquery.scrollTo.min.js', array( 'jquery' ), '1.4.5-beta', true );
 

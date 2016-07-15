@@ -51,6 +51,51 @@
 	.flexible-widgets{
 		padding-top: 80px;
 	}
+
+	div.speaker{
+		width: 80px;
+		height: 80px;
+		float: left;
+		margin-right: -20px;
+		margin-top: -10px;
+		border: 3px solid @edgered;
+		border-radius: 50%;
+		-webkit-transition: margin-right .5s, margin-left .5s;
+		transition: margin-right .5s, margin-left .5s;
+		background-color: @edgegold;
+
+		&:hover{
+			margin-right: 2px;
+			border-color: #fff;
+			-webkit-transition: margin-right .5s, margin-left .5s;
+			transition: margin-right .5s, margin-left .5s;
+
+			a{
+				opacity: .9;
+			}
+		}
+
+		&.last{
+			margin-right: 0 !important;
+		}
+
+		&:first-child:hover{
+			margin-left: 0;
+			border-color: #090;
+		}
+
+		&.keynote{
+			border-color: @edgegold;
+
+			&:hover{
+				border-color: #fff;
+			}
+		}
+	}
+
+	div.speakers{
+		margin-bottom: 30px;
+	}
 }
 #front-page-2{
 	color: @edgegray;

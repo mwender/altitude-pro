@@ -51,6 +51,105 @@ Plugins
 	display: none;
 }
 
+/* Speakers.js
+--------------------------------------------- */
+.keynote img{
+	border: 8px solid @edgegold;
+}
+
+.home .keynote img{
+	border: none;
+}
+
+.speaker{
+	text-align: center;
+}
+
+.speaker-overlay {
+    position: fixed;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, .8);
+
+    .clearfix{
+			padding: 0 60px 0 40px;
+			max-width: 1024px;
+			margin: 0 auto;
+			background-color: #fff;
+	    position: relative;
+
+	    &:first-child{
+				padding-top: 40px;
+				margin-top: 40px;
+
+	    }
+
+	    &:last-child{
+				padding-bottom: 40px;
+				margin-bottom: 40px;
+			}
+		}
+
+		h2:first-of-type{
+			margin-bottom: 3px;
+		}
+
+		div.one-fourth{
+		    text-align: right;
+		}
+
+		.close{
+			display: block;
+		    height: 56px;
+		    line-height: 56px;
+		    position: absolute;
+		    right: 20px;
+		    top: 20px;
+
+		    &:before{
+					font-family: 'Dashicons';
+					content: "\f153";
+					font-size: 56px;
+				    cursor: pointer;
+				}
+		}
+}
+
+.noscroll{
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 1024px) {
+    .speaker-overlay{
+        background-color: #fff;
+    }
+
+    .speaker-overlay .clearfix:first-child,
+    .speaker-overlay .clearfix:last-child{
+        margin: 0;
+    }
+
+    .speaker-overlay .clearfix{
+        padding: 0 20px 0 20px;
+    }
+
+    .speaker-overlay .clearfix p{
+        font-size: .9em;
+    }
+
+    .entry-content img.circle{
+        max-width: 220px;
+    }
+
+    .speaker-overlay img.circle{
+        max-width: 300px;
+    }
+}
+
 /* TablePress
 --------------------------------------------- */
 table.tablepress{

@@ -12,7 +12,7 @@
     </div>
 </script>
 <script id="overlay-template" type="text/x-handlebars-template">
-        <div class="speaker-overlay" id="{{key}}">
+        <div class="speaker-overlay {{type}}" id="{{key}}">
             <div class="clearfix">
                 <a href="#" class="close"></a>
                 <div class="one-third first">
@@ -26,95 +26,3 @@
             </div>
         </div>
 </script>
-<style type="text/css">
-.keynote img{
-	border: 8px solid #f39d20;
-}
-
-.speaker{
-	text-align: center;
-}
-
-.speaker-overlay {
-    position: fixed;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    width: 100%;
-    height: 100%;
-    color: #000;
-    z-index: 9999;
-    background-color: rgba(0, 0, 0, .8);
-}
-.speaker-overlay .clearfix{
-	padding: 0 60px 0 40px;
-	max-width: 1024px;
-	margin: 0 auto;
-	background-color: #fff;
-    position: relative;
-}
-
-.speaker-overlay .clearfix:first-child{
-	margin-top: 40px;
-	padding-top: 40px;
-}
-
-.speaker-overlay .clearfix:last-child{
-	padding-bottom: 40px;
-	margin-bottom: 40px;
-}
-
-.speaker-overlay h2:first-of-type{
-	margin-bottom: 3px;
-}
-
-.speaker-overlay div.one-fourth{
-    text-align: right;
-}
-
-.speaker-overlay .close{
-	display: block;
-    height: 56px;
-    line-height: 56px;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-}
-
-.speaker-overlay .close:before{
-	font-family: 'Dashicons';
-	content: "\f153";
-	font-size: 56px;
-    cursor: pointer;
-}
-
-.noscroll{
-	overflow: hidden;
-}
-
-@media only screen and (max-width: 1024px) {
-    .speaker-overlay{
-        background-color: #fff;
-    }
-
-    .speaker-overlay .clearfix:first-child,
-    .speaker-overlay .clearfix:last-child{
-        margin: 0;
-    }
-
-    .speaker-overlay .clearfix{
-        padding: 0 20px 0 20px;
-    }
-
-    .speaker-overlay .clearfix p{
-        font-size: .9em;
-    }
-
-    .entry-content img.circle{
-        max-width: 220px;
-    }
-
-    .speaker-overlay img.circle{
-        max-width: 300px;
-    }
-}
-</style>
