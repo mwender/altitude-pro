@@ -242,6 +242,11 @@ Content Area
 /* Entry Meta
 --------------------------------------------- */
 
+article.sticky{
+	padding: 20px;
+	background: lighten(@edgegray,60%);
+}
+
 p.entry-meta {
 	font-size: 20px;
 	margin-bottom: 0;
@@ -249,7 +254,16 @@ p.entry-meta {
 
 .entry-header,
 .entry-footer {
-	text-align: center;
+	text-align: left;
+}
+
+.entry-header{
+	.entry-title{
+		margin-bottom: 30px;
+	}
+	.post-image{
+		margin-bottom: 20px;
+	}
 }
 
 .entry-header p.entry-meta {
@@ -259,6 +273,7 @@ p.entry-meta {
 	text-transform: uppercase;
 }
 
+/*
 .entry-header::after {
 	border-bottom: 1px solid #000;
 	content: "";
@@ -267,11 +282,11 @@ p.entry-meta {
 	padding-bottom: 30px;
 	width: 25%;
 }
-
+*/
 .image-section .entry-header::after {
 	border-color: #fff;
 }
-
+/*
 .entry-footer::before {
 	border-top: 1px solid #000;
 	content: "";
@@ -280,7 +295,7 @@ p.entry-meta {
 	padding-top: 60px;
 	width: 25%;
 }
-
+*/
 .sidebar .entry-header::after {
 	display: none;
 }
