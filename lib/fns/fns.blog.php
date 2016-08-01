@@ -1,7 +1,5 @@
 <?php
-
 namespace AltitudePro\lib\fns\Blog;
-
 
 add_action( 'genesis_before_loop', __NAMESPACE__ . '\\configure_blog', 10 );
 function configure_blog(){
