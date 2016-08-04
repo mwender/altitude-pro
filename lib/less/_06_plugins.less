@@ -65,7 +65,8 @@ Plugins
 	text-align: center;
 }
 
-.speaker-overlay {
+.speaker-overlay,
+.lightbox-overlay {
     position: fixed;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -117,6 +118,20 @@ Plugins
 				    cursor: pointer;
 				}
 		}
+}
+
+.lightbox-overlay{
+	display: none;
+
+	.clearfix{
+		padding: 0;
+		background-color: transparent;
+		text-align: center;
+	}
+	img{
+		margin-top: 5vh;
+		max-height: 80vh;
+	}
 }
 
 .noscroll{

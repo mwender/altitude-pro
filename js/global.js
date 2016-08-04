@@ -68,4 +68,25 @@ jQuery(function( $ ){
   }
 
   hideText( '.hidetext', 200 );
-});
+
+  // Lightbox open
+  $('body').on('click', '.lightbox', function(e){
+  	e.preventDefault();
+  	console.log('lightbox clicked.');
+  	var image = $(this).attr( 'href' );
+  	console.log('href = ' + image );
+  	var lightbox = '<div class="lightbox-overlay" id="active-lightbox"><a href="#" class="close"></a><div class="clearfix"><img src="' + image + '" /></div></div>';
+  	$('body').prepend( lightbox ).addClass('noscroll');
+  	$('.lightbox-overlay').fadeIn();
+  });
+
+  // Lightbox close
+	$('body').on('click', 'a.close', function(e){
+		e.preventDefault();
+		var overlay = $(this).parents('div.lightbox-overlay');
+		var lightboxId = overlay.attr('id');
+		$('body').removeClass('noscroll');
+		$('.lightbox-overlay#' +  lightboxId ).fadeOut().remove();
+	});
+
+}); // jQuery(function( $ ){
