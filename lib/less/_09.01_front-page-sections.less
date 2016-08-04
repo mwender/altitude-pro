@@ -51,12 +51,12 @@
 	.flexible-widgets{
 		padding-top: 80px;
 	}
-
+	@speaker-size: 110px;
 	div.speaker{
-		width: 80px;
-		height: 80px;
+		width: @speaker-size;
+		height: @speaker-size;
 		float: left;
-		margin-right: -20px;
+		margin-right: -15px;
 		margin-top: -10px;
 		border: 3px solid @edgered;
 		border-radius: 50%;
@@ -65,14 +65,9 @@
 		background-color: @edgegold;
 
 		&:hover{
-			margin-right: 2px;
 			border-color: #fff;
 			-webkit-transition: margin-right .5s, margin-left .5s;
 			transition: margin-right .5s, margin-left .5s;
-
-			a{
-				opacity: .9;
-			}
 		}
 
 		&.last{
@@ -98,8 +93,11 @@
 	}
 	div.speakers-text{
 		font-size: 14px;
-		margin-left: 20px;
-		float: left;
+		/*margin-left: 20px;*/
+		/*float: left;*/
+		clear: both;
+		width: 100%;
+		padding-top: 20px;
 
 		&.nofloat{
 			float: none;

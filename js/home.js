@@ -56,7 +56,7 @@ jQuery(function( $ ){
 	$.getJSON(wpvars.dataurl + '?ver=' + wpvars.dataversion , function( data ){
 		var numOfSpeakers = Object.keys(data).length;
 		var col = 1; // column counter
-		var cols = 9; // total num of cols
+		var cols = 14; // total num of cols
 		var row = 0; // row counter
 		var speakerRows = new Array();
 		var speakerCount = 1;
@@ -103,16 +103,17 @@ jQuery(function( $ ){
 		$('div.speakers div.speaker:last-of-type').addClass('last');
 
 		// Add text about speakers
-		$('div.speakers > div.clearfix:first-child').append('<div class="speakers-text"><strong class="gold">Meet Our Speakers:</strong> Theresa Payton and Kevin Poulsen headline a celebrated lineup of experts in Healthcare, Retail, Legal, Banking and Finance, Manufacturing, and Government</div>');
+		$('div.speakers > div.clearfix:first-child').append('<div class="speakers-text"><strong class="gold">Meet Our Speakers:</strong><br />Theresa Payton and Kevin Poulsen headline a celebrated lineup of experts in Healthcare, Retail, Legal, Banking and Finance, Manufacturing, and Government</div>');
 
 		// Get width of all .speaker, and
 		// set width of .speakers-text to fit
 		// in the remaining space.
-		setSpeakerTextWidth();
-
+		//setSpeakerTextWidth();
+		/*
 		$( window ).resize(function(){
 			setSpeakerTextWidth();
 		});
+		*/
 
 		// Show overlay on click for speaker thumbnails
 		$('body').on('click', 'a.speaker', function(e){
