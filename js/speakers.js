@@ -9,10 +9,18 @@ jQuery(function($){
 	$.getJSON(wpvars.dataurl + '?ver=' + wpvars.dataversion , function( data ){
 		var numOfSpeakers = Object.keys(data).length;
 		var col = 1; // column counter
-		var cols = 4; // total num of cols
+		var cols = 3; // total num of cols
 		var row = 0; // row counter
 		var speakerRows = new Array();
 		var speakerCount = 1;
+
+		if( 'false' == wpvars.showkeynotes ){
+			$.each( data, function( key, val ){
+				if( 'keynote' == val.type ){
+					delete data[key];
+				}
+			});
+		}
 
 		// Add html to each row
 		$.each( data, function( key, val ){
@@ -34,7 +42,7 @@ jQuery(function($){
 			}
 
 			if( col == cols ){
-				speakerRows[row] = '<div class="clearfix">' + speakerHtml + '</div>';
+				speakerRows[row] = '<div class="clearfix" style="margin-bottom: 30px;">' + speakerHtml + '</div>';
 				// reset col/increment row
 				col = 1;
 				row = row + 1;
@@ -50,7 +58,7 @@ jQuery(function($){
 			$('main.content .entry-content .speakers').append( row );
 		});
 
-		$('main.content .entry-content .speakers .one-fourth:first-of-type').addClass('first');
+		$('main.content .entry-content .speakers .one-third:first-of-type').addClass('first');
 
 		// Show overlay on click for speaker thumbnails
 		$('main.content .entry-content .speakers').on('click', 'a.speaker', function(e){

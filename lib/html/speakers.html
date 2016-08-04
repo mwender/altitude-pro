@@ -1,13 +1,14 @@
 <h1>Speakers</h1>
 <div class="speakers"></div>
 <script id="speaker-template" type="text/x-handlebars-template">
-    <div class="one-fourth speaker {{type}}">
+    <div class="one-third speaker {{type}}">
         <a href="#" data-speaker="{{key}}" class="speaker"><img src="{{themeurl}}/images/speakers/{{photo}}" alt="" class="circle"></a>
         <h3><a href="#" class="speaker" data-speaker="{{key}}">{{name}}</a></h3>
+        {{tagline}}
     </div>
 </script>
 <script id="emptycol-template" type="text/x-handlebars-template">
-    <div class="one-fourth">
+    <div class="one-third">
         &nbsp;
     </div>
 </script>
