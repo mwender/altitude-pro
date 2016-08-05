@@ -1,0 +1,30 @@
+<!-- Handlebars -->
+<script id="speaker-template" type="text/x-handlebars-template">
+    <div class="speaker {{type}} {{colClass}}">
+        <a href="#" data-speaker="{{key}}" class="speaker" title="{{name}}"><img src="{{themeurl}}/images/speakers/{{photo}}" alt="{{name}}" class="circle"></a>
+        {{#unless thumbnailsOnly}}
+          <h3><a href="#" class="speaker" data-speaker="{{key}}">{{name}}</a></h3>
+          {{{taglineHtml}}}
+        {{/unless}}
+    </div>
+</script>
+<script id="emptycol-template" type="text/x-handlebars-template">
+    <div class="">
+        &nbsp;
+    </div>
+</script>
+<script id="overlay-template" type="text/x-handlebars-template">
+        <div class="speaker-overlay {{type}}" id="{{key}}">
+          <div class="clearfix">
+              <a href="#" class="close"></a>
+              <div class="one-third first">
+                  <img src="{{themeurl}}/images/speakers/{{photo}}" class="circle aligncenter" alt="">
+              </div>
+              <div class="two-thirds">
+              	<h2>{{name}}</h2>
+				<h5>{{{taglineHtml}}}</h5>
+              	{{{bioHtml}}}
+          	</div>
+          </div>
+        </div>
+</script>

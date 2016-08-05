@@ -27,15 +27,6 @@ function altitude_front_page_genesis_meta() {
 
 		}
 
-		//* Add front-page body class
-		add_filter( 'body_class', 'altitude_body_class' );
-		function altitude_body_class( $classes ) {
-
-   			$classes[] = 'front-page';
-  			return $classes;
-
-		}
-
 		//* Force full width content layout
 		add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 

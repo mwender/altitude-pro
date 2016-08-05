@@ -1,6 +1,7 @@
-<h1 class="gold">EDGE2016 Security Conference<br /><span>Oct 18 & 19, 2016 &bull; Crowne Plaza &bull; Knoxville, TN</span></h1>
+<h1 class="gold">EDGE2016 Security Conference<br /><span>Oct 18 &amp; 19, 2016 &bull; Crowne Plaza &bull; Knoxville, TN</span></h1>
 <p class="lead">Where complex business security problems meet real-world solutions.</p>
-<div class="speakers"></div>
+<div class="speakers all thumbnails"></div>
+<div class="speakers-text"><strong class="gold">Meet Our Speakers:</strong><br />Theresa Payton and Kevin Poulsen headline a celebrated lineup of experts in Healthcare, Retail, Legal, Banking and Finance, Manufacturing, and Government</div>
 <div class="clearfix">
 	<div class="one-third first">
 		<h4 class="widgettitle">Agenda</h4>
@@ -19,30 +20,3 @@
     <a href="{themedir}/images/EDGE2016_attendee-brochure_3.0.pdf" class="button small" target="_blank">Download Brochure</a>
   </div>
 </div>
-
-<!-- Handlebars -->
-<script id="speaker-template" type="text/x-handlebars-template">
-    <div class="speaker {{type}}">
-        <a href="#" data-speaker="{{key}}" class="speaker" title="{{name}}"><img src="{{themeurl}}/images/speakers/{{photo}}" alt="{{name}}" class="circle"></a>
-    </div>
-</script>
-<script id="emptycol-template" type="text/x-handlebars-template">
-    <div class="">
-        &nbsp;
-    </div>
-</script>
-<script id="overlay-template" type="text/x-handlebars-template">
-        <div class="speaker-overlay {{type}}" id="{{key}}">
-          <div class="clearfix">
-              <a href="#" class="close"></a>
-              <div class="one-third first">
-                  <img src="{{themeurl}}/images/speakers/{{photo}}" class="circle aligncenter" alt="">
-              </div>
-              <div class="two-thirds">
-              	<h2>{{name}}</h2>
-				<h5>{{{taglineHtml}}}</h5>
-              	{{{bioHtml}}}
-          	</div>
-          </div>
-        </div>
-</script>
