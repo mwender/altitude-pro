@@ -289,6 +289,7 @@ genesis_register_sidebar( array(
 include_once( get_stylesheet_directory() . '/lib/fns/fns.add-to-calendar.php');
 include_once( get_stylesheet_directory() . '/lib/fns/fns.blog.php');
 include_once( get_stylesheet_directory() . '/lib/fns/fns.google-analytics.php');
+include_once( get_stylesheet_directory() . '/lib/fns/fns.header.php');
 include_once( get_stylesheet_directory() . '/lib/fns/fns.shortcodes.php' );
 include_once( get_stylesheet_directory() . '/lib/fns/fns.tickera.php' );
 
