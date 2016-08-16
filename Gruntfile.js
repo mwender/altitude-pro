@@ -45,6 +45,12 @@ module.exports = function(grunt) {
         options: {
           nospawn: true
         }
+      },
+      json: {
+         files: ['lib/json/*.json'],
+        options: {
+          nospawn: true
+        }
       }
     }
   });
