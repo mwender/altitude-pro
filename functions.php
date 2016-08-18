@@ -37,7 +37,8 @@ function altitude_enqueue_scripts_styles() {
 	$font_families[] = 'Merriweather:400,700';
 	wp_enqueue_style( 'altitude-google-fonts', '//fonts.googleapis.com/css?family=' . implode( '|', $font_families ), array(), CHILD_THEME_VERSION );
 
-	if( is_page( 'speakers' ) || is_page( 'tracks' ) || is_page( 'agenda' ) || is_front_page() ){
+	$speakersjs_pages = ['speakers','tracks','agenda','conference-at-a-glance'];
+	if( is_page( $speakersjs_pages ) || is_front_page() ){
 		wp_enqueue_script( 'handlebars', get_bloginfo( 'stylesheet_directory' ) . '/js/handlebars-v4.0.5.js', null, filemtime( get_stylesheet_directory() . '/js/handlebars-v4.0.5.js' ) );
 		wp_enqueue_script( 'showdown', 'https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.2/showdown.min.js', null, '1.4.2' );
 		wp_enqueue_script( 'speakers', get_bloginfo( 'stylesheet_directory' ) . '/js/speakers.js', array( 'jquery', 'handlebars', 'showdown' ), filemtime( get_stylesheet_directory() . '/js/speakers.js' ) );
