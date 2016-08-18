@@ -1,7 +1,7 @@
 <!-- Handlebars -->
 <script id="speaker-template" type="text/x-handlebars-template">
     <div class="speaker {{type}} {{colClass}}">
-        <a href="#" data-speaker="{{key}}" class="speaker" title="{{name}}"><img src="{{themeurl}}/images/speakers/{{photo}}" alt="{{name}}" class="circle"></a>
+        <a href="#" data-speaker="{{key}}" class="speaker" title="{{name}}"><img src="{{themeurl}}/images/speakers/{{photo}}" alt="{{name}}"{{{widthHeight}}} class="circle"></a>
         {{#unless thumbnailsOnly}}
           <h3><a href="#" class="speaker" data-speaker="{{key}}">{{name}}</a></h3>
           {{{taglineHtml}}}
