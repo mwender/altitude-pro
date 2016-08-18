@@ -10,27 +10,46 @@
 		if( $(elem).hasClass('thumbnails') )
 			thumbnailsOnly = true;
 
-		var hideSession = false;
-		var hideKeynote = false;
+		// Only show specified speakers
+		var includeSpeakers = $(elem).attr('data-speakers');
+		if( typeof includeSpeakers !== 'undefined' ){
+			var speakersToInclude = includeSpeakers.split(',');
+			$.each( speakersToInclude, function( key, val ){
+				//val.thumbnailsOnly = thumbnailsOnly;
+				data[val]['thumbnailsOnly'] = thumbnailsOnly;
+				speakers[val] = data[val];
+			});
+		} else {
+			var hideSession = false;
+			var hideKeynote = false;
 
-		// Restrict set to only keynote or session speakers?
-		if( $(elem).hasClass('keynote') ){
-			hideSession = true;
-		} else if( $(elem).hasClass('session') ){
-			hideKeynote = true;
+			// Restrict set to only keynote or session speakers?
+			if( $(elem).hasClass('keynote') ){
+				hideSession = true;
+			} else if( $(elem).hasClass('session') ){
+				hideKeynote = true;
+			}
+
+			$.each( data, function( key, val ){
+				val.thumbnailsOnly = thumbnailsOnly;
+
+				if( true == hideSession && 'session' != val.type ){
+					speakers[key] = val;
+				} else if( true == hideKeynote && 'keynote' != val.type ){
+					speakers[key] = val;
+				} else if( false == hideSession && false == hideKeynote ) {
+					speakers[key] = val;
+				}
+			});
 		}
 
-		$.each( data, function( key, val ){
-			val.thumbnailsOnly = thumbnailsOnly;
-
-			if( true == hideSession && 'session' != val.type ){
-				speakers[key] = val;
-			} else if( true == hideKeynote && 'keynote' != val.type ){
-				speakers[key] = val;
-			} else if( false == hideSession && false == hideKeynote ) {
-				speakers[key] = val;
-			}
-		});
+		var thumbnailWidth = $(elem).attr('data-width');
+		if( typeof thumbnailWidth !== 'undefined' && !isNaN( parseFloat(thumbnailWidth) ) && isFinite(thumbnailWidth) ){
+			$.each( speakers, function( key, val ){
+				speakers[key]['widthHeight'] = ' width=\'' + thumbnailWidth + '\' height=\'' + thumbnailWidth + '\'';
+			});
+		}
+		console.log(speakers);
 
 		var cols = $(elem).attr('data-columns'); // Number of columns for display
 		var useColumns = false;
