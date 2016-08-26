@@ -15,9 +15,13 @@
 		if( typeof includeSpeakers !== 'undefined' ){
 			var speakersToInclude = includeSpeakers.split(',');
 			$.each( speakersToInclude, function( key, val ){
-				//val.thumbnailsOnly = thumbnailsOnly;
-				data[val]['thumbnailsOnly'] = thumbnailsOnly;
-				speakers[val] = data[val];
+				if( typeof data[val] == 'undefined' ){
+					console.log('Speaker `' + val + '` not found.');
+				} else {
+					data[val]['thumbnailsOnly'] = thumbnailsOnly;
+					speakers[val] = data[val];
+				}
+
 			});
 		} else {
 			var hideSession = false;
@@ -30,16 +34,27 @@
 				hideKeynote = true;
 			}
 
+			// Check for data-exclude-speakers=""
+			var excludeSpeakers = $(elem).attr('data-exclude-speakers');
+			if( typeof excludeSpeakers !== 'undefined' ){
+				var speakersToExclude = excludeSpeakers.split(',');
+			}
+
 			$.each( data, function( key, val ){
 				val.thumbnailsOnly = thumbnailsOnly;
 
-				if( true == hideSession && 'session' != val.type ){
-					speakers[key] = val;
-				} else if( true == hideKeynote && 'keynote' != val.type ){
-					speakers[key] = val;
-				} else if( false == hideSession && false == hideKeynote ) {
-					speakers[key] = val;
+				if( typeof speakersToExclude !== 'undefined' && ! $.inArray( key, speakersToExclude ) ){
+						return true;
+				} else {
+					if( true == hideSession && 'session' != val.type ){
+						speakers[key] = val;
+					} else if( true == hideKeynote && 'keynote' != val.type ){
+						speakers[key] = val;
+					} else if( false == hideSession && false == hideKeynote ) {
+						speakers[key] = val;
+					}
 				}
+
 			});
 		}
 
@@ -49,7 +64,6 @@
 				speakers[key]['widthHeight'] = ' width=\'' + thumbnailWidth + '\' height=\'' + thumbnailWidth + '\'';
 			});
 		}
-		console.log(speakers);
 
 		var cols = $(elem).attr('data-columns'); // Number of columns for display
 		var useColumns = false;
