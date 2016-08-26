@@ -36,3 +36,110 @@ h1{
 		}
 	}
 }
+
+/* Conference at a Glance
+-------------------------------------*/
+.conference-at-a-glance{
+	.day{
+		padding: 4px 8px;
+		margin-top: 40px;
+		background-color: @edgeburgundy;
+		color: #fff;
+	}
+	.time{
+		padding-bottom: 8px;
+		margin-top: 30px;
+		border-bottom: 1px solid lighten(@edgegray,50%);
+	}
+
+	h5 span{
+		background-color: @edgered;
+		color: #fff;
+		font-size: .75em;
+
+		display: inline-block;
+		border-radius: 50%;
+		@size: 30px;
+		height: @size;
+		width: @size;
+		line-height: @size;
+		text-align: center;
+
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	p{
+		font-size: 16px;
+
+		&.label{
+			font-family: @heading-font;
+			background-color: @edgered;
+			color: #fff;
+			padding: 0 16px;
+			border-left: 5px solid @edgegold;
+			margin: 0;
+			line-height: 2.2;
+			font-size: 20px;
+		}
+	}
+
+	.clearfix{
+		margin-bottom: 60px;
+
+		&.legend{
+			margin-bottom: -20px;
+		}
+	}
+	div.speakers{
+		.clearfix{
+			margin-bottom: 0;
+		}
+	}
+
+	.one-third,
+	.one-fourth{
+		&.blank{
+			background-color: lighten(@edgegray,60%);
+		}
+
+		&.blank,
+		.label{
+			height: 180px;
+		}
+		&.blank15,
+		.label15{
+			height: 45px;
+		}
+		&.blank30,
+		.label30{
+			height: 90px;
+		}
+		&.blank45,
+		.label45{
+			height: 135px;
+		}
+
+		.speaker{
+			text-align: left;
+
+			h3{
+				margin: 4px 0 4px 0;
+				line-height: 20px;
+				font-size: 16px;
+
+				a{
+					float: none;
+				}
+			}
+			img{
+				border-width: 3px;
+			}
+			p{
+				font-size: 14px;
+				line-height: 18px;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
