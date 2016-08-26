@@ -99,6 +99,7 @@ h1{
 
 	.one-third,
 	.one-fourth{
+
 		&.blank{
 			background-color: lighten(@edgegray,60%);
 		}
@@ -140,6 +141,31 @@ h1{
 				line-height: 18px;
 				margin-bottom: 0;
 			}
+		}
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.conference-at-a-glance{
+		.time{
+			font-size: 36px;
+		}
+		.one-fourth{
+			padding-bottom: 30px;
+			border-bottom: 1px solid lighten(@edgegray,50%);
+			margin-bottom: 50px;
+
+			&:last-child{
+				padding-bottom: 0;
+				border-bottom: 0;
+			}
+		}
+		.legend .one-fourth{
+			padding-bottom: 0;
+			margin-bottom: 0;
+			border-bottom: none;
+		}
+		div.blank{
+			display: none;
 		}
 	}
 }
