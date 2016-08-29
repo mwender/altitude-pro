@@ -52,7 +52,13 @@ h1{
 		border-bottom: 1px solid lighten(@edgegray,50%);
 	}
 
-	h5 span{
+	h6{
+		font-size: 16px;
+		margin: 4px 0;
+	}
+
+	h5 > span,
+	p.label > span{
 		background-color: @edgered;
 		color: #fff;
 		font-size: .75em;
@@ -70,17 +76,36 @@ h1{
 		box-sizing: border-box;
 	}
 	p{
+		margin-bottom: 16px;
+	}
+	p,
+	li{
 		font-size: 16px;
+	}
+	p.label{
+		font-family: @heading-font;
+		background-color: @edgered;
+		color: #fff;
+		padding: 0 10px;
+		border-left: 5px solid @edgegold;
+		margin: 0;
+		line-height: 2.2;
+		font-size: 20px;
+		height: 180px;
 
-		&.label{
-			font-family: @heading-font;
-			background-color: @edgered;
-			color: #fff;
-			padding: 0 16px;
-			border-left: 5px solid @edgegold;
-			margin: 0;
-			line-height: 2.2;
-			font-size: 20px;
+		&.label15{
+			height: 45px;
+		}
+		&.label30{
+			height: 90px;
+		}
+		&.label45{
+			height: 135px;
+		}
+
+		& > span{
+			background-color: #fff;
+			color: @edgered;
 		}
 	}
 
@@ -98,7 +123,8 @@ h1{
 	}
 
 	.one-third,
-	.one-fourth{
+	.one-fourth,
+	.clearfix{
 
 		&.blank{
 			background-color: lighten(@edgegray,60%);
@@ -123,9 +149,10 @@ h1{
 
 		.speaker{
 			text-align: left;
+			width: 100%;
 
 			h3{
-				margin: 4px 0 4px 0;
+				margin: 4px 0;
 				line-height: 20px;
 				font-size: 16px;
 
