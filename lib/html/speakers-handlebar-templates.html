@@ -6,6 +6,11 @@
           <h3><a href="#" class="speaker" data-speaker="{{key}}">{{name}}</a></h3>
           {{{taglineHtml}}}
         {{/unless}}
+        {{#if showAbstract}}
+          <h5>{{title}}</h5>
+          <div class="hidetext">{{{abstractHtml}}}</div>
+        <!--<div><a href="#" class="abstract button small" data-speaker="{{key}}">View abstract &rarr;</a></div>-->
+        {{/if}}
     </div>
 </script>
 <script id="emptycol-template" type="text/x-handlebars-template">
@@ -14,17 +19,27 @@
     </div>
 </script>
 <script id="overlay-template" type="text/x-handlebars-template">
-        <div class="speaker-overlay {{type}}" id="{{key}}">
-          <div class="clearfix">
-              <a href="#" class="close"></a>
-              <div class="one-third first">
-                  <img src="{{themeurl}}/images/speakers/{{photo}}" class="circle aligncenter" alt="">
-              </div>
-              <div class="two-thirds">
-              	<h2>{{name}}, <span>{{type}} Speaker</span></h2>
-				<h5>{{{taglineHtml}}}</h5>
-              	{{{bioHtml}}}
-          	</div>
-          </div>
+  <div class="speaker-overlay {{type}}" id="{{key}}">
+    <div class="clearfix">
+        <a href="#" class="close" data-speaker="{{key}}"></a>
+        <div class="one-third first">
+            <img src="{{themeurl}}/images/speakers/{{photo}}" class="circle aligncenter" alt="">
         </div>
+        <div class="two-thirds">
+        	<h2>{{name}}, <span>{{type}} Speaker</span></h2>
+  				<h5>{{{taglineHtml}}}</h5>
+        	{{{bioHtml}}}
+    	</div>
+    </div>
+  </div>
+</script>
+<script id="abstract-template" type="text/x-handlebars-template">
+  <div class="abstract-overlay {{type}}" id="{{key}}">
+    <div class="clearfix">
+      <a href="#" class="close" data-speaker="{{key}}"></a>
+      <h3>{{title}}</h3>
+      <h5>{{name}}, {{tagline}}</h5>
+      {{{abstractHtml}}}
+    </div>
+  </div>
 </script>
