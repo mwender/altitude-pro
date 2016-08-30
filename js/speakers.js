@@ -10,6 +10,10 @@
 		if( $(elem).hasClass('thumbnails') )
 			thumbnailsOnly = true;
 
+		var showAbstract = false;
+		if( $(elem).hasClass('abstract') )
+			showAbstract = true;
+
 		// Only show specified speakers
 		var includeSpeakers = $(elem).attr('data-speakers');
 		if( typeof includeSpeakers !== 'undefined' ){
@@ -19,6 +23,13 @@
 					console.log('Speaker `' + val + '` not found.');
 				} else {
 					data[val]['thumbnailsOnly'] = thumbnailsOnly;
+					data[val]['showAbstract'] = showAbstract;
+					if( true == showAbstract ){
+						var converter = new showdown.Converter(),
+					    abstract = data[val]['abstract'],
+					    abstractHtml = converter.makeHtml(abstract);
+					    data[val]['abstractHtml'] = abstractHtml;
+					}
 					speakers[val] = data[val];
 				}
 
@@ -42,10 +53,22 @@
 
 			$.each( data, function( key, val ){
 				val.thumbnailsOnly = thumbnailsOnly;
+				val.showAbstract = showAbstract;
+
+				if( true == showAbstract ){
+					var converter = new showdown.Converter(),
+				    abstract = val.abstract,
+				    abstractHtml = converter.makeHtml(abstract);
+				    val.abstractHtml = abstractHtml;
+				}
 
 				if( typeof speakersToExclude !== 'undefined' && ! $.inArray( key, speakersToExclude ) ){
 						return true;
 				} else {
+					if( typeof speakersToExclude !== 'undefined' && true == $.inArray( key, speakersToExclude ) ){
+						return true;
+					}
+
 					if( true == hideSession && 'session' != val.type ){
 						speakers[key] = val;
 					} else if( true == hideKeynote && 'keynote' != val.type ){
@@ -150,8 +173,36 @@
 	window.AddSpeakers = AddSpeakers;
 })(window, jQuery);
 
+(function(window,$){
+	var hideText = $.fn.hideText = function(textselector, strlen, moretext){
+    strlen = typeof strlen !== 'undefined' ? strlen : 100;
+    moretext = typeof moretext !== 'undefined' ? moretext : 'Read More';
+
+    var sections = $( textselector );
+    for(var i = 0; i < sections.length; i++ ){
+        var textToHide = $( sections[i] ).html();
+        var textToCheck = $( sections[i] ).text().substring(strlen);
+        if( '' == textToCheck )
+            continue;
+        var visibleText = $( sections[i] ).text().substring(0, strlen);
+
+        $( sections[i] )
+            .html(('<span class="visible-text">' + visibleText + '</span>') + ('<span class="hidden-text">' + textToHide + '</span>'))
+            .append('<span class="read-more">&hellip;[<a id="read-more" title="' + moretext + '" style="cursor: pointer;">' + moretext + '</a>]</spam>')
+            .click(function() {
+                $(this).find('span.hidden-text').toggle();
+                $(this).find('span.read-more').hide();
+                $(this).find('span.visible-text').hide();
+            });
+        $( sections[i] ).find( 'span.hidden-text' ).hide();
+    }
+  }
+  window.hideText = hideText;
+})(window, jQuery);
+
 jQuery(function($){
 	var speakerOverlayTemplate = Handlebars.compile( $('#overlay-template').html() );
+	var abstractOverlayTemplate = Handlebars.compile( $('#abstract-template').html() );
 
 	// Speaker photos and bios
 	$.getJSON(wpvars.dataurl + '?ver=' + wpvars.dataversion , function( data ){
@@ -159,6 +210,7 @@ jQuery(function($){
 		$('.speakers').each(function(){
 			AddSpeakers($(this), data);
 		});
+		hideText( 'div.hidetext', 200, 'More &darr;' );
 
 		// Show overlay on click for speaker thumbnails
 		$('.speakers').on('click', 'a.speaker', function(e){
@@ -180,12 +232,40 @@ jQuery(function($){
 			$('body').prepend( overlay ).addClass('noscroll');
 		});
 
+		// Show abstract overlay on click for `View abstract` link
+		$('.speakers').on('click', 'a.abstract', function(e){
+			e.preventDefault();
+			var speakerId = $(this).attr('data-speaker');
+			var speaker = data[speakerId];
+			speaker.themeurl = wpvars.themeurl;
+
+			// Convert markdown
+			var converter = new showdown.Converter(),
+		    abstract = speaker.abstract,
+		    abstractHtml = converter.makeHtml(abstract),
+		    tagline = speaker.tagline,
+		    taglineHtml = converter.makeHtml(tagline);
+		    speaker.abstractHtml = abstractHtml;
+		    speaker.taglineHtml = taglineHtml;
+
+		    var overlay = abstractOverlayTemplate( speaker );
+		    $('body').prepend( overlay ).addClass('noscroll');
+		});
+
 		$('body').on('click', 'a.close', function(e){
 			e.preventDefault();
-			var overlay = $(this).parents('div.speaker-overlay');
-			var speakerId = overlay.attr('id');
+			var speakerId = $(this).attr('data-speaker');
 			$('body').removeClass('noscroll');
-			$('.speaker-overlay#' +  speakerId ).remove();
+			$('#' +  speakerId ).remove();
+		});
+
+		$('body').on('click', '.abstract-overlay', function(e){
+			e.preventDefault();
+			if( e.target !== this )
+				return;
+
+			$('body').removeClass('noscroll');
+			$(this).remove();
 		});
 
 	}); // $.getJSON
