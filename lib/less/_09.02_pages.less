@@ -123,6 +123,13 @@ h1{
 	}
 
 	.one-third,
+	.one-fourth{
+		ul,ol{
+			margin-left: 20px;
+		}
+	}
+
+	.one-third,
 	.one-fourth,
 	.clearfix{
 
@@ -154,19 +161,23 @@ h1{
 			h3{
 				margin: 4px 0;
 				line-height: 20px;
-				font-size: 16px;
+				font-size: 20px;
 
 				a{
 					float: none;
+				}
+
+				& + p{
+					line-height: 18px;
 				}
 			}
 			img{
 				border-width: 3px;
 			}
-			p{
+			p,
+			.hidetext{
 				font-size: 14px;
-				line-height: 18px;
-				margin-bottom: 0;
+				line-height: 22px;
 			}
 		}
 	}

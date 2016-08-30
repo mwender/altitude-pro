@@ -79,6 +79,7 @@ Plugins
 	}
 }
 
+.abstract-overlay,
 .speaker-overlay,
 .lightbox-overlay {
     position: fixed;
@@ -107,6 +108,14 @@ Plugins
 					p:last-of-type{
 						margin-bottom: 0;
 					}
+				}
+			}
+
+			ol{
+				margin-left: 30px;
+
+				li{
+					list-style-type: decimal;
 				}
 			}
 
@@ -148,19 +157,24 @@ Plugins
 
 		.close{
 			display: block;
-		    height: 56px;
-		    line-height: 56px;
-		    position: absolute;
-		    right: 20px;
-		    top: 20px;
+	    height: 56px;
+	    line-height: 56px;
+	    position: absolute;
+	    right: 20px;
+	    top: 20px;
+	    margin-left: 20px;
 
-		    &:before{
-					font-family: 'Dashicons';
-					content: "\f153";
-					font-size: 56px;
-				    cursor: pointer;
-				}
+	    &:before{
+				font-family: 'Dashicons';
+				content: "\f153";
+				font-size: 56px;
+			    cursor: pointer;
+			}
 		}
+}
+
+.abstract-overlay h3{
+	margin-right: 20px;
 }
 
 .lightbox-overlay{
@@ -182,20 +196,25 @@ Plugins
 }
 
 @media only screen and (max-width: 1024px) {
-    .speaker-overlay{
+    .speaker-overlay,
+    .abstract-overlay{
         background-color: #fff;
     }
 
     .speaker-overlay .clearfix:first-child,
-    .speaker-overlay .clearfix:last-child{
+    .speaker-overlay .clearfix:last-child,
+    .abstract-overlay .clearfix:first-child,
+    .abstract-overlay .clearfix:last-child{
         margin: 0;
     }
 
-    .speaker-overlay .clearfix{
+    .speaker-overlay .clearfix,
+    .abstract-overlay .clearfix{
         padding: 0 20px 0 20px;
     }
 
-    .speaker-overlay .clearfix p{
+    .speaker-overlay .clearfix p
+    .abstract-overlay .clearfix p{
         font-size: .9em;
     }
 
