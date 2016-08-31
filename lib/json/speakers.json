@@ -22,7 +22,9 @@
 		"type": "session",
 		"tagline": "Cellular Sales, Information Technology Business Manager",
 		"photo": "speaker-default.600x600.png",
-		"bio": "Bio coming soon."
+		"bio": "Bio coming soon.",
+		"title": "PCI Point-to-Point Encryption (P2PE) in a Large Retail Environment ",
+		"abstract": "Many organizations that process credit card information are moving to point-2-point encryption to reduce risk and create a more secure payment processing environment. This not only reduces data breach risks to the organization but also helps to better protect consumer privacy. This session will present attendees with a case study on how one organization rolled out an enterprise–wide P2PE implementation."
 	},
 	"karen-clark": {
 		"name": "Karen Clark",
@@ -48,7 +50,7 @@
 		"tagline": "LBMC, Senior Manager of Information Services Division",
 		"photo": "bill-dean.600x600.jpg",
 		"bio": "Bill is a Senior Manager in LBMC's Information Security Services division and is responsible for incident response, digital forensics, electronic discovery and overall litigation support. Bill has more than 20 years of information technology experience with a specialty in information security and digital forensics for the past 10 years.\n\nPrior to LBMC, he served as the Director of Security Assessments and Digital Forensics for Sword & Shield Enterprise Security Inc. Bill was also the founder of Forensic Discoveries, before merging with Sword & Shield Enterprise Security and served as a senior security analyst responsible for information security for a large healthcare organization. In these roles, he was responsible for digital forensics to support litigation, incident response services, penetration testing, and overall security defense posture. In these roles, he has been qualified as an expert witness in Federal Courts and Tennessee State Courts.\n\nBill is a frequent speaker and published author on the topics of computer security, digital forensics and electronic discovery for numerous legal and technical associations. Additionally, Bill is a faculty member for the Institute for Applied Network Security (IANS), is a Certified Computer Examiner (CCE), GIAC Certified Incident Handler (GCIH), GIAC Certified Penetration Tester (GPEN) and GIAC Certified Forensic Analyst (GCFA). He is also an active member of the International Society for Forensic Computer Examiners and InfraGard Board member. Bill was awarded Knoxville’s \"40 under 40\" business leaders class of 2014. Bill holds an A.S. in Computer Science from Walters State Community College and a BS in Information Technology from Information Technology.",
-		"title": "IR Tabletop Session",
+		"title": "Incident Response Tabletop Session",
 		"abstract": "It is time for organizations to evolve from incident response policies and plans to something that adds more value than a \"checkbox\". This is achieved by performing tabletop exercises to improve your incident response capabilities. This session will provide an overview on developing and performing tabletop exercises. You will actually spend the majority of the time participating in a tabletop exercise to get the \"feel\" for the process. "
 	},
 	"joshua-eldridge": {
@@ -78,6 +80,15 @@
 		"title": "The Global Cyber & Information Security Threat and the Role of U.S National Laboratories",
 		"abstract": "This talk will discuss the role the U.S. national research laboratory system in tackling grand challenge problems in cyber and information security. National laboratories fill a unique niche between academic institutions and industry by playing a key role in the transition of novel cyber and information security technology from theory/experiment to operational environments. Laboratories perform research and development in cyber and information security science and deploy state-of-the-art tools via several mechanisms to include:\n\n1. Operational systems for government agencies,\n\n2. Fieldable prototypes for proof-of-principle demonstrations, and\n\n3. Transfer of technology to the private sector.\n\nThis talk will describe this science and technology lifecycle and will include few specific examples from Oak Ridge National Laboratory of novel technology development and deployment in the areas of (a) malware detection/diagnosis, (b) data security, and (c) the use of shadow networks in the war against cyber threats."
 	},
+	"graham-holmes": {
+		"name": "Graham Holmes",
+		"type": "session",
+		"tagline": "Cisco, Director Advanced Security Initiatives Group",
+		"photo": "graham-holmes.600x600.jpg",
+		"bio": "Coming soon.",
+		"title": "Advanced Security",
+		"abstract": "Graham Holmes will be discussing industry perspectives on current trends in attack evolution on network devices and cloud systems; effectiveness of leveraging attack focused evaluations, such as red-teaming and pen-testing, to identify security weaknesses and vulnerabilities. Attendees will come away with a better understanding of how to stay ahead of these emerging threats."
+	},
 	"chris-mccarty": {
 		"name": "Chris McCarty",
 		"type": "session",
@@ -87,6 +98,15 @@
 		"title": "After the Breach: Providing Notice and Minimizing Liability",
 		"abstract": "We live in a world where questions regarding a possible breach have moved from “if” to “when.” In stepping away from the technical side, Mr. McCarty will discuss what steps your companies and/or clients must take to properly notify customers of a breach. The discussion will then turn to identifying and minimizing the associated liabilities of that breach (e.g., fines, penalties, lawsuits, etc.)."
 	},
+	"observeit": {
+		"name": "ObserveIT",
+		"type": "session",
+		"tagline": "Vendor Session",
+		"photo": "sponsors.observeit.600x600.png",
+		"bio": "",
+		"title": "Insider Threat",
+		"abstract": "Bad user judgement and bad user behavior puts organizations at risk. This session will examine many of the factors that lead to security incidents and exposure to organizations; challenges with security monitoring of users; and effective strategies and solutions for identifying and eliminating insider threats."
+	},
 	"david-parker": {
 		"name": "David Parker",
 		"type": "session",
@@ -94,7 +114,7 @@
 		"photo": "david-parker.600x600.jpg",
 		"bio": "David Parker has been with Eastman Chemical Company for 28 years. He has spent 21 years in various areas of Information Technology ranging from Systems Analyst responsibilities to his current  role as Supervisor, Security Architecture.\n\nPrior to Information Technology, David also spent nearly three years in Corporate Auditing where he gained insight into the business. This increased knowledge led to the realization of a need for a  focus on global cyber security.\n\nDavid has been in his current role for three years and has developed a passion for cyber security and the improvement of Eastman’s global cyber security posture. He has forged a strong partnership with a local university to begin building a cyber security curriculum and has become an excellent source of talent.",
 		"title": "Vulnerability Management Round Table",
-		"abstract": "David’s presentation about Vulnerability Management shall include:\n\n- Understanding the need for a Vulnerability Management program\n\n- Creating a vision for Vulnerability Management\n\n- Journey to implement that vision\n\n- Next steps in our journey"
+		"abstract": "David will lead a roundtable discussion on building an effective vulnerability management program. Key points of discussion will include:\n\n- Understanding the need for a Vulnerability Management program\n\n- Creating a vision for Vulnerability Management\n\n- Journey to implement that vision\n\n- Next steps in our journey\n\nWith a targeted 30% facilitator/70% attendee content mix, the objective is to learn from the experiences of your colleagues. While attending to simply listen will provide value, the significance of these sessions lies in the information sharing related to the successes and challenges from peers."
 	},
 	"chris-poulin": {
 		"name": "Chris Poulin",
@@ -128,7 +148,9 @@
 		"type": "session",
 		"tagline": "Covenant Health, Information Security Officer",
 		"photo": "bob-wilson.600x600.jpg",
-		"bio": "*Bio coming soon.*"
+		"bio": "*Bio coming soon.*",
+		"title": "3rd Party Vendor Risk Management",
+		"abstract": "This session will share experiences on successfully developing a 3rd party management system to help reduce risks in the supply chain. As is often seen in post-data breach analysis, vulnerabilities introduced into an organization through 3rd party vendor access is a leading attack vector for hackers. Attendees will come away with better insight and understanding into how 3rd party vendor risk and vulnerability can be reduced or eliminated."
 	},
 	"betsy-woudenberg": {
 		"name": "Betsy Woudenberg",

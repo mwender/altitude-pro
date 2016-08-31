@@ -47,7 +47,7 @@
 
 			// Check for data-exclude-speakers=""
 			var excludeSpeakers = $(elem).attr('data-exclude-speakers');
-			if( typeof excludeSpeakers !== 'undefined' ){
+			if( typeof excludeSpeakers != 'undefined' ){
 				var speakersToExclude = excludeSpeakers.split(',');
 			}
 
@@ -62,13 +62,9 @@
 				    val.abstractHtml = abstractHtml;
 				}
 
-				if( typeof speakersToExclude !== 'undefined' && ! $.inArray( key, speakersToExclude ) ){
+				if( typeof speakersToExclude != 'undefined' && -1 != $.inArray( key, speakersToExclude ) ){
 						return true;
 				} else {
-					if( typeof speakersToExclude !== 'undefined' && true == $.inArray( key, speakersToExclude ) ){
-						return true;
-					}
-
 					if( true == hideSession && 'session' != val.type ){
 						speakers[key] = val;
 					} else if( true == hideKeynote && 'keynote' != val.type ){
@@ -174,9 +170,10 @@
 })(window, jQuery);
 
 (function(window,$){
-	var hideText = $.fn.hideText = function(textselector, strlen, moretext){
+	var hideText = $.fn.hideText = function(textselector, strlen, moretext, lesstext){
     strlen = typeof strlen !== 'undefined' ? strlen : 100;
     moretext = typeof moretext !== 'undefined' ? moretext : 'Read More';
+    lesstext = typeof lesstext !== 'undefined' ? lesstext : 'Read Less';
 
     var sections = $( textselector );
     for(var i = 0; i < sections.length; i++ ){
@@ -187,12 +184,12 @@
         var visibleText = $( sections[i] ).text().substring(0, strlen);
 
         $( sections[i] )
-            .html(('<span class="visible-text">' + visibleText + '</span>') + ('<span class="hidden-text">' + textToHide + '</span>'))
+            .html(('<span class="visible-text" style="cursor: pointer;">' + visibleText + '</span>') + ('<span class="hidden-text">' + textToHide + '[<a id="read-less" style="cursor: pointer;">' + lesstext + '</a>]</span>'))
             .append('<span class="read-more">&hellip;[<a id="read-more" title="' + moretext + '" style="cursor: pointer;">' + moretext + '</a>]</spam>')
             .click(function() {
                 $(this).find('span.hidden-text').toggle();
-                $(this).find('span.read-more').hide();
-                $(this).find('span.visible-text').hide();
+                $(this).find('span.read-more').toggle();
+                $(this).find('span.visible-text').toggle();
             });
         $( sections[i] ).find( 'span.hidden-text' ).hide();
     }
@@ -210,7 +207,7 @@ jQuery(function($){
 		$('.speakers').each(function(){
 			AddSpeakers($(this), data);
 		});
-		hideText( 'div.hidetext', 200, 'More &darr;' );
+		hideText( 'div.hidetext', 200, 'More &darr;', 'Less &uarr;' );
 
 		// Show overlay on click for speaker thumbnails
 		$('.speakers').on('click', 'a.speaker', function(e){
@@ -260,6 +257,15 @@ jQuery(function($){
 		});
 
 		$('body').on('click', '.abstract-overlay', function(e){
+			e.preventDefault();
+			if( e.target !== this )
+				return;
+
+			$('body').removeClass('noscroll');
+			$(this).remove();
+		});
+
+		$('body').on('click', '.speaker-overlay', function(e){
 			e.preventDefault();
 			if( e.target !== this )
 				return;

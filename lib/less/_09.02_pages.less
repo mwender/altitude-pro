@@ -37,15 +37,37 @@ h1{
 	}
 }
 
-/* Conference at a Glance
+/* Conference Agenda
 -------------------------------------*/
-.conference-at-a-glance{
+@daytop: 103px;
+@legendtop: 146px;
+.conference-agenda{
 	.day{
 		padding: 4px 8px;
-		margin-top: 40px;
-		background-color: @edgeburgundy;
+		margin: 40px 0 20px;
+		background-color: @edgemaron;
 		color: #fff;
+
+		h3{
+			margin: 0 auto;
+			max-width: 1200px;
+
+		}
+
+		&.fixed{
+			position: fixed;
+			margin: 0;
+			width: 100%;
+			top: @daytop;
+			left: 0;
+			z-index: 99999;
+		}
 	}
+
+	&.admin-bar .day.fixed{
+		top: @daytop + 32px;
+	}
+
 	.time{
 		padding-bottom: 8px;
 		margin-top: 30px;
@@ -77,6 +99,10 @@ h1{
 	}
 	p{
 		margin-bottom: 16px;
+	}
+	h5 + p,
+	h5 + .hidetext{
+		margin-top: -12px;
 	}
 	p,
 	li{
@@ -111,11 +137,35 @@ h1{
 
 	.clearfix{
 		margin-bottom: 60px;
+	}
+	.legend .clearfix{
+		margin-bottom: -20px;
+	}
+	.legend{
+		&.fixed{
+			position: fixed;
+			left: 0;
+			top: @legendtop;
+			width: 100%;
+			background-color: rgba(255,255,255,0.95);
+			padding: 10px 0;
+			border-bottom: 3px solid @edgered;
 
-		&.legend{
-			margin-bottom: -20px;
+			& > .clearfix{
+				max-width: 1200px;
+				margin: 0 auto;
+
+				h5{
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
+
+	&.admin-bar .legend.fixed{
+		top: @legendtop + 32px;
+	}
+
 	div.speakers{
 		.clearfix{
 			margin-bottom: 0;
@@ -204,6 +254,58 @@ h1{
 		}
 		div.blank{
 			display: none;
+		}
+	}
+}
+@media only screen and (max-width: 1280px){
+	.conference-agenda{
+		.day.fixed h3,
+		.legend.fixed > .clearfix{
+			max-width: 1140px;
+		}
+	}
+}
+@media only screen and (max-width: 1200px){
+	.conference-agenda{
+		.day.fixed h3,
+		.legend.fixed > .clearfix{
+			max-width: 960px;
+		}
+	}
+}
+@media only screen and (max-width: 1023px){
+	.conference-agenda{
+		.day.fixed{
+			top: 0;
+		}
+		.legend .clearfix .one-fourth{
+			margin-bottom: 0;
+		}
+		.legend.fixed{
+			top: 44px;
+
+			.clearfix{
+				.one-fourth{
+					margin-bottom: 6px;
+				}
+			}
+		}
+		.day.fixed h3,
+		.legend.fixed > .clearfix{
+			max-width: 768px;
+		}
+
+		.one-fourth{
+			margin-bottom: 40px;
+		}
+
+		&.admin-bar{
+			.day.fixed{
+				top: 32px;
+			}
+			.legend.fixed{
+				top: 72px;
+			}
 		}
 	}
 }

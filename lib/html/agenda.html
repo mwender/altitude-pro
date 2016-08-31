@@ -1,15 +1,63 @@
+<style type="text/css">
+	.agenda-wrapper{
+		background-image: url({themedir}images/edge2016-full-agenda.1110x1835.png);
+		background-size: 97%;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 555px;
+		height: 918px;
+	}
+	.agenda-cover{
+		background-color: rgba(0,0,0,0.65);
+		width: 100%;
+		height: 100%;
+		border-radius: 3px;
+		padding-top: 260px;
+	}
+	.agenda-cover h2{
+		color: #fff;
+		text-align: center;
+		background-color: rgba(232,75,60,0.4);
+		width: 350px;
+		padding: 20px;
+		border-radius: 5px;
+		display: block;
+		margin: 0 auto;
+	}
+	.agenda-cover h2 span.dashicon{
+		font-family: 'dashicons';
+		font-size: 180px;
+		display: block;
+	}
+	.agenda-cover h2 span.dashicon.dashicon-search:before{
+		content: "\f179";
+	}
+	.agenda-cover:hover{
+		cursor: pointer;
+		background-color: rgba(232,75,60,0.4);
+	}
+	.agenda-cover:hover h2{
+		background-color: rgba(0,0,0,0.35);
+	}
+</style>
 <h1>Agenda</h1>
+<div class="alert alert-edge2016">
+    <div class="clearfix">
+        <div class="two-thirds first" style="text-align: left;">
+            <h3 style="text-align: left; margin: 0 0 6px 0;">View the Complete Agenda</h3> The EDGE2016 Conference agenda is now available.</div>
+        <div class="one-third" style="text-align: right;"><a href="/conference-agenda" class="button" style="margin: 0; font-size: 20px; white-space: nowrap;">View Complete Agenda</a></div>
+    </div>
+</div>
 <div class="one-half first">
-    <p>Detailed session information will be posted as speakers are confirmed. Here's what you can expect to experience at EDGE2016.</p>
+    <p>Here's what you can expect to experience at EDGE2016:</p>
     <div class="speakers keynote thumbnails" data-columns="2"></div>
     <p><strong><a href="/agenda/keynotes">Keynote Speakers</a></strong> &ndash; You will have the opportunity to hear two compelling keynote addresses from some of the brightest minds within the information security community.</p>
-    <div class="speakers session thumbnails" data-columns="4" data-exclude-speakers="justin-boernhoeft"></div>
+    <div class="speakers session thumbnails" data-columns="4" data-exclude-speakers="justin-boernhoeft,bob-wilson,graham-holmes,observeit"></div>
     <p><strong><a href="/agenda/tracks">Track Sessions</a></strong> &ndash; There will be specific discussions and topical sessions led by industry experts on the latest trends in information security and actionable advice for your organization.</p>
     <hr />
     <div class="alert alert-success"><strong>Continuing Education Credits</strong><br>Attendees will receive up to 16 CPE, CLP, or CME credits and up to 1.6 CEU credits.</div>
 </div>
 <div class="one-half">
-    <h4>Day 1 &ndash; Tuesday, October 18, 2016</h4> [table id=1 /]
-    <h4>Day 2 &ndash; Wednesday, October 19, 2016</h4> [table id=2 /]
+	<a href="/conference-agenda"><div class="agenda-wrapper"><div class="agenda-cover"><h2><span class="dashicon dashicon-search"></span>View the<br />complete agenda</h2></div></div></a>
 </div>
 <div class="clearfix"></div>

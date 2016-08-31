@@ -37,7 +37,7 @@ function altitude_enqueue_scripts_styles() {
 	$font_families[] = 'Merriweather:400,700';
 	wp_enqueue_style( 'altitude-google-fonts', '//fonts.googleapis.com/css?family=' . implode( '|', $font_families ), array(), CHILD_THEME_VERSION );
 
-	$speakersjs_pages = ['speakers','tracks','agenda','conference-at-a-glance'];
+	$speakersjs_pages = ['speakers','tracks','agenda','conference-agenda'];
 	if( is_page( $speakersjs_pages ) || is_front_page() ){
 		wp_enqueue_script( 'handlebars', get_bloginfo( 'stylesheet_directory' ) . '/js/handlebars-v4.0.5.js', null, filemtime( get_stylesheet_directory() . '/js/handlebars-v4.0.5.js' ) );
 		wp_enqueue_script( 'showdown', 'https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.2/showdown.min.js', null, '1.4.2' );
@@ -47,6 +47,10 @@ function altitude_enqueue_scripts_styles() {
 			$templates = file_get_contents( get_stylesheet_directory() . '/lib/html/speakers-handlebar-templates.html' );
 			echo $templates;
 		});
+	}
+
+	if( is_page( 'conference-agenda' ) ){
+		wp_enqueue_script( 'waypoints', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.waypoints.min.js', array( 'jquery' ), filemtime( get_stylesheet_directory() . '/js/jquery.waypoints.min.js' ) );
 	}
 
 }

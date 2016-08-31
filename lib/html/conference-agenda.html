@@ -1,11 +1,48 @@
+<script type="text/javascript">
+	jQuery(function($){
+
+		var tueWaypoints = $('#tuesday-date').waypoint({
+			handler: function(direction){
+				if( 'down' == direction ){
+					$(this.element).addClass('fixed');
+					$('#tuesday-legend').addClass('fixed');
+				} else if( 'up' == direction ){
+					$(this.element).removeClass('fixed');
+					$('#tuesday-legend').removeClass('fixed');
+				}
+			},
+			offset: 80
+		});
+
+		var wedWaypoints = $('#wednesday-date').waypoint({
+			handler: function(direction){
+				if( 'down' == direction ){
+					$(this.element).addClass('fixed');
+					$('#wednesday-legend').addClass('fixed');
+					$('#tuesday-date').removeClass('fixed');
+					$('#tuesday-legend').removeClass('fixed');
+				} else if( 'up' == direction ){
+					$(this.element).removeClass('fixed');
+					$('#wednesday-legend').removeClass('fixed');
+					$('#tuesday-date').addClass('fixed');
+					$('#tuesday-legend').addClass('fixed');
+				}
+			},
+			offset: 290
+		});
+
+	});
+</script>
 <div class="wrap">
-	<h2>Conference Agenda</h2>
-	<h3 class="day">Tuesday, October 18, 2016</h3>
-	<div class="clearfix legend">
-		<div class="one-fourth first"><h5><span>SB</span> &ndash; Summit Ballroom</h5></div>
-		<div class="one-fourth"><h5><span>A</span> &ndash; Salon A</h5></div>
-		<div class="one-fourth"><h5><span>C</span> &ndash; Salon C</h5></div>
-		<div class="one-fourth"><h5><span>MR</span> &ndash; Mahogany Room</h5></div>
+	<h1><a href="/agenda">Agenda</a><span class="dashicons dashicons-arrow-right-alt2"></span>Complete Agenda</h1>
+	<div class="day" id="tuesday-date"><h3>Tuesday, October 18, 2016</h3></div>
+	<div class="legend" id="tuesday-legend">
+		<div class="clearfix">
+			<div class="one-fourth first"><h5><span>SB</span> &ndash; Summit Ballroom</h5></div>
+			<div class="one-fourth"><h5><span>A</span> &ndash; Salon A</h5></div>
+			<div class="one-fourth"><h5><span>C</span> &ndash; Salon C</h5></div>
+			<div class="one-fourth"><h5><span>MR</span> &ndash; Mahogany Room</h5></div>
+		</div>
 	</div>
 	<h4 class="time">8:00 &ndash; 9:00AM</h4>
 	<div class="clearfix">
@@ -19,7 +56,7 @@
 	<h5><span>SB</span> Keynote Speaker</h5>
 	<div class="clearfix">
 		<div class="one-third first">
-			<div class="speakers float" data-speakers="theresa-payton" data-width="150"></div>
+			<div class="speakers float" data-speakers="theresa-payton" data-width="180"></div>
 		</div>
 		<div class="two-thirds">
 
@@ -40,9 +77,15 @@
 		<p class="label label15">Break</p>
 	</div>
 	<h4 class="time">10:45 &ndash; 11:45AM</h4>
+	<h5><span>SB</span> General Session #1</h5>
 	<div class="clearfix">
-		<h5><span>SB</span> General Session #1</h5>
-		<p><strong>Cisco SVP</strong></p>
+		<div class="one-third first">
+			<div class="speakers float" data-speakers="graham-holmes" data-width="180"></div>
+		</div>
+		<div class="two-thirds">
+			<h5>Advanced Security</h5>
+			<p>Holmes will be discussing industry perspectives on current trends in attack evolution on network devices and cloud systems; effectiveness of leveraging attack focused evaluations, such as red-teaming and pen-testing, to identify security weaknesses and vulnerabilities. Attendees will come away with a better understanding of how to stay ahead of these emerging threats.</p>
+		</div>
 	</div>
 	<h4 class="time">11:45AM &ndash; 12:30PM</h4>
 	<div class="clearfix">
@@ -64,10 +107,11 @@
 		</div>
 		<div class="one-fourth">
 			<h5><span>C</span> Track Session #1</h5>
-			<div class="speakers float" data-speakers="justin-boernhoeft" data-width="100"></div>
+			<div class="speakers float abstract" data-speakers="justin-boernhoeft" data-width="100"></div>
 		</div>
 		<div class="one-fourth">
 			<h5><span>MR</span> Track Session #1</h5>
+			<div class="speakers float abstract" data-speakers="observeit" data-width="100"></div>
 		</div>
 	</div>
 	<h4 class="time">2:15 &ndash; 2:30PM</h4>
@@ -82,7 +126,7 @@
 		</div>
 		<div class="one-fourth">
 			<h5><span>A</span> Track Session #2</h5>
-			<p><strong>HIPAA OCR Updates</strong></p>
+			<p><strong>To Be Announced</strong></p>
 		</div>
 		<div class="one-fourth">
 			<h5><span>C</span> Track Session #2</h5>
@@ -108,14 +152,15 @@
 	</div>
 	<!-- END DAY 1 -->
 
-	<h3 class="day">Wednesday, October 19, 2016</h3>
-	<div class="clearfix legend">
-		<div class="one-fourth first"><h5><span>SB</span> &ndash; Summit Ballroom</h5></div>
-		<div class="one-fourth"><h5><span>A</span> &ndash; Salon A</h5></div>
-		<div class="one-fourth"><h5><span>C</span> &ndash; Salon C</h5></div>
-		<div class="one-fourth"><h5><span>MR</span> &ndash; Mahogony Room</h5></div>
+	<div class="day" id="wednesday-date"><h3>Wednesday, October 19, 2016</h3></div>
+	<div class="legend" id="wednesday-legend">
+		<div class="clearfix">
+			<div class="one-fourth first"><h5><span>SB</span> &ndash; Summit Ballroom</h5></div>
+			<div class="one-fourth"><h5><span>A</span> &ndash; Salon A</h5></div>
+			<div class="one-fourth"><h5><span>C</span> &ndash; Salon C</h5></div>
+			<div class="one-fourth"><h5><span>MR</span> &ndash; Mahogony Room</h5></div>
+		</div>
 	</div>
-
 	<h4 class="time">8:00 &ndash; 9:00AM</h4>
 	<div class="clearfix">
 		<p class="label"><span>SB</span> Sponsored Breakfast</p>
@@ -181,7 +226,7 @@
 		</div>
 		<div class="one-fourth">
 			<h5><span>MR</span> Track Session #3</h5>
-			<p><strong>Vendor Session #2</strong></p>
+			<p><strong>To Be Announced</strong></p>
 		</div>
 	</div>
 
@@ -202,7 +247,7 @@
 		</div>
 		<div class="one-fourth">
 			<h5><span>C</span> Track Session #4</h5>
-			<div class="speakers float" data-speakers="bob-wilson" data-width="100"></div>
+			<div class="speakers float abstract" data-speakers="bob-wilson" data-width="100"></div>
 		</div>
 		<div class="one-fourth">
 			<h5><span>MR</span> Track Session #4</h5>
