@@ -98,12 +98,12 @@
 		"title": "After the Breach: Providing Notice and Minimizing Liability",
 		"abstract": "We live in a world where questions regarding a possible breach have moved from “if” to “when.” In stepping away from the technical side, Mr. McCarty will discuss what steps your companies and/or clients must take to properly notify customers of a breach. The discussion will then turn to identifying and minimizing the associated liabilities of that breach (e.g., fines, penalties, lawsuits, etc.)."
 	},
-	"observeit": {
-		"name": "ObserveIT",
+	"michael-mckee": {
+		"name": "Michael McKee",
 		"type": "session",
-		"tagline": "Vendor Session",
-		"photo": "sponsors.observeit.600x600.png",
-		"bio": "",
+		"tagline": "ObserveIT, CEO",
+		"photo": "michael-mckee.600x600.jpg",
+		"bio": "Mike brings almost 20 years of cross-functional, global experience in the technology industry to ObserveIT. Prior to [ObserveIT](http://www.observeit.com/), Mike led the award-winning Global Services and Customer Success organizations at Rapid7, a security data and analytics company that went public (RPD) in July 2015.\n\nMike's prior positions include Senior Vice President, CAD Operations & Strategy, at PTC, Inc., a software company, Chief Financial Officer at HighWired.com, an e-commerce solution provider, and Associate/Analyst roles at Broadview Associates, Ltd., McKinsey & Company and Goldman Sachs. Mike also played professional hockey for the Quebec Nordiques (now the Colorado Avalanche). Mike received a B.A. in economics and politics, cum laude, from Princeton University and a M.B.A., with honors, from Harvard Business School.",
 		"title": "Insider Threat",
 		"abstract": "Bad user judgement and bad user behavior puts organizations at risk. This session will examine many of the factors that lead to security incidents and exposure to organizations; challenges with security monitoring of users; and effective strategies and solutions for identifying and eliminating insider threats."
 	},
