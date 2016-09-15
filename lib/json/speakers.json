@@ -104,8 +104,8 @@
 		"tagline": "ObserveIT, CEO",
 		"photo": "michael-mckee.600x600.jpg",
 		"bio": "Mike brings almost 20 years of cross-functional, global experience in the technology industry to ObserveIT. Prior to [ObserveIT](http://www.observeit.com/), Mike led the award-winning Global Services and Customer Success organizations at Rapid7, a security data and analytics company that went public (RPD) in July 2015.\n\nMike's prior positions include Senior Vice President, CAD Operations & Strategy, at PTC, Inc., a software company, Chief Financial Officer at HighWired.com, an e-commerce solution provider, and Associate/Analyst roles at Broadview Associates, Ltd., McKinsey & Company and Goldman Sachs. Mike also played professional hockey for the Quebec Nordiques (now the Colorado Avalanche). Mike received a B.A. in economics and politics, cum laude, from Princeton University and a M.B.A., with honors, from Harvard Business School.",
-		"title": "Insider Threat",
-		"abstract": "Bad user judgement and bad user behavior puts organizations at risk. This session will examine many of the factors that lead to security incidents and exposure to organizations; challenges with security monitoring of users; and effective strategies and solutions for identifying and eliminating insider threats."
+		"title": "How to Build an Insider Threat Program in 30 minutes",
+		"abstract": "People are the core of your business, but they are also responsible for 90% of security incidents. There is no patch for people. To reduce the likelihood of insider threats, you need the right people, process and technology to make it happen. After this presentation, you will know:\n\n- Terminology – what are the buzzwords (Insider Threat)\n\n- People – who needs to be involved to make it happen (exec team, legal, HR, etc.)\n\n- Process – how do you operationalize an insider threat program\n\n- Technology— how Insider Threat Management solutions work (ObserveIT)"
 	},
 	"david-parker": {
 		"name": "David Parker",
