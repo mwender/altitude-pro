@@ -437,6 +437,58 @@ input[type="search"]::-webkit-search-results-button {
 	color: #000;
 }
 
+.button{
+	&.wide{
+		width: 100%;
+	}
+
+	&:hover{
+		.icon{
+			color: #fff;
+			background-color: #000;
+		}
+	}
+
+	.icon{
+		background-color: #fff;
+		color: @edgered;
+		padding: 2px;
+		display: block;
+		float: right;
+		border-radius: 10%;
+		font-family: 'genericons';
+		font-size: 18px;
+		line-height: 1;
+
+		&.doc{
+
+			&:before{
+				font-family: 'dashicons';
+				content: '\f491';
+			}
+		}
+
+		&.schedule{
+			padding: 0;
+
+			&:before{
+				content: '\f307';
+				margin-left: 2px;
+				font-size: 24px;
+			}
+		}
+		&.ticket{
+			padding-bottom: 4px;
+
+			&:before{
+				font-family: 'dashicons';
+				content: '\f524';
+				margin-left: 3px;
+			}
+		}
+	}
+}
+
 /* Tables
 -------------------------------------------------- */
 table{
