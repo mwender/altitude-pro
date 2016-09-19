@@ -113,6 +113,38 @@
 			width: 100%;
 		}
 	}
+
+	@sponsor-size: 60px;
+	div.sponsors{
+		img{
+			max-width: @sponsor-size;
+			max-height: @sponsor-size;
+			background-color: #fff;
+			padding: 2px;
+			border: 1px solid #eee;
+			-webkit-filter: grayscale(80%);
+			filter: grayscale(80%);
+
+			&:hover{
+				-webkit-filter: grayscale(0%);
+				filter: grayscale(0%);
+				cursor: pointer;			}
+
+			&.alignleft{
+				margin: 0 10px 10px 0;
+			}
+
+			&.diamond{
+				border-color: #b9f2ff;
+			}
+			&.silver{
+				border-color: #e7e7e7;
+			}
+			&.bronze{
+				border-color: #A57164;
+			}
+		}
+	}
 }
 
 
