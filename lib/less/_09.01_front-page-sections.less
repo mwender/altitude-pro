@@ -121,10 +121,11 @@
 			max-height: @sponsor-size;
 			background-color: #fff;
 			padding: 2px;
-			border: 1px solid #eee;
+			border: 2px solid #eee;
+			/*
 			-webkit-filter: grayscale(80%);
 			filter: grayscale(80%);
-
+			*/
 			&:hover{
 				-webkit-filter: grayscale(0%);
 				filter: grayscale(0%);
@@ -136,9 +137,13 @@
 
 			&.diamond{
 				border-color: #b9f2ff;
+				max-width: @sponsor-size + 30px;
+				max-height: @sponsor-size + 30px;
 			}
 			&.silver{
 				border-color: #e7e7e7;
+				max-width: @sponsor-size + 15px;
+				max-height: @sponsor-size + 15px;
 			}
 			&.bronze{
 				border-color: #A57164;
