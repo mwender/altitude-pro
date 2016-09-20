@@ -107,6 +107,15 @@
 		"title": "How to Build an Insider Threat Program in 30 minutes",
 		"abstract": "People are the core of your business, but they are also responsible for 90% of security incidents. There is no patch for people. To reduce the likelihood of insider threats, you need the right people, process and technology to make it happen. After this presentation, you will know:\n\n- Terminology – what are the buzzwords (Insider Threat)\n\n- People – who needs to be involved to make it happen (exec team, legal, HR, etc.)\n\n- Process – how do you operationalize an insider threat program\n\n- Technology— how Insider Threat Management solutions work (ObserveIT)"
 	},
+	"chris-meystrik": {
+		"name": "Chris Meystrik",
+		"type": "session",
+		"tagline": "Jewelry Television, Chief Technology Officer",
+		"photo": "chris-meystrik.600x600.jpg",
+		"bio": "As Chief Technology Officer at Jewelry Television, Chris is responsible for the digital retail network’s technology roadmap, a roadmap that ensures JTV keeps pace in a very dynamic market place where the omni-digital experience is paramount to success. Additionally, he is responsible for the management of the enterprise systems that run all aspects of the business, including: customer engagement, warehouse operations, merchandising, and planning. Since joining JTV in 2005 he has lead initiatives to hire a world-class technology staff, implement efficient agile methodologies, redefining and lowering the economics of technology, and mapping out a vision for the future direction of technology to propel the success of JTV.\n\nPrior to joining Jewelry Television, Chris was Chief Technology Officer at LastMinuteTravel.com and accountable for all aspects of designing and developing technology to support the LastMinuteTravel business model and instrumental in the fundraising for the dot-com company’s 2002 recapitalization program. While Vice President of Consumer Technology at WebMD, Chris engineered all technology aspects of the WebMD consumer portal [www.webmd.com](http://www.webmd.com), a company he joined when it merged with Greenberg News Networks (MedCast) in 1999. At MedCast, while managing the engineering division, Chris was challenged with driving the launch of the MedCast Network, which was ultimately sold to Healtheon/WebMD for $250MM. Before joining MedCast, Chris was a Senior System Consultant for various industries in the Southeast and Midwest; Systems Manager for Tennessee Valley Authority - responsible for deployment of the distributed general ledger system; Senior Consultant for Oracle Corporation; research associate on Particle Accelerator control systems in the Engineering Physics Division at Argonne National Laboratory near Chicago.\n\nChris earned Bachelor of Science degrees in Mathematics and Computer Science from Tarkio College and a Master of Science in Computer Science from the University of Tennessee.",
+		"title": "Enterprise Solutions - working title",
+		"abstract": "_Enterprise solutions topic coming soon._"
+	},
 	"david-parker": {
 		"name": "David Parker",
 		"type": "session",
