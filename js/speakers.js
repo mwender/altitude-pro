@@ -1,7 +1,6 @@
 (function(window,$){
 	var AddSpeakers = $.fn.AddSpeakers = function(elem,data){
 		var speakerTemplate = Handlebars.compile( $('#speaker-template').html() );
-		var emptyColTemplate = Handlebars.compile( $('#emptycol-template').html() );
 		var speakers = {};
 
 		classes = $(elem).attr('class');
@@ -129,13 +128,9 @@
 					speakerHtml = speakerHtml + speakerTemplate( val );
 				}
 
-				// Pad the row if col != cols and we're on the last speaker
+				// Set `col` == `cols` if we're on the last speaker
 				if( speakerCount == numOfSpeakers && col != cols ){
-					var pad = cols - col;
-					for (var i = 0; i < pad; i++) {
-						speakerHtml = speakerHtml + emptyColTemplate( '' );
-						col++;
-					}
+					col = cols;
 				}
 
 				if( col == cols ){
