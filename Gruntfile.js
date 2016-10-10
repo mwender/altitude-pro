@@ -9,7 +9,8 @@ module.exports = function(grunt) {
         },
         files: {
           // target.css file: source.less file
-          'lib/css/main.css': 'lib/less/main.less'
+          'lib/css/main.css': 'lib/less/main.less',
+          'lib/css/print.css': 'lib/less/print.less'
         }
       },
       production: {
@@ -19,7 +20,8 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          'lib/css/main.css': 'lib/less/main.less'
+          'lib/css/main.css': 'lib/less/main.less',
+          'lib/css/print.css': 'lib/less/print.less'
         }
       }
     },

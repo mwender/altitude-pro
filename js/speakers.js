@@ -1,6 +1,12 @@
 (function(window,$){
 	var AddSpeakers = $.fn.AddSpeakers = function(elem,data){
-		var speakerTemplate = Handlebars.compile( $('#speaker-template').html() );
+		var listSpeakers = $(elem).attr('data-list-speakers');
+		if( typeof listSpeakers !== 'undefined' ){
+			var speakerTemplate = Handlebars.compile( $('#speaker-condensed-template').html() );
+		} else {
+			var speakerTemplate = Handlebars.compile( $('#speaker-template').html() );
+		}
+
 		var speakers = {};
 
 		classes = $(elem).attr('class');
@@ -12,6 +18,11 @@
 		var showAbstract = false;
 		if( $(elem).hasClass('abstract') )
 			showAbstract = true;
+
+
+		var showRoom = false;
+		if( $(elem).hasClass('room') )
+			showRoom = true;
 
 		// Only show specified speakers
 		var includeSpeakers = $(elem).attr('data-speakers');
@@ -29,6 +40,7 @@
 					    abstractHtml = converter.makeHtml(abstract);
 					    data[val]['abstractHtml'] = abstractHtml;
 					}
+					data[val]['showRoom'] = showRoom;
 					speakers[val] = data[val];
 				}
 

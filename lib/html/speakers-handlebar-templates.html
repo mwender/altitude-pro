@@ -7,7 +7,7 @@
           {{{taglineHtml}}}
         {{/unless}}
         {{#if showAbstract}}
-          <h5>{{title}}</h5>
+          <h5 class="abstract-title">{{#if showRoom}}<span>{{room}}</span>{{/if}}{{title}}</h5>
           <div class="hidetext">{{{abstractHtml}}}</div>
         {{/if}}
     </div>
@@ -34,6 +34,14 @@
       <h3>{{title}}</h3>
       <h5>{{name}}, {{tagline}}</h5>
       {{{abstractHtml}}}
+    </div>
+  </div>
+</script>
+<script id="speaker-condensed-template" type="text/x-handlebars-template">
+  <div class="speaker clearfix">
+    <div class="one-fourth first"><img src="{{themeurl}}/images/speakers/{{photo}}" class="circle alignright" /></div>
+    <div class="three-fourths">
+      <p><strong>{{name}}</strong>, <span>{{tagline}}</span><br />{{title}}</p>
     </div>
   </div>
 </script>

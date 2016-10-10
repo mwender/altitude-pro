@@ -1,6 +1,17 @@
 .fullwidth{
 	margin-bottom: -8px;
 }
+.nofooter{
+	.footer-widgets,
+	.site-footer{
+		display: none;
+	}
+}
+.noheader{
+	header.site-header{
+		display: none;
+	}
+}
 .overlay{
 	.overlay();
 }
@@ -39,9 +50,17 @@ h1{
 
 /* Conference Agenda
 -------------------------------------*/
+.agenda-for-print{
+	span.visible-text,
+	span.read-more{
+		display: none;
+	}
+}
+
 @daytop: 103px;
 @legendtop: 146px;
-.conference-agenda{
+.conference-agenda,
+.agenda-for-print{
 	.day{
 		padding: 4px 8px;
 		margin: 40px 0 20px;
@@ -79,6 +98,7 @@ h1{
 		margin: 4px 0;
 	}
 
+	h4.time > span,
 	h5 > span,
 	p.label > span{
 		background-color: @edgered;
@@ -96,6 +116,9 @@ h1{
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
+	}
+	h5.abstract-title > span{
+		margin-right: 4px;
 	}
 	p{
 		margin-bottom: 16px;
@@ -308,6 +331,45 @@ h1{
 			}
 			.legend.fixed{
 				top: 72px;
+			}
+		}
+	}
+}
+
+#front-page-3{
+	.widget_text{
+		h3{
+			text-transform: none;
+
+				span{
+					font-size: 24px;
+					text-transform: capitalize;
+					color: lighten(@edgegray, 10%);
+				}
+		}
+	}
+}
+
+/* Speaker List
+-------------------------------------*/
+.speaker-list{
+
+	p{
+		font-size: 12px;
+	}
+	img{
+		max-width: 75px;
+	}
+
+	.three-fourths{
+		text-align: left;
+
+		span{
+			text-transform: capitalize;
+			color: lighten(@edgegray, 10%);
+
+			p{
+				display: inline;
 			}
 		}
 	}
