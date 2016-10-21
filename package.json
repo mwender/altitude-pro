@@ -6,16 +6,19 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mwender/altitude-pro"
-    },
+  },
   "dependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-less": "^1.0.0",
     "grunt-contrib-watch": "^0.6.1"
   },
   "devDependencies": {
+    "browser-sync": "^2.17.5",
     "grunt": "^0.4.5",
+    "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-less": "^1.0.0",
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^3.5.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
