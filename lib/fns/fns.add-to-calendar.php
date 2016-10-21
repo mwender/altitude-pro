@@ -14,14 +14,14 @@ function add_to_calendar(){
     </script>
     <span class="addtocalendar atc-style-blue">
         <var class="atc_event">
-            <var class="atc_date_start">2016-10-18 08:00:00</var>
-            <var class="atc_date_end">2016-10-19 16:30:00</var>
+            <var class="atc_date_start">2017-10-17 08:00:00</var>
+            <var class="atc_date_end">2017-10-18 16:30:00</var>
             <var class="atc_timezone">America/New_York</var>
-            <var class="atc_title">EDGE2016</var>
-            <var class="atc_description">EDGE2016 Security Conference - https://www.edgesecurityconference.com</var>
-            <var class="atc_location">Crowne Plaza, 401 W Summit Hill Dr, Knoxville, TN 37902</var>
+            <var class="atc_title">EDGE2017</var>
+            <var class="atc_description">EDGE2017 Security Conference - https://www.edgesecurityconference.com</var>
+            <var class="atc_location">Knoxville Convention Center, 701 Henley Street, Knoxville, TN 37902</var>
             <var class="atc_organizer">Sword &amp; Shield</var>
-            <var class="atc_organizer_email">EDGE2016@edgesecurityconference.com</var>
+            <var class="atc_organizer_email">EDGE2017@edgesecurityconference.com</var>
         </var>
     </span>
 <?php
