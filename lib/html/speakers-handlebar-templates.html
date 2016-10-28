@@ -7,7 +7,11 @@
           {{{taglineHtml}}}
         {{/unless}}
         {{#if showAbstract}}
+          {{#if presentation}}
+          <div class="presentation"><a href="/wp-content/uploads/edge2016-presentations/{{presentation}}" class="button small" target="_blank">DOWNLOAD PDF: {{title}}</a></div>
+          {{else}}
           <h5 class="abstract-title">{{#if showRoom}}<span>{{room}}</span>{{/if}}{{title}}</h5>
+          {{/if}}
           <div class="hidetext">{{{abstractHtml}}}</div>
         {{/if}}
     </div>
@@ -22,6 +26,9 @@
         <div class="two-thirds">
         	<h2>{{name}}, <span>{{type}} Speaker</span></h2>
   				<h5>{{{taglineHtml}}}</h5>
+          {{#if presentation}}
+          <div class="presentation"><a href="/wp-content/uploads/edge2016-presentations/{{presentation}}" class="button small" target="_blank">DOWNLOAD: {{title}}</a></div>
+          {{/if}}
         	{{{bioHtml}}}
     	</div>
     </div>
