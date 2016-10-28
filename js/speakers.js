@@ -273,6 +273,11 @@ jQuery(function($){
 		});
 
 		$('body').on('click', '.speaker-overlay', function(e){
+			// Let hrefs to work
+			var target = e.target;
+			if( 'http' == target.toString().substring(0,4) )
+				return;
+
 			e.preventDefault();
 			if( e.target !== this )
 				return;
