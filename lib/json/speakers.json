@@ -25,7 +25,8 @@
 		"bio": "Justin Bornhoeft is the IT Business Manager at Cellular Sales.  In that role he is not only responsible for PCI compliance as the internal security assessor but also IT asset management, IT vendor relations, and IT financial management.\n\nPrior to Cellular Sales, Justin held positions and earned certifications in IT management, financial management, project management, systems administration, network administration, IT training, and end user support which he leverages to help transform vision into reality.  This experience blends well with the initiatives of Cellular Sales.\n\nCellular Sales is a dynamic and growing company that adapts well to changing market opportunities and threats.  We do so by striving to improve continuously, to grow wisely, to keep customer information safe, and to maintain our corporate culture.  This year we took an important step forward in protecting credit card data by implementing encryption technology on our payment terminals.",
 		"title": "Simplifying PCI with End-to-End Encryption (E2EE) in a Large Retail Environment",
 		"abstract": "Many organizations that process credit card information are moving to end-to-end encryption (E2EE) and point-to-point encryption (P2PE) to reduce PCI scope and shrink consumer credit card exposure. These solutions not only reduce data breach risks to the organization but also provide better protection for consumer privacy. This session will present attendees with a case study on how one organization rolled out an enterprise–wide E2EE implementation.",
-		"room": "MR"
+		"room": "MR",
+		"presentation": "simplifying_pci_with_p2pe_e2ee_justin_bornhoeft.pdf"
 	},
 	"karen-clark": {
 		"name": "Karen Clark",
