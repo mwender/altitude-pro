@@ -1,4 +1,6 @@
 module.exports = function(grunt) {
+  require('load-grunt-tasks')(grunt);
+
   grunt.initConfig({
     less: {
       development: {
@@ -24,9 +26,6 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      options: {
-        livereload: true,
-      },
       styles: {
         files: ['lib/less/**/*.less'], // which files to watch
         tasks: ['less:production'],
@@ -46,13 +45,25 @@ module.exports = function(grunt) {
           nospawn: true
         }
       }
+    },
+    browserSync: {
+      dev: {
+        bsFiles: {
+          src: [
+            'lib/less/**/*.less',
+            'lib/html/*.html',
+            'js/*.js'
+          ]
+        },
+        options: {
+          proxy: "example.dev",
+          watchTask: true
+        }
+      }
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', ['browserSync', 'watch']);
   grunt.registerTask('build', ['less:production']);
   grunt.registerTask('builddev', ['less:development']);
 };
