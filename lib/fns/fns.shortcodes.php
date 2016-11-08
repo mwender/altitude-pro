@@ -1,4 +1,6 @@
 <?php
+namespace AltitudePro\lib\fns;
+
 /**
  * Returns HTML stored in lib/html/
  *
@@ -6,9 +8,9 @@
  *
  * @return string Specify the HTML to retrieve.
  */
-add_shortcode( 'htmlinc', 'html_include' );
+add_shortcode( 'htmlinc', __NAMESPACE__ . '\\html_include' );
 function html_include( $atts ){
-	extract( shortcode_atts( array(
+	extract( \shortcode_atts( array(
 		'html' => 'name-of-your-html-file',
 		'doshortcodes' => true,
 	), $atts ) );
@@ -18,11 +20,11 @@ function html_include( $atts ){
 	$return = ( file_exists( $file ) )? file_get_contents( $file ) : '<p class="alert"><strong>ERROR:</strong> I could not find <code>' . basename( $file ) . '</code>.</p>' ;
 
 	$search = array( '{themedir}' );
-	$replace = array( trailingslashit( get_stylesheet_directory_uri() ) );
+	$replace = array( \trailingslashit( get_stylesheet_directory_uri() ) );
 	$return = str_replace( $search, $replace, $return );
 
 	if( true == $doshortcodes )
-		$return = do_shortcode( $return );
+		$return = \do_shortcode( $return );
 
 	return $return;
 }
@@ -34,12 +36,12 @@ function html_include( $atts ){
  *
  * @return string WordPress nav menu.
  */
-add_shortcode( 'navmenu', 'ap_get_navmenu' );
-function ap_get_navmenu( $atts ){
+add_shortcode( 'navmenu', __NAMESPACE__ . '\\get_navmenu' );
+function get_navmenu( $atts ){
 	if( empty( $atts['menu'] ) )
 		return '<p><strong>ERROR:</strong> Please specify a <code>menu</code>.</p>';
 
-	$args = shortcode_atts( array(
+	$args = \shortcode_atts( array(
 		'menu' 				=> null,
 		'menu_class' 		=> 'menu',
 		'menu_id' 			=> null,
@@ -48,7 +50,7 @@ function ap_get_navmenu( $atts ){
 	), $atts );
 	$args['echo'] = false;
 
-	return wp_nav_menu( $args );
+	return \wp_nav_menu( $args );
 }
 
 ?>
