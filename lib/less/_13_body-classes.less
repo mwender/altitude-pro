@@ -1,0 +1,61 @@
+/* Body Classes
+  - .fullwidth - full width content
+  - .nofooter
+  - .noheader
+  - .notitle - hides page title
+  - .wide - no left/right padding for content
+--------------------------------------------- */
+.fullwidth{
+  margin-bottom: -8px;
+
+  &.full-width-content{
+    .site-inner{
+      margin-top: 103px;
+      max-width: none;
+
+      article.entry{
+        margin-bottom: 0;
+      }
+
+      .content{
+        padding: 0;
+      }
+    }
+
+    &.withwrap{
+      .site-inner{
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.nofooter{
+  .footer-widgets,
+  .site-footer{
+    display: none;
+  }
+}
+
+.noheader{
+  header.site-header{
+    display: none;
+  }
+}
+
+.notitle{
+  article header.entry-header{
+    display: none;
+  }
+}
+
+.wide{
+  &.full-width-content{
+    main.content{
+      padding: 0 0 50px;
+    }
+    .site-inner{
+      margin-top: 140px;
+    }
+  }
+}
