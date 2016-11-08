@@ -56,7 +56,7 @@ module.exports = function(grunt) {
           ]
         },
         options: {
-          proxy: "example.dev",
+          proxy: "provisionfitness.dev",
           watchTask: true
         }
       }
