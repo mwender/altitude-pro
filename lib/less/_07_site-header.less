@@ -4,7 +4,7 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #000;
+	background-color: rgba(255,255,255,0.5);
 	left: 0;
 	position: fixed;
 	top: 0;
@@ -13,15 +13,14 @@ Site Header
 }
 
 .featured-section .site-header {
-	background-color: transparent;
+	background-color: rgba(255,255,255,0.95);
 }
 
 .featured-section .site-header > .wrap {
-	border-bottom: 1px solid #fff;
 }
 
 .site-header.dark {
-	background-color: #000;
+	background-color: @primaryblue;
 }
 
 .site-header.dark > .wrap {
@@ -41,12 +40,18 @@ Site Header
 
 .title-area {
 	float: left;
-	padding: 25px 0;
-	width: 360px;
+	padding: 12px 0;
+	width: 380px;
 }
 
 .site-header.dark .title-area {
-	padding: 15px 0;
+	.site-title{
+		opacity: 1;
+
+		> a{
+			background-image: url(../images/provision-fitness.white.700x226.png);
+		}
+	}
 }
 
 .site-title {
@@ -56,6 +61,16 @@ Site Header
 	line-height: 1;
 	margin-bottom: 0;
 	text-transform: uppercase;
+	width: 220px;
+	float: left;
+
+	> a{
+		background-size: contain !important;
+		display: block;
+		height: 80px;
+		text-indent: -9999px;
+		background: url(../images/provision-fitness.color.700x226.png) no-repeat;
+	}
 }
 
 .site-title a,
