@@ -258,6 +258,7 @@ genesis_register_sidebar( array(
 ------------------------------- */
 
 //* Include functions
+include_once( get_stylesheet_directory() . '/lib/fns/fns.google-analytics.php' );
 include_once( get_stylesheet_directory() . '/lib/fns/fns.shortcodes.php' );
 
 //* Process text widget shortcodes
