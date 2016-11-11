@@ -3,3 +3,73 @@
     height: 600px;
   }
 }
+.front-page-2{
+  color: #fff;
+
+  .flexible-widgets{
+    padding: 30px 0;
+
+    .widget{
+      margin-bottom: 0;
+    }
+  }
+
+  .two-thirds{
+    text-align: left;
+
+    h3{
+      line-height: 55px;
+      margin-bottom: 0;
+    }
+  }
+
+  .one-third{
+    text-align: right;
+  }
+
+  .solid-section{
+    background-color: @primaryblue;
+  }
+}
+.front-page-4 .solid-section{
+
+  #blog-feature{
+    background-image: url(../images/britton.1200x800.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1;
+  }
+
+  .clearfix{
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .flexible-widgets{
+    padding: 0;
+  }
+
+  .one-half{
+    text-align: left;
+    padding: 60px 60px 70px 30px;
+  }
+
+  section.widget{
+    margin-bottom: 0;
+  }
+
+  .wrap{
+    max-width: 100%;
+  }
+}
+.front-page-5{
+  .widget:nth-child(n+2) .textwidget{
+    background: @primaryblue;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 5px;
+  }
+}
