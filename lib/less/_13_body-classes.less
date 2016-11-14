@@ -1,32 +1,39 @@
 /* Body Classes
-  - .fullwidth - full width content
+  - .full-width-page - full width content
+  - .full-width-noheading - full width content w/o page title
   - .nofooter
   - .noheader
   - .notitle - hides page title
-  - .wide - no left/right padding for content
 --------------------------------------------- */
-.fullwidth{
+.full-width-page,
+.full-width-noheading{
   margin-bottom: -8px;
 
-  &.full-width-content{
+  .site-inner{
+    margin-top: 103px;
+    max-width: none;
+
+    article.entry{
+      margin-bottom: 0;
+    }
+
+    .content{
+      padding: 0;
+      width: 100%;
+      float: none;
+    }
+  }
+
+  &.withwrap{
     .site-inner{
-      margin-top: 103px;
-      max-width: none;
-
-      article.entry{
-        margin-bottom: 0;
-      }
-
-      .content{
-        padding: 0;
-      }
+      margin-top: 30px;
     }
+  }
+}
 
-    &.withwrap{
-      .site-inner{
-        margin-top: 30px;
-      }
-    }
+.full-width-noheading{
+  article header.entry-header{
+    display: none;
   }
 }
 
@@ -49,13 +56,9 @@
   }
 }
 
-.wide{
-  &.full-width-content{
-    main.content{
-      padding: 0 0 50px;
-    }
-    .site-inner{
-      margin-top: 140px;
-    }
+.wide-content{
+  .content{
+    width: 100%;
+    float: none;
   }
 }
