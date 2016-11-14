@@ -1,5 +1,5 @@
 <?php
-/* 
+/*
  * Adds the required CSS to the front end.
  */
 
@@ -35,7 +35,7 @@ function altitude_css() {
 		}
 
 	}
-
+/*
 	$css .= ( altitude_customizer_get_default_accent_color() !== $color ) ? sprintf( '
 		a,
 		.entry-title a:hover,
@@ -68,7 +68,7 @@ function altitude_css() {
 			border-color: %1$s;
 		}
 		', $color ) : '';
-
+*/
 	if( $css ){
 		wp_add_inline_style( $handle, $css );
 	}
