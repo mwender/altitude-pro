@@ -189,7 +189,7 @@ function altitude_widget_area_class( $id ) {
 
 //* Relocate the post info
 remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
-add_action( 'genesis_entry_header', 'genesis_post_info', 5 );
+remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
 
 //* Customize the entry meta in the entry header
 add_filter( 'genesis_post_info', 'altitude_post_info_filter' );
