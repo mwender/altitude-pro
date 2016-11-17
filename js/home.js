@@ -8,7 +8,8 @@ jQuery(function( $ ){
 
 	// Local Scroll Speed
 	$.localScroll({
-		duration: 750
+		duration: 750,
+		offset: -50
 	});
 
 	// Image Section Height
