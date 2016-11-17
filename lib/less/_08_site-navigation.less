@@ -6,39 +6,70 @@ Site Navigation
 .genesis-nav-menu {
 	line-height: 1;
 	font-family: @nav-font;
-}
 
-.genesis-nav-menu .menu-item {
-	display: inline-block;
-	text-align: left;
-	margin-top: 16px;
-}
+	.menu-item{
+		display: inline-block;
+		text-align: left;
+	}
 
-.genesis-nav-menu li li {
-	margin-left: 0;
-}
+	& > .menu-item{
+		margin-top: 16px;
+	}
 
-.genesis-nav-menu a {
-	color: @primaryblue;
-	display: block;
-	font-size: 14px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	padding: 30px 15px;
-	text-transform: uppercase;
+	li li {
+		margin-left: 0;
+	}
+
+	a {
+		color: @primaryblue;
+		display: block;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		padding: 30px 15px;
+		text-transform: uppercase;
+	}
+
+	li.highlight a:hover::before {
+		color: #fff;
+	}
+
+	li.highlight > a {
+		font-weight: 800;
+	}
+
+	.sub-menu {
+		left: -9999px;
+		letter-spacing: 0;
+		opacity: 0;
+		position: absolute;
+		-webkit-transition: opacity .4s ease-in-out;
+		-moz-transition:    opacity .4s ease-in-out;
+		-ms-transition:     opacity .4s ease-in-out;
+		-o-transition:      opacity .4s ease-in-out;
+		transition:         opacity .4s ease-in-out;
+		width: 200px;
+		z-index: 99;
+
+		a {
+			color: #fff;
+			background-color: @secondarylightblue;
+			padding: 20px;
+			position: relative;
+			width: 200px;
+		}
+
+		a:hover{
+			background-color: @primaryorange;
+		}
+		li.current-menu-item > a {
+			background-color: @secondarydarkblue;
+		}
+	}
 }
 
 .site-header.dark .genesis-nav-menu a {
-	padding: 30px 15px;
 	color: #fff;
-}
-
-.genesis-nav-menu li.highlight a:hover::before {
-	color: #fff;
-}
-
-.genesis-nav-menu li.highlight > a {
-	font-weight: 800;
 }
 
 .front-page .genesis-nav-menu li.current-menu-item > a:hover,
@@ -51,31 +82,7 @@ Site Navigation
 	text-transform: uppercase;
 }
 
-.genesis-nav-menu .sub-menu {
-	left: -9999px;
-	letter-spacing: 0;
-	opacity: 0;
-	position: absolute;
-	-webkit-transition: opacity .4s ease-in-out;
-	-moz-transition:    opacity .4s ease-in-out;
-	-ms-transition:     opacity .4s ease-in-out;
-	-o-transition:      opacity .4s ease-in-out;
-	transition:         opacity .4s ease-in-out;
-	width: 200px;
-	z-index: 99;
-}
 
-.genesis-nav-menu .sub-menu a {
-	background-color: #111;
-	padding: 20px;
-	position: relative;
-	width: 200px;
-}
-
-.genesis-nav-menu .sub-menu a:hover,
-.genesis-nav-menu .sub-menu li.current-menu-item > a {
-	background-color: #222;
-}
 
 .genesis-nav-menu .sub-menu .sub-menu {
 	margin: -54px 0 0 199px;
