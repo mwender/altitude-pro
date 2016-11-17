@@ -1,0 +1,6 @@
+.gradient(@color){
+  background: -moz-linear-gradient(top,  rgba( red(@color),green(@color),blue(@color),0.2) 0%, rgba( red(@color),green(@color),blue(@color),0.5) 30%, rgba( red(@color),green(@color),blue(@color),0.8) 80%, rgba( red(@color),green(@color),blue(@color),0.9) 100%);
+  background: -webkit-linear-gradient(top,  rgba( red(@color),green(@color),blue(@color),0.2) 0%,rgba( red(@color),green(@color),blue(@color),0.5) 30%,rgba( red(@color),green(@color),blue(@color),0.8) 80%,rgba( red(@color),green(@color),blue(@color),0.9) 100%);
+  background: linear-gradient(to bottom,  rgba( red(@color),green(@color),blue(@color),0.2) 0%,rgba( red(@color),green(@color),blue(@color),0.5) 30%,rgba( red(@color),green(@color),blue(@color),0.8) 80%,rgba( red(@color),green(@color),blue(@color),0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='argb(rgba( red(@color),green(@color),blue(@color),0.2))', endColorstr='argb(rgba( red(@color),green(@color),blue(@color),0.9))',GradientType=0 );
+}
