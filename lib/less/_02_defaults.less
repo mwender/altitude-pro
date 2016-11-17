@@ -448,6 +448,39 @@ input[type="search"]::-webkit-search-results-button {
 	color: #fff;
 }
 
+.button-circle{
+	background-color: @primaryblue;
+	border-radius: 50%;
+	display: inline-block;
+	padding: 0 14px;
+
+	&:hover{
+		background-color: @primaryorange;
+	}
+
+	i{
+		&::before{
+			color: #fff;
+			font-family: 'dashicons';
+			font-size: 24px;
+			font-style: normal;
+		}
+
+		&.down::before{
+			content: "\f347";
+			line-height: 2.2;
+			font-weight: bold;
+		}
+
+	}
+
+	&.bottom-section{
+		position: absolute;
+		bottom: 80px;
+	}
+
+}
+
 /* Tables
 -------------------------------------------------- */
 table{
