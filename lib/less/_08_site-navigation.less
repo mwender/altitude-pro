@@ -2,6 +2,9 @@
 /*
 Site Navigation
 ---------------------------------------------------------------------------------------------------- */
+.site-header > .wrap{
+	position: relative;
+}
 
 .genesis-nav-menu {
 	line-height: 1;
@@ -13,7 +16,7 @@ Site Navigation
 	}
 
 	& > .menu-item{
-		margin-top: 16px;
+		margin-top: 26px;
 	}
 
 	li li {
@@ -23,7 +26,7 @@ Site Navigation
 	a {
 		color: @primaryblue;
 		display: block;
-		font-size: 14px;
+		font-size: 16px;
 		font-weight: 700;
 		letter-spacing: 1px;
 		padding: 30px 15px;
@@ -66,10 +69,50 @@ Site Navigation
 			background-color: @secondarydarkblue;
 		}
 	}
+
+	&.menu-secondary{
+		position: absolute;
+		right: 0;
+		background: lighten(@secondarylightblue,15%);
+		border-radius: 0 0 5px 5px;
+
+		li{
+			margin: 0;
+
+			a{
+				padding: 8px 12px;
+				font-size: 14px;
+				font-weight: normal;
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-transform: none;
+				letter-spacing: normal;
+
+				&:hover{
+					color: #fff;
+					background-color: @primaryblue;
+				}
+			}
+
+			&:first-child{
+				a{
+					border-radius: 0 0 0 5px;
+				}
+			}
+			&:last-child{
+				a{
+					border-radius: 0 0 5px 0;
+				}
+			}
+		}
+	}
 }
 
 .site-header.dark .genesis-nav-menu a {
 	color: #fff;
+}
+
+.site-header.dark .genesis-nav-menu > .menu-item{
+	margin-top: 16px;
 }
 
 .front-page .genesis-nav-menu li.current-menu-item > a:hover,
@@ -138,13 +181,6 @@ Site Navigation
 
 .nav-primary .genesis-nav-menu {
 	float: right;
-}
-
-/* Secondary Navigation
---------------------------------------------- */
-
-.nav-secondary {
-	border-bottom: 1px solid #fff;
 }
 
 /* Footer Navigation
