@@ -102,22 +102,33 @@ Site Header
 }
 /* Top Section
 --------------------------------------------- */
-@topSectionHeight: 200px;
+@topSectionHeight: 180px;
+@topSectionBorderHeight: 10px;
+@ribbonTwoHeight: 36px;
+@ribbonOneHeight: @topSectionHeight; /*  - @ribbonTwoHeight */
+@gradientHeight: @topSectionHeight - @topSectionBorderHeight;
 .top-section{
-	background: @primaryblue url(../images/top-section.1920x300.png) no-repeat left center;
+	background: @primaryblue url(../images/top-section.machines.1920x300.jpg) no-repeat left center;
 	background-size: cover;
 	height: @topSectionHeight;
 	margin-top: 104px;
 	color: #fff;
+	border-bottom: @topSectionBorderHeight solid @primaryblue;
 
 	.dashicon{
 		font-family: 'dashicons';
 		font-size: 16px;
 
+		&.building:before{
+			content: "\f512";
+		}
 		&.calendar:before{
 			content: "\f508";
 		}
-		&.dashicons-megaphone{
+		&.location-alt:before{
+			content: "\f231";
+		}
+		&.megaphone{
 			content: "\f488";
 		}
 		&.mic:before{
@@ -132,21 +143,27 @@ Site Header
 		&.users:before{
 			content: "\f307";
 		}
+		&.groups:before{
+			content: '\f307';
+		}
+		&.universal-access-alt:before{
+			content: '\f507';
+		}
 	}
 
 	.gradient{
-		.gradient(#000);
-		height: @topSectionHeight;
+		.gradient(@tertiarydarkblue);
+		height: @gradientHeight;
 	}
 
 	.ribbon-one{
-		height: @topSectionHeight - 36px;
+		height: @ribbonOneHeight;
 		max-width: 1200px;
 		margin: 0 auto;
 
 		p{
 			font-weight: 600;
-			line-height: @topSectionHeight - 36px;
+			line-height: @ribbonOneHeight;
 			text-align: center;
 
 			span{
@@ -156,7 +173,8 @@ Site Header
 	}
 	.ribbon-two{
 		height: 36px;
-		background-color: rgba(red(@primaryblue),green(@primaryblue),blue(@primaryblue),0.6);
+		/*background-color: rgba(red(@primaryblue),green(@primaryblue),blue(@primaryblue),0.6);*/
+		background-color: @primaryblue;
 	}
 
 	ul{
@@ -183,15 +201,13 @@ Site Header
 
 
 }
-.wide.full-width-content{
-	.top-section + .site-inner{
-		margin-top: 30px;
-	}
-}
+
 @media only screen and (max-width: 1023px) {
 	.top-section{
 		margin-top: 0px;
+		margin-bottom: 30px;
 		height: auto;
+		background-image: none;
 
 		.gradient,
 		.ribbon-two{
