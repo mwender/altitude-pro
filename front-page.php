@@ -56,7 +56,7 @@ function altitude_front_page_genesis_meta() {
 			function altitude_featured_body_class( $classes ) {
 
 				$classes[] = 'featured-section';
-				
+
 				return $classes;
 
 			}
@@ -81,7 +81,7 @@ function altitude_front_page_widgets() {
 	) );
 
 	genesis_widget_area( 'front-page-3', array(
-		'before' => '<div id="front-page-3" class="front-page-3"><div class="image-section"><div class="flexible-widgets widget-area' . altitude_widget_area_class( 'front-page-3' ) . '"><div class="wrap">',
+		'before' => '<div id="front-page-3" class="front-page-3"><div class="image-section fullheight"><div class="flexible-widgets widget-area' . altitude_widget_area_class( 'front-page-3' ) . '"><div class="wrap">',
 		'after'  => '</div></div></div></div>',
 	) );
 
@@ -91,7 +91,7 @@ function altitude_front_page_widgets() {
 	) );
 
 	genesis_widget_area( 'front-page-5', array(
-		'before' => '<div id="front-page-5" class="front-page-5"><div class="image-section"><div class="flexible-widgets widget-area' . altitude_widget_area_class( 'front-page-5' ) . '"><div class="wrap">',
+		'before' => '<div id="front-page-5" class="front-page-5"><div class="image-section fullheight"><div class="flexible-widgets widget-area' . altitude_widget_area_class( 'front-page-5' ) . '"><div class="wrap">',
 		'after'  => '</div></div></div></div>',
 	) );
 
@@ -101,7 +101,7 @@ function altitude_front_page_widgets() {
 	) );
 
 	genesis_widget_area( 'front-page-7', array(
-		'before' => '<div id="front-page-7" class="front-page-7"><div class="image-section"><div class="flexible-widgets widget-area' . altitude_widget_area_class( 'front-page-7' ) . '"><div class="wrap">',
+		'before' => '<div id="front-page-7" class="front-page-7"><div class="image-section fullheight"><div class="flexible-widgets widget-area' . altitude_widget_area_class( 'front-page-7' ) . '"><div class="wrap">',
 		'after'  => '</div></div></div></div>',
 	) );
 
