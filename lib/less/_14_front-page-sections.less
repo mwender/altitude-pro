@@ -38,10 +38,11 @@
   border-bottom: 10px solid @primaryblue;
 
   #blog-feature{
-    background-image: url(../images/britton.1200x800.jpg);
-    background-size: cover;
+    background-image: url(../images/britton-knoxmercury.800x908.jpg);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right top;
+    background-color: @primaryorange;
     flex: 1;
   }
 
@@ -55,7 +56,10 @@
     padding: 0;
   }
 
-  .one-half{
+  .one-half,
+  .two-thirds,
+  .three-fourths,
+  .five-sixths{
     text-align: left;
     padding: 60px 60px 70px 30px;
   }
