@@ -33,6 +33,18 @@ function altitude_enqueue_scripts_styles() {
 	wp_enqueue_style( 'dashicons' );
 	wp_enqueue_style( 'altitude-google-fonts', '//fonts.googleapis.com/css?family=Ek+Mukta:200,800', array(), CHILD_THEME_VERSION );
 
+	if( is_page( 'Classes' ) ){
+		wp_enqueue_script( 'jquery-ui-accordion' );
+		wp_enqueue_style( 'jquery-ui', get_bloginfo( 'stylesheet_directory' ) . '/lib/css/jquery-ui/jquery-ui.min.css' );
+		wp_add_inline_script( 'jquery-ui-accordion', 'jQuery(document).ready(function( $ ) {
+	$( ".accordion" ).accordion({
+		active: false,
+		collapsible: true,
+		heightStyle: \'content\'
+	});
+});' );
+	}
+
 }
 
 //* Add HTML5 markup structure
