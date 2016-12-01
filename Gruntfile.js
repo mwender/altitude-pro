@@ -65,7 +65,7 @@ module.exports = function(grunt) {
           ]
         },
         options: {
-          proxy: "2017.edgeseccon.dev/",
+          proxy: "2017.edgeseccon.dev",
           watchTask: true
         }
       }
