@@ -275,6 +275,7 @@ include_once( get_stylesheet_directory() . '/lib/fns/fns.constants.php' );
 include_once( get_stylesheet_directory() . '/lib/fns/fns.google-analytics.php' );
 include_once( get_stylesheet_directory() . '/lib/fns/fns.layouts.php' );
 include_once( get_stylesheet_directory() . '/lib/fns/fns.shortcodes.php' );
+include_once( get_stylesheet_directory() . '/lib/fns/fns.the-events-calendar.php' );
 
 //* Process text widget shortcodes
 add_filter( 'widget_text', 'do_shortcode' );
