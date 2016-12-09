@@ -273,6 +273,7 @@ genesis_register_sidebar( array(
 include_once( get_stylesheet_directory() . '/lib/fns/fns.blog.php' );
 include_once( get_stylesheet_directory() . '/lib/fns/fns.constants.php' );
 include_once( get_stylesheet_directory() . '/lib/fns/fns.google-analytics.php' );
+include_once( get_stylesheet_directory() . '/lib/fns/fns.gravityforms.php' );
 include_once( get_stylesheet_directory() . '/lib/fns/fns.layouts.php' );
 include_once( get_stylesheet_directory() . '/lib/fns/fns.shortcodes.php' );
 include_once( get_stylesheet_directory() . '/lib/fns/fns.the-events-calendar.php' );
