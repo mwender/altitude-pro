@@ -44,6 +44,12 @@ module.exports = function(grunt) {
         options: {
           nospawn: true
         }
+      },
+      php: {
+        files: ['*.php','templates/*.php'],
+        options: {
+          nospawn: true
+        }
       }
     },
     browserSync: {
@@ -52,7 +58,9 @@ module.exports = function(grunt) {
           src: [
             'lib/less/**/*.less',
             'lib/html/*.html',
-            'js/*.js'
+            'js/*.js',
+            '*.php',
+            'templates/*.php'
           ]
         },
         options: {
