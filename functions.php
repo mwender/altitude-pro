@@ -45,6 +45,16 @@ function altitude_enqueue_scripts_styles() {
 });' );
 	}
 
+	if( is_front_page() ){
+		wp_enqueue_script( 'jquery-jshowoff', get_stylesheet_directory_uri() . '/js/jquery.jshowoff.min.js', ['jquery'], filemtime( get_stylesheet_directory() . '/js/jquery.jshowoff.min.js'), true );
+		wp_add_inline_script( 'jquery-jshowoff', 'jQuery(document).ready(function($){
+			$(".class-descriptions").jshowoff({
+				controls: false,
+				autoPlay: false
+			});
+		});' );
+	}
+
 }
 
 //* Add HTML5 markup structure
