@@ -50,7 +50,8 @@ function altitude_enqueue_scripts_styles() {
 		wp_add_inline_script( 'jquery-jshowoff', 'jQuery(document).ready(function($){
 			$(".class-descriptions").jshowoff({
 				controls: false,
-				autoPlay: false
+				autoPlay: false,
+				speed: 11000
 			});
 		});' );
 	}
