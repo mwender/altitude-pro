@@ -66,10 +66,11 @@ Media Queries
 	.site-header {
 		position: static;
 	}
-
+	/*
 	.front-page .site-header {
-		background-color: #000;
+		background-color: @primaryblue;
 	}
+	*/
 
 	.front-page .site-header > .wrap {
 		border: none;
@@ -184,6 +185,23 @@ Media Queries
 		padding: 0 5%;
 	}
 
+	.site-header{
+		box-shadow: 0px 1px 2px #aaa;
+	}
+
+	/* Center the header logo */
+	.site-header .title-area{
+		padding-top: 0;
+
+		.site-title{
+			width: 100%;
+
+			a{
+				background-position: center;
+			}
+		}
+	}
+
 	.front-page .site-inner {
 		padding: 0;
 	}
@@ -283,7 +301,7 @@ Media Queries
 	.site-header .genesis-nav-menu.responsive-menu > .menu-item-has-children:before,
 	.site-header .genesis-nav-menu.responsive-menu > li:hover > a,
 	.site-header .genesis-nav-menu.responsive-menu a:hover {
-		color: #fff;
+		color: @primaryorange;
 	}
 
 	.altitude-home .simple-social-icons ul li {

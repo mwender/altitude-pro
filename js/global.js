@@ -1,17 +1,17 @@
 jQuery(function( $ ){
 
-	if( $( document ).scrollTop() > 0 ){
-		$( '.site-header' ).addClass( 'dark' );			
+	if( $( document ).scrollTop() > 0 && window.innerWidth > 800 ){
+		$( '.site-header' ).addClass( 'dark' );
 	}
 
 	// Add opacity class to site header
 	$( document ).on('scroll', function(){
 
-		if ( $( document ).scrollTop() > 0 ){
-			$( '.site-header' ).addClass( 'dark' );			
+		if ( $( document ).scrollTop() > 0 && window.innerWidth > 800 ){
+			$( '.site-header' ).addClass( 'dark' );
 
 		} else {
-			$( '.site-header' ).removeClass( 'dark' );			
+			$( '.site-header' ).removeClass( 'dark' );
 		}
 
 	});
