@@ -135,12 +135,63 @@ Content Area
 		padding-top: 60px;
 	}
 
+	@planwidth: 450px;
+	.plan{
+		ul{
+			margin: 0 auto;
+			max-width: @planwidth;
+			border-top: 1px solid rgba(255,255,255,0.5);
+		}
+		li{
+			text-align: left;
+			margin: 0;
+			padding: 8px 12px;
+			max-width: @planwidth;
+			background-color: rgba(255,255,255,0.1);
+			border-bottom: 1px solid rgba(255,255,255,0.5);
+
+			&:before{
+				font-family: 'dashicons';
+				font-size: 24px;
+			}
+
+			&.dashicons-star-filled{
+				padding-left: 36px;
+				text-indent: -14px;
+
+				&:before{
+					content: "\f155";
+					display: inline-table;
+					vertical-align: middle;
+					margin: -4px 6px 0 0;
+				}
+			}
+		}
+	}
+
 	.wrap{
 		max-width: 100%;
 
 		#plans{
 			.plan{
-				a{
+				a.button{
+					display: block;
+					max-width: @planwidth;
+					margin: 20px auto 40px auto;
+					font-size: 28px;
+					text-transform: none;
+					letter-spacing: 1px;
+					background-color: #fff;
+					color: @smcoblue;
+					border-color: #fff;
+
+					&:hover{
+						background-color: @smcopink;
+						color: #fff;
+					}
+				}
+
+				li a{
 					color: #fff;
 					background-color: rgba(256,256,256,0.25);
 					padding: 2px 2px 0 4px;
@@ -182,11 +233,7 @@ Content Area
 			}
 		}
 
-		#plans
-		#plans
-		#plans
-
-		section.widget{
+		#plans section.widget{
 			margin-bottom: 0;
 		}
 
