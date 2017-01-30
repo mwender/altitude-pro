@@ -28,9 +28,6 @@ function altitude_enqueue_scripts_styles() {
 	$main_css_version = ( file_exists( get_stylesheet_directory() . '/lib/css/main.css' ) )? filemtime( get_stylesheet_directory() . '/lib/css/main.css' ) : get_bloginfo( 'version' );
 	wp_enqueue_style( $handle, get_bloginfo( 'stylesheet_directory' ) . '/lib/css/main.css', false, $main_css_version );
 
-	$print_css_version = ( file_exists( get_stylesheet_directory() . '/lib/css/print.css' ) )? filemtime( get_stylesheet_directory() . '/lib/css/print.css' ) : get_bloginfo( 'version' );
-	wp_enqueue_style( $handle . '-print', get_bloginfo( 'stylesheet_directory' ) . '/lib/css/print.css', array( $handle ), $print_css_version, 'print' );
-
 	wp_enqueue_script( 'altitude-global', get_bloginfo( 'stylesheet_directory' ) . '/js/global.js', array( 'jquery' ), filemtime( get_stylesheet_directory() . '/js/global.js' ) );
 
 	wp_enqueue_style( 'dashicons' );

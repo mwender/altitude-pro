@@ -7,12 +7,16 @@ module.exports = function(grunt) {
         options: {
           compress: false,
           yuicompress: false,
-          optimization: 2
+          optimization: 2,
+          sourceMap: true,
+          sourceMapFilename: 'lib/css/main.css.map',
+          sourceMapBasepath: 'lib/less',
+          sourceMapURL: 'main.css.map',
+          sourceMapRootpath: '../../lib/less'
         },
         files: {
           // target.css file: source.less file
-          'lib/css/main.css': 'lib/less/main.less',
-          'lib/css/print.css': 'lib/less/print.less'
+          'lib/css/main.css': 'lib/less/main.less'
         }
       },
       production: {
@@ -22,15 +26,14 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          'lib/css/main.css': 'lib/less/main.less',
-          'lib/css/print.css': 'lib/less/print.less'
+          'lib/css/main.css': 'lib/less/main.less'
         }
       }
     },
     watch: {
       styles: {
         files: ['lib/less/**/*.less'], // which files to watch
-        tasks: ['less:production'],
+        tasks: ['less:development'],
         options: {
           nospawn: true
         }
