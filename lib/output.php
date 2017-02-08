@@ -20,7 +20,7 @@ function altitude_css() {
 
 	$settings = array();
 
-	foreach( $opts as $opt ){
+	foreach( $opts as $opt ) {
 		$settings[$opt]['image'] = preg_replace( '/^https?:/', '', get_option( $opt .'-altitude-image', sprintf( '%s/images/bg-%s.jpg', get_stylesheet_directory_uri(), $opt ) ) );
 	}
 
@@ -30,46 +30,13 @@ function altitude_css() {
 
 		$background = $value['image'] ? sprintf( 'background-image: url(%s);', $value['image'] ) : '';
 
-		if( is_front_page() ) {
+		if ( is_front_page() ) {
 			$css .= ( ! empty( $section ) && ! empty( $background ) ) ? sprintf( '.front-page-%s { %s }', $section, $background ) : '';
 		}
 
 	}
-/*
-	$css .= ( altitude_customizer_get_default_accent_color() !== $color ) ? sprintf( '
-		a,
-		.entry-title a:hover,
-		.image-section a:hover,
-		.image-section .featured-content .entry-title a:hover,
-		.site-footer a:hover {
-			color: %1$s;
-		}
 
-		button,
-		input[type="button"],
-		input[type="reset"],
-		input[type="submit"],
-		.archive-pagination li a:hover,
-		.archive-pagination .active a,
-		.button,
-		.footer-widgets,
-		.widget .button {
-			background-color: %1$s;
-		}
-
-		button,
-		input[type="button"],
-		input[type="reset"],
-		input[type="submit"],
-		.button,
-		.front-page input:focus,
-		.front-page textarea:focus,
-		.widget .button {
-			border-color: %1$s;
-		}
-		', $color ) : '';
-*/
-	if( $css ){
+	if ( $css ) {
 		wp_add_inline_style( $handle, $css );
 	}
 
