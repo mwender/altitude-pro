@@ -1,12 +1,6 @@
 /*
 Defaults
 ---------------------------------------------------------------------------------------------------- */
-@heading-font: "Oswald", sans-serif;
-@body-font: "Merriweather", sans-serif;
-@nav-font: @heading-font;
-@button-font: @heading-font;
-@button-color: @edgegreen;
-@button-color-hover: @edgegold;
 
 /* Typographical Elements
 --------------------------------------------- */
@@ -341,10 +335,10 @@ input[type="submit"],
 a.add_to_cart,
 .button,
 .widget .button {
-	background-color: @button-color;
-	border: 2px solid @button-color;
+	background-color: @button-bgcolor;
+	border: 2px solid @button-bgcolor;
 	border-radius: 5px;
-	color: #fff;
+	color: @button-color;
 	cursor: pointer;
 	font-size: 14px;
 	font-weight: 800;
@@ -355,6 +349,11 @@ a.add_to_cart,
 	-webkit-font-smoothing: antialiased;
 	white-space: normal;
 	width: auto;
+
+	&.secondary{
+		background-color: @button-secondary-bgcolor;
+
+	}
 }
 
 button:hover,
@@ -371,9 +370,9 @@ a.add_to_cart:hover,
 .footer-widgets .widget .button,
 .widget .button:hover,
 .widget .button.clear:hover {
-	background-color: #fff;
-	border: 2px solid #fff;
-	color: #000;
+	background-color: @button-bgcolor-hover;
+	border: 2px solid @button-bgcolor-hover;
+	color: @button-color-hover;
 }
 
 .button {
@@ -465,7 +464,7 @@ input[type="search"]::-webkit-search-results-button {
 
 	.icon{
 		background-color: #fff;
-		color: @edgered;
+		color: @edgesecondary;
 		padding: 2px;
 		display: block;
 		float: right;

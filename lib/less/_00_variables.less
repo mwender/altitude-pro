@@ -2,13 +2,21 @@
 @import 'mixins/google-maps';
 @import 'mixins/gradients';
 
+/* EDGE2017 */
+@edgeblue: #211F5D;
+@edgegreen: #51B848;
+@edgelightgray: #f2f2f2;
+
+/* EDGE2016 */
 @edgered: 	#e94f3d;
 @edgegold: 	#f39d20;
 @edgegray: 	#58595B;
 @edgemaron: #8e2e1e;
-@edgeblue: #211F5D;
-@edgegreen: #51B848;
-@edgelightgray: #f2f2f2;
+
+/* EDGE Primary Colors */
+@edgeprimary: @edgeblue;
+@edgesecondary: @edgegreen;
+@edgeaccent: @edgelightgray;
 
 .red{
 	color: @edgered;
@@ -42,3 +50,16 @@
 @alert-danger-border: 		#ba1c1c;
 @alert-danger-bg: 			lighten(@alert-danger-border,20%);
 @alert-danger-text: 		#333;
+
+@heading-font: "Oswald", sans-serif;
+@body-font: "Merriweather", sans-serif;
+@nav-font: @heading-font;
+
+/* Buttons */
+@button-font: @heading-font;
+@button-color: #fff;
+@button-bgcolor: @edgegreen;
+@button-color-hover: #000;
+@button-bgcolor-hover: #fff;
+
+@button-secondary-bgcolor: @edgeprimary;
