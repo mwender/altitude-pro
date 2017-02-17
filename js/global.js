@@ -42,6 +42,27 @@ jQuery(function( $ ){
 		});
 	});
 
+  // Photoswipe galleries
+  $('.photoswipe').on('click',function(e){
+    e.preventDefault();
+    var gallery = $(this).attr('data-gallery');
+    $.getJSON(globaljsvars.dataurl + '/' + gallery + '/images.json?ver=' + globaljsvars.dataversion, function( images ){
+      var pswpElement = document.querySelectorAll('.pswp')[0];
+
+      // define options (if needed)
+      var options = {
+          // optionName: 'option value'
+          // for example:
+          index: 0 // start at first slide
+      };
+
+      // Initializes and opens PhotoSwipe
+      var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, images, options);
+      gallery.init();
+    });
+  });
+
+  // Adds `Read More` link
   function hideText( textselector, strlen, moretext ){
       strlen = typeof strlen !== 'undefined' ? strlen : 100;
       moretext = typeof moretext !== 'undefined' ? moretext : 'Read More';
@@ -66,7 +87,6 @@ jQuery(function( $ ){
           $( sections[i] ).find( 'span.hidden-text' ).hide();
       }
   }
-
   hideText( '.hidetext', 200 );
 
   // Lightbox open

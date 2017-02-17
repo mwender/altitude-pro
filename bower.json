@@ -1,0 +1,21 @@
+{
+  "name": "altitude-pro",
+  "description": "ALTITUDE PRO THEME http://my.studiopress.com/themes/altitude/",
+  "main": "front-page.php",
+  "authors": [
+    "Michael Wender"
+  ],
+  "license": "GPLv2",
+  "homepage": "https://github.com/mwender/altitude-pro",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "photoswipe": "^4.1.1"
+  }
+}
