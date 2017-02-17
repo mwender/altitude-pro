@@ -2,7 +2,15 @@
 	var AddSpeakers = $.fn.AddSpeakers = function(elem,data){
 		var listSpeakers = $(elem).attr('data-list-speakers');
 		if( typeof listSpeakers !== 'undefined' ){
-			var speakerTemplate = Handlebars.compile( $('#speaker-condensed-template').html() );
+			switch( listSpeakers ){
+				case 'keynote-agenda':
+					var speakerTemplate = Handlebars.compile( $('#keynote-agenda-template').html() );
+					$(elem).addClass('abstract room'); // Display speaker abstract and room
+				break;
+
+				default:
+					var speakerTemplate = Handlebars.compile( $('#speaker-condensed-template').html() );
+			}
 		} else {
 			var speakerTemplate = Handlebars.compile( $('#speaker-template').html() );
 		}
@@ -146,7 +154,7 @@
 				}
 
 				if( col == cols ){
-					speakerRows[row] = '<div class="clearfix usecolumns">' + speakerHtml + '</div>';
+					speakerRows[row] = '<div class="clearfix usecolumns speakersjs">' + speakerHtml + '</div>';
 					// reset col/increment row
 					col = 1;
 					row = row + 1;
@@ -159,7 +167,7 @@
 				// Don't use columns
 				speakerHtml = speakerHtml + speakerTemplate( val );
 				if( speakerCount == numOfSpeakers ){
-					speakerRows[0] = '<div class="clearfix">' + speakerHtml + '</div>';
+					speakerRows[0] = '<div class="clearfix speakersjs">' + speakerHtml + '</div>';
 				}
 				speakerCount++;
 			} // if( true == useColumns )
@@ -207,6 +215,8 @@
 jQuery(function($){
 	var speakerOverlayTemplate = Handlebars.compile( $('#overlay-template').html() );
 	var abstractOverlayTemplate = Handlebars.compile( $('#abstract-template').html() );
+	var speakerTemplatePartial = Handlebars.compile( $('#speaker-template').html() );
+	Handlebars.registerPartial('speakerTemplate', speakerTemplatePartial );
 
 	// Speaker photos and bios
 	$.getJSON(wpvars.dataurl + '?ver=' + wpvars.dataversion , function( data ){

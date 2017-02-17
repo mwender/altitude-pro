@@ -64,7 +64,7 @@ h1{
 	.day{
 		padding: 4px 8px;
 		margin: 40px 0 20px;
-		background-color: @edgemaron;
+		background-color: @edgeprimary;
 		color: #fff;
 
 		h3{
@@ -93,6 +93,10 @@ h1{
 		border-bottom: 1px solid lighten(@edgegray,50%);
 	}
 
+	.one-third .time{
+		margin-top: 0;
+	}
+
 	h6{
 		font-size: 16px;
 		margin: 4px 0;
@@ -101,7 +105,7 @@ h1{
 	h4.time > span,
 	h5 > span,
 	p.label > span{
-		background-color: @edgered;
+		background-color: @edgeprimary;
 		color: #fff;
 		font-size: .75em;
 
@@ -133,10 +137,10 @@ h1{
 	}
 	p.label{
 		font-family: @heading-font;
-		background-color: @edgered;
+		background-color: darken(@edgeaccent,25%); /* @edgered */
 		color: #fff;
 		padding: 0 10px;
-		border-left: 5px solid @edgegold;
+		border-left: 5px solid @edgeprimary;
 		margin: 0;
 		line-height: 2.2;
 		font-size: 20px;
@@ -154,7 +158,7 @@ h1{
 
 		& > span{
 			background-color: #fff;
-			color: @edgered;
+			color: @edgeprimary;
 		}
 	}
 
@@ -172,7 +176,7 @@ h1{
 			width: 100%;
 			background-color: rgba(255,255,255,0.95);
 			padding: 10px 0;
-			border-bottom: 3px solid @edgered;
+			border-bottom: 3px solid @edgeprimary;
 
 			& > .clearfix{
 				max-width: 1200px;

@@ -16,6 +16,14 @@
         {{/if}}
     </div>
 </script>
+<script id="speaker-condensed-template" type="text/x-handlebars-template">
+  <div class="speaker clearfix">
+    <div class="one-fourth first"><img src="{{themeurl}}/images/speakers/{{photo}}" class="circle alignright" /></div>
+    <div class="three-fourths">
+      <p><strong>{{name}}</strong>, <span>{{tagline}}</span><br />{{title}}</p>
+    </div>
+  </div>
+</script>
 <script id="overlay-template" type="text/x-handlebars-template">
   <div class="speaker-overlay {{type}}" id="{{key}}">
     <div class="clearfix">
@@ -44,11 +52,45 @@
     </div>
   </div>
 </script>
-<script id="speaker-condensed-template" type="text/x-handlebars-template">
-  <div class="speaker clearfix">
-    <div class="one-fourth first"><img src="{{themeurl}}/images/speakers/{{photo}}" class="circle alignright" /></div>
-    <div class="three-fourths">
-      <p><strong>{{name}}</strong>, <span>{{tagline}}</span><br />{{title}}</p>
+
+<!-- Conference Agenda Templates -->
+<script id="agenda-default-session-template" type="text/x-handlebars-template">
+  <div class="clearfix">
+    <div class="one-third first">
+      <h4 class="time">{{{time}}}</h4>
+      <h5>{{name}}</h5>
+    </div>
+    <div class="two-thirds">
+      <table class="agenda">
+        {{#each items}}
+          <tr>
+            <td><h5><span>{{room}}</span> {{speaker}} - {{#if title}}{{title}}{{else}}To be announced.{{/if}}</h5></td>
+          </tr>
+        {{/each}}
+      </table>
+    </div>
+  </div>
+</script>
+<script id="agenda-block-session-template" type="text/x-handlebars-template">
+  <h4 class="time">{{{time}}}</h4>
+  <div class="clearfix">
+    <p class="label{{length}} label">{{#if room}}<span>{{room}}</span> {{/if}}{{name}}</p>
+  </div>
+</script>
+<!-- /Conference Agenda Templates -->
+
+<script id="keynote-agenda-template" type="text/x-handlebars-template">
+  {{#if showRoom}}<h5><span>{{room}}</span> {{#if session-label}}{{session-label}}{{else}}Keynote Speaker{{/if}}</h5>{{/if}}
+  <div class="clearfix">
+    <div class="one-third first">
+      {{> speakerTemplate showAbstract=false}}
+    </div>
+    <div class="two-thirds">
+      <h5 class="abstract-title">{{title}}</h5>
+        {{{abstractHtml}}}
+        {{#if presentation}}
+        <div class="presentation"><a href="/wp-content/uploads/edge2016-presentations/{{presentation}}" class="button small" target="_blank">DOWNLOAD: {{title}}</a></div>
+        {{/if}}
     </div>
   </div>
 </script>

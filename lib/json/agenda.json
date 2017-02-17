@@ -1,0 +1,58 @@
+{
+  "tuesday": {
+    "800-900": {
+      "name": "Registration and Breakfast",
+      "time": "8:00 &ndash; 9:00AM",
+      "length": "60",
+      "room": "CB"
+    },
+    "900-930": {
+      "name": "Opening Remarks",
+      "time": "9:00 &ndash; 9:30AM",
+      "length": "30",
+      "room": "CB"
+    },
+    "930-1030": {
+      "name": "Keynote Speaker",
+      "time": "9:30 &ndash; 10:30AM",
+      "length": "60",
+      "room": "CB"
+    },
+    "1030-1045": {
+      "name": "Break",
+      "time": "10:30 &ndash; 10:45AM",
+      "length": "15"
+    },
+    "1045-1145": {
+      "name": "General Session #1",
+      "time": "10:45 &ndash; 11:45AM",
+      "length": "60",
+      "room": "CB"
+    },
+    "1145-1230": {
+      "name": "Networking Break",
+      "time": "11:45AM &ndash; 12:30PM",
+      "length": "45"
+    },
+    "1230-130": {
+      "name": "Lunch",
+      "time": "12:30 &ndash; 1:30PM"
+    },
+    "130-215": {
+      "items": [
+        {
+          "room": "CB",
+          "speaker": "Theresa Payton",
+          "title": ""
+        },
+        {
+          "room": "A",
+          "speaker": "Fred Cobb",
+          "title": ""
+        }
+      ],
+      "name": "Track Session #1",
+      "time": "1:30 &ndash; 2:15PM"
+    }
+  }
+}

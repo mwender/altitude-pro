@@ -28,7 +28,17 @@ function altitude_enqueue_scripts_styles() {
 	$main_css_version = ( file_exists( get_stylesheet_directory() . '/lib/css/main.css' ) )? filemtime( get_stylesheet_directory() . '/lib/css/main.css' ) : get_bloginfo( 'version' );
 	wp_enqueue_style( $handle, get_bloginfo( 'stylesheet_directory' ) . '/lib/css/main.css', false, $main_css_version );
 
+	// Global JS
 	wp_enqueue_script( 'altitude-global', get_bloginfo( 'stylesheet_directory' ) . '/js/global.js', array( 'jquery' ), filemtime( get_stylesheet_directory() . '/js/global.js' ) );
+	$uploads = wp_upload_dir();
+	$json_files = ['edge2016gallery/images.json'];
+	$timestamp = 0;
+	foreach ($json_files as $file) {
+		$filetime = filemtime( $uploads['basedir'] . '/' . $file );
+		if( $filetime > $timestamp )
+			$timestamp = $filetime;
+	}
+	wp_localize_script( 'altitude-global', 'globaljsvars', ['dataurl' => $uploads['baseurl'], 'dataversion' => $timestamp] );
 
 	wp_enqueue_style( 'dashicons' );
 	wp_enqueue_style( 'genericons', get_bloginfo( 'stylesheet_directory' ) . '/lib/fonts/genericons/genericons.css', null, filemtime( get_stylesheet_directory() . '/lib/fonts/genericons/genericons.css' ) );
@@ -43,6 +53,18 @@ function altitude_enqueue_scripts_styles() {
 		wp_enqueue_script( 'showdown', 'https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.2/showdown.min.js', null, '1.4.2' );
 		wp_enqueue_script( 'speakers', get_bloginfo( 'stylesheet_directory' ) . '/js/speakers.js', array( 'jquery', 'handlebars', 'showdown' ), filemtime( get_stylesheet_directory() . '/js/speakers.js' ) );
 		wp_localize_script( 'speakers', 'wpvars', array( 'dataurl' => get_bloginfo( 'stylesheet_directory' ) . '/lib/json/speakers.json', 'themeurl' => get_bloginfo( 'stylesheet_directory' ), 'dataversion' => filemtime( get_stylesheet_directory() . '/lib/json/speakers.json' ), 'showkeynotes' => 'false' ) );
+		add_action('wp_footer', function(){
+			$templates = file_get_contents( get_stylesheet_directory() . '/lib/html/speakers-handlebar-templates.html' );
+			echo $templates;
+		});
+	}
+
+	$agendajs_pages = ['conference-agenda'];
+	if( is_page( $agendajs_pages ) ){
+		wp_enqueue_script( 'handlebars', get_bloginfo( 'stylesheet_directory' ) . '/js/handlebars-v4.0.5.js', null, filemtime( get_stylesheet_directory() . '/js/handlebars-v4.0.5.js' ) );
+		wp_enqueue_script( 'showdown', 'https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.2/showdown.min.js', null, '1.4.2' );
+		wp_enqueue_script( 'agenda', get_bloginfo( 'stylesheet_directory' ) . '/js/agenda.js', array( 'jquery', 'handlebars', 'showdown' ), filemtime( get_stylesheet_directory() . '/js/agenda.js' ) );
+		wp_localize_script( 'agenda', 'agendavars', array( 'agendadata' => get_bloginfo( 'stylesheet_directory' ) . '/lib/json/agenda.json', 'themeurl' => get_bloginfo( 'stylesheet_directory' ), 'dataversion' => filemtime( get_stylesheet_directory() . '/lib/json/agenda.json' ) ) );
 		add_action('wp_footer', function(){
 			$templates = file_get_contents( get_stylesheet_directory() . '/lib/html/speakers-handlebar-templates.html' );
 			echo $templates;
@@ -105,6 +127,21 @@ function altitude_secondary_nav_class( $classes ) {
 
 	return $classes;
 
+}
+
+/**
+ * Add the `post_name` as a class on the <body>
+ */
+add_filter( 'body_class', 'altitude_body_class' );
+function altitude_body_class( $classes ){
+	global $post;
+
+	$classes[] = $post->post_name;
+
+	if( is_front_page() )
+		$classes[] = 'front-page';
+
+	return $classes;
 }
 
 //* Hook menu in footer
