@@ -19,8 +19,9 @@ function html_include( $atts ){
 
 	$return = ( file_exists( $file ) )? file_get_contents( $file ) : '<p class="alert"><strong>ERROR:</strong> I could not find <code>' . basename( $file ) . '</code>.</p>' ;
 
-	$search = array( '{themedir}' );
-	$replace = array( \trailingslashit( get_stylesheet_directory_uri() ) );
+	$search = array( '{themedir}', '{registration_link}' );
+    $registration_link = ( defined( 'REGISTRATION_LINK' ) )? REGISTRATION_LINK : '#';
+	$replace = [ \trailingslashit( get_stylesheet_directory_uri() ), $registration_link ];
 	$return = str_replace( $search, $replace, $return );
 
 	if( true == $doshortcodes )
