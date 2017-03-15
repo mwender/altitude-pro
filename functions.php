@@ -42,9 +42,7 @@ function altitude_enqueue_scripts_styles() {
 
 	wp_enqueue_style( 'dashicons' );
 	wp_enqueue_style( 'genericons', get_bloginfo( 'stylesheet_directory' ) . '/lib/fonts/genericons/genericons.css', null, filemtime( get_stylesheet_directory() . '/lib/fonts/genericons/genericons.css' ) );
-	$font_families = array();
-	$font_families[] = 'Oswald:400,700';
-	$font_families[] = 'Merriweather:400,700';
+	$font_families = ['Oswald:400,700'];
 	wp_enqueue_style( 'altitude-google-fonts', '//fonts.googleapis.com/css?family=' . implode( '|', $font_families ), array(), CHILD_THEME_VERSION );
 
 	$speakersjs_pages = ['speakers','tracks','agenda','conference-agenda','speaker-list','agenda-for-print'];
