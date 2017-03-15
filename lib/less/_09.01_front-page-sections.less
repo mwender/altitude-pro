@@ -30,6 +30,9 @@
 
 /* Hero Unit */
 #front-page-1{
+	p > a{
+		color: @edgesecondary;
+	}
 	a.button{
 		margin-bottom: 30px;
 		margin-top: 0;
@@ -58,21 +61,23 @@
 	.flexible-widgets{
 		padding-top: 80px;
 	}
-	@speaker-size: 75px;
+
+	@speaker-size: 128px;
+	@speaker-border-width: 4px;
 	div.speaker{
 		width: @speaker-size;
 		height: @speaker-size;
 		float: left;
-		margin-right: -15px;
-		margin-top: -10px;
-		border: 2px solid @edgered;
-		border-radius: 50%;
+		margin-right: 10px;
+		/*margin-top: -10px;*/
+		margin: 0 10px 10px 0;
+		border: @speaker-border-width solid @edgeprimary;
 		-webkit-transition: margin-right .5s, margin-left .5s;
 		transition: margin-right .5s, margin-left .5s;
-		background-color: @edgegold;
+		background-color: @edgesecondary;
 
 		img{
-			width: @speaker-size - 4px;
+			width: @speaker-size - (@speaker-border-width * 2);
 		}
 
 		&:hover{
@@ -91,14 +96,15 @@
 		}
 
 		&.keynote{
-			border-color: @edgegold;
+			border-color: @edgesecondary;
 
 			&:hover{
 				border-color: #fff;
 			}
 		}
-	}
 
+	}
+	/**/
 	div.speakers{
 		margin-bottom: 10px;
 	}

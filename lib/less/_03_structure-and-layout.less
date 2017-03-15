@@ -134,13 +134,13 @@ Common Classes
 /* Callout
 --------------------------------------------- */
 .callout{
-	background-color: @edgered;
-	color: #fff;
+	background-color: darken(@edgesecondary,20%);
+	color: #333;
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 	margin-bottom: 20px;
 
 	a.add_to_cart{
-		background-color: @edgegold;
+		background-color: @edgesecondary;
 		font-size: 28px;
 	}
 
@@ -151,7 +151,7 @@ Common Classes
 
 		a{
 			padding: 6px 12px;
-			background-color: @edgegold;
+			background-color: @edgesecondary;
 			border-radius: 3px;
 			color: #fff;
 			font-weight: bold;
@@ -164,6 +164,11 @@ Common Classes
 		padding: 10px;
 		border-bottom: 1px solid #fff;
 
+		&,
+		.dashicons{
+			color: #fff;
+		}
+
 		h3,
 		#front-page-5 .widget_text & h3{
 			margin: 0;
@@ -172,6 +177,7 @@ Common Classes
 	}
 	.callout-content{
 		padding: 20px 30px 20px 20px;
+		background-color: @edgeaccent;
 	}
 
 	.dashicons,
@@ -239,7 +245,7 @@ Common Classes
 		.footer-widgets,
 		.widget .button{
 			background-color: #fff;
-			color: @edgered;
+			color: @edgesecondary;
 		}
 
 		.gform_footer{

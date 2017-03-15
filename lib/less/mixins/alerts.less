@@ -1,6 +1,6 @@
 // Alerts
 
-.alert-variant(@background; @border; @text-color) {
+.alert-variant(@background; @border; @text-color; @link-hover-color: @edgesecondary) {
 	background-color: @background;
 	border-color: @border;
 	color: @text-color;
@@ -11,4 +11,8 @@
 	.alert-link {
 		color: darken(@text-color, 10%);
 	}
+
+  a:hover{
+    color: lighten(@link-hover-color,25%);
+  }
 }
