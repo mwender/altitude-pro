@@ -1,4 +1,28 @@
 (function(window,$){
+	/**
+	 * Displays speakers from speakers.json
+	 *
+	 * @type       {attr,str}						data-list-speakers							Specifies the template. Defaults to #speaker-condensed-template.
+	 *
+	 * Possible values:
+	 * 		keynote-agenda	Displays the speaker abstract and room
+	 *
+	 * @type       {attr,str} 					class {
+	 * 		.thumbnails Show thumbnails only.
+	 * 		.abstract		Show abstract.
+	 * 		.room				Show room.
+	 * 		.keynote		Show keynote speakers only.
+	 * 		.session		Show session speakers only.
+	 * }
+	 *
+	 * @type       {attr,comma-sep-str}	data-speakers					Comma separated list of speakers to include (e.g. data-speakers="john-doe,sally-doe").
+	 *
+	 * @type       {attr,comma-sep-str}	data-exclude-speakers	Comma separated list of speakers to exclude.
+	 *
+	 * @type       {attr,int} 					data-width											Width in pixels of thumbnails.
+	 *
+	 * @type       {attr,int} 					data-columns										Number of columns for display.
+	 */
 	var AddSpeakers = $.fn.AddSpeakers = function(elem,data){
 		var listSpeakers = $(elem).attr('data-list-speakers');
 		if( typeof listSpeakers !== 'undefined' ){
