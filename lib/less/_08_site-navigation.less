@@ -6,31 +6,45 @@ Site Navigation
 .genesis-nav-menu {
 	line-height: 1;
 	font-family: @nav-font;
+	padding: 18px;
+
+	.menu-item {
+		display: inline-block;
+		text-align: left;
+		margin-top: 16px;
+	}
+
+	li li {
+		margin-left: 0;
+	}
+
+	a {
+		color: @edgegreen;
+		display: block;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		padding: 10px 15px;
+		text-transform: uppercase;
+		border-radius: 3px;
+
+		&:hover{
+			background-color: rgba(238,238,238,0.4);
+		}
+	}
 }
 
-.genesis-nav-menu .menu-item {
-	display: inline-block;
-	text-align: left;
-	margin-top: 16px;
-}
+.site-header.dark .genesis-nav-menu{
+	li.current-menu-item{
+		a{
+			background-color: rgba(238,238,238,0.3);
+		}
+	}
 
-.genesis-nav-menu li li {
-	margin-left: 0;
-}
-
-.genesis-nav-menu a {
-	color: @edgegreen;
-	display: block;
-	font-size: 14px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	padding: 30px 15px;
-	text-transform: uppercase;
-}
-
-.site-header.dark .genesis-nav-menu a {
-	padding: 30px 15px;
-	color: #fff;
+	a {
+		padding: 10px 15px;
+		color: #fff;
+	}
 }
 
 .genesis-nav-menu li.highlight a:hover::before {
