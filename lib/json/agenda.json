@@ -42,17 +42,99 @@
       "items": [
         {
           "room": "CB",
-          "speaker": "Theresa Payton",
+          "speaker": "TBA",
           "title": ""
         },
         {
           "room": "A",
-          "speaker": "Fred Cobb",
+          "speaker": "TBA",
+          "title": ""
+        },
+        {
+          "room": "B",
+          "speaker": "TBA",
+          "title": ""
+        },
+        {
+          "room": "C",
+          "speaker": "TBA",
+          "title": ""
+        },
+        {
+          "room": "D",
+          "speaker": "TBA",
+          "title": ""
+        },
+        {
+          "room": "E",
+          "speaker": "TBA",
+          "title": ""
+        },
+        {
+          "room": "LH",
+          "speaker": "TBA",
           "title": ""
         }
       ],
       "name": "Track Session #1",
       "time": "1:30 &ndash; 2:15PM"
+    },
+    "215-230": {
+      "name": "Break",
+      "time": "2:15 &ndash; 2:30PM",
+      "length": "15"
+    },
+    "230-315": {
+      "items": [
+        {
+          "room": "CB",
+          "speaker": "TBA",
+          "title": ""
+        },
+        {
+          "room": "A",
+          "speaker": "TBA",
+          "title": ""
+        },
+        {
+          "room": "B",
+          "speaker": "TBA",
+          "title": ""
+        },
+        {
+          "room": "C",
+          "speaker": "TBA",
+          "title": ""
+        },
+        {
+          "room": "D",
+          "speaker": "TBA",
+          "title": ""
+        },
+        {
+          "room": "E",
+          "speaker": "TBA",
+          "title": ""
+        },
+        {
+          "room": "LH",
+          "speaker": "TBA",
+          "title": ""
+        }
+      ],
+      "name": "Track Session #2",
+      "time": "2:30 &ndash; 3:15PM"
+    },
+    "315-330": {
+      "name": "Break",
+      "time": "3:15 &ndash; 3:30PM",
+      "length": "15"
+    },
+    "330-430": {
+      "name": "Panel Discussion",
+      "time": "3:30 &ndash; 4:30PM",
+      "length": "60",
+      "room": "CB"
     }
   }
 }
