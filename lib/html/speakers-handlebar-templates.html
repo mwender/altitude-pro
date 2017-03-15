@@ -1,7 +1,7 @@
 <!-- Handlebars -->
 <script id="speaker-template" type="text/x-handlebars-template">
     <div class="speaker {{type}} {{colClass}}">
-        <a href="#" data-speaker="{{key}}" class="speaker" title="{{name}}"><img src="{{themeurl}}/images/speakers/{{photo}}" alt="{{name}}"{{{widthHeight}}} class="circle"></a>
+        <a href="#" data-speaker="{{key}}" class="speaker" title="{{name}}"><img src="{{themeurl}}/images/speakers/{{photo}}" alt="{{name}}"{{{widthHeight}}} class="square"></a>
         {{#unless thumbnailsOnly}}
           <h3><a href="#" class="speaker" data-speaker="{{key}}">{{name}}</a></h3>
           {{{taglineHtml}}}
@@ -18,7 +18,7 @@
 </script>
 <script id="speaker-condensed-template" type="text/x-handlebars-template">
   <div class="speaker clearfix">
-    <div class="one-fourth first"><img src="{{themeurl}}/images/speakers/{{photo}}" class="circle alignright" /></div>
+    <div class="one-fourth first"><img src="{{themeurl}}/images/speakers/{{photo}}" class="square alignright" /></div>
     <div class="three-fourths">
       <p><strong>{{name}}</strong>, <span>{{tagline}}</span><br />{{title}}</p>
     </div>
@@ -29,7 +29,7 @@
     <div class="clearfix">
         <a href="#" class="close" data-speaker="{{key}}"></a>
         <div class="one-third first">
-            <img src="{{themeurl}}/images/speakers/{{photo}}" class="circle aligncenter" alt="">
+            <img src="{{themeurl}}/images/speakers/{{photo}}" class="square aligncenter" alt="">
         </div>
         <div class="two-thirds">
         	<h2>{{name}}, <span>{{type}} Speaker</span></h2>
