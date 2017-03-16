@@ -124,7 +124,7 @@ nav.nav-primary{
 
 /* Top Section
 --------------------------------------------- */
-@topSectionHeight: 200px;
+@topSectionHeight: 160px; /* 200px when .ribbon-two is active */
 .top-section{
 	background: @edgelightgray url(../../images/edge-bkgrd.1920x300.jpg) no-repeat left center;
 	background-size: cover;
@@ -162,14 +162,14 @@ nav.nav-primary{
 	}
 
 	.ribbon-one{
-		height: @topSectionHeight - 36px;
+		height: @topSectionHeight; /* - 36px */
 		max-width: 1200px;
 		margin: 0 auto;
 
 		p{
 			font-family: @heading-font;
       font-weight: 600;
-			line-height: @topSectionHeight - 36px;
+			line-height: @topSectionHeight; /* - 36px */
 			text-align: center;
 		}
 	}
