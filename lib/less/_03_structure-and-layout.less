@@ -37,6 +37,7 @@ Structure and Layout
 /* Column Classes
 	Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
 --------------------------------------------- */
+@leftmargin: 6%; /* 2.564102564102564% */
 
 .five-sixths,
 .four-sixths,
@@ -51,43 +52,52 @@ Structure and Layout
 .two-sixths,
 .two-thirds {
 	float: left;
-	margin-left: 2.564102564102564%;
+	/*margin-left: 2.564102564102564%;*/
+	margin-left: @leftmargin;
 }
 
 .one-half,
 .three-sixths,
 .two-fourths {
-	width: 48.717948717948715%;
+	/*width: 48.717948717948715%;*/
+	width: 50% - @leftmargin;
 }
 
 .one-third,
 .two-sixths {
-	width: 31.623931623931625%;
+	/*width: 31.623931623931625%;*/
+	width: 33% - @leftmargin;
 }
 
 .four-sixths,
 .two-thirds {
-	width: 65.81196581196582%;
+	/*width: 65.81196581196582%;*/
+	width: 66% - @leftmargin;
 }
 
 .one-fourth {
-	width: 23.076923076923077%;
+	/*width: 23.076923076923077%;*/
+	width: 25% - @leftmargin;
 }
 
 .three-fourths {
-	width: 74.35897435897436%;
+	/*width: 74.35897435897436%;*/
+	width: 75% - @leftmargin;
 }
 
 .one-sixth {
-	width: 14.52991452991453%;
+	/*width: 14.52991452991453%;*/
+	width: 16% - @leftmargin;
 }
 
 .one-seventh{
-	width: 11.435897435897436%;
+	/*width: 11.435897435897436%;*/
+	width: 14% - @leftmargin;
 }
 
 .five-sixths {
-	width: 82.90598290598291%;
+	/*width: 82.90598290598291%;*/
+	width: 83% - @leftmargin;
 }
 
 .first {
