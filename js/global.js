@@ -92,12 +92,23 @@ jQuery(function( $ ){
   // Lightbox open
   $('body').on('click', '.lightbox', function(e){
   	e.preventDefault();
-  	console.log('lightbox clicked.');
   	var image = $(this).attr( 'href' );
-  	console.log('href = ' + image );
   	var lightbox = '<div class="lightbox-overlay" id="active-lightbox"><a href="#" class="close"></a><div class="clearfix"><img src="' + image + '" /></div></div>';
-  	$('body').prepend( lightbox ).addClass('noscroll');
+
+    $('body').prepend( lightbox ).addClass('noscroll');
   	$('.lightbox-overlay').fadeIn();
+  });
+
+  // Close Lightbox on click anywhere
+  $('body').on('click','.lightbox-overlay', function(e){
+
+    e.preventDefault();
+    var target = e.target;
+
+    if( $(target).has('.lightbox-overlay#active-lightbox') ){
+      $('body').removeClass('noscroll');
+      $( this ).fadeOut().remove();
+    }
   });
 
   // Lightbox close
