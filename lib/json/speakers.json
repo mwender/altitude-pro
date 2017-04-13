@@ -1,23 +1,14 @@
 {
-  "charlie-miller": {
+  "miller-valasek": {
     "type": "keynote",
-    "name": "Charlie Miller",
-    "tagline": "&ldquo;White Hat&rdquo; Hacker, Didi Chuxing",
-    "photo": "charlie-miller.600x600.jpg",
-    "bio": "Recognized globally for his ability to identify vulnerabilities in consumer products, Dr. Charlie Miller is \"one of the most technically proficient hackers on Earth\", according to ForeignPolicy.com.\n\nCurrently the Senior Security Engineer at Uber's Advanced Technologies Center, Dr. Miller has made waves within the field of automotive security for his work alongside research partner, Chris Valasek. First demonstrating that with direct access to a vehicle, the physical systems of a Ford and Toyota could be controlled by an attacker, he then expanded this research to show that these attacks could be done remotely. Dr. Miller and Valasek made headlines and exposed serious security flaws in automobiles with their remote compromise of a 2014 Jeep Cherokee, in which they obtained physical control of the vehicle from more than 10 miles away; the results led Fiat Chrysler to recall 1.4 million vehicles.\n\nDr. Miller previously served on Twitter’s computer security team after five years as a computer hacker for the National Security Agency. The 4-time winner of the “Super Bowl” of computer hacking, the annual Pwn2Own competition, Dr. Miller has publicly demonstrated many security exploits, specifically of Apple products and is the first person to remotely hack the iPhone, as well as the Android smartphone (on the day it was released).\n\nHe is the co-author of three books, including *iOS Hacker's Handbook*, and has been featured in a range of media outlets, including NBC, ABC, CNN, NPR, CNBC, *The New York Times*, *USA Today* and *Forbes*.",
+    "name": "Dr. Charlie Miller and Chris Valasek",
+    "tagline": "Renowned “White Hat&rdquo; Hackers",
+    "photo": "miller-and-valasek.600x600.jpg",
+    "bio": "Recognized as two of the most technically proficient hackers on Earth by ForeignPolicy.com, Dr. Charlie Miller and Chris Valasek are best known for the remote compromise of a 2014 Jeep Cherokee, whereby they obtained physical control of the vehicle, exposing serious security flaws; the results led Fiat Chrysler to recall 1.4 million vehicles. Now they captivate and enlighten audiences in a presentation as unique and fascinating as the cyber superheroes themselves, revealing how they identify vulnerabilities in various technologies and devices, discuss their roles as hackers for good, and what it all means for specific industries, organizations and individuals.\n\nBoth Miller and Valasek serve as consultants for the hit CBS drama series, &ldquo;CSI: Cyber&rdquo; and as judges at the Pwnie awards, commonly referred to as the “hacker Oscars;” they have also consulted with members of Congress on consumer cybersecurity protection measures. They have been featured in media outlets including NBC, ABC, The New York Times, Time, The Washington Post, Forbes and SecurityWeek.\n\nCurrently, Dr. Miller serves as the head of autonomous vehicle security division at Didi Chuxing, a ride sharing company based in China that completes more rides per month than any other company in the world. Previously, he served on Twitter’s computer security team after five years as a computer hacker for the National Security Agency. He is the first person to remotely hack Apple’s iPhone.\n\nSecurity Lead at Uber’s Advanced Technologies Center, Valasek’s work in automotive security secured him a spot on LinkedIn’s Next Wave list, featuring 150 of the top professionals age 35 and under who are transforming different industries. He has presented at cybersecurity conferences including BlackHat USA, DEFCON and Infiltrate, and is the chairman of SummerCon, America’s oldest hacker conference.",
     "title": "",
     "abstract": "",
-    "room": "CB"
-  },
-  "chris-valasek": {
-    "type": "keynote",
-    "name": "Chris Valasek",
-    "tagline": "Security Lead, Uber Advanced Technologies Center & Renowned \"White Hat\" Hacker",
-    "photo": "chris-valasek.600x600.jpg",
-    "bio": "Regarded for his work in the automotive security arena, Chris Valasek specializes in offensive research methodologies with a focus on reverse engineering and exploitation. Best known for the remote compromise of a 2014 Jeep Cherokee, whereby he and his research partner, Charlie Miller obtained physical control of the vehicle from more than 10 miles away, Valasek was lauded for exposing serious security flaws in automobiles; the results led Fiat Chrysler to recall 1.4 million vehicles. Valasek is one of the first researchers to discuss automotive security issues in detail, and his release of a library to physically control vehicles through the CAN (Controller Area Network) bus garnered worldwide media attention.\n\nValasek’s hacking of the Jeep Cherokee led Uber to bring him on board as Security Lead at their Advanced Technologies Center. As a result of his work within the automotive industry, Valasek was included on LinkedIn’s Next Wave list, featuring 150 of the top professionals age 35 and under who are transforming different industries.\n\nA popular speaker on security flaws in various technologies and devices, and solutions for preventing and alleviating such critical issues, he has presented at such preeminent cybersecurity conferences around the world, including BlackHat USA, DEFCON and Infiltrate. He is also the Chairman of SummerCon, America’s oldest hacker conference. His insights have been featured in a large range of media outlets, including leading publications, *TIME*, *Fortune*, *The Washington Post*, *Forbes* and *SecurityWeek*.",
-    "title": "",
-    "abstract": "",
-    "room": "CB"
+    "room": "CB",
+    "plural": "true"
   },
   "brett-williams": {
     "type": "keynote",
