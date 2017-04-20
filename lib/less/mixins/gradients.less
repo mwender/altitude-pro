@@ -1,13 +1,14 @@
-.background-gradient() {
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.9) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.2)), color-stop(30%,rgba(0,0,0,0.5)), color-stop(80%,rgba(0,0,0,0.8)), color-stop(100%,rgba(0,0,0,0.9)));
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
-	background: -o-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
-	background: -ms-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
-	background: linear-gradient(to bottom,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
+.background-gradient(@color: #000, @step1: 0.2, @step2: 0.5, @step3: 0.8, @step4: 0.9) {
+	background: -moz-linear-gradient(top,  rgba(red(@color),green(@color),blue(@color),@step1) 0%, rgba(red(@color),green(@color),blue(@color),@step2) 30%, rgba(red(@color),green(@color),blue(@color),@step3) 80%, rgba(red(@color),green(@color),blue(@color),@step4) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(red(@color),green(@color),blue(@color),@step1)), color-stop(30%,rgba(red(@color),green(@color),blue(@color),@step2)), color-stop(80%,rgba(red(@color),green(@color),blue(@color),@step3)), color-stop(100%,rgba(red(@color),green(@color),blue(@color),@step4)));
+	background: -webkit-linear-gradient(top,  rgba(red(@color),green(@color),blue(@color),@step1) 0%,rgba(red(@color),green(@color),blue(@color),@step2) 30%,rgba(red(@color),green(@color),blue(@color),@step3) 80%,rgba(red(@color),green(@color),blue(@color),@step4) 100%);
+	background: -o-linear-gradient(top,  rgba(red(@color),green(@color),blue(@color),@step1) 0%,rgba(red(@color),green(@color),blue(@color),@step2) 30%,rgba(red(@color),green(@color),blue(@color),@step3) 80%,rgba(red(@color),green(@color),blue(@color),@step4) 100%);
+	background: -ms-linear-gradient(top,  rgba(red(@color),green(@color),blue(@color),@step1) 0%,rgba(red(@color),green(@color),blue(@color),@step2) 30%,rgba(red(@color),green(@color),blue(@color),@step3) 80%,rgba(red(@color),green(@color),blue(@color),@step4) 100%);
+	background: linear-gradient(to bottom,  rgba(red(@color),green(@color),blue(@color),@step1) 0%,rgba(red(@color),green(@color),blue(@color),@step2) 30%,rgba(red(@color),green(@color),blue(@color),@step3) 80%,rgba(red(@color),green(@color),blue(@color),@step4) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#e6000000',GradientType=0 );
 	display: table;
 	overflow: hidden;
 	table-layout: fixed;
 	width: 100%;
 }
+
