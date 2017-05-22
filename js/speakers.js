@@ -251,7 +251,7 @@ jQuery(function($){
 		hideText( 'div.hidetext', 200, 'More &darr;', 'Less &uarr;' );
 
 		// Show overlay on click for speaker thumbnails
-		$('.speakers').on('click', 'a.speaker', function(e){
+		$('a.speaker').on('click', function(e){
 			e.preventDefault();
 			var speakerId = $(this).attr('data-speaker');
 			var speaker = data[speakerId];
