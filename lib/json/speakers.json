@@ -20,15 +20,158 @@
     "abstract": "",
     "room": "CB"
   },
-  "first-last": {
-    "name": "First Last",
+  "larry-bray": {
+    "name": "Larry Bray",
     "type": "session",
-    "tagline": "Speaker Tagline Goes Here",
-    "photo": "speaker-default.600x600.png",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis malesuada dictum. Fusce nec ultricies lacus. Etiam porttitor, purus vitae scelerisque rutrum, est velit consequat felis, quis sodales libero dui at nibh. Sed elit nibh, posuere a viverra eget, rhoncus non nisl. Sed dignissim adipiscing massa vel tristique. Nulla odio odio, sodales ut commodo id, fringilla et nibh. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In tincidunt facilisis fringilla. Proin blandit dolor tempor lorem suscipit faucibus.\n\nSuspendisse felis arcu, tincidunt quis aliquet at, venenatis quis mi. Vivamus feugiat iaculis congue. Ut elementum mollis felis sed bibendum. Curabitur volutpat purus eros. Phasellus consequat venenatis euismod. Praesent viverra feugiat orci, eget interdum felis tincidunt vitae. Fusce posuere adipiscing erat, ut fringilla nisi lacinia auctor. Etiam magna diam, vehicula in dictum id, tempus nec augue. Mauris tempus imperdiet lorem, aliquet semper justo volutpat eget. Duis convallis, mauris nec sagittis accumsan, odio enim hendrerit quam, eget tincidunt est urna id lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vitae iaculis tellus. Curabitur nibh nunc, pulvinar eu consectetur in, ultrices et velit. Maecenas nulla odio, vehicula eu rutrum sit amet, bibendum id sapien. Proin vehicula vehicula aliquam. Vestibulum a purus ante.\n\nInteger interdum, mauris tempus mollis tristique, dui sapien pulvinar ante, non fringilla sem urna at leo. Vivamus porttitor ipsum nec elit tempor consectetur. Praesent condimentum, sapien eget accumsan tristique, tortor ipsum malesuada mi, at tempor tortor eros vel purus. Mauris convallis velit ac lorem vestibulum eget imperdiet neque placerat. Vivamus et ipsum vitae justo suscipit laoreet. Suspendisse commodo vulputate arcu id egestas. Cras congue lobortis ligula, eu consequat leo pulvinar et.",
-    "title": "Presentation Title Goes Here",
-    "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate labore laboriosam, doloribus magnam quaerat libero recusandae quas molestiae dignissimos accusamus tempore veritatis, voluptatibus. Laborum, aperiam et laboriosam, suscipit dicta quibusdam eum adipisci neque deleniti accusamus dolorem omnis, animi hic doloribus?",
+    "tagline": "Security Advisor BIMASS",
+    "photo": "larry-bray.600x600.jpg",
+    "bio": "Larry currently works with companies as a security advisor, providing guidance and program management to achieve compliance, risk management, and corporate solutions. His background has involved risk assessment, analysis, governance, and reporting to senior management. He has been in consulting for over 12 years, working with companies such as financial services, state governments, and industrial products, while focusing on HIPAA compliance for healthcare companies and state agencies.\n\nLarry has been a Monitor of a multi-year Corrective Action Plan for Health and Human Services, Director of Technology Risk Management for consulting; Security Project Manager for state government, Security Manager at the Federal Reserve, and IT Director in telecommunications.\n\nHe is a Certified Information Security Manager (CISM), Certified in Risk and Information Systems Control (CRISC) and completed the training for INFOSEC Assessment Methodology, National Security Agency. He also holds a Masters Degree in Education and a Bachelor of Science in Mathematics. ",
+    "title": "Risk Management – Framework for Tracking, Analysis, and Governance",
+    "abstract": "The nature of security risk management creates a wide array of security controls, test results, vulnerabilities, etc., but little management information to determine the issues, track progress, and engage senior management. The presentation describes principles and techniques for using a flexible framework to integrate standards into a mechanism for reporting and tracking the controls and measurements. Key components of the approach described in the presentation include:\n- Functional Approach: using a framework for controls that incorporates an organization and operational approach to align the security controls and technology\n- Techniques for management reporting and tracking of risk levels based on project management principles in which controls are linked to functional areas to reflect the status, as well as the rate of improvement\n- Case Study: Application of the concepts using a multi-departmental enterprise with regulatory requirements that has significant deficiencies and required mandated reporting and management oversight",
     "room": "",
-    "presentation": "name-of-presentation.pdf"
+    "presentation": ""
+  },
+  "paul-coggin": {
+    "name": "Paul Coggin",
+    "type": "session",
+    "tagline": "Cyber Security Research Scientist with Wells Fargo",
+    "photo": "paul-coggin.600x600.jpg",
+    "bio": "Paul Coggin is a Cyber Security Research Scientist for Wells Fargo. His expertise includes tactical, service provider, and ICS\\SCADA network infrastructure attacks, and defenses, as well as large complex network design and implementation. His experience includes leading network architecture reviews, vulnerability analysis, and penetration testing engagements for critical infrastructure and tactical networks. Pauls’ experience includes teaching networking, hacking and forensics courses internationally. He has a BS in Math\\Computer Science, MS in Information Assurance and Security and a MS in Computer Information Systems. In addition he holds a number of network and security certifications.",
+    "title": "Hallowed Be Thy Packets",
+    "abstract": "Blue and Red teams are missing the low hanging vulnerabilities that exist in many enterprise networks today. This session will show in detail how the red team can quickly identify and exploit numerous network protocol vulnerabilities that the previous security test team probably missed. Methods for securing routing and switching protocols will be covered. Detailed PCAP examples will be covered. Recommendations for adding visualization and instrumentation to the network to detect network exploits will be covered.",
+    "room": "",
+    "presentation": ""
+  },
+  "tim-flowers": {
+    "name": "Tim Flowers",
+    "type": "session",
+    "tagline": "USDOJ, Computer Crime and Intellectual Property Trial Attorney",
+    "photo": "tim-flowers.600x600.jpg",
+    "bio": "Tim Flowers is a Trial Attorney in the Computer Crime and Intellectual Property Section of the United States Department of Justice. Although Mr. Flowers’s practice is heavily focused on litigating cases across the spectrum of computer-based and intellectual-property crimes, he has also conducted various outreach activities as part of CCIPS’ Cybersecurity Unit. Mr. Flowers recently co-authored, along with colleague Brian Levine, “Your Secrets Are Safe With Us: How Prosecutors Protect Trade Secrets During Investigation and Prosecution,” which appeared in the AMERICAN JOURNAL OF TRIAL ADVOCACY. Before joining CCIPS, Mr. Flowers was a judicial law clerk to the Honorable Samuel H. “Hardy” Mays, Jr. on the United States District Court for the Western District of Tennessee and the Honorable Ronald Lee Gilman on the United States Court of Appeals for the Sixth Circuit.",
+    "title": "Tracking Down the Hackers - The Future of Global Attacks and Prosecution",
+    "abstract": "In this talk Tim will share current trends of global security hacking and impacts on US companies and organizations. This presentation will include some recent case examples. Attendees will come away with a better understanding of the threat landscape, current cyberattack methods, and how working with law enforcement is critical.",
+    "room": "",
+    "presentation": ""
+  },
+  "joe-gray": {
+    "name": "Joe Gray",
+    "type": "session",
+    "tagline": "Enterprise Security Consultant, Sword & Shield Enterprise Security",
+    "photo": "joe-gray.600x600.jpg",
+    "bio": "In a time when alleged government exploits are being leaked and repurposed for malice, the necessity of analysis is rising. This is a chronicle of my journey from being a “security guy” with Incident Response experience to learning data carving, effective threat intelligence, malware analysis, and reverse engineering. I talk about the inspirations that pushed me to learn more as well as the pitfalls and lessons learned through the process. I may even name drop some of my own mentors and mentees.\n\nThe core of this presentation is not only that of technical perseverance, although it is. This presentation is one that demonstrates how being a good mentor and mentee will enable one to achieve seemingly impossible goals. I provide technical demonstrations of things that I learned through the journey and prove to the audience that anything is possible, once you take the first step. There will be analysis of pcaps, files, and malware to demonstrate the full lifecycle of a blue teamer.",
+    "title": "PCAPs, IOCs, Honeypots, and Malware, Oh My!",
+    "abstract": "Joe Gray joined the U.S. Navy directly out of High School and served for 7 years as a Submarine Navigation Electronics Technician. Joe is an Enterprise Security Consultant at Sword & Shield Enterprise Security in Knoxville, TN. Joe also maintains his own Blog and Podcast called Advanced Persistent Security. He is also in the SANS Instructor Development pipeline, teaching SANS Security 504: Hacker Tools, Techniques, Exploits, and Incident Handling. In his spare time, Joe enjoys reading news relevant to information security, attending information security conferences, contributing blogs to various outlets, bass fishing, and flying his drone.",
+    "room": "",
+    "presentation": ""
+  },
+  "rob-gresham": {
+    "name": "Rob Gresham",
+    "type": "session",
+    "tagline": "Security Consultant with Phantom Cyber",
+    "photo": "rob-gresham.600x600.jpg",
+    "bio": "Rob has over 15 years of experience providing security operations, information security architecture and incident response services to government and commercial entities in support of civil and criminal investigations as well as computer network defense operations. Rob Gresham has extensive experience executing and instructing on cyber threat intelligence and incident response. Rob can visualize processes, workflows and procedures which has help tremendously when designing SOC process frameworks. He has successfully built security response teams that provide incident response, threat intelligence and protection for key resources or critical infrastructure.",
+    "title": "Automating your OODA",
+    "abstract": "This talk will cover how the OODA (Observe. Orient. Decide. Act.) loop applies to security operations. By aligning OODA to your security operations, you will plainly see how investing in automation capabilities greatly improves your decision timeliness and speed to action capabilities. Describe security automation and orchestration and deciding what a good platform looks like.  Demonstrate how your love of pythonizing all things can be greatly improved with an automation platform to speed threat intelligence contextualization, incident response and containment to remediation. I will demonstrate Integrated Adaptive Cyber Defense with automation playbooks using Security Onion, Open Source Threat Intelligence, McAfee Endpoint Protection, Phantom Community Edition, and OSSIM.",
+    "room": "",
+    "presentation": ""
+  },
+  "chris-poulin": {
+    "name": "Chris Poulin",
+    "type": "session",
+    "tagline": "Principal/Director at Booz Allen Hamilton",
+    "photo": "chris-poulin.600x600.jpg",
+    "bio": "Chris Poulin brings a balance of technical skills and entrepreneurship encompassing 30 years in information security and software development to his role as Director of Internet of Things Security, with a focus on connected cars, and Threat Intel at Booz Allen Hamilton.\n\nPrior to his work at BAH, Chris was a Research Strategist for IBM's X-Force Research & Development team. Chris was responsible for researching and analyzing security trends as they relate to cybercrime, cyberwarfare, corporate espionage, hacktivism, and emerging threats, with a special focus on security for the Internet of Things (IoT), especially connected vehicles. He also wrote and advised on Coding Security, Security Program Strategy, and Risk Management. Chris joined IBM through the Q1 Labs acquisition, where he served as CSO.\n\nChris started his security career in the U.S. Air Force managing global intelligence networks and developing software for the National Reconnaissance Office. He left the Department of Defense to leverage his leadership and technical skills to found and build FireTower, Inc., a successful information security consulting firm serving many Fortune 100 clients. Chris is a prolific and accomplished speaker and writer. In his spare time, he hacks things such as cars and alarm systems, and pick locks.",
+    "title": "The Internet of Things, Artificial Intelligence, and the Transformation of the Human Race",
+    "abstract": "From connected elevators to smart cars, the Internet of Things (IoT) is all around us, even in ways we're not aware of. The devices make our lives easier, encourage us to exercise, and save time and resources--but at what cost? With current computer and mobile technology, the main threat is to our data and our accounts, with phishing and ransomware topping the charts; however, the IoT introduces risk to our personal safety and compromises our privacy in ways we can't even yet imagine. With the pace of Artificial Intelligence accelerating, where do machines end and sentience begin? If Elon Musk's Neural Mesh becomes reality, where is the line between biology and technology? Are we ready for an Internet of Humans? Join Chris in an exploration of the art of the possible, the probable, and the peril, including the ethics of letting technology off the chain.",
+    "room": "",
+    "presentation": ""
+  },
+  "travis-howerton": {
+    "name": "Travis Howerton",
+    "type": "session",
+    "tagline": "Senior Director, Transformation at CNS, Y-12 National Security Complex",
+    "photo": "travis-howerton.600x600.jpg",
+    "bio": "Travis Howerton is the senior director for Transformation within the Business Management and Transformation organization at Consolidated Nuclear Security, LLC, which is responsible for the management and operation of the Pantex Plant in Amarillo, Texas, and the Y-12 National Security transformation organization, leadership of the CNS Cost Savings program, management of the Booz Allen Hamilton support staff, line management of the Information Solutions and Services organization, and responsibility for the Business System Modernization project and Enterprise Resource Planning consolidation.\n\nBefore joining CNS in 2016, Howerton served as the deputy director for the Information Technology Services Division at Oak Ridge National Laboratory and was responsible for day-to-day IT and cyber security operations. He ensured efficient programmatic execution for cyber security operations, the application portfolio, research and development support systems/applications, networking, infrastructure/data center operations, library capabilities and enterprise architecture. He also was the line manager for ITSD, with 200 employees and an annual budget more than $50 million. Previously, Howerton served as the chief technology officer for the National Nuclear Security Administration. In that role, he provided technology strategy and direction for the U.S. Nuclear Weapons Complex, with an annual technology budget of nearly $1 billion.\n\nHowerton began his career as a software engineer and has held various roles in the Department of Energy, including security program manager for the Y-12 Site Office, YSO chief information officer, director for the Cyber Sciences Lab and chief technology officer. Howerton holds a B.S. in organizational management from Tusculum College (Greeneville, Tennessee) and an M.S. in computer information systems from Boston University.",
+    "title": "Cyber Security Transformation within the National Security Environment",
+    "abstract": "What does it take to transform and securely operate the enterprise environment of a national security complex? Join Travis as he shares insights and lessons learned on tackling the challenge of modernizing cyber security for mission critical operations.",
+    "room": "",
+    "presentation": ""
+  },
+  "ben-johnson": {
+    "name": "Ben Johnson",
+    "type": "session",
+    "tagline": "Co-Founder of Carbon Black",
+    "photo": "ben-johnson.600x600.jpg",
+    "bio": "Ben Johnson is an Executive in Residence (EIR) with Ten Eleven Ventures, a cyber-focused VC.  Previously, Ben Co-founded Carbon Black, a next-generation end-point security company, where, as CTO he helped drive technology vision, product effectiveness, and security evangelism while the company went from 2 to 750 employees.  While at Carbon Black he spent much of his time meeting with top enterprises, partners, and the press, and was routinely appeared online, in-print, and on television regarding cyber security topics and news.\n\nIn the past four years he has met with over 600 organizations, traveled over 500,000 miles and presented in 15 countries.  In addition to his regular job, Ben is on the boards of several security start-ups and is routinely sought out for advice regarding security strategy, product strategy, or to help venture capitalists with due diligence.  Prior to Carbon Black, he spent several years working in U.S. Intelligence, first at NSA and then as a defense contractor.  Mr. Johnson has computer science degrees from the University of Chicago and Johns Hopkins University and currently lives with his family in Southern California.",
+    "title": "Practical Lessons from 500,000 Air Miles of Security Meetings",
+    "abstract": "In the past four years Ben has met with over 600 organizations, traveled over 500,000 miles and presented in 15 countries. Ben will be sharing his insights and key takeaways on next-generation end-point security and the security industry.",
+    "room": "",
+    "presentation": ""
+  },
+  "robert-johnston": {
+    "name": "Robert Johnston",
+    "type": "session",
+    "tagline": "President/CEO Adlumin",
+    "photo": "robert-johnston.600x600.jpg",
+    "bio": "Robert  Johnston, Founder & Chief Executive Ofﬁcer  of Adlumin. Previously Mr. Johnston worked in the private sector as a principal consultant at CrowdStrike, Inc. as an incident response expert conducting engagements against nation state, criminal, and hacktivist organizations across a variety of industry sectors. Mr. Johnston has also served as a Captain in the United States Marine Corps. As a Marine Ofﬁcer he was the Team Lead of 81 National Cyber Protection Team, Cyber National Mission Force and the Director of the Marine Corps Red Team. He is an accomplished leader and technical expert within the cyber security community.\n\nMr. Johnston is a 2008 graduate of the United States Naval Academy with a degree in Information Technology. He was the primary/lead responder on the Democratic National Committee (DNC) hack while at Crowdstrike.  An avid speaker within the cyber security community ISC2 awarded him runner up for the best up and-coming cyber security professional in North, Central, and South America and the winner of the 2015 Community Awareness Government Information Security Leadership Award. Mr. Johnston can be followed on Twitter at [@dvgsecurity](https://twitter.com/dvgsecurity)",
+    "title": "Identity Based Attacks - Insights on the DNC Hack",
+    "abstract": "Why do corporate breaches continue to succeed? Corporate breaches continue to succeed because attackers are able to steal the legitimate identities of your employees and use those identities to attack your infrastructure. Far deadlier than malware based attacks, identity based attacks can go undetected for months or years because perpetrators impersonate the methods used by your various privileged accounts as if they were that user. Attackers have changed their methods from the now outdated malware based attacks to the evolved identity based attacks. Learn how analytics, deception, and data streams are saving the security industry, or would have at least saved the Democratic National Committee.",
+    "room": "",
+    "presentation": ""
+  },
+  "ed-rojas": {
+    "name": "Ed Rojas",
+    "type": "session",
+    "tagline": "Deloitte Cyber Risk Services",
+    "photo": "ed-rojas.600x600.jpg",
+    "bio": "IoT devices are expected to reach 20 billion in numbers in three years. These devices will connect to each other and existing corporate and personal networks, creating an extremely large footprint for cyber security experts to protect. There are no set standards for securing these devices; no regulations; and over 100 protocols. It is the stuff of nightmares. In this presentation Ed will break down the IoT ecosystem into its four components and will identify, with your help, where it makes sense to add security and what type of security solution is required.",
+    "title": "The IoT Ecosystem and Cybersecurity",
+    "abstract": "Edgar is a specialist master at Deloitte’s Risk and Financial Advisory/Cyber Risk Services.  A 28+ year veteran in the data networking and information security industry, with over 15 years in business development nationally and internationally leading groups of engineers and developing new markets in USA, Europe and Latin America.\n\nCo-host pvcsec.com podcast. Founder Tactical Edge, one of the best infosec events in Latin America.\n\nYou can reach Ed at @edgarr0jas, @tactical3dge, or @pvcsec",
+    "room": "",
+    "presentation": ""
+  },
+  "tony-rucci": {
+    "name": "Tony Rucci",
+    "type": "session",
+    "tagline": "Information Security & Threat Intelligence Information International Associates, Inc.",
+    "photo": "tony-rucci.600x600.jpg",
+    "bio": "EDGE Roundtable discussions are facilitated sessions lead by industry experts. While the facilitator will have prepared content specific to the topic and will lead the discussions, the objective is interactive dialogue between the participants on that specific challenge. With a targeted 30% facilitator/70% attendee content mix, the objective is to learn from the experiences of your colleagues. While attending to simply listen will provide value, the significance of these sessions lies in the information sharing related to the successes and challenges from peers.\n\nIn this roundtable session, Toni will walk attendees through various scenarios based on actual events for a lively discussion around effective threat management, dealing with data breaches, proper handling of ransomware outbreaks, and best practices for incident handling.",
+    "title": "Roundtable: Threat Management/Breach Management/Ransomware/Incident Handling",
+    "abstract": "With more than 32 years of counterintelligence and security experience, a retired Counterintelligence Special Agent and US Army Warrant Officer, Tony Rucci followed his dream and as started his own company, /Root Technology, which was approached for acquisition after just 13 months! After serving as Chief Security Officer for two independent companies, today Tony is the Director of Information Security & Threat Intelligence for Information International Associates.\n\nDuring his years as a CI agent, Tony ran espionage investigations and served as a computer crimes investigator, proudly protecting our national interests. From 1998 to 2004, he served as the Counterintelligence Operations Officer at The White House, serving two administrations. Tony departed the White House upon his retirement in December 2004 but continues to serve the U.S. Intelligence Community and national security efforts in his current capacities with IIa, building a robust Threat Intelligence and Information Security vertical supporting both private sector and government clients. He speaks regularly on topics as Critical Infrastructure Protection, Technical Threats, Computer Crimes, Social Networking and Insider Threats while serving on multiple Security Advisory Boards. Currently he is an Advisory Board Member, Nevada Secretary of State; Silver Flume; For the University of Nevada, he is on the Advisory Board for the Computer Science and Engineering & Cyber Security Center; he is the former National Vice President of the U.S. Army Military Intelligence Corps Association and is a former Fellow at the National Cyber Security Institute, Washington DC, sponsored by the NSA. Tony and his wife Pam are “Proud Empty Nesters” and split their time between East Tennessee & Northern Nevada. They have one son and two beautiful Grandbabies! @InsiderThreats",
+    "room": "",
+    "presentation": ""
+  },
+  "chris-sanders": {
+    "name": "Chris Sanders",
+    "type": "session",
+    "tagline": "Founder of Applied Network Defense",
+    "photo": "chris-sanders.600x600.jpg",
+    "bio": "Chris Sanders is an information security author, trainer, and researcher originally from Mayfield, KY. He is the founder of Applied Network Defense, a company focused on delivering high quality, accessible information security training. In previous roles, Chris worked with the US Department of Defense, InGuardians, and Mandiant to build security operation centers and train practitioners focused on defending defense, government, and Fortune 500 networks. Chris is also the founder and director of the Rural Technology Fund, a non-profit that donates scholarships and equipment to public schools to further technical education in rural and high poverty areas. In 2016, the RTF put computer science education resources into the hands of over 10,000 students.\n\nChris has authored several books and articles, including the international best seller “Practical Packet Analysis” from No Starch Press, currently in its third edition and in seven languages, and “Applied Network Security Monitoring” from Syngress. His current research focus is the intersection of cyber defense and cognitive psychology to enhance the field of security investigative technique through a better understanding of the human thought and learning processes.\n\nChris blogs at [www.chrissanders.org](http://www.chrissanders.org). You can learn more about Applied Network Defense at [www.appliednetworkdefense.com](http://www.appliednetworkdefense.com) and the RTF at [www.ruraltechfund.org](http://www.ruraltechfund.org).",
+    "title": "A Cognitive View of Security Investigations",
+    "abstract": "In this presentation, Chris will discuss various aspects of defensive security from the perspective of how we think and process information.",
+    "room": "",
+    "presentation": ""
+  },
+  "aditya-sood": {
+    "name": "Aditya K. Sood",
+    "type": "session",
+    "tagline": "Director of Cloud Security Symantec",
+    "photo": "aditya-sood.600x600.jpg",
+    "bio": "Dr. Sood is an information security practitioner and researcher by profession. Dr. Sood has research interests in malware automation and analysis, cloud security, secure software design and cybercrime. He is also a founder of SecNiche Security Labs, an independent web portal for sharing research with security community. He has authored several papers for various magazines and journals including IEEE, Elsevier, CrossTalk, ISACA, Virus Bulletin, Usenix and others. His work has been featured in several media outlets including Associated Press, Fox News, The Register, Guardian, Business Insider, Kaspersky Threatpost, CBC and others. He has been an active speaker at industry conferences and presented at BlackHat, DEFCON, HackInTheBox, RSA, Virus Bulletin, OWASP and many others. Currently, Dr. Sood directs the security efforts for the Elastica Cloud Security division at BlueCoat, Symantec. Dr. Sood obtained his Ph.D from Michigan State University in Computer Sciences. Dr. Sood is also an author of \"Targeted Cyber Attacks\" book published by Syngress.",
+    "title": "Malice in the Cloud - Dissecting Abuse and Exploitation of Cloud Apps",
+    "abstract": "Cloud storage usage is increasing rapidly. The attackers are using cloud applications as launch pads for triggering cyber attacks on the Internet. It has become indispensable for enterprises to keep track of the active cloud applications in the network for detecting malice. With that, threats from malicious insiders, attackers and naive users are increasing that are putting organizations at risk.\n\nGenerally speaking, cloud applications have not been not effectively managed in the enterprises as IT departments do not have robust mechanisms to detect insecurities persisting in the cloud applications. As a result, enterprises are encountering a problem of Shadow IT, a terminology used for highlighting devices and unauthorized applications that remain activated under the radar of the IT department. Shadow IT renders organizations more vulnerable to cyber attacks because Shadow IT infrastructure is not monitored by organizations for detecting potential threats and vulnerabilities. Therefore, to address Shadow IT, it is not merely sufficient to discover what SaaS applications are running, but to understand how enterprise ready those applications are from a security, risk, and compliance perspective — specifically with regard to the precise needs of your organization. The users also need to understand how the SaaS applications are exploited. In this talk, users will gain applied knowledge and can easily apply to their routine work in the enterprises.",
+    "room": "",
+    "presentation": ""
+  },
+  "betsy-woudenberg": {
+    "name": "Betsy Woudenberg",
+    "type": "session",
+    "tagline": "Founder/CEO IntelligenceArts",
+    "photo": "betsy-woudenberg.600x600.jpg",
+    "bio": "Betsy Woudenberg is founder and CEO of IntelligenceArts, a security consulting firm based in the Washington DC area. She is a former U.S. Intelligence officer with experience in cyber operations and telecommunications and is an internationally recognized expert on the human and technical risk factors in critical infrastructure security.\n\nMs. Woudenberg’s early career was in Silicon Valley, working for game companies and software startups. She joined the Central Intelligence Agency as a member of CIA’s first post-9/11 class of case officers.\n\nHer work at CIA focused on applying her experience in the business world to conduct non-traditional operations against national security targets. As a case officer, reports officer, and targeting officer, Ms. Woudenberg learned the end-to-end craft of intelligence collection, from defining collection requirements to designing operations to gathering and shaping reports that addressed the needs and interests of U.S. policymakers. Ms. Woudenberg also developed subject matter expertise in cyber operations, telecommunications, and counterintelligence.\n\nHer specialty is interpreting highly technical topics for non-technical audiences. She teaches at USCYBERCOM, the Department of Defense, the Department of Energy, and internationally about SCADA—the control systems that run our critical infrastructure—and Stuxnet, the first known successful kinetic cyber-weapon. After ten years applying a corporate perspective to the intelligence community, Ms. Woudenberg now brings the benefit of this experience back to the business world. She helps clients understand the motivations and capabilities of nation-state adversaries and how sophisticated attackers exploit both human and cyber vulnerabilities to bypass conventional corporate security countermeasures. She speaks at security conferences across the country to help private sector audiences understand global threats, using publicly known cyber and espionage cases to illustrate how adversaries are evolving and adapting their tactics. She views security from the perspective of the adversary, and helps her clients shape a holistic protection strategy that leverages human, physical, and cyber resources. Ms. Woudenberg is a graduate of Stanford University.",
+    "title": "Current Insights on Nation-State Hacking",
+    "abstract": "As a former U.S. Intelligence officer with experience in cyber operations and telecommunications and a internationally recognized expert on the human and technical risk factors in critical infrastructure security, Betsy will share current insights on nation-state hacking activities.\n\nAttendees will better understand the motivations and capabilities of nation-state adversaries and how sophisticated attackers exploit both human and cyber vulnerabilities to bypass conventional corporate security countermeasures.",
+    "room": "",
+    "presentation": ""
   }
 }

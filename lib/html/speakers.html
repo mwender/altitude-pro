@@ -1,29 +1,3 @@
-<h1>Speakers</h1>
-<div class="speakers"></div>
-<script id="speaker-template" type="text/x-handlebars-template">
-    <div class="one-third speaker {{type}}">
-        <a href="#" data-speaker="{{key}}" class="speaker"><img src="{{themeurl}}/images/speakers/{{photo}}" alt="" class="circle"></a>
-        <h3><a href="#" class="speaker" data-speaker="{{key}}">{{name}}</a></h3>
-        {{tagline}}
-    </div>
-</script>
-<script id="emptycol-template" type="text/x-handlebars-template">
-    <div class="one-third">
-        &nbsp;
-    </div>
-</script>
-<script id="overlay-template" type="text/x-handlebars-template">
-        <div class="speaker-overlay {{type}}" id="{{key}}">
-            <div class="clearfix">
-                <a href="#" class="close"></a>
-                <div class="one-third first">
-                    <img src="{{themeurl}}/images/speakers/{{photo}}" class="circle aligncenter" alt="">
-                </div>
-                <div class="two-thirds">
-                	<h2>{{name}}</h2>
-					<h5>{{{taglineHtml}}}</h5>
-                	{{{bioHtml}}}
-            	</div>
-            </div>
-        </div>
-</script>
+<h1 style="text-transform: uppercase; margin-bottom: 60px;">Our Speakers</h1>
+<div class="speakers" data-columns="4" data-width="200"></div>
+
