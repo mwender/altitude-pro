@@ -32,6 +32,24 @@ Site Navigation
 			background-color: rgba(238,238,238,0.4);
 		}
 	}
+
+	ul.sub-menu{
+		padding-top: 26px;
+
+		li.menu-item{
+
+			a{
+				background-color: @edgegray;
+				padding: 10px 15px;
+			}
+
+			& a:hover,
+			&.current-menu-item a{
+				color: #fff;
+				background-color: @edgegreen;
+			}
+		}
+	}
 }
 
 .site-header.dark .genesis-nav-menu{
