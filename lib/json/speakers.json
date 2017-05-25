@@ -20,6 +20,28 @@
     "abstract": "",
     "room": "CB"
   },
+  "chris-poulin": {
+    "name": "Chris Poulin",
+    "type": "session",
+    "tagline": "Principal/Director at Booz Allen Hamilton",
+    "photo": "chris-poulin.600x600.jpg",
+    "bio": "Chris Poulin brings a balance of technical skills and entrepreneurship encompassing 30 years in information security and software development to his role as Director of Internet of Things Security, with a focus on connected cars, and Threat Intel at Booz Allen Hamilton.\n\nPrior to his work at BAH, Chris was a Research Strategist for IBM's X-Force Research & Development team. Chris was responsible for researching and analyzing security trends as they relate to cybercrime, cyberwarfare, corporate espionage, hacktivism, and emerging threats, with a special focus on security for the Internet of Things (IoT), especially connected vehicles. He also wrote and advised on Coding Security, Security Program Strategy, and Risk Management. Chris joined IBM through the Q1 Labs acquisition, where he served as CSO.\n\nChris started his security career in the U.S. Air Force managing global intelligence networks and developing software for the National Reconnaissance Office. He left the Department of Defense to leverage his leadership and technical skills to found and build FireTower, Inc., a successful information security consulting firm serving many Fortune 100 clients. Chris is a prolific and accomplished speaker and writer. In his spare time, he hacks things such as cars and alarm systems, and pick locks.",
+    "title": "The Internet of Things, Artificial Intelligence, and the Transformation of the Human Race",
+    "abstract": "From connected elevators to smart cars, the Internet of Things (IoT) is all around us, even in ways we're not aware of. The devices make our lives easier, encourage us to exercise, and save time and resources--but at what cost? With current computer and mobile technology, the main threat is to our data and our accounts, with phishing and ransomware topping the charts; however, the IoT introduces risk to our personal safety and compromises our privacy in ways we can't even yet imagine. With the pace of Artificial Intelligence accelerating, where do machines end and sentience begin? If Elon Musk's Neural Mesh becomes reality, where is the line between biology and technology? Are we ready for an Internet of Humans? Join Chris in an exploration of the art of the possible, the probable, and the peril, including the ethics of letting technology off the chain.",
+    "room": "",
+    "presentation": ""
+  },
+  "ben-johnson": {
+    "name": "Ben Johnson",
+    "type": "session",
+    "tagline": "Co-Founder of Carbon Black",
+    "photo": "ben-johnson.600x600.jpg",
+    "bio": "Ben Johnson is an Executive in Residence (EIR) with Ten Eleven Ventures, a cyber-focused VC.  Previously, Ben Co-founded Carbon Black, a next-generation end-point security company, where, as CTO he helped drive technology vision, product effectiveness, and security evangelism while the company went from 2 to 750 employees.  While at Carbon Black he spent much of his time meeting with top enterprises, partners, and the press, and was routinely appeared online, in-print, and on television regarding cyber security topics and news.\n\nIn the past four years he has met with over 600 organizations, traveled over 500,000 miles and presented in 15 countries.  In addition to his regular job, Ben is on the boards of several security start-ups and is routinely sought out for advice regarding security strategy, product strategy, or to help venture capitalists with due diligence.  Prior to Carbon Black, he spent several years working in U.S. Intelligence, first at NSA and then as a defense contractor.  Mr. Johnson has computer science degrees from the University of Chicago and Johns Hopkins University and currently lives with his family in Southern California.",
+    "title": "Practical Lessons from 500,000 Air Miles of Security Meetings",
+    "abstract": "In the past four years Ben has met with over 600 organizations, traveled over 500,000 miles and presented in 15 countries. Ben will be sharing his insights and key takeaways on next-generation end-point security and the security industry.",
+    "room": "",
+    "presentation": ""
+  },
   "larry-bray": {
     "name": "Larry Bray",
     "type": "session",
@@ -28,6 +50,17 @@
     "bio": "Larry currently works with companies as a security advisor, providing guidance and program management to achieve compliance, risk management, and corporate solutions. His background has involved risk assessment, analysis, governance, and reporting to senior management. He has been in consulting for over 12 years, working with companies such as financial services, state governments, and industrial products, while focusing on HIPAA compliance for healthcare companies and state agencies.\n\nLarry has been a Monitor of a multi-year Corrective Action Plan for Health and Human Services, Director of Technology Risk Management for consulting; Security Project Manager for state government, Security Manager at the Federal Reserve, and IT Director in telecommunications.\n\nHe is a Certified Information Security Manager (CISM), Certified in Risk and Information Systems Control (CRISC) and completed the training for INFOSEC Assessment Methodology, National Security Agency. He also holds a Masters Degree in Education and a Bachelor of Science in Mathematics. ",
     "title": "Risk Management – Framework for Tracking, Analysis, and Governance",
     "abstract": "The nature of security risk management creates a wide array of security controls, test results, vulnerabilities, etc., but little management information to determine the issues, track progress, and engage senior management. The presentation describes principles and techniques for using a flexible framework to integrate standards into a mechanism for reporting and tracking the controls and measurements. Key components of the approach described in the presentation include:\n- Functional Approach: using a framework for controls that incorporates an organization and operational approach to align the security controls and technology\n- Techniques for management reporting and tracking of risk levels based on project management principles in which controls are linked to functional areas to reflect the status, as well as the rate of improvement\n- Case Study: Application of the concepts using a multi-departmental enterprise with regulatory requirements that has significant deficiencies and required mandated reporting and management oversight",
+    "room": "",
+    "presentation": ""
+  },
+    "kyle-bubp": {
+    "name": "Kyle Bubp",
+    "type": "session",
+    "tagline": "Founder and Principal Consultant Savage Security",
+    "photo": "kyle-bubp.600x600.jpg",
+    "bio": "For over a decade, Kyle Bubp has been elevating the state of security for enterprises, service providers, government organizations and the industry at large. Throughout his career, Kyle has worked on several privileged and classified U.S. government projects for multiple 3-letter agencies. He has developed secure architectures for fingerprint processing, protected research for the scientific and academic communities, and locked down environments for defense logistics. He's put his skills to the test at a massive scale for an international hosting company and has since co-founded Savage Security, an InfoSec Research and Consulting firm. Kyle has been published in ISSA Journal about the malware threat and he continues to pen articles and speak about best practices in security.",
+    "title": "Open Source Defense: Building a Security Program with Zero Budget",
+    "abstract": "Even though large breaches have hit headline news in years past, some companies are still on the fence about investing in cybersecurity. As a security practitioner (or jack of all trades) how can you be expected to cover your assets with zero budget? Thankfully, there are plenty of open-source tools out there that will allow you to secure your organization. Come join me as I discuss how you can track your network assets, perform vulnerability assessments, prevent attacks with intrusion prevention systems, and even deploy HIDS. We will also jump into finding sensitive data and PII in your network, as well as incident response tools and automation. All it costs is your time (and maybe a VM or two). You really can drastically improve the security posture of your network with little to no budget, and you’ll have fun doing it! OK, maybe it won’t be fun, but at least you’ll learn something, right?",
     "room": "",
     "presentation": ""
   },
@@ -48,8 +81,8 @@
     "tagline": "USDOJ, Computer Crime and Intellectual Property Trial Attorney",
     "photo": "tim-flowers.600x600.jpg",
     "bio": "Tim Flowers is a Trial Attorney in the Computer Crime and Intellectual Property Section of the United States Department of Justice. Although Mr. Flowers’s practice is heavily focused on litigating cases across the spectrum of computer-based and intellectual-property crimes, he has also conducted various outreach activities as part of CCIPS’ Cybersecurity Unit. Mr. Flowers recently co-authored, along with colleague Brian Levine, “Your Secrets Are Safe With Us: How Prosecutors Protect Trade Secrets During Investigation and Prosecution,” which appeared in the AMERICAN JOURNAL OF TRIAL ADVOCACY. Before joining CCIPS, Mr. Flowers was a judicial law clerk to the Honorable Samuel H. “Hardy” Mays, Jr. on the United States District Court for the Western District of Tennessee and the Honorable Ronald Lee Gilman on the United States Court of Appeals for the Sixth Circuit.",
-    "title": "Tracking Down the Hackers - The Future of Global Attacks and Prosecution",
-    "abstract": "In this talk Tim will share current trends of global security hacking and impacts on US companies and organizations. This presentation will include some recent case examples. Attendees will come away with a better understanding of the threat landscape, current cyberattack methods, and how working with law enforcement is critical.",
+    "title": "Cybercrime Near and Far—Lessons Learned in Combatting Computer Crimes Locally and Around the World",
+    "abstract": "Cybercrime often hits close to home, even when the perpetrators live halfway around the globe.  But despite the local effects of cybercrime, cyber actors often wreak havoc without ever meeting or interacting with their intended victims, whether the target is a Fortune 500 company or a lone individual.  Operating from afar, these malicious actors simply exploit network vulnerabilities or compromise the PII and banking information of entire groups of people without having to witness to the force and effects of their actions.  These relatively impersonal aspects of cybercrime often leave many victims asking why they were targeted and what must be done to avoid another attack—questions that law enforcement is left to answer.\n\nOther times, however, cyber actors are fixtures in victims’ lives—the disgruntled former employee or the jilted friend out for revenge.  At the United States Department of Justice, Senior Trial Attorney Tim Flowers has witnessed cybercrime on both its grandest and most granular scale.  In his capacity as a federal prosecutor, he has overseen the investigation and prosecution of cyber actors located both home and abroad, learning valuable lessons in the process.  His talk will focus on current trends in cybercrime, from the growing influence of organized crime to lone individuals leveraging the trust of their targets for ill-gotten gains.  Special consideration will be given to one or two examples from Tennessee that demonstrate both the importance of early reporting and the need for victim participation up and until sentencing.",
     "room": "",
     "presentation": ""
   },
@@ -75,17 +108,6 @@
     "room": "",
     "presentation": ""
   },
-  "chris-poulin": {
-    "name": "Chris Poulin",
-    "type": "session",
-    "tagline": "Principal/Director at Booz Allen Hamilton",
-    "photo": "chris-poulin.600x600.jpg",
-    "bio": "Chris Poulin brings a balance of technical skills and entrepreneurship encompassing 30 years in information security and software development to his role as Director of Internet of Things Security, with a focus on connected cars, and Threat Intel at Booz Allen Hamilton.\n\nPrior to his work at BAH, Chris was a Research Strategist for IBM's X-Force Research & Development team. Chris was responsible for researching and analyzing security trends as they relate to cybercrime, cyberwarfare, corporate espionage, hacktivism, and emerging threats, with a special focus on security for the Internet of Things (IoT), especially connected vehicles. He also wrote and advised on Coding Security, Security Program Strategy, and Risk Management. Chris joined IBM through the Q1 Labs acquisition, where he served as CSO.\n\nChris started his security career in the U.S. Air Force managing global intelligence networks and developing software for the National Reconnaissance Office. He left the Department of Defense to leverage his leadership and technical skills to found and build FireTower, Inc., a successful information security consulting firm serving many Fortune 100 clients. Chris is a prolific and accomplished speaker and writer. In his spare time, he hacks things such as cars and alarm systems, and pick locks.",
-    "title": "The Internet of Things, Artificial Intelligence, and the Transformation of the Human Race",
-    "abstract": "From connected elevators to smart cars, the Internet of Things (IoT) is all around us, even in ways we're not aware of. The devices make our lives easier, encourage us to exercise, and save time and resources--but at what cost? With current computer and mobile technology, the main threat is to our data and our accounts, with phishing and ransomware topping the charts; however, the IoT introduces risk to our personal safety and compromises our privacy in ways we can't even yet imagine. With the pace of Artificial Intelligence accelerating, where do machines end and sentience begin? If Elon Musk's Neural Mesh becomes reality, where is the line between biology and technology? Are we ready for an Internet of Humans? Join Chris in an exploration of the art of the possible, the probable, and the peril, including the ethics of letting technology off the chain.",
-    "room": "",
-    "presentation": ""
-  },
   "travis-howerton": {
     "name": "Travis Howerton",
     "type": "session",
@@ -94,17 +116,6 @@
     "bio": "Travis Howerton is the senior director for Transformation within the Business Management and Transformation organization at Consolidated Nuclear Security, LLC, which is responsible for the management and operation of the Pantex Plant in Amarillo, Texas, and the Y-12 National Security transformation organization, leadership of the CNS Cost Savings program, management of the Booz Allen Hamilton support staff, line management of the Information Solutions and Services organization, and responsibility for the Business System Modernization project and Enterprise Resource Planning consolidation.\n\nBefore joining CNS in 2016, Howerton served as the deputy director for the Information Technology Services Division at Oak Ridge National Laboratory and was responsible for day-to-day IT and cyber security operations. He ensured efficient programmatic execution for cyber security operations, the application portfolio, research and development support systems/applications, networking, infrastructure/data center operations, library capabilities and enterprise architecture. He also was the line manager for ITSD, with 200 employees and an annual budget more than $50 million. Previously, Howerton served as the chief technology officer for the National Nuclear Security Administration. In that role, he provided technology strategy and direction for the U.S. Nuclear Weapons Complex, with an annual technology budget of nearly $1 billion.\n\nHowerton began his career as a software engineer and has held various roles in the Department of Energy, including security program manager for the Y-12 Site Office, YSO chief information officer, director for the Cyber Sciences Lab and chief technology officer. Howerton holds a B.S. in organizational management from Tusculum College (Greeneville, Tennessee) and an M.S. in computer information systems from Boston University.",
     "title": "Cyber Security Transformation within the National Security Environment",
     "abstract": "What does it take to transform and securely operate the enterprise environment of a national security complex? Join Travis as he shares insights and lessons learned on tackling the challenge of modernizing cyber security for mission critical operations.",
-    "room": "",
-    "presentation": ""
-  },
-  "ben-johnson": {
-    "name": "Ben Johnson",
-    "type": "session",
-    "tagline": "Co-Founder of Carbon Black",
-    "photo": "ben-johnson.600x600.jpg",
-    "bio": "Ben Johnson is an Executive in Residence (EIR) with Ten Eleven Ventures, a cyber-focused VC.  Previously, Ben Co-founded Carbon Black, a next-generation end-point security company, where, as CTO he helped drive technology vision, product effectiveness, and security evangelism while the company went from 2 to 750 employees.  While at Carbon Black he spent much of his time meeting with top enterprises, partners, and the press, and was routinely appeared online, in-print, and on television regarding cyber security topics and news.\n\nIn the past four years he has met with over 600 organizations, traveled over 500,000 miles and presented in 15 countries.  In addition to his regular job, Ben is on the boards of several security start-ups and is routinely sought out for advice regarding security strategy, product strategy, or to help venture capitalists with due diligence.  Prior to Carbon Black, he spent several years working in U.S. Intelligence, first at NSA and then as a defense contractor.  Mr. Johnson has computer science degrees from the University of Chicago and Johns Hopkins University and currently lives with his family in Southern California.",
-    "title": "Practical Lessons from 500,000 Air Miles of Security Meetings",
-    "abstract": "In the past four years Ben has met with over 600 organizations, traveled over 500,000 miles and presented in 15 countries. Ben will be sharing his insights and key takeaways on next-generation end-point security and the security industry.",
     "room": "",
     "presentation": ""
   },
