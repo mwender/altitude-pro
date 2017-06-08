@@ -75,6 +75,17 @@
     "room": "",
     "presentation": ""
   },
+"william-dixon": {
+    "name": "William Dixon",
+    "type": "session",
+    "tagline": "Vice President, Security Science Stroz Friedberg",
+    "photo": "william-dixon.600x600.jpg",
+    "bio": "William Dixon is a Vice President within Stroz Friedberg’s Security Science Practice. Mr. Dixon is responsible for the firm’s managed security services offering and strategic partnerships, in addition to leading complex client engagements. He has over 15 years of experience as a leader in security risk management, program governance, third party risk management, security operations, and cyber threat assessment. He has served leadership roles in technical implementation and management, consulting, and business development.\n\nPrior to Stroz Friedberg, Mr. Dixon served in leadership roles within Accenture’s Global Security Practice and IBM Global Services along with advising multiple security startups. He has lead multiple enterprise security projects and initiatives for clients within the Financial Services, Technology, Healthcare, Retail, and Energy and Utilities.\n\nHe is a Certified Information Systems Security Professional (CISSP), Certified Information Security Manager (CISM), and Certified in Risk and Information Systems Control (CRISC).",
+    "title": "Hallowed Be Thy Packets",
+    "abstract": "Many organizations that have become victim to a cyber security breach or ransom felt that their security controls and program where adequate enough to protect them or at least recover from a security incident. The reality is that “good enough” security usually leads to the discussion of &quot;we should have had more security.&quot;\n\nIn this session attendees will hear of three real word scenarios the state of an organization’s security posture prior to a cyber security incident and their state post incident. The cases presented will showcase what steps were taken to improve their incident response detection and response in the wake of a cyber incident. In addition, attendees will gain insights on to what the board of directors and executive management really want to see when it comes to a security program that is “good enough” in the aftermath of an incident. Finally, attendees will gain knowledge of what programs and processes should be in place and managed to effective respond to an incident and prove that “good enough” security will eventually lead to the need for more security.",
+    "room": "",
+    "presentation": ""
+  },
   "tim-flowers": {
     "name": "Tim Flowers",
     "type": "session",
