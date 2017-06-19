@@ -185,6 +185,28 @@
     "room": "",
     "presentation": ""
   },
+  "josh-watson": {
+    "name": "Josh Watson",
+    "type": "session",
+    "tagline": "Lead Detective and Forensic Examiner/Investigator, Reno, Nevada Police Department",
+    "photo": "josh-watson.600x600.jpg",
+    "bio": "Josh Watson is a 15-year Police Officer and the lead Detective and Forensic Examiner/Investigator at the Reno Police Department in Nevada. For the past 7 years, his predominant focus has been computer and mobile device forensics related to criminal investigations. He is the full-time Examiner for Reno PD and assists numerous other state and local agencies, conducting over 1200 exams of digital devices over the past 7 years. He holds certifications for several forensic tools to include Cellebrite, FTK, Lantern, and Blacklight, and is trained and experienced in the use of EnCase, IEF, and other forensic tools and methods.\n\nDetective Watson is a frequent guest lecturer at the University of Nevada, Reno Computer Science & Engineering School and also presents regularly on cyber safety to local schools and youth organizations. He also works closely with the local FBI ICAC and USSS EC Task Forces, and has testified numerous times as an expert in both County, State, and Federal Courts.",
+    "title": "Current Insights on Nation-State Hacking",
+    "abstract": "As a former U.S. Intelligence officer with experience in cyber operations and telecommunications and a internationally recognized expert on the human and technical risk factors in critical infrastructure security, Betsy will share current insights on nation-state hacking activities.\n\nAttendees will better understand the motivations and capabilities of nation-state adversaries and how sophisticated attackers exploit both human and cyber vulnerabilities to bypass conventional corporate security countermeasures.",
+    "room": "",
+    "presentation": ""
+  },
+  "wes-widner": {
+    "name": "Wes Widner",
+    "type": "session",
+    "tagline": "Senior Software Engineer at CrowdStrike",
+    "photo": "wes-widner.600x600.jpg",
+    "bio": "Wes Widner is a veteran in the threat intelligence industry. His work history includes data engineering and threat modeling with McAfee Labs’s Global Threat Intelligence, building out a large scale malware pipeline with Norse Corporation, and engineering clouds at Crowdstrike. He specializes in building large-scale distributed threat intelligence systems that span a range of threat vectors. Wes also enjoys teaching children how to hack, ethically of course.",
+    "title": "Say Hello to My Little Friend",
+    "abstract": "s your iPhone really safe or is it all just an ad? Recent studies claim that iOS apps crash more than Android apps*. Some critics have also pointed to the FBI compromising the iPhones of the San Bernardino killers as evidence that Apple’s product is riddled with security flaws. Meanwhile, Apple maintains that iOS is the most secure platform on the market. For those of us who have spent some time studying iOS security the truth is more complex and interesting.\n\nApple does try to suppress news of security vulnerabilities in its products so it’s not surprising that the subject of iOS security is still a mystery. Despite the device being wildly popular. In this talk, we will explore the history of iOS security by tying security incidents that have made their way into news reports to the underlying systems issues. As we move through this history I’ll highlight actions that we can use to mitigate various classes of attacks. And finally, we'll conclude by examining resources to secure our iOS devices.\n\nWe carry our mobile devices with us everywhere. They help us answer obscure questions and they hold our most intimate secrets. If you’re interested in learning more about iOS security, come join me and my little friend.",
+    "room": "",
+    "presentation": ""
+  },
   "betsy-woudenberg": {
     "name": "Betsy Woudenberg",
     "type": "session",
