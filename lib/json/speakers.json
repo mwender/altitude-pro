@@ -31,6 +31,17 @@
     "room": "",
     "presentation": ""
   },
+  "stephen-fridakis": {
+    "name": "Stephen Fridakis",
+    "type": "session",
+    "tagline": "Chief Information Security Officer, HBO",
+    "photo": "stephen-fridakis.600x600.jpg",
+    "bio": "Dr. Stephen G. Fridakis is the Chief Information Security Officer of HBO, located in New York. He has responsibility for the management of IT Security, establishment of policy and oversight of networks, content and applications. Prior to HBO he was the CISO of the United Nations FAO and UNDP. His long experience in IT security includes positions at Amazon, VeriSign, Oracle, Netscape, and DHL. He holds post graduate degrees in Business Administration, and Computer Science, and multiple certifications in IT Security Management and Disaster Recovery. He has served in the USNR and is the holder of multiple patents in IT Security technologies. He lives in Westchester, NY with his family.",
+    "title": "Cybersecurity Challenges in Media and Entertainment",
+    "abstract": "Media consumption is changing constantly. Media organizations need to cater to ultra-connected and several platforms to reach audiences at any place in real time. Content delivery is now IP based and information is processed using complex technical and business arrangements. In the past decade, media and entertainment companies have embraced digital technologies that help them not only create and deliver their products in new and compelling ways, but also collect, store and use a massive amount of data to gain deeper insights into their customers. Multi-service and multi-protocol delivery over IP to consumer-owned devices such as smartphones, tablets, smart TVs, and PCs is essential today. Delivery of content becomes direct and personalized based on extensive analytics of viewer data. All this opens up significant new risks that could lead content, data, and business systems to be compromised. And those risks, if not mitigated, represent a true existential threat. In this presentation we will discuss how media approaches cybersecurity and the typical concerns media organizations face.",
+    "room": "",
+    "presentation": ""
+  },
   "ben-johnson": {
     "name": "Ben Johnson",
     "type": "session",
