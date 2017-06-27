@@ -19,6 +19,7 @@ This repository is intended only for my private development and for public demon
 
 ## Changelog
 
+- Version 1.1.2 - 06/27/2017 (10:13) - Altitude Pro v.1.1.2
 - Version 1.0.3 - 06/28/2016 (14:50) - Altitude Pro v.1.0.3
 - Version 1.0.2 - Altitude Pro v.1.0.2
 - Version 1.0 - Updated 01/12/2015
