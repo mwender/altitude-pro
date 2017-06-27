@@ -1,7 +1,21 @@
 <?php
+/**
+ * Altitude Pro.
+ *
+ * This file adds the default theme settings to the Altitude Pro Theme.
+ *
+ * @package Altitude
+ * @author  StudioPress
+ * @license GPL-2.0+
+ * @link    http://my.studiopress.com/themes/altitude/
+ */
 
-//* Altitude Theme Setting Defaults
 add_filter( 'genesis_theme_settings_defaults', 'altitude_theme_defaults' );
+/**
+ * Updates theme settings on reset.
+ *
+ * @since 1.0.0
+ */
 function altitude_theme_defaults( $defaults ) {
 
 	$defaults['blog_cat_num']              = 5;
@@ -15,8 +29,12 @@ function altitude_theme_defaults( $defaults ) {
 
 }
 
-//* Altitude Theme Setup
 add_action( 'after_switch_theme', 'altitude_theme_setting_defaults' );
+/**
+ * Updates theme settings on activation.
+ *
+ * @since 1.0.0
+ */
 function altitude_theme_setting_defaults() {
 
 	if ( function_exists( 'genesis_update_settings' ) ) {
@@ -29,15 +47,19 @@ function altitude_theme_setting_defaults() {
 			'posts_nav'                 => 'numeric',
 			'site_layout'               => 'full-width-content',
 		) );
-		
+
 	} 
 
 	update_option( 'posts_per_page', 5 );
 
 }
 
-//* Simple Social Icon Defaults
 add_filter( 'simple_social_default_styles', 'altitude_social_default_styles' );
+/**
+ * Updates Simple Social Icon settings on activation.
+ *
+ * @since 1.0.0
+ */
 function altitude_social_default_styles( $defaults ) {
 
 	$args = array(
@@ -49,9 +71,9 @@ function altitude_social_default_styles( $defaults ) {
 		'icon_color_hover'       => '#ffffff',
 		'size'                   => 40,
 		);
-		
+
 	$args = wp_parse_args( $args, $defaults );
-	
+
 	return $args;
-	
+
 }
