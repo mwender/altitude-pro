@@ -57,7 +57,7 @@ function altitude_enqueue_scripts_styles() {
 		});
 	}
 
-	$agendajs_pages = ['conference-agenda'];
+	$agendajs_pages = ['conference-agenda','agenda'];
 	if( is_page( $agendajs_pages ) ){
 		wp_enqueue_script( 'handlebars', get_bloginfo( 'stylesheet_directory' ) . '/js/handlebars-v4.0.5.js', null, filemtime( get_stylesheet_directory() . '/js/handlebars-v4.0.5.js' ) );
 		wp_enqueue_script( 'showdown', 'https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.2/showdown.min.js', null, '1.4.2' );
@@ -69,7 +69,7 @@ function altitude_enqueue_scripts_styles() {
 		});
 	}
 
-	if( is_page( 'conference-agenda' ) ){
+	if( is_page( 'conference-agenda' ) || is_page( 'agenda' ) ){
 		wp_enqueue_script( 'waypoints', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.waypoints.min.js', array( 'jquery' ), filemtime( get_stylesheet_directory() . '/js/jquery.waypoints.min.js' ) );
 	}
 
