@@ -31,7 +31,10 @@
       // Process sessionSpeakers array
       if( typeof session.sessionSpeakers !== 'undefined' ){
         session.sessionSpeakers.forEach(function(currentValue, index, array){
+          key = currentValue.speaker;
           currentValue.speaker = speakers[currentValue.speaker];
+          currentValue.speaker.key = key;
+
           if( typeof currentValue.speaker !== 'undefined' ){
             var converter = new showdown.Converter();
             if( typeof currentValue.speaker.abstract !== 'undefined' ){
@@ -49,7 +52,9 @@
       }
 
       if( typeof session.speaker !== 'undefined' ){
+        key = session.speaker;
         session.speaker = speakers[session.speaker];
+        session.speaker.key = key;
         if( typeof session.speaker !== 'undefined' ){
           var converter = new showdown.Converter();
           if( typeof session.speaker.abstract !== 'undefined' ){

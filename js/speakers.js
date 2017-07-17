@@ -251,7 +251,7 @@ jQuery(function($){
 		hideText( 'div.hidetext', 200, 'More &darr;', 'Less &uarr;' );
 
 		// Show overlay on click for speaker thumbnails
-		$('a.speaker').on('click', function(e){
+		$('body').on('click', 'a.speaker', function(e){
 			e.preventDefault();
 			var speakerId = $(this).attr('data-speaker');
 			var speaker = data[speakerId];
@@ -265,6 +265,7 @@ jQuery(function($){
 		    taglineHtml = converter.makeHtml(tagline);
 		    speaker.bioHtml = bioHtml;
 		    speaker.taglineHtml = taglineHtml;
+		    speaker.key = speakerId;
 
 			var overlay = speakerOverlayTemplate( speaker );
 			$('body').prepend( overlay ).addClass('noscroll');
