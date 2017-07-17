@@ -1,5 +1,53 @@
 {
   "tuesday": {
+    "keynotes": {
+      "name": "Dr. Charlie Miller and Chris Valasek",
+      "time": "Keynote Address",
+      "length": "60",
+      "speaker": "miller-valasek"
+    },
+    "general-session": {
+      "name": "Chris Poulin",
+      "time": "General Session",
+      "length": "60",
+      "speaker": "chris-poulin"
+    },
+    "afternoon-sessions": {
+      "name": "",
+      "time": "Afternoon Sessions",
+      "sessionSpeakers": [
+        {
+          "speaker": "ben-johnson"
+        },
+        {
+          "speaker": "stephen-fridakis"
+        },
+        {
+          "speaker": "joe-gray"
+        },
+        {
+          "speaker": "william-dixon"
+        },
+        {
+          "speaker": "wes-widner"
+        },
+        {
+          "speaker": "tim-flowers"
+        },
+        {
+          "speaker": "larry-bray"
+        },
+        {
+          "speaker": "rob-gresham"
+        },
+        {
+          "speaker": "chris-sanders"
+        },
+        {
+          "speaker": "aditya-sood"
+        }
+      ]
+    },
     "800-900": {
       "name": "Registration and Breakfast",
       "time": "8:00 &ndash; 9:00AM",
@@ -135,6 +183,47 @@
       "time": "3:30 &ndash; 4:30PM",
       "length": "60",
       "room": "CB"
+    }
+  },
+  "wednesday":{
+    "keynotes": {
+      "name": "Major General Brett Williams",
+      "time": "Keynote Address",
+      "length": "60",
+      "speaker": "brett-williams"
+    },
+    "general-session": {
+      "name": "Robert Johnston",
+      "time": "General Session",
+      "length": "60",
+      "speaker": "robert-johnston"
+    },
+    "afternoon-sessions": {
+      "name": "",
+      "time": "Afternoon Sessions",
+      "sessionSpeakers": [
+        {
+          "speaker": "tony-rucci"
+        },
+        {
+          "speaker": "paul-coggin"
+        },
+        {
+          "speaker": "betsy-woudenberg"
+        },
+        {
+          "speaker": "kyle-bubp"
+        },
+        {
+          "speaker": "josh-watson"
+        },
+        {
+          "speaker": "ed-rojas"
+        },
+        {
+          "speaker": "travis-howerton"
+        }
+      ]
     }
   }
 }

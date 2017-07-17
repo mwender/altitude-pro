@@ -55,26 +55,41 @@
 
 <!-- Conference Agenda Templates -->
 <script id="agenda-default-session-template" type="text/x-handlebars-template">
+  <h2 class="time">{{{time}}}</h2>
+  {{#each sessionSpeakers}}
   <div class="clearfix">
-    <div class="one-third first">
-      <h4 class="time">{{{time}}}</h4>
-      <h5>{{name}}</h5>
+    <div class="one-fourth first">
+      <a href="#" data-speaker="{{speaker.key}}" class="speaker" title="{{speaker.name}}"><img src="{{../themeurl}}/images/speakers/{{speaker.photo}}" alt="{{speaker.name}}"{{{widthHeight}}} class="square"></a>
+      <h5>{{speaker.name}}</h5>
+      {{{speaker.taglineHtml}}}
     </div>
-    <div class="two-thirds">
-      <table class="agenda">
-        {{#each items}}
-          <tr>
-            <td><h5><span>{{room}}</span> {{speaker}} - {{#if title}}{{title}}{{else}}To be announced.{{/if}}</h5></td>
-          </tr>
-        {{/each}}
-      </table>
+    <div class="three-fourths">
+      <h4>{{#if speaker.title}}{{speaker.title}}{{else}}To be announced.{{/if}}</h4>
+      {{{speaker.abstractHtml}}}
     </div>
   </div>
+  {{/each}}
 </script>
+
 <script id="agenda-block-session-template" type="text/x-handlebars-template">
   <h4 class="time">{{{time}}}</h4>
   <div class="clearfix">
     <p class="label{{length}} label">{{#if room}}<span>{{room}}</span> {{/if}}{{name}}</p>
+  </div>
+</script>
+
+<script id="agenda-speaker-feature-template" type="text/x-handlebars-template">
+  <h2 class="time">{{{time}}}</h2>
+  <div class="clearfix">
+    <div class="one-fourth first">
+      <a href="#" data-speaker="{{key}}" class="speaker" title="{{speaker.name}}"><img src="{{themeurl}}/images/speakers/{{speaker.photo}}" alt="{{speaker.name}}"{{{widthHeight}}} class="square"></a>
+      <h5>{{speaker.name}}</h5>
+      {{{speaker.taglineHtml}}}
+    </div>
+    <div class="three-fourths">
+      <h4 class="abstract-title">{{#if speaker.title}}{{speaker.title}}{{else}}To be announced.{{/if}}</h4>
+      {{{speaker.abstractHtml}}}
+    </div>
   </div>
 </script>
 <!-- /Conference Agenda Templates -->

@@ -62,7 +62,7 @@ function altitude_enqueue_scripts_styles() {
 		wp_enqueue_script( 'handlebars', get_bloginfo( 'stylesheet_directory' ) . '/js/handlebars-v4.0.5.js', null, filemtime( get_stylesheet_directory() . '/js/handlebars-v4.0.5.js' ) );
 		wp_enqueue_script( 'showdown', 'https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.2/showdown.min.js', null, '1.4.2' );
 		wp_enqueue_script( 'agenda', get_bloginfo( 'stylesheet_directory' ) . '/js/agenda.js', array( 'jquery', 'handlebars', 'showdown' ), filemtime( get_stylesheet_directory() . '/js/agenda.js' ) );
-		wp_localize_script( 'agenda', 'agendavars', array( 'agendadata' => get_bloginfo( 'stylesheet_directory' ) . '/lib/json/agenda.json', 'themeurl' => get_bloginfo( 'stylesheet_directory' ), 'dataversion' => filemtime( get_stylesheet_directory() . '/lib/json/agenda.json' ) ) );
+		wp_localize_script( 'agenda', 'agendavars', array( 'agendadata' => get_bloginfo( 'stylesheet_directory' ) . '/lib/json/agenda.json', 'speakerdata' => get_bloginfo( 'stylesheet_directory' ) . '/lib/json/speakers.json', 'themeurl' => get_bloginfo( 'stylesheet_directory' ), 'dataversion' => filemtime( get_stylesheet_directory() . '/lib/json/agenda.json' ) ) );
 		add_action('wp_footer', function(){
 			$templates = file_get_contents( get_stylesheet_directory() . '/lib/html/speakers-handlebar-templates.html' );
 			echo $templates;
