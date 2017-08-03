@@ -31,6 +31,29 @@ function html_include( $atts ){
 }
 
 /**
+ * Includes PHP stored in lib/php/
+ *
+ * @since 1.0.0
+ *
+ * @return string Specify the PHP file to retrieve.
+ */
+add_shortcode( 'phpinc', __NAMESPACE__ . '\\php_include' );
+function php_include( $atts ){
+    extract( \shortcode_atts( array(
+        'php' => 'name-of-your-php-file',
+        'doshortcodes' => true,
+    ), $atts ) );
+
+    $file = dirname( __FILE__ ) . '/../php/' . $php . '.php';
+
+    if( file_exists( $file ) ){
+        include_once( $file );
+    } else {
+        echo '<p class="alert"><strong>ERROR:</strong> I could not find <code>' . basename( $file ) . '</code>.</p>' ;
+    }
+}
+
+/**
  * A WordPress navigation menu.
  *
  * @since 1.0.2
