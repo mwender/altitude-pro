@@ -23,7 +23,7 @@ EDGE2017 brings together these experts in the cybersecurity industry with busine
     [
         'question' => 'Where can I find a list of all the speakers?',
         'answer' => 'As we get nearer to the conference date, we will be adding a complete list of
-speakers and topics to our agenda, which can be found here: <a href="https://edgesecurityconference.com/agenda/">https://edgesecurityconference.com/agenda/</a>. A final agenda will be online by the first of August. You can also register to receive email updates.',
+speakers and topics to our agenda, which can be found here: <a href="https://edgesecurityconference.com/agenda/">https://edgesecurityconference.com/agenda/</a>. A final agenda will be online by the first of August. You can also <a href="http://landing.swordshield.com/edge2017-updates">register to receive email updates</a>.',
     ],
     [
         'question' => 'Are there any after-hours events?',
@@ -57,7 +57,7 @@ foreach( $faqs as $key => $faq ){
     echo '<a name="' . $key . '"></a><div style="padding-top: 130px;">';
     echo '<h4>' . ($key + 1) . ') ' . $faq['question'] . '</h4>';
     echo apply_filters( 'the_content', $faq['answer'] );
-    echo '<p style="text-align: right;"><a href="#">&uarr; Top</a></p>';
+    echo '<p><a href="#">&uarr; Back to Top</a></p>';
     echo '</div>';
 }
 ?>
