@@ -38,6 +38,10 @@ speakers and topics to our agenda, which can be found here: <a href="https://edg
         'answer' => 'If you have questions regarding payment or the event, itself, you may email us at <a href="mailto:edge2017@edgesecurityconference.com">edge2017@edgesecurityconference.com</a>. Speakers may use <a href="mailto:speakers@edgesecurityconference.com">speakers@edgesecurityconference.com</a> and sponsors may use <a href="mailto:sponsors@edgesecurityconference.com">sponsors@edgesecurityconference.com</a>. Media contacts can email Ripley PR at 865-977-1973 or by emailing <a href="hripley@ripleypr.com">hripley@ripleypr.com</a>.',
     ],
     [
+        'question' => 'Will I receive CPE/CEU credits for attending this conference?',
+        'answer' => 'Yes. Attendees will receive 10 CPE, CLP, or CME credits and up to 1.0 CEU credits.',
+    ],
+    [
         'question' => 'What is the conference attire?',
         'answer' => 'Business casual is most appropriate.',
     ],
