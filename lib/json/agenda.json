@@ -45,6 +45,15 @@
         },
         {
           "speaker": "aditya-sood"
+        },
+        {
+          "speaker": "frank-trama"
+        },
+        {
+          "speaker": "paul-mazzucco"
+        },
+        {
+          "speaker": "robert-macdonald"
         }
       ]
     },
@@ -212,6 +221,9 @@
           "speaker": "kyle-bubp"
         },
         {
+          "speaker": "peder-muller"
+        },
+        {
           "speaker": "josh-watson"
         },
         {
@@ -219,6 +231,9 @@
         },
         {
           "speaker": "travis-howerton"
+        },
+        {
+          "speaker": "greg-rosenberg"
         }
       ]
     }
