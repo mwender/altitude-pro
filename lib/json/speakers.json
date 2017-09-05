@@ -273,6 +273,17 @@
     "room": "",
     "presentation": ""
   },
+  "russel-van-tuyl": {
+    "name": "Russel Van Tuyl",
+    "type": "session",
+    "tagline": "Security Analyst, Sword & Shield Enterprise Security",
+    "photo": "russel-van-tuyl.600x600.jpg",
+    "bio": "Russel Van Tuyl is a security analyst for Sword & Shield Enterprise Security. His primary role consists of conducting network vulnerability assessments, penetration tests, and web application assessments but also performs firewall configuration audits, wireless assessments, and social engineering engagements. He has more than 15 years of experience in the technical field in roles such as database design, field device support, help desk, IT asset management, programming, and information security.",
+    "title": "0 Days & 1337 h4x0rs - Why You Don't Need Either To Secure Your Business",
+    "abstract": "Experience has shown me that organizations have not mastered fundamental security practices or identified systemic risk areas that have the biggest potential to ensure a strong security posture to effectively secure their business. Follow me, an experienced penetration tester, as we embark on a journey to look at some of the most common ways a company can be compromised during a penetration test. I'll illustrate why you won't need 0 day exploits or the world’s greatest l337 h4x0rs to get the most significant gains in securing your business. This presentation is not a technical deep dive into network attacks, but rather a high-level overview of key areas to address to significantly drive down risk through the application of well-known and defined security practices. You'll walk away with a better understanding of key areas of risk and associated impact along with solutions to overcome them. Additionally, I'll throw in a framework for good measure that contains a prioritized list of controls that will increase the maturity of your organization's security no matter its current state.",
+    "room": "",
+    "presentation": ""
+  },
   "josh-watson": {
     "name": "Josh Watson",
     "type": "session",
