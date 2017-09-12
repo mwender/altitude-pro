@@ -97,17 +97,6 @@
     "room": "",
     "presentation": ""
   },
-  "yulia-duryea": {
-    "name": "Yulia Duryea",
-    "type": "session",
-    "tagline": "Director of Product Management, Windstream",
-    "photo": "yulia-duryea.600x600.jpg",
-    "bio": "Yulia Duryea is the Director of Product Management at Windstream where she is the product lead over the Enterprise SD-WAN portfolio. Prior to joining Windstream, Yulia held a variety of product roles at Level 3 Communications, where she managed the product lifecycle of a number of services, including managed security services, managed router, managed UCC, Ethernet and IP-VPN. Yulia holds an MBA from Oregon State University, and a BS from Université Lyon 3, in Lyon France.",
-    "title": "",
-    "abstract": "",
-    "room": "",
-    "presentation": ""
-  },
   "tim-flowers": {
     "name": "Tim Flowers",
     "type": "session",
@@ -116,6 +105,17 @@
     "bio": "Tim Flowers is a Trial Attorney in the Computer Crime and Intellectual Property Section of the United States Department of Justice. Although Mr. Flowers’s practice is heavily focused on litigating cases across the spectrum of computer-based and intellectual-property crimes, he has also conducted various outreach activities as part of CCIPS’ Cybersecurity Unit. Mr. Flowers recently co-authored, along with colleague Brian Levine, “Your Secrets Are Safe With Us: How Prosecutors Protect Trade Secrets During Investigation and Prosecution,” which appeared in the AMERICAN JOURNAL OF TRIAL ADVOCACY. Before joining CCIPS, Mr. Flowers was a judicial law clerk to the Honorable Samuel H. “Hardy” Mays, Jr. on the United States District Court for the Western District of Tennessee and the Honorable Ronald Lee Gilman on the United States Court of Appeals for the Sixth Circuit.",
     "title": "Cybercrime Near and Far—Lessons Learned in Combatting Computer Crimes Locally and Around the World",
     "abstract": "Cybercrime often hits close to home, even when the perpetrators live halfway around the globe.  But despite the local effects of cybercrime, cyber actors often wreak havoc without ever meeting or interacting with their intended victims, whether the target is a Fortune 500 company or a lone individual.  Operating from afar, these malicious actors simply exploit network vulnerabilities or compromise the PII and banking information of entire groups of people without having to witness to the force and effects of their actions.  These relatively impersonal aspects of cybercrime often leave many victims asking why they were targeted and what must be done to avoid another attack—questions that law enforcement is left to answer.\n\nOther times, however, cyber actors are fixtures in victims’ lives—the disgruntled former employee or the jilted friend out for revenge.  At the United States Department of Justice, Senior Trial Attorney Tim Flowers has witnessed cybercrime on both its grandest and most granular scale.  In his capacity as a federal prosecutor, he has overseen the investigation and prosecution of cyber actors located both home and abroad, learning valuable lessons in the process.  His talk will focus on current trends in cybercrime, from the growing influence of organized crime to lone individuals leveraging the trust of their targets for ill-gotten gains.  Special consideration will be given to one or two examples from Tennessee that demonstrate both the importance of early reporting and the need for victim participation up and until sentencing.",
+    "room": "",
+    "presentation": ""
+  },
+  "mike-frane": {
+    "name": "Mike Frane",
+    "type": "session",
+    "tagline": "VP Product Management, Windstream",
+    "photo": "mike-frane.600x600.jpg",
+    "bio": "Mike Frane is VP Product Management at Windstream with responsibility for the company’s SD-WAN strategy. Since joining the organization in 2008, he’s overseen the launch and lifecycle of products including cellular wireless, Ethernet and MPLS IPsec access elements, Secure WiFi & Analytics, Application Performance Optimization, IPsec VPN and Unified Communications services and led the company’s Portal and Hybrid Networking strategy. Most recently, Mike and his team launched EarthLink SD-WAN, their most significant such product introduction in over a decade. Mike has a BS in Genetics and Cellular Biology from the University of Minnesota and was involved in gene therapy research at the Institute of Human Genetics before entering the telecommunications industry as a business analyst for an investment firm based in the Pacific Northwest.",
+    "title": "",
+    "abstract": "",
     "room": "",
     "presentation": ""
   },
@@ -204,6 +204,17 @@
     "bio": "Previously with Identity and Access Operations at Fidelity Investments for 8+ years, Vishal Patel has worked mainly in the financial industry within information technology organizations later focusing in Information Security and Identity Access Management.  Vishal has had the pleasure with working alongside some of the most talented and brilliant individuals that have helped to shape his career while defending organizations with increased cyber threats externally and internally.  He is always excited to share his experiences and learn from those willing to share theirs.",
     "title": "Title not available",
     "abstract": "Traditionally, much of the focus of a corporation’s InfoSec efforts have been placed on ensuring that the perimeter is secure. Recent attacks have shown an alarming shift from perimeter-based attacks to ones that originate inside the corporate network using privileged accounts. During this session CyberArk will discuss growing trends in regards to attacks and what Security Leaders are doing to protect their organizations from these advanced attacks.  CyberArk will also walk through a typical attack that utilizes privileged accounts and how passwords may not even be necessary to break down the front door.",
+    "room": "",
+    "presentation": ""
+  },
+  "joseph-poupard": {
+    "name": "Joseph Poupard",
+    "type": "session",
+    "tagline": "Dark Trace, Regional Director",
+    "photo": "joseph-poupard.600x600.jpg",
+    "bio": "Joseph T. Poupard is a Regional Director at Darktrace, the world’s leading machine learning company for cyber defense. He has worked extensively with clients across numerous industry verticals, from Financial Services to Healthcare, helping them deploy Darktrace’s Enterprise Immune System, the only AI technology capable of detecting and autonomously responding to early-stage cyber-threats. Joe graduated with a bachelor’s degree from Tufts University and is based out of Darktrace’s Washington, DC office.",
+    "title": "Unsupervised Machine Learning: A New Approach to Cyber Defense",
+    "abstract": "From insiders to sophisticated external attackers, the reality of cyber security today is that the threat is already inside. Legacy approaches to cyber security, which rely on knowledge of past attacks, are simply not sufficient to combat new, evolving attacks, and no human cyber analyst can watch so much or react quickly enough. A fundamentally new approach to cyber defense is needed to detect and investigate these threats that are already inside the network - before they turn into a full-blown crisis.\n\nSelf-learning systems represent a fundamental step-change in automated cyber defense, are relied upon by organizations around the world, and can cover up to millions of devices. Based on unsupervised machine learning and probabilistic mathematics, these new approaches to security can establish a highly accurate understanding of normal behavior by learning an organization’s ‘pattern of life,’. They can therefore spot abnormal activity as it emerges and even take precise, measured actions to automatically curb the threat.\n\nDiscover why unsupervised machine learning is the future of defense and how the ‘immune system’ approach to cyber security provides complete network visibility and the ability to prioritize threats in order to better allocate time and resources.\n\nIn this session, learn:\n- How new machine learning and mathematics are automating advanced cyber defense\n- Why full network visibility allows you to detect threats as or before they emerge\n- How smart prioritization and visualization of threats allows for better resource allocation and lower risk\n- Real-world examples of unknown threats detected by ‘immune system’ technology",
     "room": "",
     "presentation": ""
   },
