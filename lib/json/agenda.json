@@ -17,7 +17,13 @@
       "time": "Afternoon Sessions",
       "sessionSpeakers": [
         {
-          "speaker": "ben-johnson"
+          "speaker": "larry-bray"
+        },
+        {
+          "speaker": "william-dixon"
+        },
+        {
+          "speaker": "tim-flowers"
         },
         {
           "speaker": "stephen-fridakis"
@@ -26,19 +32,16 @@
           "speaker": "joe-gray"
         },
         {
-          "speaker": "william-dixon"
-        },
-        {
-          "speaker": "wes-widner"
-        },
-        {
-          "speaker": "tim-flowers"
-        },
-        {
-          "speaker": "larry-bray"
-        },
-        {
           "speaker": "rob-gresham"
+        },
+        {
+          "speaker": "ben-johnson"
+        },
+        {
+          "speaker": "robert-macdonald"
+        },
+        {
+          "speaker": "paul-mazzucco"
         },
         {
           "speaker": "chris-sanders"
@@ -50,10 +53,7 @@
           "speaker": "frank-trama"
         },
         {
-          "speaker": "paul-mazzucco"
-        },
-        {
-          "speaker": "robert-macdonald"
+          "speaker": "wes-widner"
         }
       ]
     },
@@ -212,31 +212,34 @@
       "time": "Afternoon Sessions",
       "sessionSpeakers": [
         {
-          "speaker": "tony-rucci"
+          "speaker": "kyle-bubp"
         },
         {
           "speaker": "paul-coggin"
         },
         {
-          "speaker": "kyle-bubp"
-        },
-        {
-          "speaker": "peder-muller"
-        },
-        {
-          "speaker": "josh-watson"
-        },
-        {
-          "speaker": "ed-rojas"
+          "speaker": "mike-frane"
         },
         {
           "speaker": "travis-howerton"
         },
         {
+          "speaker": "peder-muller"
+        },
+        {
+          "speaker": "ed-rojas"
+        },
+        {
           "speaker": "greg-rosenberg"
         },
         {
+          "speaker": "tony-rucci"
+        },
+        {
           "speaker": "russel-van-tuyl"
+        },
+        {
+          "speaker": "josh-watson"
         }
       ]
     }
