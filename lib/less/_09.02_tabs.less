@@ -1,0 +1,35 @@
+/* jQuery UI Tabs */
+@tabcolor: #c3c3c3;
+#tabs{
+  border: 0;
+
+  /* Tabs */
+  .ui-tabs-nav li{
+    border-color: @tabcolor;
+
+    &.ui-state-default{
+      background: @tabcolor;
+
+      &.ui-state-active{
+        background: #fff;
+
+        a{
+          color: darken(@tabcolor, 40%);
+        }
+      }
+    }
+  }
+
+  /* Tab Container */
+  .ui-widget-header{
+    border: 0;
+    background: transparent;
+  }
+
+  /* Tab Content */
+  .ui-tabs-panel{
+    border-top: 1px solid @tabcolor;
+    margin-top: 1px;
+    padding: 1em 0;
+  }
+}
