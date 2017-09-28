@@ -130,9 +130,24 @@ Content Area
   ------------------------------------------- */
 .front-page-4{
 
+	p:last-child{
+		margin-bottom: 0;
+	}
+
+	ul{
+		margin-bottom: 20px;
+	}
+}
+.front-page-4-deactivated{
+
 	.flexible-widgets{
 		padding-bottom: 0;
-		padding-top: 60px;
+		padding-top: 0;
+
+		.sectiontitle{
+				font-size: 42px;
+				font-weight: bold;
+		}
 	}
 
 	@planwidth: 450px;
@@ -153,6 +168,18 @@ Content Area
 			&:before{
 				font-family: 'dashicons';
 				font-size: 24px;
+			}
+
+			&.dashicons-arrow-right-alt{
+				padding-left: 36px;
+				text-indent: -14px;
+
+				&:before{
+					content: "\f344";
+					display: inline-table;
+					vertical-align: middle;
+					margin: -2px 6px 0 0;
+				}
 			}
 
 			&.dashicons-star-filled{
@@ -221,11 +248,14 @@ Content Area
 				padding-bottom: 20px;
 			}
 
+			/* Highlight middle w/ shadow */
+			/*
 			.widget:nth-child(3){
 				box-shadow: 0px 0px 10px #000;
 				position: relative;
 				z-index: 3;
 			}
+			*/
 
 			.widget:nth-child(4){
 				position: relative;
@@ -237,6 +267,15 @@ Content Area
 			margin-bottom: 0;
 		}
 
+		.widgettitle{
+			max-width: 450px;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 42px;
+		}
+
+		/* Round Widget Titles*/
+		/*
 		@widgetsize: 150px;
 		.widgettitle{
 			border: none;
@@ -251,6 +290,7 @@ Content Area
 			text-transform: none;
 			letter-spacing: 0;
 		}
+		*/
 	}
 
 	div.cta{
