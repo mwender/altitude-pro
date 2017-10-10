@@ -1,33 +1,134 @@
-  <!--<div class="alert alert-edge2017">
-        <div class="clearfix">
-          <div class="three-fourths first">
-            <h3 style="margin: 0 0 6px 0;">Call for Speakers</h3>
-            <em>Have something to share at EDGE?</em> Submit your proposal:
-          </div>
-          <div class="one-fourth" style="text-align: right;">
-            <a href="/call-for-speakers/" class="button" style="margin: 0; font-size: 20px; white-space: nowrap;">Call for Speakers</a>
-          </div>
-        </div>
-  </div>-->
-  <p>EDGE2017 brings together the brightest minds in today's information security community. From our keynotes to our track sessions, there will be content to challenge and inspire you, and to further your career.</p>
-  <h2>Keynote Speakers</h2>
-  <p>As thought leaders in their fields, our keynote speakers are speaking on topics at the forefront of today's InfoSec community.</p>
-  <div class="clearfix">
-    <div class="one-half first">
-        <h3>Day 1</h3>
-        <div class="speakers keynote thumbnails" data-columns="2" data-width="300" data-speakers="miller-valasek"></div>
-        <p><a class="speaker" href="#" data-speaker="miller-valasek">Charlie Miller</a>  and <a class="speaker" href="#" data-speaker="miller-valasek">Chris Valasek</a>, Renowned "White Hat" Hackers</p>
-    </div>
-    <div class="one-half">
-        <h3>Day 2</h3>
-        <div class="speakers keynote thumbnails" data-columns="2" data-width="300" data-speakers="brett-williams"></div>
-        <p><a href="#" class="speaker" data-speaker="brett-williams">Maj. Gen. Brett T. Williams</a>, US Cyber Command (2012-2014)</p>
+<script type="text/javascript">
+  (function($){
+    var tueWaypoints = function(){
+        $('#tuesday-date').waypoint({
+        handler: function(direction){
+          if( 'down' == direction ){
+            $(this.element).addClass('fixed');
+          } else if( 'up' == direction ){
+            $(this.element).removeClass('fixed');
+          }
+        },
+        offset: 80
+      });
+    };
+
+    var wedWaypoints = function(){
+      $('#wednesday-date').waypoint({
+        handler: function(direction){
+          if( 'down' == direction ){
+            $(this.element).addClass('fixed');
+            $('#tuesday-date').removeClass('fixed');
+          } else if( 'up' == direction ){
+            $(this.element).removeClass('fixed');
+            $('#tuesday-date').addClass('fixed');
+          }
+        },
+        offset: 220
+      });
+    }
+
+    var timeWaypoints = function(){
+      $('.agenda div.time').waypoint({
+        handler: function(direction){
+          if( 'down' == direction ){
+            $('.agenda div.time').removeClass('fixed');
+            $(this.element).addClass('fixed');
+          } else if ( 'up' == direction ){
+            $(this.element).removeClass('fixed');
+          }
+        },
+        offset: 320
+      });
+    }
+
+    var clearWaypoints = function(){
+      $('.clearwaypoints').waypoint({
+        handler: function(direction){
+          $('.agenda div.time').removeClass('fixed');
+        },
+        offset: 320
+      });
+    }
+
+    // Wait 1 sec, Initialize Waypoints
+    setTimeout(function(){
+      tueWaypoints();
+      wedWaypoints();
+      timeWaypoints();
+      clearWaypoints();
+    },1000);
+
+  })(jQuery);
+</script>
+<div class="clearfix">
+  <div class="one-half first">
+    <p>EDGE2017 features a world-class lineup of the brightest minds in the information security industry. View our speakers, <a href="http://www.cvent.com/d/dvqhx5/4W?RefID=Conference+Website">register</a> for the conference, and come prepared to learn about new developments and gain valuable insights in cybersecurity.</p>
+  </div>
+  <div class="one-half">
+    <div class="alert alert-edge2017">
+      <h5 style="margin-bottom: 4px; text-transform: uppercase;">Continuing Education Credits</h5>
+      <p style="margin-bottom: 0">Attendees will receive up to 10 CPE, CLP, or CME and 1.0 CEU credits.</p>
     </div>
   </div>
-  <hr/>
-  <h3>Track Sessions</h3>
-  <p>Specific discussions and topical sessions led by industry experts will focus on the latest trends in information security and actionable advice for your organization.</p>
-  <div class="speakers session" data-columns="4" data-width="200"></div>
-  <hr/>
-  <div class="alert alert-success"><strong>Continuing Education Credits</strong><br>Attendees will receive up to 16 CPE, CLP, or CME credits and up to 1.6 CEU credits.</div>
+</div>
 
+<div class="day" id="tuesday-date"><h3>Tuesday, October 17, 2017</h3></div>
+
+<div class="agenda" data-time="tuesday:800-900" data-template="block"></div>
+
+<div class="agenda" data-time="tuesday:900-930" data-template="block"></div>
+
+<div class="agenda" data-time="tuesday:keynotes" data-template="feature"></div>
+
+<div class="agenda" data-time="tuesday:1030-1045" data-template="block"></div>
+
+<div class="agenda" data-time="tuesday:general-session" data-template="feature"></div>
+
+<div class="agenda" data-time="tuesday:1145-1230" data-template="block"></div>
+
+<div class="agenda" data-time="tuesday:1230-130" data-template="block"></div>
+
+<div class="agenda" data-time="tuesday:130-215"></div>
+
+<div class="agenda" data-time="tuesday:215-230" data-template="block"></div>
+
+<div class="agenda" data-time="tuesday:230-315"></div>
+
+<div class="clearwaypoints"></div>
+
+<div class="agenda" data-time="tuesday:315-330" data-template="block"></div>
+
+<div class="agenda" data-time="tuesday:330-430" data-template="block"></div>
+
+<div class="agenda" data-time="tuesday:430-630" data-template="block"></div>
+
+<!-- END DAY 1 -->
+
+<div class="day" id="wednesday-date"><h3>Wednesday, October 18, 2017</h3></div>
+
+<div class="agenda" data-time="wednesday:800-900" data-template="block"></div>
+
+<div class="agenda" data-time="wednesday:900-930" data-template="block"></div>
+
+<div class="agenda" data-time="wednesday:keynotes" data-template="feature"></div>
+
+<div class="agenda" data-time="wednesday:1030-1045" data-template="block"></div>
+
+<div class="agenda" data-time="wednesday:general-session" data-template="feature"></div>
+
+<div class="agenda" data-time="wednesday:1145-1230" data-template="block"></div>
+
+<div class="agenda" data-time="wednesday:1230-130" data-template="block"></div>
+
+<div class="agenda" data-time="wednesday:130-215"></div>
+
+<div class="agenda" data-time="wednesday:215-230" data-template="block"></div>
+
+<div class="agenda" data-time="wednesday:230-315"></div>
+
+<div class="clearwaypoints"></div>
+
+<div class="agenda" data-time="wednesday:315-330" data-template="block"></div>
+
+<div class="agenda" data-time="wednesday:330-430" data-template="block"></div>

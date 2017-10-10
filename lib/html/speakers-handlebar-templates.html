@@ -16,6 +16,7 @@
         {{/if}}
     </div>
 </script>
+
 <script id="speaker-condensed-template" type="text/x-handlebars-template">
   <div class="speaker clearfix">
     <div class="one-fourth first"><img src="{{themeurl}}/images/speakers/{{photo}}" class="square alignright" /></div>
@@ -24,6 +25,7 @@
     </div>
   </div>
 </script>
+
 <script id="overlay-template" type="text/x-handlebars-template">
   <div class="speaker-overlay {{type}}" id="{{key}}">
     <div class="clearfix">
@@ -42,6 +44,7 @@
     </div>
   </div>
 </script>
+
 <script id="abstract-template" type="text/x-handlebars-template">
   <div class="abstract-overlay {{type}}" id="{{key}}">
     <div class="clearfix">
@@ -55,7 +58,7 @@
 
 <!-- Conference Agenda Templates -->
 <script id="agenda-default-session-template" type="text/x-handlebars-template">
-  <h2 class="time">{{{time}}}</h2>
+  <div class="time"><h2><span>{{{time}}}</span> {{name}}</h2></div>
   {{#each sessionSpeakers}}
   <div class="clearfix">
     <div class="one-fourth first">
@@ -65,6 +68,7 @@
     </div>
     <div class="three-fourths">
       <h4>{{#if speaker.title}}{{speaker.title}}{{else}}To be announced.{{/if}}</h4>
+      {{#if speaker.room}}<h5 class="room-title"><span>Room</span> {{speaker.room}}</h5>{{/if}}
       {{{speaker.abstractHtml}}}
     </div>
   </div>
@@ -74,12 +78,12 @@
 <script id="agenda-block-session-template" type="text/x-handlebars-template">
   <h4 class="time">{{{time}}}</h4>
   <div class="clearfix">
-    <p class="label{{length}} label">{{#if room}}<span>{{room}}</span> {{/if}}{{name}}</p>
+    <p class="label{{length}} label">{{name}}{{#if room}}<br/><span>{{room}}</span>{{/if}}</p>
   </div>
 </script>
 
 <script id="agenda-speaker-feature-template" type="text/x-handlebars-template">
-  <h2 class="time">{{{time}}}</h2>
+  <div class="time"><h2><span>{{{time}}}</span> {{name}}</h2></div>
   <div class="clearfix">
     <div class="one-fourth first">
       <a href="#" data-speaker="{{speaker.key}}" class="speaker" title="{{speaker.name}}"><img src="{{themeurl}}/images/speakers/{{speaker.photo}}" alt="{{speaker.name}}"{{{widthHeight}}} class="square"></a>
@@ -88,6 +92,7 @@
     </div>
     <div class="three-fourths">
       <h4 class="abstract-title">{{#if speaker.title}}{{speaker.title}}{{else}}To be announced.{{/if}}</h4>
+      {{#if speaker.room}}<h5 class="room-title"><span>Room</span> {{speaker.room}}</h5>{{/if}}
       {{{speaker.abstractHtml}}}
     </div>
   </div>

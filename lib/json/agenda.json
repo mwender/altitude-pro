@@ -1,15 +1,14 @@
 {
   "tuesday": {
     "keynotes": {
-      "name": "Dr. Charlie Miller and Chris Valasek",
-      "time": "Keynote Address",
+      "name": "Keynote Address: Dr. Charlie Miller and Chris Valasek",
+      "time": "9:30 - 10:30AM",
       "length": "60",
       "speaker": "miller-valasek"
     },
     "general-session": {
-      "name": "Chris Poulin",
-      "time": "General Session",
-      "length": "60",
+      "name": "General Session: Chris Poulin",
+      "time": "10:45 - 11:45AM",
       "speaker": "chris-poulin"
     },
     "afternoon-sessions": {
@@ -61,80 +60,58 @@
       "name": "Registration and Breakfast",
       "time": "8:00 &ndash; 9:00AM",
       "length": "60",
-      "room": "CB"
+      "room": "Outside Rotunda Room"
     },
     "900-930": {
       "name": "Opening Remarks",
       "time": "9:00 &ndash; 9:30AM",
       "length": "30",
-      "room": "CB"
-    },
-    "930-1030": {
-      "name": "Keynote Speaker",
-      "time": "9:30 &ndash; 10:30AM",
-      "length": "60",
-      "room": "CB"
+      "room": "Cumberland EFG"
     },
     "1030-1045": {
       "name": "Break",
       "time": "10:30 &ndash; 10:45AM",
       "length": "15"
     },
-    "1045-1145": {
-      "name": "General Session #1",
-      "time": "10:45 &ndash; 11:45AM",
-      "length": "60",
-      "room": "CB"
-    },
     "1145-1230": {
-      "name": "Networking Break",
+      "name": "Networking Break and Exhibits Open",
       "time": "11:45AM &ndash; 12:30PM",
       "length": "45"
     },
     "1230-130": {
       "name": "Lunch",
-      "time": "12:30 &ndash; 1:30PM"
+      "time": "12:30 &ndash; 1:30PM",
+      "room": "Exhibit Hall B, Lower Level"
     },
     "130-215": {
-      "items": [
+      "name": "Track Session 1",
+      "time": "1:30 &ndash; 2:15PM",
+      "sessionSpeakers": [
         {
-          "room": "CB",
-          "speaker": "TBA",
-          "title": ""
+          "speaker": "packet-viper"
         },
         {
-          "room": "A",
-          "speaker": "TBA",
-          "title": ""
+          "speaker": "joe-gray"
         },
         {
-          "room": "B",
-          "speaker": "TBA",
-          "title": ""
+          "speaker": "william-dixon"
         },
         {
-          "room": "C",
-          "speaker": "TBA",
-          "title": ""
+          "speaker": "wes-widner"
         },
         {
-          "room": "D",
-          "speaker": "TBA",
-          "title": ""
+          "speaker": "tim-flowers"
         },
         {
-          "room": "E",
-          "speaker": "TBA",
-          "title": ""
+          "speaker": "ben-johnson"
         },
         {
-          "room": "LH",
-          "speaker": "TBA",
-          "title": ""
+          "speaker": "windstream"
+        },
+        {
+          "speaker": "dark-trace"
         }
-      ],
-      "name": "Track Session #1",
-      "time": "1:30 &ndash; 2:15PM"
+      ]
     },
     "215-230": {
       "name": "Break",
@@ -142,45 +119,31 @@
       "length": "15"
     },
     "230-315": {
-      "items": [
+      "name": "Track Session 2",
+      "time": "2:30 &ndash; 3:15PM",
+      "sessionSpeakers": [
         {
-          "room": "CB",
-          "speaker": "TBA",
-          "title": ""
+          "speaker": "larry-bray"
         },
         {
-          "room": "A",
-          "speaker": "TBA",
-          "title": ""
+          "speaker": "rob-gresham"
         },
         {
-          "room": "B",
-          "speaker": "TBA",
-          "title": ""
+          "speaker": "chris-sanders"
         },
         {
-          "room": "C",
-          "speaker": "TBA",
-          "title": ""
+          "speaker": "aditya-sood"
         },
         {
-          "room": "D",
-          "speaker": "TBA",
-          "title": ""
+          "speaker": "stephen-fridakis"
         },
         {
-          "room": "E",
-          "speaker": "TBA",
-          "title": ""
+          "speaker": "tierpoint"
         },
         {
-          "room": "LH",
-          "speaker": "TBA",
-          "title": ""
+          "speaker": "micro-focus"
         }
-      ],
-      "name": "Track Session #2",
-      "time": "2:30 &ndash; 3:15PM"
+      ]
     },
     "315-330": {
       "name": "Break",
@@ -188,23 +151,28 @@
       "length": "15"
     },
     "330-430": {
-      "name": "Panel Discussion",
+      "name": "CyberViews Panel and Closing Remarks",
       "time": "3:30 &ndash; 4:30PM",
       "length": "60",
-      "room": "CB"
+      "room": "Cumberland EFG"
+    },
+    "430-630": {
+      "name": "EDGE After Hours Event",
+      "time": "4:30 &ndash; 6:30PM",
+      "length": "120",
+      "room": "Cumberland A"
     }
   },
   "wednesday":{
     "keynotes": {
-      "name": "Major General Brett Williams",
-      "time": "Keynote Address",
+      "name": "Keynote Address: Major General Brett Williams",
+      "time": "9:30 - 10:30AM",
       "length": "60",
       "speaker": "brett-williams"
     },
     "general-session": {
-      "name": "Robert Johnston",
-      "time": "General Session",
-      "length": "60",
+      "name": "General Session: Robert Johnston",
+      "time": "10:45 - 11:45AM",
       "speaker": "robert-johnston"
     },
     "afternoon-sessions": {
@@ -221,19 +189,19 @@
           "speaker": "mike-frane"
         },
         {
-          "speaker": "travis-howerton"
-        },
-        {
           "speaker": "peder-muller"
         },
         {
           "speaker": "ed-rojas"
         },
         {
-          "speaker": "greg-rosenberg"
+          "speaker": "tony-rucci"
         },
         {
-          "speaker": "tony-rucci"
+          "speaker": "ken-swain"
+        },
+        {
+          "speaker": "craig-thomas"
         },
         {
           "speaker": "russel-van-tuyl"
@@ -242,6 +210,100 @@
           "speaker": "josh-watson"
         }
       ]
+    },
+    "800-900": {
+      "name": "Breakfast",
+      "time": "8:00 &ndash; 9:00AM",
+      "length": "60",
+      "room": "Outside Rotunda Room"
+    },
+    "900-930": {
+      "name": "Opening Remarks",
+      "time": "9:00 &ndash; 9:30AM",
+      "length": "30",
+      "room": "Cumberland EFG"
+    },
+    "1030-1045": {
+      "name": "Break",
+      "time": "10:30 &ndash; 10:45AM",
+      "length": "15"
+    },
+    "1145-1230": {
+      "name": "Networking Break and Exhibits Open",
+      "time": "11:45AM &ndash; 12:30PM",
+      "length": "45"
+    },
+    "1230-130": {
+      "name": "Lunch",
+      "time": "12:30 &ndash; 1:30PM",
+      "room": "Exhibit Hall B, Lower Level"
+    },
+    "130-215": {
+      "name": "Track Session 3",
+      "time": "1:30 &ndash; 2:15PM",
+      "sessionSpeakers": [
+        {
+          "speaker": "russel-van-tuyl"
+        },
+        {
+          "speaker": "tony-rucci"
+        },
+        {
+          "speaker": "paul-coggin"
+        },
+        {
+          "speaker": "peder-muller"
+        },
+        {
+          "speaker": "kyle-bubp"
+        },
+        {
+          "speaker": "sophos"
+        },
+        {
+          "speaker": "force-point"
+        }
+      ]
+    },
+    "215-230": {
+      "name": "Break",
+      "time": "2:15 &ndash; 2:30PM",
+      "length": "15"
+    },
+    "230-315": {
+      "name": "Track Session 4",
+      "time": "2:30 &ndash; 3:15PM",
+      "sessionSpeakers": [
+        {
+          "speaker": "pci-panel"
+        },
+        {
+          "speaker": "josh-watson"
+        },
+        {
+          "speaker": "ed-rojas"
+        },
+        {
+          "speaker": "craig-thomas"
+        },
+        {
+          "speaker": "cyberark"
+        },
+        {
+          "speaker": "mad-security"
+        }
+      ]
+    },
+    "315-330": {
+      "name": "Break",
+      "time": "3:15 &ndash; 3:30PM",
+      "length": "15"
+    },
+    "330-430": {
+      "name": "CyberViews Panel and Closing Remarks",
+      "time": "3:30 &ndash; 4:30PM",
+      "length": "60",
+      "room": "Cumberland EFG"
     }
   }
 }

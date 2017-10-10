@@ -260,12 +260,26 @@ nav.nav-primary{
     transform: translateY(55%);
     background: transparent!important;
     float: right;
+
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen
+    and (max-width : 700px) {
+      float: none;
+      width: 100%;
+      margin-bottom: 10px;
+    }
 }
 
 .atcb-link {
     display: block;
     outline: none!important;
     cursor: pointer;
+
+    @media only screen
+    and (max-width : 700px) {
+      text-align: center;
+
+    }
 }
 
 .atcb-link:focus~ul,
@@ -281,6 +295,12 @@ nav.nav-primary{
     left: 0;
     width: 170px;
     z-index: 900;
+
+    @media only screen
+    and (max-width : 700px) {
+      width: 100% !important;
+
+    }
 }
 
 .atcb-list,

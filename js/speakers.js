@@ -108,7 +108,9 @@
 				if( typeof speakersToExclude != 'undefined' && -1 != $.inArray( key, speakersToExclude ) ){
 						return true;
 				} else {
-					if( true == hideSession && 'session' != val.type ){
+					if( 'session' != val.type && 'keynote' != val.type ){
+						console.log('Skipping ' + val.name + ', ' + val.title );
+					} else if( true == hideSession && 'session' != val.type ){
 						speakers[key] = val;
 					} else if( true == hideKeynote && 'keynote' != val.type ){
 						speakers[key] = val;
