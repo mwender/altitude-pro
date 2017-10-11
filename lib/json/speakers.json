@@ -141,6 +141,17 @@
     "room": "301-B",
     "presentation": ""
   },
+  "dawn-marie-hutchinson": {
+    "name": "Dawn-Marie Hutchinson",
+    "type": "session",
+    "tagline": "Executive Director, Office of the CISO, Optiv",
+    "photo": "dawn-marie-hutchinson.600x600.jpg",
+    "bio": "Dawn-Marie Hutchinson brings 18 years of enterprise information technology experience to her role as executive director in the Office of the CISO at Optiv.  A well-known thought leader and highly sought after speaker as an expert on the subjects of crisis management, incident response, threat mapping, data privacy, cyber security strategy and leadership. She is credited with establishing standards and controls for the anonymization of patient level data and authored the white paper for defining those levels, as well as use cases for the secondary uses of medical data. Additionally, she served on the HITRUST Privacy working group responsible for revising the HITRUST Common Security Framework to include additional privacy controls and the inclusion of NIST app J recommendations.\n\nIn addition to being recognized by CSO Magazine as one of twelve most influential women in cyber security she was also honored as SC Magazine’s “8 Women to Watch,” and on the CRN Women’s Power 50 list honoring outstanding female executives prominently involved in the IT channel ecosystem for their successes and the far-reaching impact they are having on the technology industry. Her contributions to the industry include presentations or keynotes at more than 40 conferences worldwide, including RSA, Gartner Security Summit, Net Diligence, Black Hat, IAPP, Evanta CIO and CISO Summits and ISSA events.\n\nShe participates on several corporate and advisory boards in the information security space to help organizations go beyond technology to resolve their struggles, and to work with business executives to drive innovation and deliver solutions that create real value for organizations. She hosts 20 CISO roundtables per year to help unite the security community and to facilitate conversation and drive ideas to accomplish good and additionally frequently speaks to elementary and middle school children about internet safety.\n\nHutchinson holds a master’s degree from the Saint Joseph’s University Haub School of Business and her bachelor’s degree in International Relations from the University of New Hampshire.",
+    "title": "GDPR: An Exercise in​ Data Accountability",
+    "abstract": "A strong data management program can be a central factor for GDPR compliance. This session looks at how data accountability should be incorporated in an organization’s approach to the GDPR.   This session examines problems that will come up under the GDPR and offers practical solutions.​",
+    "room": "301-D",
+    "presentation": ""
+  },
   "robert-johnston": {
     "name": "Robert Johnston",
     "type": "session",
