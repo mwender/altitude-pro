@@ -153,11 +153,23 @@ h1{
 			background-color: #fff;
 			border-bottom: 1px solid @edgeblue;
 
+			/* Smartphones (portrait and landscape) ----------- */
+			@media only screen
+			and (max-width : 768px) {
+				top: 44px;
+			}
+
 			h2{
 				padding: 10px 0;
 				margin: 0 auto;
 				border: 0;
 				max-width: 1200px;
+
+				@media only screen
+				and (max-width : 768px) {
+					font-size: 24px;
+					padding: 10px;
+				}
 
 			}
 		}
@@ -331,6 +343,11 @@ h1{
 			}
 			img{
 				border-width: 3px;
+
+				@media only screen
+				and (max-width : 768px) {
+					max-width: 200px;
+				}
 			}
 			p,
 			.hidetext{
