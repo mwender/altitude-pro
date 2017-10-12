@@ -218,17 +218,6 @@
     "room": "300-B",
     "presentation": ""
   },
-  "ed-rojas": {
-    "name": "Ed Rojas",
-    "type": "session",
-    "tagline": "Deloitte Cyber Risk Services",
-    "photo": "ed-rojas.600x600.jpg",
-    "bio": "Edgar is a specialist master at Deloitte’s Risk and Financial Advisory/Cyber Risk Services. A 28+ year veteran in the data networking and information security industry, with over 15 years in business development nationally and internationally leading groups of engineers and developing new markets in USA, Europe and Latin America.\n\nCo-host pvcsec.com podcast. Founder Tactical Edge, one of the best infosec events in Latin America.\n\nYou can reach Ed at @edgarr0jas, @tactical3dge, or @pvcsec",
-    "title": "The IoT Ecosystem and Cybersecurity",
-    "abstract": "IoT devices are expected to reach 20 billion in numbers in three years. These devices will connect to each other and existing corporate and personal networks, creating an extremely large footprint for cyber security experts to protect. There are no set standards for securing these devices; no regulations; and over 100 protocols. It is the stuff of nightmares. In this presentation Ed will break down the IoT ecosystem into its four components and will identify, with your help, where it makes sense to add security and what type of security solution is required.",
-    "room": "301-B",
-    "presentation": ""
-  },
   "tony-rucci": {
     "name": "Tony Rucci",
     "type": "session",
