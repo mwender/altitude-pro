@@ -262,6 +262,17 @@
     "room": "301-D",
     "presentation": ""
   },
+"mad-security": {
+    "name": "Don Sumner",
+    "type": "session",
+    "tagline": "Vice President, MAD Security",
+    "photo": "don-sumner.600x600.jpg",
+    "bio": "Don Sumner is the Vice President of Sales with MAD Security, and has worked in the Information Security Space for the last 20 years. His roles include sales, managed services product management, Trusted Advisor roles and developing strategic go to market strategy. While not specifically technical, Don works with Information Security leaders to align business objectives and risk tolerance with IT Security strategy and spend, and has served as subject matter expert for products and services including managed intrusion prevention and advanced endpoint solutions. Don splits time between Chattanooga and Athens TN, and will evangelize the importance of a sound information security program to anyone who will listen. Even his dog, Francesca, the 17 pound Cockapoo.",
+    "title": "I Like You, But if Zombies Are Chasing Us I’m Outrunning You",
+    "abstract": "Information Security has a lot of shiny/blinky things. New technologies, new approaches, new attack vectors… and the list goes on. Yet it seems that no matter how many years go by with all of the amazing and incredible cyber security innovations, the problem just isn’t going away. In fact, it’s getting worse. It’s easy to get excited about the newest technologies, or even all of the free technologies that can be deployed, but what small and midsize businesses need is to be pragmatic. There are core elements of an information security program that can and should be implemented and run properly, and by doing so you make yourself a less appealing target than the many others who are chasing the latest “wow”. During this session we will explore the core, tried and true, proven and sustainable information security components that can ensure that you’re not the slowest sprinter during the zombie apocalypse.",
+    "room": "300-B",
+    "presentation": ""
+  },
   "sophos": {
     "name": "Ken Swain",
     "type": "session",
@@ -337,17 +348,6 @@
     "title": "PCI Panel Discussion",
     "abstract": "Details coming soon.",
     "room": "Cumberland B",
-    "presentation": ""
-  },
-  "mad-security": {
-    "name": "MAD Security",
-    "type": "other",
-    "tagline": "",
-    "photo": "mad-security.600x600.png",
-    "bio": "",
-    "title": "MAD Security Presentation",
-    "abstract": "*More information coming soon.*",
-    "room": "300-B",
     "presentation": ""
   }
 }
