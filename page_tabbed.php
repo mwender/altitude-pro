@@ -29,6 +29,8 @@ add_action( 'wp_enqueue_scripts', 'altitude_enqueue_tab_scripts' );
 
 // Add tabbed content to the page body
 function altitude_tabbed_content(){
+    the_content();
+
     if( have_rows('tabbed_content') ){
         $tabs = [];
         $tab_contents = [];
@@ -54,8 +56,6 @@ function altitude_tabbed_content(){
             ?>
         </div>
 <?php
-    } else {
-        the_content();
     }
 }
 add_action( 'genesis_entry_content', 'altitude_tabbed_content' );

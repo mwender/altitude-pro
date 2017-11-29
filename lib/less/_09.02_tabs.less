@@ -1,7 +1,9 @@
 /* jQuery UI Tabs */
 @tabcolor: #c3c3c3;
-#tabs{
+#tabs.ui-widget{
   border: 0;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
 
   /* Tabs */
   .ui-tabs-nav li{
@@ -31,5 +33,13 @@
     border-top: 1px solid @tabcolor;
     margin-top: 1px;
     padding: 1em 0;
+
+    a{
+      color: @smcoblue;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
   }
 }
