@@ -10,10 +10,33 @@ Content Area
 	clear: both;
 	text-align: center;
 	width: 100%;
+
+	.title{
+		display: inline-flex;
+		align-items: center;
+		text-transform: none !important;
+
+		span{
+			/*background: @edgegreen;*/
+			background: rgba(red(@edgegreen),green(@edgegreen),blue(@edgegreen),0.6);
+			margin-left: 8px;
+			padding: 4px 6px;
+			border-radius: 3px;
+			color: #fff;
+			font-size: 1.1rem;
+
+		}
+	}
+
+	h4.title{
+		font-size: 1.8rem !important;
+		letter-spacing: 0;
+		font-weight: 400;
+	}
 }
 
 .image-section {
-	.background-gradient(#000,0.2,0.4,0.7,0.8);
+	.background-gradient(#000,0.2,0.5,0.6,.8);
 }
 
 .image-section .widget-area {

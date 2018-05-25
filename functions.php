@@ -313,7 +313,7 @@ genesis_register_sidebar( array(
 ------------------------------- */
 
 //* Include functions
-include_once( get_stylesheet_directory() . '/lib/fns/fns.add-to-calendar.php');
+//include_once( get_stylesheet_directory() . '/lib/fns/fns.add-to-calendar.php');
 include_once( get_stylesheet_directory() . '/lib/fns/fns.blog.php' );
 include_once( get_stylesheet_directory() . '/lib/fns/fns.constants.php' );
 include_once( get_stylesheet_directory() . '/lib/fns/fns.genesis.php' );
