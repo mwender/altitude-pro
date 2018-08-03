@@ -165,12 +165,38 @@ nav.nav-primary{
 		height: @topSectionHeight; /* - 36px */
 		max-width: 1200px;
 		margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-		p{
+		p,
+    .title{
 			font-family: @heading-font;
       font-weight: 600;
-			line-height: @topSectionHeight; /* - 36px */
+			/*line-height: @topSectionHeight;*/ /* - 36px */
 			text-align: center;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+
+      @media screen and (max-width: 610px) {
+        font-size: 1.5rem;
+      }
+
+      span{
+        background: rgba(red(@edgegreen),green(@edgegreen),blue(@edgegreen),0.6);
+        margin-left: 8px;
+        padding: 4px 8px;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 1.5rem;
+
+        @media screen and (max-width: 610px) {
+          font-size: 1.0rem;
+        }
+      }
 		}
 	}
 	.ribbon-two{
@@ -218,7 +244,7 @@ nav.nav-primary{
 		}
 
 		.ribbon-one{
-			display: none;
+			/*display: none;*/
 		}
 
 		.ribbon-two{
