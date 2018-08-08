@@ -93,6 +93,7 @@ function altitude_woocommerce_css() {
 			border-color: %1$s;
 		}
 
+		ul.woocommerce-error,
 		.woocommerce-error,
 		.woocommerce-info,
 		.woocommerce-message {

@@ -5,7 +5,7 @@
 	Author: StudioPress
 	Author URI: http://www.studiopress.com/
 
-	Version: 1.1.2
+	Version: 1.1.4
 
 	Tags: one-column, two-columns, custom-header, custom-menu, e-commerce, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 
@@ -520,10 +520,10 @@ input[type="search"]::-webkit-search-results-button {
 button:focus,
 button:hover,
 input:focus[type="button"],
-input:focus[type="reset"],
-input:focus[type="submit"],
 input:hover[type="button"],
+input:focus[type="reset"],
 input:hover[type="reset"],
+input:focus[type="submit"],
 input:hover[type="submit"],
 .button.clear:focus,
 .button.clear:hover,
@@ -577,20 +577,20 @@ input[type="submit"].small,
 .footer-widgets button:focus,
 .footer-widgets button:hover,
 .footer-widgets input:focus[type="button"],
-.footer-widgets input:focus[type="reset"],
-.footer-widgets input:focus[type="submit"],
 .footer-widgets input:hover[type="button"],
+.footer-widgets input:focus[type="reset"],
 .footer-widgets input:hover[type="reset"],
+.footer-widgets input:focus[type="submit"],
 .footer-widgets input:hover[type="submit"],
 .footer-widgets .widget .button:focus,
 .footer-widgets .widget .button:hover,
 .image-section button:focus,
 .image-section button:hover,
 .image-section input:focus[type="button"],
-.image-section input:focus[type="reset"],
-.image-section input:focus[type="submit"],
 .image-section input:hover[type="button"],
+.image-section input:focus[type="reset"],
 .image-section input:hover[type="reset"],
+.image-section input:focus[type="submit"],
 .image-section input:hover[type="submit"],
 .image-section .widget .button:focus,
 .image-section .widget .button:hover {
@@ -872,11 +872,11 @@ td {
 .widget_search input[type="submit"]:focus {
 	background: #000;
 	border-radius: 0;
-    box-shadow: none;
+	box-shadow: none;
 	color: #fff;
 	padding: 20px 23px;
-    right: 0;
-    top: 0;
+	right: 0;
+	top: 0;
 }
 
 .error404 .content .search-form {
@@ -2074,8 +2074,8 @@ p.form-submit,
 		width: 100%;
 	}
 
-	.image-section h2,
-	.solid-section h2 {
+	.front-page-1 .widget:first-of-type h4,
+	.front-page-2 .widget:first-of-type h4 {
 		font-size: 60px;
 		font-size: 6rem;
 	}
@@ -2299,8 +2299,8 @@ p.form-submit,
 
 @media only screen and (max-width: 480px) {
 
-	.image-section h2,
-	.solid-section h2 {
+	.front-page-1 .widget:first-of-type h4,
+	.front-page-2 .widget:first-of-type h4 {
 		font-size: 40px;
 		font-size: 4rem;
 	}
