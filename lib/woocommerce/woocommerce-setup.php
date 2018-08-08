@@ -10,6 +10,15 @@
  * @link    http://my.studiopress.com/themes/altitude/
  */
 
+// Add product gallery support.
+if ( class_exists( 'WooCommerce' ) ) {
+
+	add_theme_support( 'wc-product-gallery-lightbox' );
+	add_theme_support( 'wc-product-gallery-slider' );
+	add_theme_support( 'wc-product-gallery-zoom' );
+
+}
+
 add_action( 'wp_enqueue_scripts', 'altitude_products_match_height', 99 );
 /**
  * Print an inline script to the footer to keep products the same height.
@@ -36,7 +45,7 @@ add_filter( 'genesiswooc_default_products_per_page', 'altitude_default_products_
  *
  * @return int Number of products per page.
  */
-function altitude_default_products_per_page( $count ) {
+function altitude_default_products_per_page() {
 	return 8;
 }
 

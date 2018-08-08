@@ -43,7 +43,7 @@ include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.
 // Child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Altitude Pro' );
 define( 'CHILD_THEME_URL', 'http://my.studiopress.com/themes/altitude/' );
-define( 'CHILD_THEME_VERSION', '1.1.2' );
+define( 'CHILD_THEME_VERSION', '1.1.4' );
 
 // Enqueue scripts and styles.
 add_action( 'wp_enqueue_scripts', 'altitude_enqueue_scripts_styles' );
@@ -216,7 +216,7 @@ add_action( 'genesis_after_entry', 'genesis_after_entry_widget_area', 5 );
 // Setup widget counts.
 function altitude_count_widgets( $id ) {
 
-	global $sidebars_widgets;
+	$sidebars_widgets = wp_get_sidebars_widgets();
 
 	if ( isset( $sidebars_widgets[ $id ] ) ) {
 		return count( $sidebars_widgets[ $id ] );
