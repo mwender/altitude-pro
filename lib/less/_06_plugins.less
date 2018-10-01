@@ -117,9 +117,8 @@ Plugins
 
     /* iPads (portrait) ----------- */
     @media only screen
-    and (min-device-width : 768px)
-    and (max-device-width : 1024px)
-    and (orientation : portrait) {
+    and (min-width : 768px)
+    and (max-width : 1024px) {
       /* Styles */
       max-width: 150px;
     }
@@ -208,6 +207,16 @@ Plugins
 		.one-third{
 			img{
 				border: 5px solid @edgesecondary;
+
+        /* iPads (portrait) ----------- */
+        @media only screen
+        and (min-width : 768px)
+        and (max-width : 1024px) {
+          /* Styles */
+          max-width: 150px;
+          border-width: 2px;
+          display: inline;
+        }
 			}
 		}
 

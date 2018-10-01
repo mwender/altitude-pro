@@ -1,0 +1,72 @@
+{
+  "cyber-insurance": {
+    "name": "TBA",
+    "type": "session",
+    "tagline": "",
+    "photo": "placeholder-male.600x600.png",
+    "bio": "To be announced.",
+    "title": "A Primer on Cyber Insurance",
+    "abstract": "The description and speaker for this session will be announced soon.",
+    "room": "",
+    "presentation": ""
+  },
+  "sean-hoar": {
+    "type": "session",
+    "name": "Sean Hoar",
+    "tagline": "Chair, National Data Privacy & Cybersecurity Practice at Lewis Brisbois Bisgaard & Smith LLP",
+    "photo": "sean-hoar.600x600.jpg",
+    "bio": "Sean Hoar has extensive experience managing responses to data breaches and working with cyber insurance carriers. As chair of the national Data Privacy & Cybersecurity Practice at Lewis Brisbois Bisgaard & Smith LLP, he manages a national breach response team and personally manages responses to data breaches on a daily basis. He also counsels businesses on best practices in information privacy and data security. This includes incident response planning and employee/executive training on network security awareness. He served as the lead cyber attorney for the U.S. Attorney’s Office in Oregon, where he was the point of contact for the FBI, Secret Service and Homeland Security in system intrusions and other digital crime emergencies. He also taught courses in cybercrime and privacy law at the University of Oregon School of Law and the Lewis & Clark Law School, and he serves an executive director of the Financial Crimes & Digital Evidence Foundation. Sean holds the Certified Information Systems Security Professional (CISSP), the Global Information Security Professional (GISP) and the Certified Information Privacy Professional/United States (CIPP/US) credentials.",
+    "title": "Enterprise Risk Assessment – A Case Study",
+    "abstract": "This session will feature practical, real life examples of organizations that have recently completed enterprise assessment engagements. The following areas will be examined during this session with respect to risk assessments:\n- Background / profile of the assessed organization\n- The assessed organization’s core infosec and compliance issues and challenges prior to the assessment\n- How the assessment was delivered (approach, methodology, assessor, etc.)\n- Results / findings of the assessment\n- The assessed organization’s response to the findings / remediation action steps\n- The assessed organization’s post remediation security / compliance posture\n- Lessons learned by assessed organization\n\nKey lessons and takeaways for attendees to consider will also be addressed.",
+    "plural": "false"
+  },
+    "bowe-hoy": {
+    "name": "Bowe Hoy",
+    "type": "session",
+    "tagline": "VP of Sales, Sword & Shield",
+    "photo": "bowe-hoy.600x600.jpg",
+    "bio": "Bowe Hoy is the Vice President of Sales for Sword & Shield Enterprise Security. Bowe has extensive experience helping organizations solve complex cybersecurity and compliance challenges with strategic services and solutions. He has been an active member of cybersecurity professional organizations in the Portland area for a number of years, including ISACA and ISSA. He has served in various leadership roles with the ISSA Portland chapter including vice president and president.",
+    "title": "The Roundtable of Associations",
+    "abstract": "Leaders representing the local chapters of national information security professional associations such as ISSA, ISACA, OWASP, HIMSS and BSides will provide information about their groups’ programs and activities, specifically pertaining to risk management and privacy matters. These groups are excellent sources for continued education, training, networking, and career development for professionals in the information security and compliance fields."
+  },
+  "jack-dempsey": {
+    "type": "keynote",
+    "name": "Jack Dempsey",
+    "tagline": "Managing Director, PCI Risk & Compliance for Sword & Shield Enterprise Security",
+    "photo": "jack-dempsey.600x600.jpg",
+    "bio": "Jack Dempsey is Technical Director of West Coast Operations for Sword & Shield Enterprise Security, Inc. Jack is an experienced IT professional and security expert with 20 years’ experience in IT service management and security operations. Jack is a CISSP and PCI QSA, and holds the CISM, CISA, CRISC and GSNA certifications. He is an ISACA Community Leader and contributor to the LinkedIn PCI DSS community group. After retiring from the Air Force, Jack worked as a Novell engineer, Microsoft Systems engineer, a call center IT manager and as an IT Director for Xerox. For the last eight years he has been an advisor and mentor to IT security leaders, providing guidance and assisting with IT governance, compliance and risk management, when not studying for an advanced IT Security degree.",
+    "title": "Third-Party Risk Management - The Blame Game",
+    "abstract": "When it comes to managing cyber risks associated with third-party entities - vendors, partners, clients, business associates, etc. – many organizations either have a false sense of security (too much blind trust, not enough objective validation / controls) or have an inadequate, ineffective, and / or inefficient third-party risk management program which essentially offers little to no security risk reduction. And when the organization is exposed or compromised through a cyber breach or incident, the response is often playing many rounds of The Blame Game.\n\nHow can your organization avoid playing The Blame Game with respect to third-party risk management? This session will focus on the components of a successful third-party risk management program, from third-party selection to data confidentiality after the relationship ends, and the core ingredients in between.\n\nThe key topics to be addressed in this session include:\n- Pre-engagement – third-party selection\n- Identifying third-party risk (What data does the third-party have access to? How does the\n-hird-party access the data? What data persistence does the third-party have?)\n- Pre-contract risk management (right to audit)\n- Security framework compliance (PCI, HIPAA, NIST, ISO 27000 series, GDPR,\n-edRamp, FTC)\n- Security controls maturity\n- Self-assessments vs. third-party assessments\n- History of compromise\n- Six degrees of connection (How is fourth and fifth party risk managed? How does your-third-party handle their third-party risk?)\n- Incident notification requirements\n- Breach notification requirements\n- Third-party Insurance\n- Post engagement - expectation of continuing confidentiality after the contract ends"
+  },
+   "matt-beland": {
+    "name": "Matt Beland",
+    "type": "session",
+    "tagline": "CEO of Smooth Sailing Solutions, Inc.",
+    "photo": "matt-beland.600x600.jpg",
+    "bio": "Matt Beland is the CEO of Smooth Sailing Solutions, Inc. Matt is a skilled technical executive in the fields of information technology and security. He specializes in developing organizational security infrastructures based in balancing the three-legged stool - Technology, Administration, and People.",
+    "title": "Management Accepts the Risk: A Tabletop Exercise in Risk Management",
+    "abstract": "Everybody talks about risk management, especially when it comes to complying with regulatory requirements. In this session, we’re going to explore what it’s actually like to make choices in a risk management context - and potentially suffer the consequences. An interactive role-playing session, this will require you to bring your critical thinking skills, and appetite for risk, and maybe a blessing from Lady Luck.\n\nAttendees will be able to collaborate with their peers seated at their table (team) during this tabletop exercise. Each table will represent a separate organization. Roles will be assigned for each person (C-suite, CEO, COO, Sales and Marketing, CIO, CISO, etc.). Scenarios will be introduced for each table to address. Each table will work together to outline the situation, discuss options, and make decisions within a time limit. Choices will cost or gain resource tokens, risk tokens, etc.\n\nThere should be time for about five different scenarios explored during this exercise. A reward will be presented to the top-scoring table or tables based on total resource tokens earned. A discussion about lessons learned and takeaways will be held at the end of the session.",
+    "presentation": ""
+  },
+   "panel-session": {
+    "name": "Panel Session",
+    "type": "session",
+    "tagline": "Matt Beland, Moderator with Mike Griffin, Sean Hoar, and Jack Dempsey",
+    "photo": "panelists.600x600.jpg",
+    "bio": "__Matt Beland__ is the CEO of Smooth Sailing Solutions, Inc. He’s an industry-leading IT and security professional with 20 years of experience in the field. One of his main roles has been that of education and awareness, delivering presentations and training dozens of times per year. His experience and talents are particularly effective in helping get past the jargon and overhyped sales nonsense common in information security. Matt sails boats.\n\n__Mike Griffin__ is the Director, Information Security for Janrain, inc. Mike is an accomplished information security leader with a successful track record in delivering effective security programs by creating partnerships with key stakeholders, understanding the real risks and taking a practical approach to achieve results that add value. He has knowledge and experience with security governance practices, policy and process development, project management, compliance management, training and awareness programs, and risk management. Mike has led the security & compliance programs for companies such as Circle K, FEI, Columbia Sportswear, Harry and David. Mike’s 21 years of experience also includes roles in security and IT with Tyco International and PremierWest Bank. During his career Mike has been active in professional organizations, including ISACA and ISSA, where he’s held the position of vice president of the Portland chapter. Mike holds a Bachelor of Science in IT Security from Western Governors University and various certifications including CISSP and CISM.\n\n__Sean Hoar__ has extensive experience managing responses to data breaches and working with cyber insurance carriers. As chair of the national Data Privacy & Cybersecurity Practice at Lewis Brisbois Bisgaard & Smith LLP, he manages a national breach response team and personally manages responses to data breaches on a daily basis. He also counsels businesses on best practices in information privacy and data security. This includes incident response planning and employee/executive training on network security awareness. He served as the lead cyber attorney for the U.S. Attorney’s Office in Oregon, where he was the point of contact for the FBI, Secret Service and Homeland Security in system intrusions and other digital crime emergencies. He also taught courses in cybercrime and privacy law at the University of Oregon School of Law and the Lewis & Clark Law School, and he serves an executive director of the Financial Crimes & Digital Evidence Foundation. Sean holds the Certified Information Systems Security Professional (CISSP), the Global Information Security Professional (GISP) and the Certified Information Privacy Professional/United States (CIPP/US) credentials.\n\n__Jack Dempsey__ is Technical Director of West Coast Operations for Sword & Shield Enterprise Security, Inc. Jack is an experienced IT professional and security expert with 20 years’ experience in IT service management and security operations. Jack is a CISSP and PCI QSA, and holds the CISM, CISA, CRISC and GSNA certifications. He is an ISACA Community Leader and contributor to the LinkedIn PCI DSS community group. After retiring from the Air Force, Jack worked as a Novell engineer, Microsoft Systems engineer, a call center IT manager and as an IT Director for Xerox. For the last eight years he has been an advisor and mentor to IT security leaders, providing guidance and assisting with IT governance, compliance and risk management, when not studying for an advanced IT Security degree.",
+    "title": "Privacy Compliancy – GDPR and Beyond",
+    "abstract": "The General Data Protection Regulation (GDPR) regulations and requirements went into effect on May 25, 2018. This European Union (EU) regulation, intended to give people more control over their personal data and protect that information from risk, applies to any organization that conducts business in the EU. This panel session will address what all organizations can learn from GDPR (regardless if compliance to it is a requirement or not), how GDPR aligns with other data and information security compliance frameworks such NIST, HIPAA, ISO, ITIL, and PCI, and practical steps that organizations can take to address GDPR compliance requirements.",
+    "presentation": ""
+  },
+  "pci-panel": {
+    "name": "Panel Discussion",
+    "type": "other",
+    "tagline": "",
+    "photo": "pci-panel.600x600.jpg",
+    "bio": "PCI Panel Discussion",
+    "title": "PCI Panel Discussion",
+    "abstract": "Details coming soon.",
+    "room": "Cumberland B",
+    "presentation": ""
+  }
+}

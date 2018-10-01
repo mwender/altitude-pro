@@ -45,31 +45,53 @@ function altitude_enqueue_scripts_styles() {
 	$font_families = ['Oswald:400,700'];
 	wp_enqueue_style( 'altitude-google-fonts', '//fonts.googleapis.com/css?family=' . implode( '|', $font_families ), array(), CHILD_THEME_VERSION );
 
-	$speakersjs_pages = ['speakers','tracks','agenda','conference-agenda','speaker-list','agenda-for-print'];
+	$speakersjs_pages = ['speakers','tracks','agenda','conference-agenda','speaker-list','agenda-for-print','edge-portland-agenda'];
 	if( is_page( $speakersjs_pages ) || is_front_page() ){
 		wp_enqueue_script( 'handlebars', get_bloginfo( 'stylesheet_directory' ) . '/js/handlebars-v4.0.5.js', null, filemtime( get_stylesheet_directory() . '/js/handlebars-v4.0.5.js' ) );
 		wp_enqueue_script( 'showdown', 'https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.2/showdown.min.js', null, '1.4.2' );
 		wp_enqueue_script( 'speakers', get_bloginfo( 'stylesheet_directory' ) . '/js/speakers.js', array( 'jquery', 'handlebars', 'showdown' ), filemtime( get_stylesheet_directory() . '/js/speakers.js' ) );
-		wp_localize_script( 'speakers', 'wpvars', array( 'dataurl' => get_bloginfo( 'stylesheet_directory' ) . '/lib/json/speakers.json', 'themeurl' => get_bloginfo( 'stylesheet_directory' ), 'dataversion' => filemtime( get_stylesheet_directory() . '/lib/json/speakers.json' ), 'showkeynotes' => 'false' ) );
+
+		$speakers_json = ( is_page( 'edge-portland-agenda' ) )? 'speakers.portland.json' : 'speakers.nashville.json' ;
+		wp_localize_script( 'speakers', 'wpvars', [
+			'dataurl' => get_bloginfo( 'stylesheet_directory' ) . '/lib/json/' . $speakers_json,
+			'themeurl' => get_bloginfo( 'stylesheet_directory' ),
+			'dataversion' => filemtime( get_stylesheet_directory() . '/lib/json/' . $speakers_json ),
+			'showkeynotes' => 'false'
+		]);
+
 		add_action('wp_footer', function(){
 			$templates = file_get_contents( get_stylesheet_directory() . '/lib/html/speakers-handlebar-templates.html' );
 			echo $templates;
 		});
 	}
 
-	$agendajs_pages = ['conference-agenda','agenda'];
+	$agendajs_pages = ['conference-agenda','agenda','edge-portland-agenda'];
 	if( is_page( $agendajs_pages ) ){
 		wp_enqueue_script( 'handlebars', get_bloginfo( 'stylesheet_directory' ) . '/js/handlebars-v4.0.5.js', null, filemtime( get_stylesheet_directory() . '/js/handlebars-v4.0.5.js' ) );
 		wp_enqueue_script( 'showdown', 'https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.2/showdown.min.js', null, '1.4.2' );
 		wp_enqueue_script( 'agenda', get_bloginfo( 'stylesheet_directory' ) . '/js/agenda.js', array( 'jquery', 'handlebars', 'showdown' ), filemtime( get_stylesheet_directory() . '/js/agenda.js' ) );
-		wp_localize_script( 'agenda', 'agendavars', array( 'agendadata' => get_bloginfo( 'stylesheet_directory' ) . '/lib/json/agenda.json', 'speakerdata' => get_bloginfo( 'stylesheet_directory' ) . '/lib/json/speakers.json', 'themeurl' => get_bloginfo( 'stylesheet_directory' ), 'dataversion' => filemtime( get_stylesheet_directory() . '/lib/json/agenda.json' ) ) );
+
+		if( is_page( 'edge-portland-agenda' ) ){
+			$agenda_json = 'agenda.portland.json';
+			$speakers_json = 'speakers.portland.json';
+		} else {
+			$agenda_json = 'agenda.nashville.json';
+			$speakers_json = 'speakers.nashville.json';
+		}
+		wp_localize_script( 'agenda', 'agendavars', [
+			'agendadata' => get_bloginfo( 'stylesheet_directory' ) . '/lib/json/' . $agenda_json,
+			'speakerdata' => get_bloginfo( 'stylesheet_directory' ) . '/lib/json/' . $speakers_json,
+			'themeurl' => get_bloginfo( 'stylesheet_directory' ),
+			'dataversion' => filemtime( get_stylesheet_directory() . '/lib/json/' . $agenda_json )
+		]);
+
 		add_action('wp_footer', function(){
 			$templates = file_get_contents( get_stylesheet_directory() . '/lib/html/speakers-handlebar-templates.html' );
 			echo $templates;
 		});
 	}
 
-	if( is_page( 'conference-agenda' ) || is_page( 'agenda' ) ){
+	if( is_page( $agendajs_pages ) ){
 		wp_enqueue_script( 'waypoints', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.waypoints.min.js', array( 'jquery' ), filemtime( get_stylesheet_directory() . '/js/jquery.waypoints.min.js' ) );
 	}
 

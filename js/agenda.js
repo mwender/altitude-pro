@@ -26,6 +26,7 @@
       var day = timeArray[0];
       var time = timeArray[1];
       var session = data[day][time];
+      //console.log('wpvars',wpvars,'session',session);
       session.themeurl = wpvars.themeurl;
 
       // Process sessionSpeakers array

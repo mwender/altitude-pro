@@ -1,0 +1,54 @@
+{
+  "tuesday": {
+    "830-900": {
+      "name": "Registration and Breakfast",
+      "time": "8:30 &ndash; 9:00AM",
+      "length": "30"
+    },
+    "900-1015": {
+      "name": "Session 1",
+      "time": "9:00 &ndash; 10:15AM",
+      "length": "75",
+      "speaker": "jack-dempsey"
+    },
+    "1015-1030": {
+      "name": "Break",
+      "time": "10:15 &ndash; 10:30AM",
+      "length": "15"
+    },
+    "1030-1145": {
+      "name": "Session 2",
+      "time": "10:30 &ndash; 11:45AM",
+      "length": "75",
+      "speaker": "sean-hoar"
+    },
+    "1145-100": {
+      "name": "Break/Lunch",
+      "time": "11:45AM &ndash; 1:00PM",
+      "length": "45"
+    },
+    "1215-1245": {
+      "name": "Mini-Session",
+      "time": "12:15 &ndash; 12:45PM",
+      "length": "30",
+      "speaker": "bowe-hoy"
+    },
+    "100-230": {
+      "name": "Session 3",
+      "time": "1:00 &ndash; 2:30PM",
+      "length": "90",
+      "speaker": "matt-beland"
+    },
+    "230-245": {
+      "name": "Break",
+      "time": "2:30 &ndash; 2:45PM",
+      "length": "15"
+    },
+    "245-400": {
+      "name": "Session 4",
+      "time": "2:45 &ndash; 4:00PM",
+      "length": "75",
+      "speaker": "panel-session"
+    }
+  }
+}

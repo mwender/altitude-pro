@@ -257,6 +257,7 @@ jQuery(function($){
 			e.preventDefault();
 			var speakerId = $(this).attr('data-speaker');
 			var speaker = data[speakerId];
+			console.log('data[speakerId]', data[speakerId]);
 			speaker.themeurl = wpvars.themeurl;
 
 			// Convert markdown
