@@ -15,7 +15,7 @@ require_once( get_stylesheet_directory() . '/lib/customize.php' );
 include_once( get_stylesheet_directory() . '/lib/output.php' );
 
 //* Include functions
-include_once( get_stylesheet_directory() . '/lib/fns/fns.shortcodes.php' );
+include_once( get_stylesheet_directory() . '/lib/fns/shortcodes.php' );
 
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Altitude Pro Theme' );
@@ -28,7 +28,13 @@ function altitude_enqueue_scripts_styles() {
 	//* Remove default style.css, add /lib/main.css
 	$handle  = defined( 'CHILD_THEME_NAME' ) && CHILD_THEME_NAME ? sanitize_title_with_dashes( CHILD_THEME_NAME ) : 'child-theme';
 	wp_deregister_style( $handle );
-	wp_enqueue_style( $handle, get_bloginfo( 'stylesheet_directory' ) . '/lib/css/main.css', false, filemtime( get_stylesheet_directory() . '/lib/css/main.css' ) );
+
+	$page_template = get_page_template_slug();
+	if( 'elementor_header_footer' == $page_template ){
+		wp_enqueue_style( $handle, get_bloginfo( 'stylesheet_directory' ) . '/lib/css/main-minimal.css', false, filemtime( get_stylesheet_directory() . '/lib/css/main-minimal.css' ) );
+	} else {
+		wp_enqueue_style( $handle, get_bloginfo( 'stylesheet_directory' ) . '/lib/css/main.css', false, filemtime( get_stylesheet_directory() . '/lib/css/main.css' ) );
+	}
 
 	wp_enqueue_script( 'altitude-global', get_bloginfo( 'stylesheet_directory' ) . '/js/global.js', array( 'jquery' ), '1.0.0' );
 
