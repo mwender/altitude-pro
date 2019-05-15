@@ -37,7 +37,7 @@ function pricing_form( $atts ){
 	if( is_null( $args['form']) || ! is_numeric( $args['form'] ) ){
 		$replace['form'] = '<div class="alert alert-warning">Please specify a Gravity Form to include here using <code>form="<em>ID</em>"</code>.</div>';
 	} else {
-		$replace['form'] = gravity_form( $args['form'], false, false, false, false, false, null, false );
+		$replace['form'] = gravity_form( $args['form'], false, false, false, false, true, null, false );
 	}
 	$replace['display_site-visit'] = '';
 	$replace['display_group-coaching'] = '';
@@ -70,6 +70,7 @@ function pricing_form( $atts ){
 
 
 	wp_enqueue_script( 'pricing', get_stylesheet_directory_uri() . '/js/pricing.js', ['jquery'], filemtime( get_stylesheet_directory() . '/js/pricing.js'), true );
+	wp_localize_script( 'pricing', 'wpvars', ['formId' => $args['form']] );
 
 	$file = dirname( __FILE__ ) . '/../html/pricing.html';
 	$html = ( file_exists( $file ) )? file_get_contents( $file ) : '<p class="alert"><strong>ERROR:</strong> I could not find <code>' . basename( $file ) . '</code>.</p>' ;
