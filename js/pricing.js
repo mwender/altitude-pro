@@ -1,23 +1,28 @@
 /* Pricing Form */
 jQuery(document).ready(function($){
 
-  console.log('[pricing.js] loaded.');
+  console.log('[pricing.js] loaded. formId = ', wpvars.formId);
+  var formId = wpvars.formId;
 
   let quote = {
     'services': {
       'site_visit': {
         'selected': false,
-        'quantity': 1
+        'quantity': 1,
+        'label': 'Site Visit'
       },
       'group_coaching': {
-        'selected': false
+        'selected': false,
+        'label': 'Group Coaching'
       },
       'one_on_one_coaching': {
         'selected': false,
-        'quantity': 0
+        'quantity': 0,
+        'label': 'One-on-One Coaching'
       },
       'marketing': {
         'selected': false,
+        'label': 'Marketing',
         'modules': {
           'donors': false,
           'community_partners': false,
@@ -27,6 +32,7 @@ jQuery(document).ready(function($){
       }
     }
   }
+
   calculatePrice();
 
   $('input.service').change(function(){
@@ -54,6 +60,17 @@ jQuery(document).ready(function($){
       quote.services.marketing.modules[this.id] = false;
     }
     calculatePrice();
+  });
+
+  // Toggle the text of the submit button
+  $('input[name="input_7"]').change(function(){
+    var value = $(this).val();
+    var submitButton = $('.smco-pricing-form input[type="submit"]');
+    if('I\'d like to discuss my quote.' === value ){
+      submitButton.val('Discuss Your Quote');
+    } else {
+      submitButton.val('Sign Up');
+    }
   });
 
   function calculatePrice(){
@@ -115,25 +132,126 @@ jQuery(document).ready(function($){
     const formattedOnetimePrice = formatMoney(totalOnetimePrice,0);
     console.log('[pricing.js] formattedOnetimePrice = ', formattedOnetimePrice );
 
-    if(0 < totalOnetimePrice){
-      $('#pricing #onetime').removeClass('disabled');
-      $('#one-time-fees').removeClass('disabled');
-    } else {
-      $('#pricing #onetime').addClass('disabled');
-      $('#one-time-fees').addClass('disabled');
-    }
-    if(0 < totalMonthlyPrice){
-      $('#pricing #monthly').removeClass('disabled');
-      $('#recurring-fees').removeClass('disabled');
+    const initialBankDraft = (totalOnetimePrice/2)+totalMonthlyPrice;
+    const formattedInitialBankDraft = formatMoney(initialBankDraft,0);
+    console.log('[pricing.js] formattedInitialBankDraft = ', formattedInitialBankDraft );
 
+    const remainingBankDraft = (totalOnetimePrice/2);
+    const formattedRemainingBankDraft = formatMoney(remainingBankDraft,0);
+    console.log('[pricing.js] formattedRemainingBankDraft = ', formattedRemainingBankDraft );
+
+    // Activate OneTime Pricing fields?
+    if(0 < totalOnetimePrice){
+      $('.one-time-fees').removeClass('disabled');
     } else {
-      $('#pricing #monthly').addClass('disabled');
-      $('#recurring-fees').addClass('disabled');
+      $('.one-time-fees').addClass('disabled');
     }
-    $('#pricing #onetime').html(formattedOnetimePrice);
-    $('#pricing #monthly').html(formattedMonthlyPrice);
-    $('#one-time-fees').html(formattedOnetimePrice);
-    $('#recurring-fees').html(formattedMonthlyPrice);
+
+    // Activate Monthly Pricing fields?
+    if(0 < totalMonthlyPrice){
+      $('.monthly-fees').removeClass('disabled');
+    } else {
+      $('.monthly-fees').addClass('disabled');
+    }
+
+    if( 0 < initialBankDraft ){
+      $('.initial-bank-draft').removeClass('disabled');
+    } else {
+      $('.initial-bank-draft').addClass('disabled');
+    }
+
+    if( 0 < remainingBankDraft ){
+      $('.remaining-bank-draft').removeClass('disabled');
+    } else {
+      $('.remaining-bank-draft').addClass('disabled');
+    }
+
+    // Update pricing display fields
+    $('.one-time-fees').html(formattedOnetimePrice);
+    $('.monthly-fees').html(formattedMonthlyPrice);
+    $('.initial-bank-draft').html(formattedInitialBankDraft);
+    $('.remaining-bank-draft').html(formattedRemainingBankDraft);
+
+    // Update hidden fields
+
+    // Add description text for Selected Services
+    var selectedServicesDesc = getSelectedServicesDescription();
+    console.log('selectedServicesDesc = ', selectedServicesDesc);
+    $('.smco-pricing-form #input_' + formId + '_1').val(selectedServicesDesc);
+
+    // Set number of locations
+    var noOfLocations = getNoOfLocations();
+    console.log('noOfLocations = ', noOfLocations);
+    $('.smco-pricing-form #input_' + formId + '_2').val(noOfLocations);
+
+    // Set One-Time/Setup Fee
+    $('.smco-pricing-form #input_' + formId + '_19').val(formattedOnetimePrice);
+
+    // Set Recurring Fee
+    $('.smco-pricing-form #input_' + formId + '_21').val(formattedMonthlyPrice);
+
+    // Set Today's Bank Draft
+    $('.smco-pricing-form #input_' + formId + '_22').val(formattedInitialBankDraft);
+
+    // Set Remaining Bank Draft
+    $('.smco-pricing-form #input_' + formId + '_23').val(formattedRemainingBankDraft);
+  }
+
+  function getNoOfLocations(){
+    return quote.services.one_on_one_coaching.quantity;
+  }
+
+  function getSelectedServicesDescription(){
+    var selected_services = '';
+    var services = quote.services;
+    var counter = 0
+    for( var key in services ){
+      if( true === services[key].selected ){
+        var label = services[key].label
+        switch(key){
+          case 'site_visit':
+            label+= ' (' + services[key].quantity + ' day';
+            if( 1 < services[key].quantity )
+              label+= 's';
+            label+= ')';
+            break;
+
+          case 'one_on_one_coaching':
+            if( 0 < services[key].quantity ){
+              label+= ' (' + services[key].quantity + ' location';
+              if( 1 < services[key].quantity )
+                label+= 's';
+              label+= ')';
+            }
+            break;
+
+          case 'marketing':
+            var modules = services[key].modules;
+            label+= ' ('
+            var mod_counter = 0;
+            for( var module in modules ){
+              if( true === modules[module] ){
+                if( 0 < mod_counter )
+                  label+= ', ';
+                label+= module;
+                mod_counter++;
+              }
+            }
+            label+= ')'
+            break;
+
+          default:
+            // nothing
+        }
+
+
+        if( 0 < counter )
+          selected_services+= ', ';
+        selected_services+= label;
+        counter++;
+      }
+    }
+    return selected_services;
   }
 
   /**
