@@ -1,0 +1,265 @@
+/* Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+  background-color: #000;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.featured-section .site-header {
+  background-color: transparent;
+}
+
+.featured-section .site-header > .wrap {
+  border-bottom: 1px solid #fff;
+}
+
+.site-header.dark {
+  background-color: #000;
+}
+
+.site-header.dark > .wrap {
+  border-bottom: none;
+}
+
+.site-header.dark .nav-secondary {
+  display: none;
+}
+
+/* Title Area
+--------------------------------------------- */
+
+.title-area {
+  float: left;
+  padding: 25px 0;
+  width: 360px;
+}
+
+.site-header.dark .title-area {
+  padding: 15px 0;
+}
+
+.site-title {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.site-title a,
+.site-title a:focus,
+.site-title a:hover {
+  color: #fff !important;
+}
+
+.header-image .title-area,
+.header-image .site-header.dark .title-area {
+  padding: 0;
+}
+
+.header-image .site-title > a {
+  background-size: contain !important;
+  display: block;
+  height: 76px;
+  text-indent: -9999px;
+}
+
+.header-image .dark .site-title > a {
+  height: 56px;
+}
+
+.site-description {
+  display: block;
+  height: 0;
+  margin-bottom: 0;
+  text-indent: -9999px;
+}
+
+
+/* Site Navigation
+---------------------------------------------------------------------------------------------------- */
+
+.genesis-nav-menu {
+  line-height: 1;
+}
+
+.genesis-nav-menu .menu-item {
+  display: inline-block;
+  text-align: left;
+}
+
+.genesis-nav-menu li li {
+  margin-left: 0;
+}
+
+.genesis-nav-menu a {
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 30px 15px;
+  text-transform: uppercase;
+}
+
+.site-header.dark .genesis-nav-menu a {
+  padding: 20px 15px;
+}
+
+.genesis-nav-menu li.highlight a:focus::before,
+.genesis-nav-menu li.highlight a:hover::before {
+  color: #fff;
+}
+
+.genesis-nav-menu li.highlight > a {
+  font-weight: 800;
+}
+
+.front-page .genesis-nav-menu li.current-menu-item > a,
+.genesis-nav-menu > li > a {
+  border-bottom: 2px solid transparent;
+}
+
+.front-page .genesis-nav-menu li.current-menu-item > a:focus,
+.front-page .genesis-nav-menu li.current-menu-item > a:hover,
+.genesis-nav-menu li.current-menu-item > a,
+.genesis-nav-menu > li > a:focus,
+.genesis-nav-menu > li > a:hover {
+  border-color: #fff;
+}
+
+.genesis-nav-menu > .menu-item > a {
+  text-transform: uppercase;
+}
+
+.genesis-nav-menu .sub-menu {
+  left: -9999px;
+  letter-spacing: 0;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity .4s ease-in-out;
+  -moz-transition:    opacity .4s ease-in-out;
+  -ms-transition:     opacity .4s ease-in-out;
+  -o-transition:      opacity .4s ease-in-out;
+  transition:         opacity .4s ease-in-out;
+  width: 200px;
+  z-index: 99;
+}
+
+.genesis-nav-menu .sub-menu a {
+  background-color: #111;
+  outline: none;
+  padding: 20px;
+  position: relative;
+  width: 200px;
+}
+
+.genesis-nav-menu .sub-menu a:focus,
+.genesis-nav-menu .sub-menu a:hover,
+.genesis-nav-menu .sub-menu li.current-menu-item > a {
+  background-color: #222;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu {
+  margin: -54px 0 0 199px;
+}
+
+.genesis-nav-menu .menu-item:hover {
+  position: static;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+  left: auto;
+  opacity: 1;
+}
+
+.genesis-nav-menu > .first > a {
+  padding-left: 0;
+}
+
+.genesis-nav-menu > .last > a {
+  padding-right: 0;
+}
+
+.genesis-nav-menu > .right {
+  color: #fff;
+  display: inline-block;
+  list-style-type: none;
+  padding: 27px 20px;
+  text-transform: uppercase;
+}
+
+.genesis-nav-menu > .right > a {
+  display: inline;
+  padding: 0;
+}
+
+.genesis-nav-menu > .rss > a {
+  margin-left: 48px;
+}
+
+.genesis-nav-menu > .search {
+  display: block;
+  margin: 0 auto;
+  padding: 0 20px 20px;
+  width: 50%;
+}
+
+/* Primary Navigation
+--------------------------------------------- */
+
+.nav-primary {
+  text-align: center;
+}
+
+.nav-primary .genesis-nav-menu {
+  float: right;
+}
+
+/* Secondary Navigation
+--------------------------------------------- */
+
+.nav-secondary {
+  border-bottom: 1px solid #fff;
+}
+
+/* Footer Navigation
+--------------------------------------------- */
+
+.nav-footer .genesis-nav-menu {
+  padding: 20px 0;
+}
+
+.nav-footer .genesis-nav-menu a {
+  border: none;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin: 0 20px;
+  padding: 0;
+}
+
+/* Responsive Menu
+--------------------------------------------- */
+
+.menu .menu-item:focus {
+  position: static;
+}
+
+.menu .menu-item > a:focus + ul.sub-menu,
+.menu .menu-item.sfHover > ul.sub-menu {
+  left: auto;
+  opacity: 1;
+}
+
+.sub-menu-toggle,
+.menu-toggle {
+  display: none;
+  visibility: hidden;
+}

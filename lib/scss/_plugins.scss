@@ -1,0 +1,34 @@
+/* Plugins
+---------------------------------------------------------------------------------------------------- */
+
+/* Genesis eNews Extended
+--------------------------------------------- */
+
+.enews-widget input {
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.enews-widget input[type="submit"] {
+  margin: 0;
+  width: 100%;
+}
+
+.enews form + p {
+  margin-top: 24px;
+}
+
+/* Genesis Portfolio Pro
+--------------------------------------------- */
+
+.genesis-pro-portfolio .content .pro-portfolio {
+  padding: 0;
+}
+
+/* Jetpack
+--------------------------------------------- */
+
+#wpstats {
+  display: none;
+}

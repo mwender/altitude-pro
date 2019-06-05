@@ -1,0 +1,24 @@
+{
+  "name": "uwgk-altitude-pro",
+  "version": "1.0.0",
+  "description": "Build setup for UWGK Altitude Pro theme",
+  "main": "index.php",
+  "scripts": {
+    "development:browsersync": "browser-sync start --proxy 'uwgk.test' --files 'lib/css/*.css' 'js/*.js'",
+    "build-task:scss-compile": "node-sass-chokidar --source-map true lib/scss/ -o lib/css",
+    "build-task:autoprefixer": "postcss lib/css/*.css --use autoprefixer -d lib/css",
+    "development:build": "npm-run-all -p build-task:*",
+    "development:watch": "chokidar 'lib/scss/**/*.scss' -c 'npm run development:build'",
+    "dev": "npm-run-all -p development:*"
+  },
+  "author": "Michael Wender",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.5.1",
+    "chokidar-cli": "^1.2.2",
+    "node-sass-chokidar": "^1.3.4",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.2"
+  },
+  "devDependencies": {}
+}

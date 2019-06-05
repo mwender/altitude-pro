@@ -1,0 +1,90 @@
+/* Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+/* Site Containers
+--------------------------------------------- */
+
+.site-inner,
+.wrap {
+  float: none;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.site-inner {
+  background-color: #fff;
+  clear: both;
+  margin-top: 170px;
+  position: relative;
+  z-index: 9;
+  word-wrap: break-word;
+}
+
+.front-page .site-container .site-inner {
+  margin-top: 0;
+  max-width: 100%;
+}
+
+.altitude-landing .site-container .site-inner {
+  margin-top: 100px;
+}
+
+.secondary-nav .site-inner {
+  margin-top: 250px;
+}
+
+/* Column Classes
+--------------------------------------------- */
+/* Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css */
+
+.five-sixths,
+.four-sixths,
+.one-fourth,
+.one-half,
+.one-sixth,
+.one-third,
+.three-fourths,
+.three-sixths,
+.two-fourths,
+.two-sixths,
+.two-thirds {
+  float: left;
+  margin-left: 2.564102564102564%;
+}
+
+.one-half,
+.three-sixths,
+.two-fourths {
+  width: 48.717948717948715%;
+}
+
+.one-third,
+.two-sixths {
+  width: 31.623931623931625%;
+}
+
+.four-sixths,
+.two-thirds {
+  width: 65.81196581196582%;
+}
+
+.one-fourth {
+  width: 23.076923076923077%;
+}
+
+.three-fourths {
+  width: 74.35897435897436%;
+}
+
+.one-sixth {
+  width: 14.52991452991453%;
+}
+
+.five-sixths {
+  width: 82.90598290598291%;
+}
+
+.first {
+  clear: both;
+  margin-left: 0;
+}

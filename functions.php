@@ -10,11 +10,19 @@
  * @link    http://my.studiopress.com/themes/altitude/
  */
 
+// Child theme (do not remove).
+define( 'CHILD_THEME_NAME', 'Altitude Pro' );
+define( 'CHILD_THEME_URL', 'http://my.studiopress.com/themes/altitude/' );
+define( 'CHILD_THEME_VERSION', '1.1.2' );
+
 // Start the engine.
 include_once( get_template_directory() . '/lib/init.php' );
 
 // Setup Theme.
 include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
+
+// Includes
+include_once( get_stylesheet_directory() . '/lib/enqueues.php' );
 
 // Set Localization (do not remove).
 add_action( 'after_setup_theme', 'altitude_localization_setup' );
@@ -42,30 +50,6 @@ include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.
 
 // Process shortcodes in text widgets
 add_filter('widget_text','do_shortcode');
-
-// Child theme (do not remove).
-define( 'CHILD_THEME_NAME', 'Altitude Pro' );
-define( 'CHILD_THEME_URL', 'http://my.studiopress.com/themes/altitude/' );
-define( 'CHILD_THEME_VERSION', '1.1.2' );
-
-// Enqueue scripts and styles.
-add_action( 'wp_enqueue_scripts', 'altitude_enqueue_scripts_styles' );
-function altitude_enqueue_scripts_styles() {
-
-	wp_enqueue_script( 'altitude-global', get_stylesheet_directory_uri() . '/js/global.js', array( 'jquery' ), '1.0.0' );
-
-	wp_enqueue_style( 'dashicons' );
-	wp_enqueue_style( 'altitude-google-fonts', '//fonts.googleapis.com/css?family=Ek+Mukta:200,800', array(), CHILD_THEME_VERSION );
-
-	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
-	wp_enqueue_script( 'altitude-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menus' . $suffix . '.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-	wp_localize_script(
-		'altitude-responsive-menu',
-		'genesis_responsive_menu',
-		altitude_responsive_menu_settings()
-	);
-
-}
 
 // Define our responsive menu settings.
 function altitude_responsive_menu_settings() {
