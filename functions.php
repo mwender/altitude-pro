@@ -40,6 +40,9 @@ include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.
 // Include notice to install Genesis Connect for WooCommerce.
 include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php' );
 
+// Process shortcodes in text widgets
+add_filter('widget_text','do_shortcode');
+
 // Child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Altitude Pro' );
 define( 'CHILD_THEME_URL', 'http://my.studiopress.com/themes/altitude/' );
@@ -224,13 +227,14 @@ function altitude_count_widgets( $id ) {
 
 }
 
-function altitude_widget_area_class( $id ) {
+function altitude_widget_area_class( $id, $count = null ) {
 
-	$count = altitude_count_widgets( $id );
+	if( stristr( $id, 'front-page' ) )
+		$count = altitude_count_widgets( $id );
 
 	$class = '';
 
-	if ( $count == 1 ) {
+	if ( $count == 1 || is_null( $count ) ) {
 		$class .= ' widget-full';
 	} elseif ( $count % 3 == 1 ) {
 		$class .= ' widget-thirds';
@@ -258,6 +262,13 @@ function altitude_post_info_filter( $post_info ) {
 
 	return $post_info;
 
+}
+
+// Customize the footer text
+add_filter( 'genesis_footer_creds_text', 'altitude_pro_footer_creds_text' );
+function altitude_pro_footer_creds_text( $creds ){
+	$creds = '&copy; Copyright ' . date( 'Y' ) . ' ' . get_bloginfo( 'title' ) . '. All rights reserved. ';
+	return $creds;
 }
 
 // Customize the entry meta in the entry footer.
