@@ -1389,13 +1389,15 @@ img.alignright,
 --------------------------------------------- */
 
 .image-section,
+.fh-image-section,
 .solid-section {
 	clear: both;
 	text-align: center;
 	width: 100%;
 }
 
-.image-section {
+.image-section,
+.fh-image-section {
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.9) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.2)), color-stop(30%,rgba(0,0,0,0.5)), color-stop(80%,rgba(0,0,0,0.8)), color-stop(100%,rgba(0,0,0,0.9)));
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
@@ -1409,21 +1411,28 @@ img.alignright,
 	width: 100%;
 }
 
-.image-section .widget-area {
+.image-section .widget-area,
+.fh-image-section .widget-area {
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
 }
 
 .image-section,
-.image-section a {
+.image-section a,
+.fh-image-section,
+.fh-image-section a {
 	color: #fff;
 }
 
 .image-section a:focus,
 .image-section a:hover,
 .image-section .featured-content .entry-title a:focus,
-.image-section .featured-content .entry-title a:hover {
+.image-section .featured-content .entry-title a:hover,
+.fh-image-section a:focus,
+.fh-image-section a:hover,
+.fh-image-section .featured-content .entry-title a:focus,
+.fh-image-section .featured-content .entry-title a:hover {
 	color: #22a1c4;
 }
 
@@ -1511,6 +1520,9 @@ img.alignright,
 .flexible-widgets {
 	padding-bottom: 60px;
 	padding-top: 100px;
+}
+.fh-image-section .flexible-widgets{
+	padding-top: 140px;
 }
 
 .flexible-widgets .widget {
