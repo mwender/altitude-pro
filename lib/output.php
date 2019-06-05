@@ -31,16 +31,26 @@ function altitude_css() {
 	$css = '';
 
 	foreach( $opts as $opt ) {
-		$settings[$opt]['image'] = preg_replace( '/^https?:/', '', get_option( $opt .'-altitude-image', sprintf( '%s/images/bg-%s.jpg', get_stylesheet_directory_uri(), $opt ) ) );
+		if( is_front_page() ){
+			$settings[$opt]['image'] = preg_replace( '/^https?:/', '', get_option( $opt .'-altitude-image', sprintf( '%s/images/bg-%s.jpg', get_stylesheet_directory_uri(), $opt ) ) );
+		} else {
+	        global $post;
+	        if( $image_id = get_post_meta( $post->ID, 'image-section-' . $opt, true ) ){
+	            $image = wp_get_attachment_url( $image_id );
+	        } else {
+	            $image = sprintf( '%s/images/bg-%s.jpg', get_stylesheet_directory_uri(), $opt );
+	        }
+	        $settings[$opt]['image'] = preg_replace( '/^https?:/', '', $image );
+		}
 	}
 
 	foreach ( $settings as $section => $value ) {
 
 		$background = $value['image'] ? sprintf( 'background-image: url(%s);', $value['image'] ) : '';
 
-		if ( is_front_page() ) {
+		//if ( is_front_page() ) {
 			$css .= ( ! empty( $section ) && ! empty( $background ) ) ? sprintf( '.front-page-%s { %s }', $section, $background ) : '';
-		}
+		//}
 
 	}
 
