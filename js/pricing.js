@@ -98,6 +98,8 @@ jQuery(document).ready(function($){
       quantity = quote.services.one_on_one_coaching.quantity;
       const one_on_one_coaching_prices = [0,1800,1800,2400,3000,3600,4200,4800,5400,6000,6600];
       price.monthly.push(one_on_one_coaching_prices[quantity]);
+      const one_on_one_coaching_setup_prices = [0,250,375,500,625,750,875,1000,1125,1250,1375];
+      price.onetime.push(one_on_one_coaching_setup_prices[quantity]);
     }
 
     // Marketing
