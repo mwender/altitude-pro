@@ -31,6 +31,7 @@ function pricing_form( $atts ){
 	$args = shortcode_atts([
 		'form' => null,
 		'show' => 'all',
+		'introtext' => 'Select your modules and your number of locations. Then you\'ll be able to discuss your quote with us or complete the sign up process by entering your billing information. We\'ll contact you to customize ThriftTrac to meet your specific needs and complete the on-boarding process.',
 	], $atts );
 
 	$replace = [];
@@ -75,7 +76,7 @@ function pricing_form( $atts ){
 	$file = dirname( __FILE__ ) . '/../html/pricing.html';
 	$html = ( file_exists( $file ) )? file_get_contents( $file ) : '<p class="alert"><strong>ERROR:</strong> I could not find <code>' . basename( $file ) . '</code>.</p>' ;
 
-	$search = ['form', 'display_site-visit', 'display_group-coaching', 'display_one-on-one-coaching', 'display_marketing'];
+	$search = ['form', 'display_site-visit', 'display_group-coaching', 'display_one-on-one-coaching', 'display_marketing', 'introtext'];
 	foreach( $search as $key ){
 		$html = str_replace( '{' . $key . '}', $replace[$key], $html );
 	}
