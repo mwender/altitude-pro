@@ -5,7 +5,7 @@
 	Author: StudioPress
 	Author URI: http://www.studiopress.com/
 
-	Version: 1.0.0
+	Version: 1.0.1
 
 	Tags: black, white, blue, green, orange, pink, one-column, two-columns, responsive-layout, custom-header, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, premise-landing-page
 
@@ -13,7 +13,7 @@
 	Template Version: 2.1
 
 	License: GPL-2.0+
-	License URI: http://www.opensource.org/licenses/gpl-license.php 
+	License URI: http://www.opensource.org/licenses/gpl-license.php
 */
 
 
@@ -1311,7 +1311,7 @@ Content Area
 	padding: 0;
 	width: 100%;
 }
-	
+
 .widget-area.flexible-widgets.widget-half .widget,
 .flexible-widgets.widget-halves .widget {
 	width: 48.717948717948715%;
@@ -1699,7 +1699,7 @@ Media Queries
 	.wrap {
 		max-width: 1140px;
 	}
-	
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1720,15 +1720,15 @@ Media Queries
 	.full-width-content .content {
 		padding: 0 110px;
 	}
-	
+
 	.genesis-nav-menu a {
 		padding: 30px 10px;
 	}
-	
+
 	.site-header.dark .genesis-nav-menu a {
 		padding: 20px 10px;
 	}
-	
+
 	.front-page-1,
 	.front-page-3,
 	.front-page-5,
@@ -1744,7 +1744,7 @@ Media Queries
 	.wrap {
 		max-width: 768px;
 	}
-	
+
 	.secondary-nav .site-inner {
 		margin-top: 80px;
 	}
@@ -1756,11 +1756,11 @@ Media Queries
 	.site-header {
 		position: static;
 	}
-	
+
 	.front-page .site-header {
 		background-color: #000;
 	}
-	
+
 	.front-page .site-header > .wrap {
 		border: none;
 	}
@@ -1771,12 +1771,12 @@ Media Queries
 	.title-area {
 		width: 100%;
 	}
-	
+
 	.site-header .title-area,
 	.site-header.dark .title-area {
 		padding: 15px 0;
 	}
-	
+
 	.header-image .dark .site-title > a {
 		height: 76px;
 	}
@@ -1786,15 +1786,15 @@ Media Queries
 	.site-title {
 		text-align: center;
 	}
-	
+
 	.header-image .site-title > a {
 		background-position: center !important;
 	}
-	
+
 	.nav-primary .genesis-nav-menu {
 		float: none;
 	}
-	
+
 	.nav-secondary,
 	.site-header.dark .nav-secondary {
 		border-bottom: none;
@@ -1840,7 +1840,7 @@ Media Queries
 		margin: 0;
 		width: 100%;
 	}
-	
+
 	.flexible-widgets.widget-full .widget,
 	.flexible-widgets.widget-halves .widget,
 	.flexible-widgets.widget-thirds .widget,
@@ -1848,12 +1848,12 @@ Media Queries
 		margin: 0 auto 20px;
 		width: 100%;
 	}
-	
+
 	.image-section h2,
 	.solid-section h2 {
 		font-size: 60px;
 	}
-	
+
 	.front-page-1 .image-section,
 	.secondary-nav .front-page-1 .image-section {
 		padding-top: 0;
@@ -1905,7 +1905,7 @@ Media Queries
 	}
 
 	.genesis-nav-menu.responsive-menu .menu-item-has-children {
-		cursor: pointer;	
+		cursor: pointer;
 	}
 
 	.genesis-nav-menu.responsive-menu .menu-item-has-children > a {
@@ -1979,12 +1979,12 @@ Media Queries
 	.altitude-home .simple-social-icons ul li {
 		margin: 0 20px 20px !important;
 	}
-	
+
 	.footer-widgets .wrap {
 		padding-top: 60px;
 		padding-bottom: 60px;
 	}
-	
+
 	.front-page-2,
 	.front-page-3,
 	.front-page-4,
@@ -1994,16 +1994,16 @@ Media Queries
 		border-top: 0;
 		margin-top: 0;
 	}
-	
+
 	.image-section .flexible-widgets {
 		padding-bottom: 80px;
 	}
-	
+
 	.solid-section .flexible-widgets {
 		padding-bottom: 40px;
 		padding-top: 60px;
 	}
-	
+
 	.bottom-image {
 		margin-top: 60px;
 		margin-bottom: -80px;
