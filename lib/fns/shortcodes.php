@@ -44,6 +44,7 @@ function pricing_form( $atts ){
 	$replace['display_group-coaching'] = '';
 	$replace['display_one-on-one-coaching'] = '';
 	$replace['display_marketing'] = '';
+	$replace['introtext'] = $args['introtext'];
 
 	$show = ( stristr( $args['show'], ',') )? explode(',', $args['show'] ) : array( $args['show'] );
 	foreach( $show as $service ){
