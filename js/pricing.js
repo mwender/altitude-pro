@@ -84,7 +84,7 @@ jQuery(document).ready(function($){
     // Site Visit
     if( quote.services.site_visit.selected ){
       quantity = quote.services.site_visit.quantity;
-      const site_visit_prices = [0,1800,3000,4200];
+      const site_visit_prices = [0,1800,3000,4500];
       price.onetime.push(site_visit_prices[quantity]);
     }
 
@@ -96,7 +96,7 @@ jQuery(document).ready(function($){
     // One-on-One Coaching
     if( quote.services.one_on_one_coaching.selected ){
       quantity = quote.services.one_on_one_coaching.quantity;
-      const one_on_one_coaching_prices = [0,1800,1800,2400,3000,3600,4200,4800,5400,6000,6600];
+      const one_on_one_coaching_prices = [0,1800,1800,2400,3000,3600,4500,4800,5400,6000,6600];
       price.monthly.push(one_on_one_coaching_prices[quantity]);
       const one_on_one_coaching_setup_prices = [0,250,375,500,625,750,875,1000,1125,1250,1375];
       price.onetime.push(one_on_one_coaching_setup_prices[quantity]);
