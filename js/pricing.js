@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
       'affiliate_partner': {
         'selected': false,
         'label': 'Affiliate Partner',
-        'partner_type': 'Bronze'
+        'partner_type': 'Silver'
       },
       'group_coaching': {
         'selected': false,
@@ -43,7 +43,6 @@ jQuery(document).ready(function($){
   $('input.service').change(function(){
     quote.services[this.id].selected = this.checked;
     $('#' + this.id + '_options').slideToggle();
-    //console.log('[pricing.js] quote =', quote);
     calculatePrice();
   });
 
