@@ -11,6 +11,11 @@ jQuery(document).ready(function($){
         'quantity': 1,
         'label': 'Site Visit'
       },
+      'affiliate_partner': {
+        'selected': false,
+        'label': 'Affiliate Partner',
+        'partner_type': 'Bronze'
+      },
       'group_coaching': {
         'selected': false,
         'label': 'Group Coaching'
@@ -47,6 +52,11 @@ jQuery(document).ready(function($){
     calculatePrice();
   });
 
+  $('input[name="partner_type"]').change(function(){
+    quote.services.affiliate_partner.partner_type = this.value;
+    calculatePrice();
+  });
+
   $('select#locations').change(function(){
     console.log('[pricing.js] locations =', this.value);
     quote.services.one_on_one_coaching.quantity = this.value;
@@ -73,6 +83,31 @@ jQuery(document).ready(function($){
     }
   });
 
+  // Listen for clicks on Elementor Price Table button
+  $('.elementor-widget-price-table').on('click', '.elementor-price-table__button', function(){
+    var partner_type = $(this).closest('.elementor-widget-price-table').attr('data-partner-type');
+    if( typeof partner_type === 'undefined' ){
+      console.log('🔔 Add a `data-partner-type` attribute to this Price Table Widget in Elementor to select an Affiliate Partner Plan Type in the Pricing Form on this page');
+    } else {
+      // Pre-select the partner type in the Pricing Form:
+      console.log(`🔔 partner_type = ${partner_type}`);
+      $('#affiliate_partner').prop('checked',true);
+
+      // Show the Bronze, Silver, Gold options
+      if( ! $('#affiliate_partner_options').is(':visible') )
+        $('#affiliate_partner_options').slideDown();
+
+      // Check the checkbox
+      $('#affiliate_' + partner_type ).prop('checked',true);
+
+      // Update the quote object
+      quote.services.affiliate_partner.selected = true;
+      quote.services.affiliate_partner.partner_type = partner_type;
+
+      calculatePrice();
+    }
+  });
+
   function calculatePrice(){
     console.log("\n----\n" + '[pricing.js] calculating price...', quote );
     const price = {
@@ -86,6 +121,18 @@ jQuery(document).ready(function($){
       quantity = quote.services.site_visit.quantity;
       const site_visit_prices = [0,1800,3000,4500];
       price.onetime.push(site_visit_prices[quantity]);
+    }
+
+    // Affiliate Partner
+    if( quote.services.affiliate_partner.selected ){
+      partner_type = quote.services.affiliate_partner.partner_type;
+      const affiliate_partner_prices = {
+        'Bronze': 300,
+        'Silver': 400,
+        'Gold': 500
+      };
+      //console.log(`🔔 partner_type = ${partner_type}`);
+      price.monthly.push( affiliate_partner_prices[partner_type] );
     }
 
     // Group Coaching
